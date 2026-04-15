@@ -4,6 +4,8 @@ import { useState } from 'react';
 
 
 const allPosts = [
+  { slug: 'ai-prompts-for-job-interviews', title: 'Land Your Dream Job: 12 AI Prompts to Ace Every Interview Stage', excerpt: 'From researching companies to answering behavioral questions, these 12 AI prompts walk you through every stage of interview prep.', date: '2026-04-15', category: 'AI Prompts', readingTime: '8 min' },
+  { slug: 'ai-email-triage-system', title: 'Build an AI Email Triage System That Clears Your Inbox in 30 Minutes', excerpt: 'Stop treating your inbox like a to-do list. Build an AI-powered triage system using simple prompts and free tools.', date: '2026-04-15', category: 'Automation', readingTime: '7 min' },
   { slug: '10-chatgpt-prompts-sales', title: '10 ChatGPT Prompts for Sales Professionals', excerpt: 'Boost your sales game with these prompts.', date: '2026-03-15', category: 'AI Prompts', readingTime: '5 min' },
   { slug: 'save-10-hours-week-ai', title: 'How I Save 10 Hours Per Week with AI', excerpt: 'Real strategies to reclaim 10 hours.', date: '2026-03-11', category: 'Productivity', readingTime: '6 min' },
   { slug: 'chatgpt-vs-claude-2026', title: 'ChatGPT vs Claude: Which Should You Use?', excerpt: 'An in-depth comparison.', date: '2026-03-12', category: 'AI Tools', readingTime: '8 min' },
@@ -11,7 +13,7 @@ const allPosts = [
   { slug: 'boost-productivity-with-ai', title: 'Boost Productivity with AI', excerpt: 'AI tips for productivity.', date: '2026-03-14', category: 'Productivity', readingTime: '5 min' },
 ];
 
-const categories = ['All', 'AI Prompts', 'AI Tools', 'Productivity', 'Tutorials'];
+const categories = ['All', 'AI Prompts', 'AI Tools', 'Productivity', 'Automation', 'Tutorials'];
 
 export default function Blog() {
   const [search, setSearch] = useState('');

@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "10-chatgpt-prompts-sales",
+    "title": "10 ChatGPT Prompts for Sales Professionals",
+    "date": "2026-03-15",
+    "category": "AI Prompts",
+    "readingTime": "5 min",
+    "tags": ["ChatGPT", "sales", "prompts"],
+    "excerpt": "Boost your sales game with these 10 battle-tested ChatGPT prompts for prospecting, objection handling, and closing."
+  },
+  {
+    "slug": "save-10-hours-week-ai",
+    "title": "How I Save 10 Hours Per Week with AI",
+    "date": "2026-03-11",
+    "category": "Productivity",
+    "readingTime": "6 min",
+    "tags": ["productivity", "automation", "AI tools"],
+    "excerpt": "Real strategies and specific tools I use every week to reclaim 10 hours without sacrificing output quality."
+  },
+  {
+    "slug": "chatgpt-vs-claude-2026",
+    "title": "ChatGPT vs Claude: Which Should You Use in 2026?",
+    "date": "2026-03-12",
+    "category": "AI Tools",
+    "readingTime": "8 min",
+    "tags": ["ChatGPT", "Claude", "comparison"],
+    "excerpt": "An in-depth, practical comparison of ChatGPT and Claude for real work tasks — so you can pick the right tool for each job."
+  },
+  {
+    "slug": "boost-productivity-with-ai",
+    "title": "Boost Productivity with AI",
+    "date": "2026-03-14",
+    "category": "Productivity",
+    "readingTime": "5 min",
+    "tags": ["productivity", "AI tools"],
+    "excerpt": "Practical AI tips to make your workday more efficient, from writing to research to task management."
+  },
+  {
+    "slug": "ai-prompts-for-job-interviews",
+    "title": "Land Your Dream Job: 12 AI Prompts to Ace Every Interview Stage",
+    "date": "2026-04-15",
+    "category": "AI Prompts",
+    "readingTime": "8 min",
+    "tags": ["job search", "ChatGPT", "Claude", "career", "interview prep"],
+    "excerpt": "From researching companies to answering behavioral questions, these 12 AI prompts walk you through every stage of interview prep — so you show up confident, specific, and ready to close the offer."
+  },
+  {
+    "slug": "ai-email-triage-system",
+    "title": "Build an AI Email Triage System That Clears Your Inbox in 30 Minutes",
+    "date": "2026-04-15",
+    "category": "Automation",
+    "readingTime": "7 min",
+    "tags": ["email", "productivity", "automation", "Gmail", "AI workflows"],
+    "excerpt": "Stop treating your inbox like a to-do list. This step-by-step guide shows you how to build an AI-powered triage system using simple prompts and free tools — so you process email in focused batches instead of all day long."
+  }
+]
