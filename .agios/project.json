@@ -1,0 +1,29 @@
+{
+  "id": "everydayaiworkflows",
+  "name": "Everyday AI Workflows",
+  "repo": "msarmento42/everydayaiworkflows",
+  "deploy_url": "https://everydayaiworkflows.com",
+  "production_url": "https://everydayaiworkflows.com",
+  "priority": "high",
+  "status": "active",
+  "type": "income-site",
+  "tech_stack": ["Next.js 15", "TypeScript", "React", "Vercel"],
+  "objective": "AI productivity blog — affiliate revenue from AI tool recommendations",
+  "success_metrics": [
+    "organic sessions per week",
+    "blog posts published",
+    "affiliate link clicks"
+  ],
+  "health": "green",
+  "last_activity": "2026-04-16",
+  "last_audit": null,
+  "next_review": "2026-06-07",
+  "human_approval_required_for": [
+    "vision changes",
+    "monetization changes",
+    "architecture changes",
+    "experiment issues",
+    "playbook promotion"
+  ],
+  "notes": "Onboarded 2026-06-02. Blog posts are folder-based pages. Has existing BACKLOG.md and BLOG_PLAN.md."
+}

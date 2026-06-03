@@ -1,0 +1,24 @@
+{
+  "allowed_paths": [
+    "src/**",
+    "public/**",
+    "package.json",
+    "next.config.ts",
+    "postcss.config.mjs",
+    "tsconfig.json",
+    "eslint.config.mjs",
+    "README.md"
+  ],
+  "blocked_paths": [
+    ".github/**",
+    ".agios/**",
+    "*.env*",
+    "package-lock.json",
+    "BACKLOG.md",
+    "BLOG_PLAN.md",
+    "IMPROVEMENTS.md",
+    "specs/**"
+  ],
+  "max_files_changed": 20,
+  "note": "Codex must not touch CI config, AGIOS config, env files, or human planning docs."
+}
