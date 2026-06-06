@@ -7,6 +7,32 @@ const postsData: Record<string, { title: string; category: string; date: string;
   'save-10-hours-week-ai': { title: 'How I Save 10 Hours Per Week with AI', category: 'Productivity', date: '2026-03-11', readingTime: '6 min', sections: ['My Routine', 'The Results'] },
 };
 
+function AffiliateTopCallout() {
+  return (
+    <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', margin: '1.5rem 0' }}>
+      <p style={{ fontWeight: 600, color: '#1e3a8a', margin: 0 }}>Tools used in this workflow:</p>
+      <ul style={{ marginTop: '0.5rem', marginBottom: 0, color: '#1e40af', display: 'grid', gap: '0.25rem' }}>
+        <li>✍️ <a href="https://www.jasper.ai/?fpr=everydayai" target="_blank" rel="noopener noreferrer sponsored" style={{ color: 'inherit', textDecoration: 'underline' }}>Jasper AI</a> — AI writing assistant for long-form content</li>
+        <li>📋 <a href="https://affiliate.notion.so/everydayaiworkflows" target="_blank" rel="noopener noreferrer sponsored" style={{ color: 'inherit', textDecoration: 'underline' }}>Notion AI</a> — All-in-one workspace with AI writing built in</li>
+      </ul>
+    </div>
+  );
+}
+
+function AffiliateBottomCallout() {
+  return (
+    <div style={{ background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '8px', padding: '1rem', margin: '1.5rem 0' }}>
+      <p style={{ fontSize: '0.875rem', color: '#4b5563', margin: 0 }}>
+        <strong>Want to automate this workflow?</strong> We recommend{' '}
+        <a href="https://www.jasper.ai/?fpr=everydayai" target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#2563eb', textDecoration: 'underline' }}>Jasper AI</a>{' '}
+        for AI-assisted writing and{' '}
+        <a href="https://affiliate.notion.so/everydayaiworkflows" target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#2563eb', textDecoration: 'underline' }}>Notion AI</a>{' '}
+        for managing your workflow systems.
+      </p>
+    </div>
+  );
+}
+
 function CommentSection() {
   const [comments, setComments] = useState([
     { name: "Alex", text: "Great article! Really helped me with my sales workflow.", date: "2 hours ago" },
@@ -39,6 +65,7 @@ function CommentSection() {
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const slug = params?.slug || 'sample-post';
   const post = postsData[slug] || { title: slug.replace(/-/g, ' '), category: 'Blog', date: '2026-03-15', readingTime: '5 min', sections: ['Overview'] };
+  const showAffiliateCallouts = slug === '10-chatgpt-prompts-sales';
   
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)', color: '#fff', fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
@@ -66,6 +93,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           🖨️ Print / Save as PDF
         </button>
         
+        {showAffiliateCallouts && <AffiliateTopCallout />}
+        
         <div style={{ lineHeight: '1.8', fontSize: '1.1rem', color: '#d1d5db' }}>
           {post.sections.map((section, i) => (
             <div key={i} style={{ marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid #374151' }}>
@@ -74,6 +103,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             </div>
           ))}
         </div>
+        
+        {showAffiliateCallouts && <AffiliateBottomCallout />}
         
         <div style={{ display: 'flex', gap: '0.75rem', marginTop: '2rem' }}>
           <span style={{ color: '#9ca3af', fontSize: '0.85rem' }}>Share:</span>

@@ -29,7 +29,23 @@ export default function BlogPost() {
             <span key={tag} style={{ fontSize: '0.7rem', color: '#00d4ff', background: 'rgba(0,212,255,0.1)', padding: '0.2rem 0.6rem', borderRadius: '20px', border: '1px solid rgba(0,212,255,0.2)' }}>{tag}</span>
           ))}
         </div>
+        <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', margin: '1.5rem 0' }}>
+          <p style={{ fontWeight: 600, color: '#1e3a8a', margin: 0 }}>Tools used in this workflow:</p>
+          <ul style={{ marginTop: '0.5rem', marginBottom: 0, color: '#1e40af', display: 'grid', gap: '0.25rem' }}>
+            <li>✍️ <a href="https://www.jasper.ai/?fpr=everydayai" target="_blank" rel="noopener noreferrer sponsored" style={{ color: 'inherit', textDecoration: 'underline' }}>Jasper AI</a> — AI writing assistant for long-form content</li>
+            <li>📋 <a href="https://affiliate.notion.so/everydayaiworkflows" target="_blank" rel="noopener noreferrer sponsored" style={{ color: 'inherit', textDecoration: 'underline' }}>Notion AI</a> — All-in-one workspace with AI writing built in</li>
+          </ul>
+        </div>
         <div style={{ lineHeight: '1.85', fontSize: '1.05rem', color: '#d1d5db' }} dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        <div style={{ background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '8px', padding: '1rem', margin: '1.5rem 0' }}>
+          <p style={{ fontSize: '0.875rem', color: '#4b5563', margin: 0 }}>
+            <strong>Want to automate this workflow?</strong> We recommend{' '}
+            <a href="https://www.jasper.ai/?fpr=everydayai" target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#2563eb', textDecoration: 'underline' }}>Jasper AI</a>{' '}
+            for AI-assisted writing and{' '}
+            <a href="https://affiliate.notion.so/everydayaiworkflows" target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#2563eb', textDecoration: 'underline' }}>Notion AI</a>{' '}
+            for managing your workflow systems.
+          </p>
+        </div>
         <div style={{ display: 'flex', gap: '0.75rem', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid #374151' }}>
           <span style={{ color: '#9ca3af', fontSize: '0.85rem' }}>Share:</span>
           <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(postData.title)}&url=https://everydayaiworkflows.com/blog/ai-email-triage-system`} target="_blank" rel="noopener noreferrer" style={{ color: '#1da1f2', fontSize: '0.85rem', textDecoration: 'none' }}>Twitter</a>
