@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "The Best AI Tools for Content Creators in 2026",
+  description: "Content creation has been transformed more thoroughly by AI than almost any other profession. In 2026, the question is no longer \"should I use AI?\" but...",
+};
 
 export default function BlogPost() {
   return (
@@ -61,8 +62,12 @@ From this, generate:
           <p>For writing at scale with brand consistency: <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper</a>. For writing with built-in web research: <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a>. For connecting your content tools into automated workflows: <a href="https://www.make.com/en/register?pc=msarmento42/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a>. These three tools together cover the full lifecycle from drafting to distribution.</p>
           <p>See our full <a href="/tools" style={{ color: "#00d4ff" }}>AI tools guide</a> for more.</p>
         </div>
-        <NewsletterCapture />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
