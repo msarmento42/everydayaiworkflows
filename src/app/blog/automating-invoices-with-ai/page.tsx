@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "Automating Invoices with AI: Stop Wasting 5+ Hours a Week on Billing",
+  description: "Most freelancers and small business owners spend 4–8 hours per month manually creating, sending, and chasing invoices. That's not just tedious — it's a...",
+};
 
 export default function BlogPost() {
   return (
