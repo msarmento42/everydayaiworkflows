@@ -1,6 +1,9 @@
-"use client";
+import NewsletterCapture from "../components/NewsletterCapture";
 
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "The Complete Notion AI Workflow Guide: From Raw Notes to Decisions | Everyday AI Workflows",
+  description: "How to use Notion AI beyond summarization — structuring notes, running analyses, and turning your knowledge base into an active decision-support system.",
+};
 
 export default function BlogPost() {
   return (
