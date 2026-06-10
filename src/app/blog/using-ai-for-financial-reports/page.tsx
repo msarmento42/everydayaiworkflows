@@ -1,6 +1,9 @@
-"use client";
+import NewsletterCapture from "../components/NewsletterCapture";
 
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "Using AI to Write Financial Reports: A Practical Workflow for Non-Finance Teams | Everyday AI Workflows",
+  description: "A step-by-step workflow for using AI to structure, draft, and polish financial reports — turning raw numbers into clear narratives that non-finance stakeholders can act on.",
+};
 
 export default function BlogPost() {
   return (
