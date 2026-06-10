@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "ChatGPT for Coding Beginners: How to Learn Faster, Debug Smarter, and Actually Ship Things",
+  description: "Learning to code used to mean spending hours staring at a cryptic error message, hunting Stack Overflow for a question that was asked eight years ago, and...",
+};
 
 export default function BlogPost() {
   return (
