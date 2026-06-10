@@ -1,6 +1,9 @@
-"use client";
+import NewsletterCapture from "../components/NewsletterCapture";
 
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "The 20-Minute AI Morning Routine That Saves 2 Hours a Day | Everyday AI Workflows",
+  description: "A structured morning AI routine that uses Claude and ChatGPT to triage email, plan your day, and prepare for meetings — so you start in control instead of reactive.",
+};
 
 export default function BlogPost() {
   return (
