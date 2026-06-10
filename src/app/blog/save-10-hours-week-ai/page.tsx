@@ -1,6 +1,9 @@
-"use client";
+import NewsletterCapture from "../components/NewsletterCapture";
 
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "How I Save 10 Hours Per Week with AI: Real Workflows, Real Numbers | Everyday AI Workflows",
+  description: "A tracked breakdown of exactly how AI reclaims 10+ hours per week across email, meeting notes, research, and reporting — with the specific workflows behind each saving.",
+};
 
 export default function BlogPost() {
   return (
