@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "10 ChatGPT Prompts for Sales Professionals That Actually Close Deals",
+  description: "Sales reps who use AI are not replacing themselves — they\'re removing the friction that keeps them from selling. The average rep spends only 28% of their...",
+};
 
 export default function BlogPost() {
   return (
@@ -153,8 +154,12 @@ Be direct. I need a prioritized action list, not a generic strategy.`}</pre>
           </div>
 
         </div>
-        <NewsletterCapture />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
