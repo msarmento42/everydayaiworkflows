@@ -1,6 +1,9 @@
-"use client";
+import NewsletterCapture from "../components/NewsletterCapture";
 
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "10 Claude AI Prompts That Will Transform Your Workday | Everyday AI Workflows",
+  description: "Ten high-impact Claude prompts for email drafting, meeting prep, research synthesis, and daily planning that go far beyond basic AI use.",
+};
 
 export default function BlogPost() {
   return (
