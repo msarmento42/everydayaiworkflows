@@ -1,6 +1,9 @@
-"use client";
+import NewsletterCapture from "../components/NewsletterCapture";
 
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "Claude API for Beginners: Build Your First AI-Powered Workflow in 30 Minutes | Everyday AI Workflows",
+  description: "A step-by-step guide to getting started with the Claude API — from your first API call to building a practical AI-powered workflow with no prior experience required.",
+};
 
 export default function BlogPost() {
   return (
