@@ -1,6 +1,9 @@
-"use client";
+import NewsletterCapture from "../components/NewsletterCapture";
 
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "How to Automate Repetitive Tasks with Make.com (No Code Required) | Everyday AI Workflows",
+  description: "A practical guide to building no-code automations with Make.com — connecting AI tools, apps, and workflows so repetitive tasks run without you.",
+};
 
 export default function BlogPost() {
   return (
