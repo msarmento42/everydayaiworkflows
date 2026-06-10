@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "How to Use AI to Write YouTube Scripts That Actually Keep Viewers Watching",
+  description: "Most YouTube scripts fail in the first 30 seconds — not because the creator lacks ideas, but because the structure is wrong. AI won&apos;t make you a better...",
+};
 
 export default function BlogPost() {
   return (
@@ -84,8 +85,12 @@ tone, not clickbait-y."`}</pre>
           ))}
         </div>
 
-        <NewsletterCapture darkMode={true} />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
