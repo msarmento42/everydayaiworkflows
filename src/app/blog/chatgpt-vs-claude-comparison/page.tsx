@@ -1,6 +1,9 @@
-"use client";
+import NewsletterCapture from "../components/NewsletterCapture";
 
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "ChatGPT vs Claude: Which AI Assistant Is Right for You? | Everyday AI Workflows",
+  description: "An in-depth comparison of ChatGPT and Claude covering writing quality, coding, research, and instruction-following to help you pick the right AI assistant.",
+};
 
 export default function BlogPost() {
   return (
