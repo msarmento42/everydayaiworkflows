@@ -84,6 +84,19 @@ export default function Home() {
           </p>
         </header>
 
+        {/* Static intro — rendered server-side for SEO */}
+        <section style={{ marginBottom: "2.5rem" }}>
+          <p style={{ color: darkMode ? "#d1d5db" : "#374151", fontSize: "1.05rem", lineHeight: "1.8", marginBottom: "1rem" }}>
+            Everyday AI Workflows is a practical resource for professionals, freelancers, and teams who want to work smarter with AI. Whether you{"'"}re just getting started with ChatGPT, Claude, or Gemini, or you{"'"}re looking to build more advanced automation pipelines, you{"'"}ll find step-by-step guides, prompt templates, and honest tool recommendations here.
+          </p>
+          <p style={{ color: darkMode ? "#d1d5db" : "#374151", fontSize: "1.05rem", lineHeight: "1.8", marginBottom: "1rem" }}>
+            The site covers writing and editing with AI, automating repetitive tasks with tools like Make.com and Zapier, using AI for data analysis, customer support, content creation, and more. Every guide is written for working professionals — focused on practical application, not theory.
+          </p>
+          <p style={{ color: darkMode ? "#9ca3af" : "#6b7280", fontSize: "0.95rem", lineHeight: "1.7" }}>
+            Browse the <a href="/blog" style={{ color: "#00d4ff" }}>blog</a> for in-depth tutorials, explore the <a href="/ai-tools" style={{ color: "#00d4ff" }}>AI tools directory</a> for curated recommendations, or use the daily prompt below as a starting point for today{"'"}s work.
+          </p>
+        </section>
+
         <div style={{ background: darkMode ? "rgba(255, 255, 255, 0.05)" : "#fff", borderRadius: "20px", padding: "2.5rem", border: darkMode ? "1px solid rgba(255, 255, 255, 0.1)" : "1px solid #e5e7eb", marginBottom: "2rem" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5rem" }}>
             <span style={{ background: "linear-gradient(90deg, #00d4ff, #7c3aed)", padding: "0.4rem 1rem", borderRadius: "20px", fontSize: "0.85rem", fontWeight: "600", color: "#fff" }}>
@@ -111,7 +124,7 @@ export default function Home() {
 
         <div style={{ background: "rgba(124, 58, 237, 0.1)", borderRadius: "16px", padding: "2rem", marginBottom: "2rem", border: "1px solid rgba(124, 58, 237, 0.3)", textAlign: "center" }}>
           <h3 style={{ color: "#fff", marginBottom: "0.5rem", fontSize: "1.3rem" }}>📧 Get AI tips weekly</h3>
-          <p style={{ color: darkMode ? "#9ca3af" : "#6b7280", marginBottom: "1rem" }}>Join 10,000+ subscribers</p>
+          <p style={{ color: darkMode ? "#9ca3af" : "#6b7280", marginBottom: "1rem" }}>Get weekly AI tips in your inbox</p>
           <div style={{ display: "flex", gap: "0.5rem", maxWidth: "400px", margin: "0 auto" }}>
             <input type="email" placeholder="Your email" style={{ flex: 1, padding: "0.75rem", borderRadius: "8px", border: "1px solid #374151", background: darkMode ? "#1a1a3e" : "#fff", color: darkMode ? "#fff" : "#1a1a3e" }} />
             <button style={{ padding: "0.75rem 1.5rem", background: "#7c3aed", border: "none", borderRadius: "8px", color: "#fff", fontWeight: "600", cursor: "pointer" }}>Subscribe</button>
