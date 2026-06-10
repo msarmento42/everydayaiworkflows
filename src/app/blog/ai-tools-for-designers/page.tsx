@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "AI Tools for Designers: Automate the Tedious Parts and Focus on Creative Work",
+  description: "Designers spend a surprising chunk of their week on work that has nothing to do with design: writing client briefs, generating copy for mockups, resizing...",
+};
 
 export default function BlogPost() {
   return (
@@ -96,8 +97,12 @@ Slide 5: Next steps and open questions"`}</pre>
           ))}
         </div>
 
-        <NewsletterCapture darkMode={true} />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
