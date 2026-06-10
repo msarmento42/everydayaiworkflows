@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "Best AI Writing Assistants in 2026: Tested and Ranked",
+  description: "The AI writing assistant market has matured significantly. What started as a novelty — an AI that could technically generate a paragraph — has become a...",
+};
 
 export default function BlogPost() {
   return (
@@ -51,7 +52,11 @@ Include: [specific angle or key point to cover]`}</pre>
           <p>For teams: <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper</a> for brand voice consistency and template-driven workflows. For solo creators who need current data: <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> for its web search integration and strong value. To automate content distribution after writing: <a href="https://www.make.com/en/register?pc=msarmento42/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> connects your writing tools to your publishing and social platforms automatically.</p>
           <p>See our full <a href="/tools" style={{ color: "#00d4ff" }}>AI tools guide</a> for more.</p>
         </div>
-        <NewsletterCapture />
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
       </div>
     </div>
   );
