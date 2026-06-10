@@ -32,7 +32,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+      <nav style={{
+        background: 'rgba(15,15,35,0.95)',
+        borderBottom: '1px solid rgba(255,255,255,0.07)',
+        padding: '0 1.5rem',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '1.5rem',
+        height: '52px',
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+        position: 'sticky' as const,
+        top: 0,
+        zIndex: 100,
+      }}>
+        <a href="/" style={{ color: '#00d4ff', textDecoration: 'none', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '-0.01em' }}>
+          Everyday AI
+        </a>
+        <div style={{ display: 'flex', gap: '1.25rem', marginLeft: '0.5rem' }}>
+          {[
+            { href: '/blog', label: 'Blog' },
+            { href: '/ai-tools', label: 'AI Tools' },
+            { href: '/tools', label: 'Directory' },
+          ].map(({ href, label }) => (
+            <a key={href} href={href} style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '0.85rem' }}>
+              {label}
+            </a>
+          ))}
+        </div>
+      </nav>
+      {children}
+      </body>
     </html>
   );
 }
