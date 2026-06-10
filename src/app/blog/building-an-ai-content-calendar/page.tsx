@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "Building an AI Content Calendar: From Zero to 90 Days of Posts in One Afternoon",
+  description: "Content consistency is the single biggest predictor of audience growth, and the single biggest thing most creators and marketers fail at. Not because they...",
+};
 
 export default function BlogPost() {
   return (
