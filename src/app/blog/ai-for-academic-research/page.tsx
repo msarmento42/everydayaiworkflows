@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "AI for Academic Research: A Practical Workflow That Cuts Literature Review Time in Half",
+  description: "Academic research has a time problem. Literature reviews that should take days stretch into weeks. Synthesizing dozens of papers into coherent arguments...",
+};
 
 export default function BlogPost() {
   return (
@@ -144,8 +145,12 @@ Be specific and critical — I want to find these problems before submission.`}<
           ))}
         </div>
 
-        <NewsletterCapture darkMode={true} />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
