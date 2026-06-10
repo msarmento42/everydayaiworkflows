@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "How to Use AI for Customer Support: A Practical Workflow That Actually Scales",
+  description: "Most customer support teams are drowning. Ticket volumes grow faster than headcount, response times slip, and agents burn out answering the same questions...",
+};
 
 export default function BlogPost() {
   return (
@@ -101,8 +102,12 @@ Format as a structured report.`}</pre>
           ))}
         </div>
 
-        <NewsletterCapture darkMode={true} />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
