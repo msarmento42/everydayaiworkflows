@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "AI Tools for Sales Teams: Close More Deals Without Working More Hours",
+  description: "Sales is already a data-heavy, communication-intensive job. AI doesn\'t replace great salespeople — it removes the parts that aren\'t selling: drafting...",
+};
 
 export default function BlogPost() {
   return (
@@ -81,8 +82,12 @@ Keep the structure identical. Replace generic language with specifics.
           ))}
         </div>
 
-        <NewsletterCapture darkMode={true} />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
