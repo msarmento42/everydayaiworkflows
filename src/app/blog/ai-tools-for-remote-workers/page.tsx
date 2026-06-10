@@ -105,8 +105,6 @@ The goal is zero follow-up questions needed.`}</pre>
             </tbody>
           </table>
 
-          <p>For a broader look at building AI-powered productivity habits, see our post on <a href="/blog/boost-productivity-with-ai" style={{ color: "#00d4ff" }}>5 proven ways to boost productivity with AI</a>.</p>
-
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
               {"💡 "}<strong>{"See the full remote worker AI toolkit — all tools reviewed and vetted. "}</strong><a href="/tools" style={{ color: "#00d4ff" }}>{"Browse the directory →"}</a>
