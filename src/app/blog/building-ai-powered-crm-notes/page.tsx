@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "Building AI-Powered CRM Notes: Turn Every Sales Call Into Actionable Data",
+  description: "Sales reps spend an average of 21% of their day writing CRM notes — time that should go toward selling. AI can write those notes for you, automatically, in...",
+};
 
 export default function BlogPost() {
   return (
