@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "AI for Email Marketing: Write Better Campaigns in Half the Time",
+  description: "Email marketing still delivers the highest ROI of any digital channel — around $36 for every $1 spent — but most teams spend 60% of their campaign time on...",
+};
 
 export default function BlogPost() {
   return (
@@ -104,8 +105,12 @@ Then write Email 1 in full.`}</pre>
           ))}
         </div>
 
-        <NewsletterCapture darkMode={true} />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
