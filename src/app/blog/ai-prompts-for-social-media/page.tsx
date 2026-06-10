@@ -1,6 +1,7 @@
-"use client";
-
-import NewsletterCapture from "../../components/NewsletterCapture";
+export const metadata = {
+  title: "50 AI Prompts for Social Media That Actually Get Engagement",
+  description: "Most AI-generated social media posts are forgettable. They\'re technically correct, grammatically clean, and utterly generic. The problem isn\'t the AI — it\'s...",
+};
 
 export default function BlogPost() {
   return (
@@ -206,8 +207,12 @@ use as a template going forward.`}</pre>
           <p>For writing social content at volume with brand voice controls: <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper</a> has purpose-built social media templates and the best brand voice training of any writing tool. For more affordable volume creation with web-search capability: <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> is excellent. To schedule and automate posts across platforms once they're written: <a href="https://www.make.com/en/register?pc=msarmento42/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> connects your AI writing tools to Buffer, Later, or Hootsuite so content flows from draft to scheduled without manual steps.</p>
           <p>See our full <a href="/tools" style={{ color: "#00d4ff" }}>AI tools guide</a> for more.</p>
         </div>
-        <NewsletterCapture />
-      </div>
+                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
+          <p style={{ color: "#9ca3af", margin: 0 }}>
+            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
+          </p>
+        </div>
+</div>
     </div>
   );
 }
