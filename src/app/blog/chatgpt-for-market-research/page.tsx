@@ -1,3 +1,5 @@
+import NewsletterCapture from "../components/NewsletterCapture";
+
 export const metadata = {
   title: "ChatGPT for Market Research: A Practical Workflow That Replaces Hours of Manual Work",
   description: "Traditional market research takes days: competitor analysis, customer persona development, TAM sizing, SWOT breakdowns. With the right prompts and workflow,...",
