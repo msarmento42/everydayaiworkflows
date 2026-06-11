@@ -1,64 +1,89 @@
-import postData from '../../../posts/ai-email-triage-system.json';
+"use client";
+import NewsletterCapture from "../../components/NewsletterCapture";
 
 export const metadata = {
-  title: postData.title,
-  description: postData.excerpt,
+  title: "Build an AI Email Triage System: Zero Inbox in Under 10 Minutes | Everyday AI Workflows",
+  description: "Cut your daily email time to under 10 minutes with AI-powered triage, automated sorting, and draft generation workflows.",
 };
 
 export default function BlogPost() {
-  const htmlContent = postData.content
-    .replace(/<h2>/g, '<h2 style="font-size:1.4rem;color:#fff;margin-top:2.5rem;margin-bottom:0.75rem;">')
-    .replace(/<pre><code>/g, '<pre style="background:rgba(0,0,0,0.4);border:1px solid #374151;border-radius:8px;padding:1.25rem;overflow-x:auto;margin:1.25rem 0;"><code style="font-size:0.85rem;color:#e5e7eb;font-family:monospace;white-space:pre-wrap;">')
-    .replace(/<\/code><\/pre>/g, '</code></pre>')
-    .replace(/<p>/g, '<p style="margin-bottom:1rem;">')
-    .replace(/<strong>/g, '<strong style="color:#fff;">');
-
   return (
-    <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)', color: '#fff', fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
-      <div style={{ maxWidth: '800px', margin: '0 auto', paddingTop: '2rem' }}>
-        <a href="/blog" style={{ color: '#00d4ff', textDecoration: 'none' }}>← Back to Blog</a>
-        <div style={{ marginTop: '1rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
-          <span style={{ fontSize: '0.75rem', color: '#7c3aed', background: 'rgba(124,58,237,0.2)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>{postData.category}</span>
-          <span style={{ fontSize: '0.75rem', color: '#6b7280' }}>⏱️ {postData.readingTime}</span>
-          <span style={{ fontSize: '0.75rem', color: '#6b7280' }}>{postData.date}</span>
+    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
+        <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
+        <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+          <span style={{ fontSize: "0.75rem", color: "#7c3aed", background: "rgba(124,58,237,0.2)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>Automation</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 8 min read</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>May 8, 2026</span>
         </div>
-        <h1 style={{ fontSize: '2.2rem', marginTop: '0.75rem', marginBottom: '1rem', lineHeight: 1.3 }}>{postData.title}</h1>
-        <p style={{ color: '#9ca3af', fontSize: '1.05rem', marginBottom: '2rem', lineHeight: 1.7 }}>{postData.excerpt}</p>
-        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
-          {postData.tags.map((tag) => (
-            <span key={tag} style={{ fontSize: '0.7rem', color: '#00d4ff', background: 'rgba(0,212,255,0.1)', padding: '0.2rem 0.6rem', borderRadius: '20px', border: '1px solid rgba(0,212,255,0.2)' }}>{tag}</span>
-          ))}
-        </div>
-        <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: '8px', padding: '1rem', margin: '1.5rem 0' }}>
-          <p style={{ fontWeight: 600, color: '#1e3a8a', margin: 0 }}>Tools used in this workflow:</p>
-          <ul style={{ marginTop: '0.5rem', marginBottom: 0, color: '#1e40af', display: 'grid', gap: '0.25rem' }}>
-            <li>✍️ <a href="https://www.jasper.ai/?fpr=everydayai" target="_blank" rel="noopener noreferrer sponsored" style={{ color: 'inherit', textDecoration: 'underline' }}>Jasper AI</a> — AI writing assistant for long-form content</li>
-            <li>📋 <a href="https://affiliate.notion.so/everydayaiworkflows" target="_blank" rel="noopener noreferrer sponsored" style={{ color: 'inherit', textDecoration: 'underline' }}>Notion AI</a> — All-in-one workspace with AI writing built in</li>
-          </ul>
-        </div>
-        <div style={{ lineHeight: '1.85', fontSize: '1.05rem', color: '#d1d5db' }} dangerouslySetInnerHTML={{ __html: htmlContent }} />
-        <div style={{ background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '8px', padding: '1rem', margin: '1.5rem 0' }}>
-          <p style={{ fontSize: '0.875rem', color: '#4b5563', margin: 0 }}>
-            <strong>Want to automate this workflow?</strong> We recommend{' '}
-            <a href="https://www.jasper.ai/?fpr=everydayai" target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#2563eb', textDecoration: 'underline' }}>Jasper AI</a>{' '}
-            for AI-assisted writing and{' '}
-            <a href="https://affiliate.notion.so/everydayaiworkflows" target="_blank" rel="noopener noreferrer sponsored" style={{ color: '#2563eb', textDecoration: 'underline' }}>Notion AI</a>{' '}
-            for managing your workflow systems.
-          </p>
-        </div>
-        <div style={{ display: 'flex', gap: '0.75rem', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid #374151' }}>
-          <span style={{ color: '#9ca3af', fontSize: '0.85rem' }}>Share:</span>
-          <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(postData.title)}&url=https://everydayaiworkflows.com/blog/ai-email-triage-system`} target="_blank" rel="noopener noreferrer" style={{ color: '#1da1f2', fontSize: '0.85rem', textDecoration: 'none' }}>Twitter</a>
-          <a href={`https://www.linkedin.com/sharing/share-offsite/?url=https://everydayaiworkflows.com/blog/ai-email-triage-system`} target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', fontSize: '0.85rem', textDecoration: 'none' }}>LinkedIn</a>
-        </div>
-        <div style={{ marginTop: '2.5rem', padding: '2rem', background: 'rgba(124,58,237,0.1)', borderRadius: '12px', border: '1px solid rgba(124,58,237,0.3)' }}>
-          <h3 style={{ color: '#fff', marginBottom: '0.5rem', marginTop: 0 }}>📧 Get AI workflow tips weekly</h3>
-          <p style={{ color: '#9ca3af', fontSize: '0.9rem', marginBottom: '1rem' }}>Practical prompts and automation ideas — no fluff.</p>
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            <input type="email" placeholder="Your email" style={{ flex: 1, padding: '0.75rem', borderRadius: '8px', border: '1px solid #374151', background: '#1a1a3e', color: '#fff' }} />
-            <button style={{ padding: '0.75rem 1.5rem', background: '#7c3aed', border: 'none', borderRadius: '8px', color: '#fff', fontWeight: '600', cursor: 'pointer' }}>Subscribe</button>
+        <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
+          Build an AI Email Triage System: Zero Inbox in Under 10 Minutes
+        </h1>
+        <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
+          <p>The average professional spends 2.6 hours per day on email. That is not managing your work — that is your work managing you. With a properly configured AI triage system, you can cut that to under 10 minutes of deliberate attention. Not by ignoring email, but by letting AI do the sorting, prioritizing, and first-draft work while you make final calls on anything that actually requires your judgment.</p>
+          <p>This guide walks you through a complete email triage workflow: the prompts, the sorting logic, the draft generation, and the automation layer that ties it together. You will also find notes on which tools handle each layer best.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Why Most AI Email Hacks Fail</h2>
+          <p>Most people try to use AI for email by asking it to summarize their inbox. That is too vague. AI produces generic output when given generic input. The key is building a system with explicit rules: which emails get flagged urgent, what a good reply looks like, and who gets responded to same-day vs. next week. Once you encode those rules once, AI applies them consistently every single day.</p>
+          <p>The three failure modes to avoid: (1) no priority criteria, so everything seems urgent; (2) no reply template logic, so drafts miss your voice; (3) no automation, so you still have to trigger each step manually. Fix all three and the system actually works.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Define Your Priority Logic</h2>
+          <p>Before you write a single prompt, spend five minutes writing down your actual triage rules. Something like: emails from my boss, direct reports, or paying clients are High. Emails that need a decision from me are Medium. Everything else is Low — newsletters, FYIs, CC chains. Once you have this, you can give it to Claude as a system prompt and it will apply it to every batch you feed it.</p>
+          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`You are my email triage assistant. Use these priority rules:
+
+HIGH: Emails from [boss name], direct reports, or paying clients.
+Also flag emails requiring a same-day decision from me.
+
+MEDIUM: Emails needing a reply within 48 hours but not urgent.
+Internal updates, vendor questions, colleague requests.
+
+LOW: Newsletters, FYI forwards, CC chains, anything that can
+wait more than 3 days.
+
+For each email I paste, output:
+- Priority: High / Medium / Low
+- Action: Reply / Delegate / Archive / Read-Later
+- 30-word draft reply (High and Medium only)`}</pre>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 2: The Batch Triage Prompt</h2>
+          <p>Once you have your system prompt saved, your daily triage session looks like this: copy a batch of email subjects and sender names, run the batch prompt, review the output, and act only on the Highs. The whole thing takes under five minutes for 30 to 40 emails.</p>
+          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`Here are today's emails. Apply my triage rules and output a
+sorted table.
+
+1. From: Sarah K (CEO) | Subject: Q3 budget review
+2. From: newsletter@techdigest.co | Subject: This week in AI
+3. From: Mike (teammate) | Subject: Can you review this deck before Friday?
+4. From: vendor@softwareco.com | Subject: Contract renewal reminder
+5. From: client@bigcorp.com | Subject: Launch timeline question
+
+Output as a table: # | Priority | Action | Draft Reply (1 sentence)`}</pre>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 3: Full Draft Generation for High-Priority Emails</h2>
+          <p>For High-priority emails, you want full drafts, not just a sentence. Paste the actual email thread and ask for a complete reply. Tell Claude your goal and constraints — word count, what not to commit to, the relationship context.</p>
+          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`Write a reply to this email. Context:
+- I am the product lead, Sarah is my CEO
+- Goal: confirm I will deliver numbers by Friday, but flag
+  that I need her input on one assumption first
+- Tone: professional, concise, no jargon
+- Max length: 150 words
+
+[Paste email thread here]`}</pre>
+          <p>Claude will produce a polished draft in seconds. Read it, adjust if needed, and send. For most high-priority emails, this takes 60 to 90 seconds instead of 5 to 10 minutes.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 4: Automate with Make.com</h2>
+          <p>Manual batch prompting works, but full automation is where this system really pays off. With <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a>, you can build a workflow that automatically pulls new emails from Gmail or Outlook, sends them through a Claude analysis step, and routes them into labeled folders — all without you touching anything.</p>
+          <p>A basic Make.com automation for email triage: Gmail trigger → filter newsletters by sender domain → Claude API call with your triage prompt → parse priority label → apply Gmail label and draft reply. This runs constantly, so when you open your inbox each morning, everything is already sorted.</p>
+          <p>For writing-heavy replies, pairing with <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> gives you brand-voice controls that keep tone consistent. And <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> can enrich replies by pulling in relevant client notes before drafting.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 5: Weekly Calibration</h2>
+          <p>Any triage system drifts over time as your role or team changes. Spend five minutes every Friday reviewing the past week: were any Highs mislabeled Low? Did any action items slip through? Update your priority rules accordingly. This keeps the system accurate without constant babysitting.</p>
+          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`Here is a summary of emails I processed this week:
+[paste list of senders and subjects]
+
+Identify: (1) top 3 senders by volume, (2) recurring themes
+or issues, (3) one process improvement to reduce inbox load
+next week.`}</pre>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Related Workflows Worth Building</h2>
+          <p>Once your email triage is running, extend AI to the meetings that emails create. Our <a href="/blog/ai-meeting-summarizer-workflow" style={{ color: "#00d4ff" }}>AI meeting summarizer workflow</a> shows how to auto-generate structured summaries and action items from any call transcript. The <a href="/blog/ai-for-project-management" style={{ color: "#00d4ff" }}>AI for project management guide</a> covers task lists, status updates, and retrospectives without manual overhead.</p>
+          <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
+            <p style={{ margin: 0, color: "#a5f3fc" }}>💡 <strong>Ready to automate your full communication stack?</strong> <a href="/tools" style={{ color: "#00d4ff" }}>Browse the full toolkit →</a></p>
           </div>
         </div>
+        <NewsletterCapture darkMode={true} />
       </div>
     </div>
   );
