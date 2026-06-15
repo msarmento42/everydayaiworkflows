@@ -1,6 +1,8 @@
+import NewsletterCapture from "../components/NewsletterCapture";
+
 export const metadata = {
   title: "How to Use AI for SEO Optimization: A Practical Workflow That Actually Ranks",
-  description: "Most SEO advice tells you to write for humans and optimize for search engines — but never explains the actual workflow. AI tools have changed what is...",
+  description: "A five-step AI workflow for keyword research, SERP-informed outlining, section-by-section writing, on-page auditing, and automated internal linking.",
 };
 
 export default function BlogPost() {
@@ -10,8 +12,8 @@ export default function BlogPost() {
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
           <span style={{ fontSize: "0.75rem", color: "#7c3aed", background: "rgba(124,58,237,0.2)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>SEO</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 7 min read</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>May 20, 2025</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 9 min read</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>May 20, 2026</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           How to Use AI for SEO Optimization: A Practical Workflow That Actually Ranks
@@ -55,7 +57,7 @@ Create a better outline that:
 - Avoid passive voice
 - No filler phrases ("In today's landscape", "It's important to note")
 - End with a transition to the next section: "[Next Section Title]"`}</pre>
-          <p>This keeps each section punchy and produces content people actually want to read. For teams producing content at scale, <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> has Brand Voice settings that apply your tone automatically across every section.</p>
+          <p>This keeps each section punchy and produces content people actually want to read. For teams producing content at scale, <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> has Brand Voice settings that apply your tone automatically across every section. For SEO-tuned AI writing specifically, <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> includes keyword density controls that score your draft as you write.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 4: Run an On-Page SEO Audit Before Publishing</h2>
           <p>Once the draft is done, run this targeted review prompt before hitting publish:</p>
@@ -80,6 +82,58 @@ For the new post "[new post title]", suggest:
 3. The anchor text to use for each`}</pre>
           <p>If you manage a blog with 50+ posts, consider automating this with <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> — trigger this prompt via the Claude API every time a new post is published, then log the suggestions to a Google Sheet for your editor to action.</p>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 6: Build a Content Promotion System That Feeds SEO</h2>
+          <p>Publishing is the beginning, not the end. Google rewards content that earns engagement signals — clicks, time on page, social shares — shortly after publication. That means your SEO workflow has to include a distribution step.</p>
+          <p>The highest-leverage move is to repurpose each post into platform-native content the same day you publish. Use this prompt pattern:</p>
+          <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`Here is my new blog post on "[topic]". Repurpose the key insights into:
+1. A LinkedIn post (hook + 3 bullet takeaways + CTA with the link)
+2. A Twitter/X thread (5 tweets, numbered)
+3. An email newsletter teaser (2 paragraphs max, subject line included)
+
+Keep each format platform-native — no generic "check out my post" language.`}</pre>
+          <p>For a scalable system that handles this automatically after each publish, see our guide on <a href="/blog/automating-social-media-with-ai" style={{ color: "#00d4ff" }}>automating social media with AI</a>. Combined with a structured publishing calendar, this is how small content teams punch above their weight. Our guide on <a href="/blog/building-an-ai-content-calendar" style={{ color: "#00d4ff" }}>building an AI content calendar</a> shows how to plan the full quarter in one sitting.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>AI SEO Tool Comparison: What to Use When</h2>
+          <div style={{ overflowX: "auto", marginTop: "1rem", marginBottom: "1rem" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid #374151" }}>
+                  <th style={{ textAlign: "left", padding: "0.75rem 0.5rem", color: "#a5f3fc" }}>Stage</th>
+                  <th style={{ textAlign: "left", padding: "0.75rem 0.5rem", color: "#a5f3fc" }}>Tool</th>
+                  <th style={{ textAlign: "left", padding: "0.75rem 0.5rem", color: "#a5f3fc" }}>What it does</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: "1px solid rgba(55,65,81,0.5)" }}>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#d1d5db" }}>Keyword research</td>
+                  <td style={{ padding: "0.75rem 0.5rem" }}><a href="https://surferseo.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Surfer SEO</a></td>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#9ca3af" }}>Real-time SERP data + keyword difficulty</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid rgba(55,65,81,0.5)" }}>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#d1d5db" }}>Outline + outlining</td>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#d1d5db" }}>Claude / ChatGPT</td>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#9ca3af" }}>SERP-informed structure via prompt</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid rgba(55,65,81,0.5)" }}>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#d1d5db" }}>Drafting at scale</td>
+                  <td style={{ padding: "0.75rem 0.5rem" }}><a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a></td>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#9ca3af" }}>Brand Voice + team workflows</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid rgba(55,65,81,0.5)" }}>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#d1d5db" }}>On-page scoring</td>
+                  <td style={{ padding: "0.75rem 0.5rem" }}><a href="https://surferseo.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Surfer SEO</a></td>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#9ca3af" }}>Content Editor grades in real time</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#d1d5db" }}>Internal linking automation</td>
+                  <td style={{ padding: "0.75rem 0.5rem" }}><a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a></td>
+                  <td style={{ padding: "0.75rem 0.5rem", color: "#9ca3af" }}>Trigger Claude API on publish, log suggestions</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>You do not need all five tools to start. Claude for outlining and writing plus Surfer SEO for keyword research covers 80% of the workflow. Add the automation layer once you are publishing consistently.</p>
+
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
               {"💡 "}<strong>{"Surfer SEO + AI writing is the fastest path to content that ranks. "}</strong><a href="/tools" style={{ color: "#00d4ff" }}>{"See all recommended AI tools →"}</a>
@@ -94,12 +148,8 @@ For the new post "[new post title]", suggest:
           ))}
         </div>
 
-                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
-          <p style={{ color: "#9ca3af", margin: 0 }}>
-            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
-          </p>
-        </div>
-</div>
+        <NewsletterCapture darkMode={true} />
+      </div>
     </div>
   );
 }
