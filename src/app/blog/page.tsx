@@ -57,6 +57,9 @@ const allPosts = [
     { slug: 'ai-tools-for-accounting', title: 'AI Tools for Accounting: Automate the Tedious Work and Focus on Advisory', excerpt: 'How accountants and bookkeepers are using AI to automate transaction categorization, draft financial narratives, catch data entry errors, and spend more time on high-value client work.', date: '2026-06-15', category: 'AI Tools', readingTime: '9 min' },
   { slug: 'ai-tools-for-entrepreneurs', title: 'AI Tools for Entrepreneurs: The Lean Founder's Tech Stack for 2026', excerpt: 'The essential AI toolkit for founders and solopreneurs: automate operations, accelerate content, manage customers, and run lean with fewer tools than you think.', date: '2026-06-16', category: 'AI Tools', readingTime: '9 min' },
   { slug: 'ai-content-repurposing-workflow', title: 'AI Content Repurposing: Turn One Post Into 10 Pieces of Content Automatically', excerpt: 'How to build an AI-powered repurposing workflow that turns a single blog post into LinkedIn posts, newsletters, threads, video scripts, and more — with minimal manual effort.', date: '2026-06-16', category: 'Automation', readingTime: '8 min' },
+
+  { slug: 'ai-tools-for-startup-founders', title: 'AI Tools for Startup Founders: Replace Three Hires With the Right Stack', excerpt: 'The practical AI toolkit for startup founders — from writing investor updates to automating customer support, market research, and content marketing with fewer resources.', date: '2026-06-17', category: 'AI Tools', readingTime: '10 min' },
+  { slug: 'ai-powered-lead-generation', title: 'AI-Powered Lead Generation: Automate Prospecting Without Losing the Human Touch', excerpt: 'How sales teams use AI to identify prospects, research accounts, personalize outreach at scale, and build pipelines that fill themselves.', date: '2026-06-17', category: 'Automation', readingTime: '9 min' },
 ];
 
 const categories = ['All', 'AI Prompts', 'AI Tools', 'Productivity', 'Automation', 'Tutorials'];
