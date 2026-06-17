@@ -78,5 +78,5 @@ jobs:
             --repo-path target \
             --control-path agios-control \
             --policy-path builder-policy.json \
-            --builder-order "${{ inputs.builder_order || \'\' }}" \
+            --builder-order "${{ inputs.builder_order }}" \
             --builder-timeout-seconds 120
