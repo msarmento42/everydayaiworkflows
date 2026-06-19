@@ -62,6 +62,8 @@ const allPosts = [
 
   { slug: 'ai-tools-for-startup-founders', title: 'AI Tools for Startup Founders: Replace Three Hires With the Right Stack', excerpt: 'The practical AI toolkit for startup founders — from writing investor updates to automating customer support, market research, and content marketing with fewer resources.', date: '2026-06-17', category: 'AI Tools', readingTime: '10 min' },
   { slug: 'ai-powered-lead-generation', title: 'AI-Powered Lead Generation: Automate Prospecting Without Losing the Human Touch', excerpt: 'How sales teams use AI to identify prospects, research accounts, personalize outreach at scale, and build pipelines that fill themselves.', date: '2026-06-17', category: 'Automation', readingTime: '9 min' },
+  { slug: 'ai-for-financial-planning', title: 'AI for Financial Planning: Build a Budget, Track Goals, and Stop Guessing', excerpt: 'How to use AI tools to build a personal budget, set savings goals, analyze spending patterns, and prepare for financial decisions — without a financial advisor.', date: '2026-06-19', category: 'Productivity', readingTime: '9 min' },
+  { slug: 'ai-tools-for-ecommerce', title: 'AI Tools for Ecommerce: Product Listings, Customer Emails, and Inventory Done Faster', excerpt: 'How ecommerce operators use AI to write better product descriptions, automate customer communications, analyze sales data, and free up hours every week.', date: '2026-06-19', category: 'Automation', readingTime: '10 min' },
 ];
 
 const categories = ['All', 'AI Prompts', 'AI Tools', 'Productivity', 'Automation', 'Tutorials'];
