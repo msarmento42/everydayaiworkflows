@@ -1,4 +1,3 @@
-"use client";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
