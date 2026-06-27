@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import AffiliateDisclosure from "../../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 const postsData: Record<string, { title: string; category: string; date: string; readingTime: string; sections: string[] }> = {
@@ -78,6 +79,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         </div>
         <h1 style={{ fontSize: '2.2rem', marginTop: '0.5rem', marginBottom: '1rem' }}>{post.title}</h1>
         <div style={{ color: '#9ca3af', marginBottom: '2rem' }}>{post.date}</div>
+        <AffiliateDisclosure />
         
         <div style={{ background: 'rgba(255,255,255,0.03)', borderRadius: '12px', padding: '1.5rem', marginBottom: '2rem' }}>
           <h3 style={{ fontSize: '1rem', color: '#fff', marginBottom: '1rem' }}>📋 Table of Contents</h3>
