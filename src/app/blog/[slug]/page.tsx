@@ -72,6 +72,24 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)', color: '#fff', fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
       <div style={{ maxWidth: '800px', margin: '0 auto', paddingTop: '2rem' }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": post?.title ?? "Everyday AI Workflows",
+              "datePublished": post?.date ?? "",
+              "author": { "@type": "Organization", "name": "Everyday AI Workflows" },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Everyday AI Workflows",
+                "url": "https://everydayaiworkflows.com"
+              },
+              "url": `https://everydayaiworkflows.com/blog/${slug}`
+            })
+          }}
+        />
         <a href="/blog" style={{ color: '#00d4ff', textDecoration: 'none' }}>← Back to Blog</a>
         <div style={{ marginTop: '1rem', display: 'flex', gap: '0.75rem' }}>
           <span style={{ fontSize: '0.75rem', color: '#7c3aed', background: 'rgba(124,58,237,0.2)', padding: '0.2rem 0.5rem', borderRadius: '4px' }}>{post.category}</span>
