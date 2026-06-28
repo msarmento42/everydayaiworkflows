@@ -1,3 +1,5 @@
+import AffiliateDisclosure from '../components/AffiliateDisclosure';
+
 export const metadata = {
   title: 'Best AI Tools (2026) — Curated Recommendations | Everyday AI Workflows',
   description: 'The best AI tools for writing, research, automation, image generation, and coding in 2026. Curated recommendations with honest reviews and affiliate links.',
@@ -183,6 +185,7 @@ export default function AITools() {
       fontFamily: 'system-ui, -apple-system, sans-serif',
     }}>
       <div style={{ maxWidth: '960px', margin: '0 auto', padding: '3rem 2rem 1rem' }}>
+        <AffiliateDisclosure />
         <div style={{ marginBottom: '0.5rem', fontSize: '0.8rem', color: '#00d4ff', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
           Curated 2026
         </div>
