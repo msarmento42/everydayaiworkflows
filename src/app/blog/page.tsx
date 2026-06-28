@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 const allPosts = [
@@ -75,16 +76,26 @@ const allPosts = [
 ];
 
 const categories = ['All', 'AI Prompts', 'AI Tools', 'Productivity', 'Automation', 'Tutorials'];
+const POSTS_PER_PAGE = 12;
 
 export default function Blog() {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('All');
+  const [page, setPage] = useState(1);
 
   const filteredPosts = allPosts.filter(post => {
     const matchesSearch = post.title.toLowerCase().includes(search.toLowerCase());
     const matchesCategory = category === 'All' || post.category === category;
     return matchesSearch && matchesCategory;
   });
+
+  const sortedPosts = [...filteredPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+  const totalPages = Math.max(1, Math.ceil(sortedPosts.length / POSTS_PER_PAGE));
+  const pagedPosts = sortedPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
+  const isFirstPage = page === 1;
+  const isLastPage = page === totalPages;
 
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)', color: '#fff', fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
@@ -93,24 +104,34 @@ export default function Blog() {
         <p style={{ color: '#9ca3af', marginBottom: '2rem' }}>{allPosts.length} articles</p>
 
         <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem' }}>
-          <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} style={{ flex: 1, padding: '0.75rem', borderRadius: '8px', border: '1px solid #374151', background: 'rgba(255,255,255,0.05)', color: '#fff' }} />
-          <select value={category} onChange={(e) => setCategory(e.target.value)} style={{ padding: '0.75rem', borderRadius: '8px', border: '1px solid #374151', background: 'rgba(255,255,255,0.05)', color: '#fff' }}>
+          <input type="text" placeholder="Search..." value={search} onChange={(e) => { setSearch(e.target.value); setPage(1); }} style={{ flex: 1, padding: '0.75rem', borderRadius: '8px', border: '1px solid #374151', background: 'rgba(255,255,255,0.05)', color: '#fff' }} />
+          <select value={category} onChange={(e) => { setCategory(e.target.value); setPage(1); }} style={{ padding: '0.75rem', borderRadius: '8px', border: '1px solid #374151', background: 'rgba(255,255,255,0.05)', color: '#fff' }}>
             {categories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
           </select>
         </div>
 
         <div style={{ display: 'grid', gap: '1rem' }}>
-          {filteredPosts.map(post => (
-            <a key={post.slug} href={`/blog/${post.slug}`} style={{ display: 'block', background: 'rgba(255,255,255,0.03)', padding: '1.25rem', borderRadius: '12px', textDecoration: 'none', color: 'inherit' }}>
+          {pagedPosts.map(post => (
+            <Link key={post.slug} href={`/blog/${post.slug}`} style={{ display: 'block', background: 'rgba(255,255,255,0.03)', padding: '1.25rem', borderRadius: '12px', textDecoration: 'none', color: 'inherit' }}>
               <span style={{ fontSize: '0.7rem', color: '#7c3aed', background: 'rgba(124,58,237,0.15)', padding: '0.15rem 0.4rem', borderRadius: '4px' }}>{post.category}</span>
               <h3 style={{ fontSize: '1.1rem', margin: '0.5rem 0', color: '#fff' }}>{post.title}</h3>
               <p style={{ fontSize: '0.85rem', color: '#9ca3af', margin: 0 }}>{post.excerpt}</p>
-            </a>
+            </Link>
           ))}
         </div>
 
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginTop: '2rem' }}>
+          <button type="button" onClick={() => setPage(p => p - 1)} disabled={isFirstPage} style={{ color: '#00d4ff', background: 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '8px', padding: '0.65rem 1rem', cursor: 'pointer', ...(isFirstPage ? { opacity: 0.4, pointerEvents: 'none' } : {}) }}>
+            ← Previous
+          </button>
+          <span style={{ color: '#9ca3af', fontSize: '0.95rem' }}>Page {page} of {totalPages}</span>
+          <button type="button" onClick={() => setPage(p => p + 1)} disabled={isLastPage} style={{ color: '#00d4ff', background: 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '8px', padding: '0.65rem 1rem', cursor: 'pointer', ...(isLastPage ? { opacity: 0.4, pointerEvents: 'none' } : {}) }}>
+            Next →
+          </button>
+        </div>
+
         <div style={{ marginTop: '3rem' }}>
-          <a href="/" style={{ color: '#00d4ff', textDecoration: 'none' }}>← Back to Home</a>
+          <Link href="/" style={{ color: '#00d4ff', textDecoration: 'none' }}>← Back to Home</Link>
         </div>
       </div>
     </div>
