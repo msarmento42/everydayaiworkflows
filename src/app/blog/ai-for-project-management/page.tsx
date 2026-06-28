@@ -1,108 +1,134 @@
+import NewsletterCapture from "../components/NewsletterCapture";
+
 export const metadata = {
-  title: "How to Use AI for Project Management: Workflows That Actually Work",
-  description: "Most project managers spend 30–40% of their week on status updates, task breakdowns, and communication overhead — not the actual work. AI can absorb most of...",
+  title: "AI for Project Management: Cut Meeting Time and Never Miss a Deadline | Everyday AI Workflows",
+  description: "A practical guide to using AI tools to run more effective projects — from kickoff to delivery. Covers meeting summarization, task breakdown, status updates, and risk identification.",
 };
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
-        <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
+        <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>{"← Back to Blog"}</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
           <span style={{ fontSize: "0.75rem", color: "#7c3aed", background: "rgba(124,58,237,0.2)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>Productivity</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 7 min read</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>May 17, 2025</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>{"⏱️ 9 min read"}</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>June 14, 2026</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
-          How to Use AI for Project Management: Workflows That Actually Work
+          AI for Project Management: Cut Meeting Time and Never Miss a Deadline
         </h1>
-
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
-          <p>Most project managers spend 30–40% of their week on status updates, task breakdowns, and communication overhead — not the actual work. AI can absorb most of that overhead if you build the right habits. Here are the workflows that deliver real time savings, starting today.</p>
+          <p>Project management has always been about information flow — making sure the right people know the right things at the right time. The problem is that most of the work involved in managing that flow is administrative: writing status updates, summarizing meetings, breaking vague goals into concrete tasks, and tracking whether commitments are on schedule. AI does not manage projects for you, but it compresses all of that administrative overhead dramatically. This guide covers the workflows where AI delivers the most value, from project kickoff through delivery.</p>
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>1. Turn a Vague Brief into a Full Project Plan in 5 Minutes</h2>
-          <p>When a stakeholder dumps a half-formed idea on you, use this prompt to extract a structured plan before your first planning meeting:</p>
-          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginTop: "1rem", marginBottom: "1rem" }}>{`You are a senior project manager. I'll give you a raw project brief.
-Return:
-1. A one-sentence objective
-2. 5–8 milestones with estimated durations
-3. Top 3 risks and mitigation strategies
-4. 3 clarifying questions to ask the stakeholder
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Turn Vague Goals Into Structured Task Lists</h2>
+          <p>The most common failure mode in project management is starting with goals that are too abstract to execute. "Launch the new product page" is a goal, not a project plan. AI is excellent at translating vague goals into structured, sequenced task lists — and at spotting the dependencies and risks you did not think to include.</p>
+          <p>Use this prompt at the start of any project:</p>
+          <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`I am managing a project with this goal:
+[describe the goal in 2-3 sentences]
 
-Brief: [paste the brief here]`}</pre>
-          <p>The output gives you something concrete to push back on or refine, rather than starting from a blank page. Copy the milestones directly into your project tracker or, if you use <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a>, ask it to turn the milestones into a linked database with assignees and due-date fields automatically generated.</p>
+Team: [list roles, e.g. designer, developer, copywriter, PM]
+Deadline: [date]
+Constraints: [budget, tools available, known blockers]
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>2. Auto-Generate Task Breakdowns from Milestone Descriptions</h2>
-          <p>Once you have milestones, AI can explode each one into atomic, assignable tasks. This is where most PMs save the most time, because task decomposition is cognitively expensive and error-prone when done manually.</p>
-          <p>Use this prompt for each milestone:</p>
-          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginTop: "1rem", marginBottom: "1rem" }}>{`Milestone: "Launch beta version of the customer portal"
-Team: 2 frontend devs, 1 backend dev, 1 QA, 1 designer
-Timeline: 3 weeks
+Give me:
+1. A phased task breakdown (phases → tasks → subtasks)
+2. Dependencies between tasks (what must complete before what)
+3. Which tasks are on the critical path
+4. 3 risks you'd flag based on what I've described
+5. Questions I should answer before starting`}</pre>
+          <p>The output will not be a perfect project plan — it will not know your team's actual capacity or your organization's specific constraints. But it gives you a structured starting point that typically covers 80% of what you need, and forces you to confront the gaps before work begins rather than mid-project.</p>
+          <p>Capture the resulting task list in <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion</a> or your project management tool of choice. Notion's AI can then help you refine tasks, estimate effort, and generate templates for repeating project types — making it a natural home for AI-assisted project planning.</p>
 
-Break this into individual tasks. For each task include:
-- Task name (verb-first, specific)
-- Owner role
-- Estimated hours
-- Dependencies (what must be done first)
-Format as a table.`}</pre>
-          <p>You will get a ready-to-import task list. If your team uses Notion, paste it into a table view and let Notion AI convert the dependency column into linked task relationships.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 2: Summarize Every Meeting in Under 2 Minutes</h2>
+          <p>Most project teams spend 20–30% of their project hours in meetings, and another significant portion writing notes from those meetings. AI collapses the second problem entirely. With an AI meeting assistant or a simple copy-paste workflow, you can have a structured summary with decisions and action items within 60 seconds of a meeting ending.</p>
+          <p>The simplest version requires no new tools: paste your meeting transcript (available from Zoom, Google Meet, or Teams after enabling AI transcription) into Claude with this prompt:</p>
+          <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`Here is a meeting transcript. Extract:
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>3. Draft Status Updates That People Actually Read</h2>
-          <p>Status updates are almost universally ignored because they are either too long, too vague, or too jargon-heavy. AI fixes all three problems at once. Keep a running bullet log of what happened this week, then run this prompt every Friday:</p>
-          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginTop: "1rem", marginBottom: "1rem" }}>{`Write a concise project status update email for a non-technical executive audience.
-Audience: VP of Product, not in the weeds on technical details
-Tone: Confident, brief, no jargon
-Format: 3 sections — "What got done", "What's at risk", "What we need from you"
-Raw notes: [paste your bullet log]`}</pre>
-          <p>This turns 20 minutes of agonizing over phrasing into 2 minutes of reviewing a ready draft.</p>
+1. Decisions made (bulleted, one line each)
+2. Action items (owner: task: due date format — infer owner from context)
+3. Open questions that need a follow-up
+4. Key discussion points worth documenting
+5. A 2-sentence TL;DR for stakeholders who weren't there
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>4. Use AI as a Risk Radar Before Sprints</h2>
-          <p>Before each sprint or planning session, dump your current backlog and project context into Claude or ChatGPT and ask:</p>
-          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginTop: "1rem", marginBottom: "1rem" }}>{`Here is our current backlog and project context.
-We are planning the next 2-week sprint.
-Identify:
-- Tasks that look underscoped (likely to balloon)
-- Potential blockers we have not addressed
-- Missing dependencies or handoffs that could slip
-- Any sequencing issues in our order of work
-Backlog: [paste backlog]
-Context: [project stage, team capacity, known constraints]`}</pre>
-          <p>This acts as a sanity check from an outside perspective — a second pair of eyes that costs nothing and takes 30 seconds. It surfaces things a tired team routinely misses right before a sprint kickoff.</p>
+[paste transcript]`}</pre>
+          <p>For teams that meet daily or weekly, automate this: use <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> to watch a Google Drive folder where transcripts are saved, automatically send each new transcript through the Claude API with this prompt, and post the formatted summary to a Slack channel or Notion page. Once set up, meeting summaries appear in your team's workspace within minutes of every meeting, with no manual steps.</p>
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>5. Retrospective Analysis Without the Awkward Silence</h2>
-          <p>Retrospectives often stall because people do not want to be the first to criticize. Run an async AI-assisted retro: ask each team member to paste their week notes into a shared doc, then run this prompt over the aggregate:</p>
-          <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginTop: "1rem", marginBottom: "1rem" }}>{`These are notes from a team retrospective. Synthesize them into:
-1. Top 3 things that went well (with specific evidence)
-2. Top 3 friction points (stated neutrally, no blame)
-3. 2–3 concrete process changes to try next sprint
-Preserve nuance, do not sanitize criticism.
-Notes: [paste team input]`}</pre>
-          <p>The AI output becomes the starting point of the meeting — everyone reads it first, which means you skip the awkward opening silence and get straight to discussing what matters.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 3: Write Status Updates That Actually Get Read</h2>
+          <p>Status updates are often written by someone who is too close to the work to know what stakeholders actually want to hear, resulting in updates that are too detailed for executives and too vague for team members. AI can generate status updates calibrated to a specific audience from your raw project data.</p>
+          <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`Here is the current state of my project:
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Putting It All Together</h2>
-          <p>None of these workflows require a new tool or a subscription. You need a capable AI (Claude or ChatGPT work fine) and a project tracker where you can paste the output. The key discipline is keeping a running context file for your project — a short doc with the objective, current milestone, team size, and known risks — so you can paste it into any prompt without rebuilding the context from scratch each time. This five-minute upfront investment pays back every time you need an AI-assisted output.</p>
+Project goal: [one sentence]
+Status as of today: [what's done, what's in progress, what's blocked]
+Key metrics: [% complete, days until deadline, budget status]
+Current blockers: [list]
+Next week's plan: [list]
+
+Write two versions of a status update:
+1. Executive summary (5 sentences max, focus on status, risks, decisions needed)
+2. Team update (structured, includes blockers and who needs to unblock what)
+
+Tone: direct, confident, no jargon.`}</pre>
+          <p>The executive version should communicate one thing: is this project on track, and if not, what does leadership need to know or decide? The team version should communicate a different thing: what is each person responsible for next, and what are the blockers that need to be resolved. Most status updates try to do both in one document and do neither well.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 4: Identify Risks Before They Become Crises</h2>
+          <p>Risk management is the part of project management that most people do informally and poorly. AI is surprisingly good at surfacing risks systematically — not because it knows your project better than you do, but because it has been trained on patterns across many projects and can articulate the common failure modes you might be overlooking.</p>
+          <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`I am running a project with these characteristics:
+[describe project type, team, timeline, dependencies]
+
+As a skeptical project manager, identify:
+1. The 5 most likely failure modes for a project like this
+2. Early warning signs I should watch for each risk
+3. Mitigation steps I can take now (before the risk materializes)
+4. Which risk I should be most worried about and why
+
+Be specific — avoid generic risks like "team communication issues."`}</pre>
+          <p>Run this prompt at the start of your project and revisit it at every major milestone. The risks that matter often shift as the project evolves, and a risk that seemed unlikely at kickoff may become the most pressing concern by week four.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 5: Automate the Administrative Overhead</h2>
+          <p>The administrative tasks in project management — updating task statuses, generating weekly reports, tracking action items from meetings — are exactly the kind of predictable, repetitive work that automation handles well. Building a simple Make.com scenario to handle these tasks can recover 3–5 hours per week for a typical project manager.</p>
+          <p>A practical starting point: create a weekly report scenario in <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> that pulls your project's open tasks from Notion or Asana, sends the data to Claude with a status summary prompt, and emails the formatted report to stakeholders every Monday morning. This takes about 45 minutes to build and eliminates a recurring manual task for the entire duration of the project.</p>
+          <p>For a complete guide to building these automation workflows, see our post on <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>automating tasks with Make.com</a>. If you are also looking to use AI for team communication and documentation, our guide on <a href="/blog/ai-meeting-summarizer-workflow" style={{ color: "#00d4ff" }}>AI meeting summarizer workflows</a> covers the meeting-to-notes pipeline in depth.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 6: Run Better Retrospectives</h2>
+          <p>Retrospectives are the highest-leverage meeting in project management — the place where you extract learnings that make the next project better. They are also consistently underinvested. AI can help you run a more structured, more honest retrospective by analyzing project data before the meeting and generating discussion prompts that surface the right issues.</p>
+          <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`Here is a summary of a project we just completed:
+
+Timeline: planned vs. actual — [dates]
+Budget: planned vs. actual — [numbers]
+Key events: [list major milestones, delays, pivots]
+Team feedback: [any notes collected before the retro]
+
+Generate:
+1. 5 retrospective questions that will surface real issues (not just "what went well")
+2. Patterns you notice in the project data that deserve discussion
+3. 3 concrete process improvements we could implement next time
+4. A template to document the retrospective outcomes for future reference`}</pre>
+          <p>The questions AI generates from your project data are usually sharper than the default retrospective formats (Start/Stop/Continue, etc.) because they are grounded in what actually happened. Use them as a starting point and let the team redirect the conversation — the goal is to surface truth, not follow a rigid format.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>What AI Cannot Do in Project Management</h2>
+          <p>AI cannot manage relationships — the conversations, negotiations, and trust-building that are the real work of project management on complex or politically charged projects. It cannot make judgment calls about priorities when information is ambiguous or incomplete. It cannot hold people accountable or navigate the human dynamics that determine whether a team performs well under pressure.</p>
+          <p>What it can do is remove the administrative drag that prevents project managers from focusing on those higher-order activities. When you are spending four hours per week writing status updates, summarizing meetings, and reformatting task lists, you have less time for the work that actually requires human judgment. AI shifts that ratio — compressing the administrative work so that more of your project management time goes toward the leadership, communication, and decision-making that only you can do.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
-              💡 <strong>Using Notion for project management?</strong> Notion AI can generate task databases, summarize project pages, and write status updates directly inside your workspace — no copy-pasting required. <a href="/tools" style={{ color: "#00d4ff" }}>See all recommended AI tools →</a>
+              {"💡 "}
+              <strong>{"Looking for the best AI tools for PMs and teams? "}</strong>
+              <a href="/tools" style={{ color: "#00d4ff" }}>{"Browse the full toolkit →"}</a>
             </p>
           </div>
 
         </div>
 
         <div style={{ display: "flex", gap: "0.75rem", marginTop: "2rem", flexWrap: "wrap" }}>
-          {["project-management", "ai-tools", "productivity", "notion", "workflows"].map(tag => (
-            <span key={tag} style={{ fontSize: "0.75rem", color: "#6b7280", background: "rgba(255,255,255,0.05)", padding: "0.2rem 0.6rem", borderRadius: "4px" }}>#{tag}</span>
+          {["project-management", "productivity", "ai-tools", "automation", "notion"].map(tag => (
+            <span key={tag} style={{ fontSize: "0.75rem", color: "#6b7280", background: "rgba(255,255,255,0.05)", padding: "0.2rem 0.6rem", borderRadius: "4px" }}>{`#${tag}`}</span>
           ))}
         </div>
 
-                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
-          <p style={{ color: "#9ca3af", margin: 0 }}>
-            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
-          </p>
-        </div>
-</div>
+        <NewsletterCapture darkMode={true} />
+      </div>
     </div>
   );
 }
