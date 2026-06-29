@@ -1,7 +1,4 @@
-"use client";
-
 import Link from 'next/link';
-import { useState } from 'react';
 
 const allPosts = [
 { slug: '10-chatgpt-prompts-sales', title: '10 ChatGPT Prompts for Sales Professionals', excerpt: 'Boost your sales game with these prompts.', date: '2026-03-15', category: 'AI Prompts', readingTime: '5 min' },
@@ -78,24 +75,33 @@ const allPosts = [
 const categories = ['All', 'AI Prompts', 'AI Tools', 'Productivity', 'Automation', 'Tutorials'];
 const POSTS_PER_PAGE = 12;
 
-export default function Blog() {
-  const [search, setSearch] = useState('');
-  const [category, setCategory] = useState('All');
-  const [page, setPage] = useState(1);
+type BlogPageProps = {
+  searchParams?: Promise<{ page?: string }> | { page?: string };
+};
 
-  const filteredPosts = allPosts.filter(post => {
-    const matchesSearch = post.title.toLowerCase().includes(search.toLowerCase());
-    const matchesCategory = category === 'All' || post.category === category;
-    return matchesSearch && matchesCategory;
-  });
+const getCurrentPage = async (searchParams?: BlogPageProps['searchParams']) => {
+  const params = await Promise.resolve(searchParams);
+  return Math.max(1, Number(params?.page) || 1);
+};
 
-  const sortedPosts = [...filteredPosts].sort(
+export async function generateMetadata({ searchParams }: BlogPageProps) {
+  const currentPage = await getCurrentPage(searchParams);
+
+  return {
+    title: currentPage > 1 ? `AI Workflows Blog – Page ${currentPage}` : 'AI Workflows Blog',
+  };
+}
+
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+  const currentPage = await getCurrentPage(searchParams);
+  const sortedPosts = [...allPosts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
   const totalPages = Math.max(1, Math.ceil(sortedPosts.length / POSTS_PER_PAGE));
-  const pagedPosts = sortedPosts.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
-  const isFirstPage = page === 1;
-  const isLastPage = page === totalPages;
+  const pagedPosts = sortedPosts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE);
+  const isFirstPage = currentPage === 1;
+  const isLastPage = currentPage >= totalPages;
+  const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)', color: '#fff', fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
@@ -103,11 +109,12 @@ export default function Blog() {
         <h1 style={{ fontSize: '2.5rem', color: '#00d4ff', marginBottom: '0.5rem' }}>Blog</h1>
         <p style={{ color: '#9ca3af', marginBottom: '2rem' }}>{allPosts.length} articles</p>
 
-        <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem' }}>
-          <input type="text" placeholder="Search..." value={search} onChange={(e) => { setSearch(e.target.value); setPage(1); }} style={{ flex: 1, padding: '0.75rem', borderRadius: '8px', border: '1px solid #374151', background: 'rgba(255,255,255,0.05)', color: '#fff' }} />
-          <select value={category} onChange={(e) => { setCategory(e.target.value); setPage(1); }} style={{ padding: '0.75rem', borderRadius: '8px', border: '1px solid #374151', background: 'rgba(255,255,255,0.05)', color: '#fff' }}>
-            {categories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
-          </select>
+        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+          {categories.map(cat => (
+            <span key={cat} style={{ color: '#9ca3af', background: 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '999px', padding: '0.4rem 0.75rem', fontSize: '0.85rem' }}>
+              {cat}
+            </span>
+          ))}
         </div>
 
         <div style={{ display: 'grid', gap: '1rem' }}>
@@ -121,13 +128,19 @@ export default function Blog() {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginTop: '2rem' }}>
-          <button type="button" onClick={() => setPage(p => p - 1)} disabled={isFirstPage} style={{ color: '#00d4ff', background: 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '8px', padding: '0.65rem 1rem', cursor: 'pointer', ...(isFirstPage ? { opacity: 0.4, pointerEvents: 'none' } : {}) }}>
+          <Link href={`/blog?page=${currentPage - 1}`} aria-disabled={isFirstPage} style={{ color: '#00d4ff', background: 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '8px', padding: '0.65rem 1rem', textDecoration: 'none', ...(isFirstPage ? { opacity: 0.4, pointerEvents: 'none' } : {}) }}>
             ← Previous
-          </button>
-          <span style={{ color: '#9ca3af', fontSize: '0.95rem' }}>Page {page} of {totalPages}</span>
-          <button type="button" onClick={() => setPage(p => p + 1)} disabled={isLastPage} style={{ color: '#00d4ff', background: 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '8px', padding: '0.65rem 1rem', cursor: 'pointer', ...(isLastPage ? { opacity: 0.4, pointerEvents: 'none' } : {}) }}>
+          </Link>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            {pageNumbers.map(pageNumber => (
+              <Link key={pageNumber} href={pageNumber === 1 ? '/blog' : `/blog?page=${pageNumber}`} style={{ color: pageNumber === currentPage ? '#0f172a' : '#00d4ff', background: pageNumber === currentPage ? '#00d4ff' : 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '8px', padding: '0.5rem 0.75rem', textDecoration: 'none', fontSize: '0.9rem' }}>
+                {pageNumber}
+              </Link>
+            ))}
+          </div>
+          <Link href={`/blog?page=${currentPage + 1}`} aria-disabled={isLastPage} style={{ color: '#00d4ff', background: 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '8px', padding: '0.65rem 1rem', textDecoration: 'none', ...(isLastPage ? { opacity: 0.4, pointerEvents: 'none' } : {}) }}>
             Next →
-          </button>
+          </Link>
         </div>
 
         <div style={{ marginTop: '3rem' }}>
