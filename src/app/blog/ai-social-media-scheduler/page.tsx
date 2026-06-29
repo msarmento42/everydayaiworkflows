@@ -1,6 +1,8 @@
+import NewsletterCapture from "../components/NewsletterCapture";
+
 export const metadata = {
   title: "How to Build an AI Social Media Scheduler That Writes and Posts For You",
-  description: "Most people treat social media scheduling as a chore — copy, paste, adjust tone, schedule, repeat. With the right AI + automation stack, you can turn that...",
+  description: "Most people treat social media scheduling as a chore — copy, paste, adjust tone, schedule, repeat. With the right AI + automation stack, you can turn that into a fully automated pipeline.",
 };
 
 export default function BlogPost() {
@@ -10,7 +12,7 @@ export default function BlogPost() {
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
           <span style={{ fontSize: "0.75rem", color: "#7c3aed", background: "rgba(124,58,237,0.2)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>Automation</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 7 min read</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 8 min read</span>
           <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>May 23, 2025</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
@@ -22,8 +24,8 @@ export default function BlogPost() {
           <p>Most people treat social media scheduling as a chore — copy, paste, adjust tone, schedule, repeat. With the right AI + automation stack, you can turn that into a fully automated pipeline that drafts platform-specific content, queues it across channels, and posts on schedule. Here&apos;s exactly how to build it.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Why Your Current Scheduling Workflow Is Costing You Hours</h2>
-          <p>The typical creator or marketer spends 3-5 hours a week on social media content — not strategy, just formatting and posting. You write a blog post, then rewrite it as a LinkedIn post, then compress it into a tweet thread, then reframe it for Instagram. Every platform wants a different length, tone, and format. AI doesn&apos;t just speed this up — it eliminates most of that manual work entirely when you connect it to a proper scheduling pipeline.</p>
-          <p>The stack we&apos;re building uses three layers: a content source (blog post, idea, or rough notes), an AI rewriting layer (Claude or GPT-4), and an automation backbone that routes the output to your scheduler. Once it&apos;s set up, you feed it one input and it handles everything else.</p>
+          <p>The typical creator or marketer spends 3–5 hours a week on social media content — not strategy, just formatting and posting. You write a blog post, then rewrite it as a LinkedIn post, then compress it into a tweet thread, then reframe it for Instagram. Every platform wants a different length, tone, and format. AI doesn&apos;t just speed this up — it eliminates most of that manual work entirely when you connect it to a proper scheduling pipeline.</p>
+          <p>The stack we&apos;re building uses three layers: a content source (blog post, idea, or rough notes), an AI rewriting layer (Claude or GPT-4), and an automation backbone that routes the output to your scheduler. Once it&apos;s set up, you feed it one input and it handles everything else. If you&apos;re still doing any of this by hand, check out <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>how to automate tasks with Make.com</a> for the foundational workflow setup first.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Pick Your Automation Backbone</h2>
           <p>The glue of this workflow is an automation platform that can call an AI API, parse the response, and push content to scheduling tools. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> is the best option here — it has native integrations with Buffer, Later, and social APIs, plus an HTTP module that hits Claude or OpenAI directly. Zapier works but costs significantly more at scale and has stricter rate limits on AI calls.</p>
@@ -77,12 +79,17 @@ Content: [INSERT SOURCE CONTENT]`}</pre>
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 4: Add a Review Gate (Optional but Recommended)</h2>
           <p>If you want human oversight before anything posts, add an approval step. Make can send you an email or Slack message with the draft content and two buttons — Approve or Reject. Only approved posts continue to the scheduler. This adds 2 minutes per batch but catches the occasional AI output that misses the tone or context. After a few weeks of approving 90%+ of posts, you&apos;ll have enough confidence to remove the gate for low-stakes platforms and keep it only for LinkedIn, where quality matters most.</p>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 5: Feed the Pipeline with an AI Content Calendar</h2>
+          <p>The scheduler is only as good as the content going into it. The most durable long-term setup is an AI-assisted content calendar — a Google Sheet or Notion database where you drop topic ideas, and an automated workflow drafts the full source content before the scheduler ever runs. See <a href="/blog/building-an-ai-content-calendar" style={{ color: "#00d4ff" }}>building an AI content calendar</a> for a step-by-step guide to that upstream layer.</p>
+          <p>A two-stage pipeline looks like this: Stage 1 produces the long-form source content (blog post, newsletter, video transcript). Stage 2 — the scheduler built in this guide — repurposes it into platform-specific posts automatically. With both stages running, you go from topic idea to multi-platform distribution without touching it manually at any point. For teams managing multiple brands or clients, add a client field to the routing table; Make reads it and selects the right scheduler accounts automatically.</p>
+
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>What This Looks Like in Practice</h2>
-          <p>Once it&apos;s running, your workflow is: write one piece of source content (or drop a URL into a Google Sheet row), and within minutes the scenario fires — generating 3 platform-specific versions, routing them to the right scheduler, and queuing them for optimal send times. A 1,000-word blog post becomes a week of LinkedIn posts, a Twitter thread, and two Instagram captions automatically. The first setup takes 2-3 hours. After that, you save that time every single week.</p>
+          <p>Once it&apos;s running, your workflow is: write one piece of source content (or drop a URL into a Google Sheet row), and within minutes the scenario fires — generating 3 platform-specific versions, routing them to the right scheduler, and queuing them for optimal send times. A 1,000-word blog post becomes a week of LinkedIn posts, a Twitter thread, and two Instagram captions automatically. The first setup takes 2–3 hours. After that, you save that time every single week.</p>
+          <p>For creators already running a content pipeline, the next step is a <a href="/blog/automating-social-media-with-ai" style={{ color: "#00d4ff" }}>full social media automation workflow</a> that handles performance reporting and engagement responses as well — closing the loop from creation to analytics entirely inside Make.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
-              💡 <strong>Make.com is the automation engine that powers workflows like this</strong> — connect AI, schedulers, and spreadsheets without code. <a href="/tools" style={{ color: "#00d4ff" }}>See all recommended AI tools →</a>
+              💡 <strong>Make.com is the automation engine that powers workflows like this</strong> — connect AI, schedulers, and spreadsheets without code. <a href="/tools" style={{ color: "#00d4ff" }}>Browse the full AI toolkit →</a>
             </p>
           </div>
 
@@ -94,12 +101,8 @@ Content: [INSERT SOURCE CONTENT]`}</pre>
           ))}
         </div>
 
-                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
-          <p style={{ color: "#9ca3af", margin: 0 }}>
-            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
-          </p>
-        </div>
-</div>
+        <NewsletterCapture darkMode={true} />
+      </div>
     </div>
   );
 }
