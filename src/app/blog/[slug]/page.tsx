@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import AffiliateDisclosure from "../../components/AffiliateDisclosure";
+import ShareButtons from "../../components/ShareButtons";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 const postsData: Record<string, { title: string; category: string; date: string; sections: string[] }> = {
@@ -152,11 +153,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         
         {showAffiliateCallouts && <AffiliateBottomCallout />}
         
-        <div style={{ display: 'flex', gap: '0.75rem', marginTop: '2rem' }}>
-          <span style={{ color: '#9ca3af', fontSize: '0.85rem' }}>Share:</span>
-          <span style={{ color: '#1da1f2', fontSize: '0.85rem' }}>Twitter</span>
-          <span style={{ color: '#0077b5', fontSize: '0.85rem' }}>LinkedIn</span>
-        </div>
+        <ShareButtons title={post.title} url={`https://everydayaiworkflows.com/blog/${slug}`} />
         
         <div className="mt-16 border-t pt-10"><NewsletterCapture /></div>
 
