@@ -34,6 +34,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Everyday AI Workflows",
+            "url": "https://everydayaiworkflows.com",
+            "founder": {
+              "@type": "Person",
+              "name": "Marcus Sarmento"
+            },
+            "description": "Practical AI workflows, prompts, and tool guides for everyday work.",
+          }),
+        }}
+      />
       <nav style={{
         background: 'rgba(15,15,35,0.95)',
         borderBottom: '1px solid rgba(255,255,255,0.07)',
@@ -53,6 +69,7 @@ export default function RootLayout({
         <div style={{ display: 'flex', gap: '1.25rem', marginLeft: '0.5rem' }}>
           {[
             { href: '/blog', label: 'Blog' },
+            { href: '/workflows/automation', label: 'Workflows' },
             { href: '/ai-tools', label: 'AI Tools' },
             { href: '/tools', label: 'Directory' },
           ].map(({ href, label }) => (

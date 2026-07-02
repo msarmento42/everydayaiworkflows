@@ -76,6 +76,12 @@ const allPosts = [
 
 const categories = ['All', 'AI Prompts', 'AI Tools', 'Productivity', 'Automation', 'Tutorials'];
 const POSTS_PER_PAGE = 12;
+const workflowHubs = [
+  { href: '/workflows/writing', title: 'Writing', description: 'Newsletters, docs, books, and content repurposing.' },
+  { href: '/workflows/meetings', title: 'Meetings', description: 'Summaries, CRM notes, onboarding, and follow-ups.' },
+  { href: '/workflows/research', title: 'Research', description: 'Market, academic, visual, and document analysis.' },
+  { href: '/workflows/automation', title: 'Automation', description: 'Email triage, invoices, lead gen, and no-code flows.' },
+];
 
 type BlogPageProps = {
   searchParams?: Promise<{ page?: string }> | { page?: string };
@@ -118,6 +124,15 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
             </span>
           ))}
         </div>
+
+        <section style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '0.75rem', marginBottom: '2rem' }}>
+          {workflowHubs.map(hub => (
+            <Link key={hub.href} href={hub.href} style={{ display: 'block', background: 'rgba(0,212,255,0.06)', border: '1px solid rgba(0,212,255,0.18)', borderRadius: '12px', padding: '1rem', textDecoration: 'none' }}>
+              <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>{hub.title}</strong>
+              <span style={{ color: '#9ca3af', fontSize: '0.8rem', lineHeight: 1.5 }}>{hub.description}</span>
+            </Link>
+          ))}
+        </section>
 
         <div style={{ display: 'grid', gap: '1rem' }}>
           {pagedPosts.map(post => (
