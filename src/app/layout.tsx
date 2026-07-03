@@ -25,6 +25,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  alternates: {
+    canonical: "https://everydayaiworkflows.com",
+    types: {
+      "application/rss+xml": "https://everydayaiworkflows.com/rss.xml",
+    },
+  },
 };
 
 export default function RootLayout({

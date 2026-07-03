@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import RoleStackCTA from "../../components/RoleStackCTA";
 
 export const metadata = {
   title: "AI for Small Business: The Practical Toolkit That Replaces Three Hires | Everyday AI Workflows",
@@ -42,6 +43,12 @@ Include a clear call to action in each version.`}</pre>
           <p>Customer support is where small businesses consistently lose to larger competitors who can afford dedicated support teams. AI changes this by handling the majority of common questions instantly, 24/7, without adding headcount. The 20% of questions that require real judgment and relationship-building still get your personal attention — but you stop spending hours answering the same ten questions repeatedly.</p>
           <p>The simplest implementation: create a comprehensive FAQ document covering every common question your customers ask. Feed this document into an AI assistant tool (many website chat plugins now accept knowledge base documents) and embed it on your site. Customers get instant answers to standard questions; complex issues escalate to you via email.</p>
           <p>For a more sophisticated setup, <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> can route incoming support emails: send the email to Claude with your FAQ as context, generate a draft response, and either auto-send it for standard queries or route it to your inbox with the AI draft pre-populated for you to review and send. This cuts your support response time from hours to minutes while keeping you in control of anything non-standard.</p>
+
+          <RoleStackCTA
+            role="small-business-owners"
+            title="Choose the small-business AI stack before you hire or subscribe"
+            body="Compare the leanest tool mix for marketing, customer support, operations, and follow-up automation."
+          />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Financial Summaries and Bookkeeping Support</h2>
           <p>AI is not a replacement for an accountant, and it should not be used to make complex financial decisions. But the layer of financial administration that eats small business owner time — summarizing bank statements, categorizing expenses, preparing data for their accountant, understanding what their financial reports mean — is something AI handles well.</p>

@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import RoleStackCTA from "../../components/RoleStackCTA";
 
 export const metadata = {
   title: "AI Tools for Sales Teams: Close More Deals Without Working More Hours",
@@ -47,6 +48,12 @@ No "I hope this finds you well." No hollow compliments.`}</pre>
           <p>The money in sales is in the follow-up. Most reps stop after 2 touches; most deals close after 5-8. The reason reps do not follow up enough is not laziness — it is that writing a fresh, relevant follow-up every time is genuinely hard. AI solves this.</p>
           <p>Build a follow-up sequence template in your CRM and use <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> to trigger AI-generated personalized follow-ups based on deal stage, days since last contact, and the prospect's industry. The automation pulls CRM data, sends it to an AI API with a structured prompt, and drafts the email into your outbox for one-click review and send. You still approve every email — you just do not write them from scratch.</p>
           <p>A well-configured Make.com workflow can handle the entire nurture sequence: initial outreach, follow-up with a value add, follow-up with social proof, and a breakup email — all triggered by CRM field changes, all personalized from your prospect data, all drafted and waiting in your queue at the start of each day.</p>
+
+          <RoleStackCTA
+            role="sales-teams"
+            title="Build a sales stack around research, follow-up, and CRM automation"
+            body="Compare the recommended sales tools before stitching together another set of disconnected outreach apps."
+          />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Meeting Prep and Call Summaries</h2>
           <p>Two places where sales reps lose hours every week: preparing for calls they are not fully briefed on, and writing call summaries afterward. AI compresses both to a fraction of the time.</p>

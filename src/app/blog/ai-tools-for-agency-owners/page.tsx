@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import RoleStackCTA from "../../components/RoleStackCTA";
 
 export const metadata = {
   title: "AI Tools for Agency Owners: Automate Delivery, Scale Without Hiring",
@@ -38,6 +39,12 @@ export default function BlogPost() {
           <p><strong>Content production:</strong> <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> is the industry standard for agency content workflows. Its Brand Voice feature lets you train the tool on each client&apos;s tone, so output stays on-brand across writers and across months. Team workspaces mean multiple writers can share templates and brand settings without constant re-briefing. For agencies doing SEO content at scale, pair Jasper with <a href="https://surferseo.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Surfer SEO</a> — Surfer&apos;s Content Editor integrates directly and scores content against the top-ranking pages for each target keyword in real time.</p>
           <p><strong>Workflow automation:</strong> <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> is the glue layer that connects everything. For agencies, the highest-value Make automations are: client approval workflows (send draft → get feedback → route to revision queue), monthly reporting (pull data from GA4/Search Console/Meta → format into a Google Doc → send to client), and intake processing (new client brief in → AI extracts key info → populate project management template). See <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>how to automate tasks with Make.com</a> for the foundational setup.</p>
           <p><strong>Knowledge management:</strong> <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> handles the internal knowledge side. Build a client knowledge base per account — brand guidelines, audience profiles, past campaign notes, competitor intel — and use Notion AI to pull relevant context when briefing new content or writing proposals. Teams that do this spend significantly less time re-briefing writers or re-researching client context that was already captured.</p>
+
+          <RoleStackCTA
+            role="agency-owners"
+            title="Turn the agency stack into a reusable delivery system"
+            body="Use the role guide to compare the delivery, automation, and knowledge-base tools before adding another seat to the team."
+          />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Automating Client Reporting (The Biggest Hidden Time Sink)</h2>
           <p>Monthly reporting is one of the most consistent time drains in agency operations — typically 4–8 hours per client per month for anything beyond a basic traffic summary. Here&apos;s a Make.com + Claude workflow that gets it to under 30 minutes:</p>

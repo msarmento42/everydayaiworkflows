@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import RoleStackCTA from "../../components/RoleStackCTA";
 
 export const metadata = {
   title: "AI for Email Marketing: Write Better Campaigns in Half the Time | Everyday AI Workflows",
@@ -57,6 +58,12 @@ Generate 10 subject lines using these different angles:
 
 For each, also write preview text under 80 characters.`}</pre>
           <p>Pick 2–3 to A/B test. Over time, the patterns that win for your audience become a playbook you can apply to every campaign. This is especially powerful when you are running campaigns on a consistent schedule — see how to pair this with an <a href="/blog/building-an-ai-content-calendar" style={{ color: "#00d4ff" }}>AI content calendar</a> to keep your email pipeline full without starting from scratch each week.</p>
+
+          <RoleStackCTA
+            role="marketing-teams"
+            title="Match the email workflow to the marketing stack"
+            body="Compare the writing, SEO, workspace, and automation tools that make campaign production repeatable."
+          />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 3: Write Segmented Variants Without Starting Over</h2>
           <p>If you have different customer segments, you no longer need to rewrite from scratch. Use this prompt after finishing your base email:</p>
