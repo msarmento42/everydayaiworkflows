@@ -68,6 +68,13 @@ const roleStacks = [
   },
 ];
 
+const quickRoutes = [
+  ['Solo operator', 'Freelancers', 'Win clients and deliver faster without hiring.'],
+  ['Revenue team', 'Sales Teams', 'Research accounts and personalize follow-up.'],
+  ['Content engine', 'Marketing Teams', 'Turn campaign work into reusable systems.'],
+  ['Client services', 'Agency Owners', 'Standardize delivery and reporting.'],
+];
+
 export default function AIToolsByRolePage() {
   return (
     <div style={{
@@ -83,6 +90,18 @@ export default function AIToolsByRolePage() {
         <p style={{ color: '#cbd5e1', fontSize: '1.05rem', lineHeight: 1.7, maxWidth: '720px', marginBottom: '2rem' }}>
           The best AI tool is the one that fits your actual workflow. Start with your role, choose the smallest useful stack, then add automation only after the manual workflow is stable.
         </p>
+
+        <section style={{ border: '1px solid rgba(0,212,255,0.22)', background: 'rgba(0,212,255,0.06)', borderRadius: '12px', padding: '1rem', marginBottom: '2rem' }}>
+          <p style={{ color: '#67e8f9', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.72rem', fontWeight: 700, margin: '0 0 0.75rem' }}>Fast start</p>
+          <div style={{ display: 'grid', gap: '0.75rem', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))' }}>
+            {quickRoutes.map(([label, role, description]) => (
+              <a key={role} href={`#${role.toLowerCase().replace(/[^a-z]+/g, '-')}`} style={{ color: '#fff', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '10px', padding: '0.85rem', background: 'rgba(255,255,255,0.035)' }}>
+                <strong style={{ display: 'block', marginBottom: '0.3rem' }}>{label}</strong>
+                <span style={{ color: '#cbd5e1', fontSize: '0.86rem', lineHeight: 1.45 }}>{description}</span>
+              </a>
+            ))}
+          </div>
+        </section>
 
         <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', marginBottom: '3rem' }}>
           {roleStacks.map((stack) => (
@@ -122,6 +141,7 @@ export default function AIToolsByRolePage() {
             <div style={{ border: '1px solid rgba(124,58,237,0.3)', background: 'rgba(124,58,237,0.11)', borderRadius: '10px', padding: '1rem' }}>
               <strong>Workflow to copy:</strong>
               <p style={{ color: '#d1d5db', margin: '0.35rem 0 0', lineHeight: 1.6 }}>{stack.workflow}</p>
+              <a href="/workflows/automation" style={{ display: 'inline-block', color: '#00d4ff', marginTop: '0.75rem', fontWeight: 700, textDecoration: 'none' }}>Build the automation workflow →</a>
             </div>
           </section>
         ))}
