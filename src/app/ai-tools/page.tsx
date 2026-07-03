@@ -200,6 +200,25 @@ export default function AITools() {
           Choosing tools for a specific job? Use the <a href="/ai-tools-by-role" style={{ color: '#00d4ff' }}>AI tools by role guide</a> for freelancer, sales, marketing, agency, creator, and small business stacks.
         </p>
 
+        <section style={{
+          border: '1px solid rgba(0,212,255,0.2)',
+          background: 'rgba(0,212,255,0.06)',
+          borderRadius: '12px',
+          padding: '1rem',
+          marginBottom: '2rem',
+        }}>
+          <strong style={{ color: '#a5f3fc' }}>Not sure where to start?</strong>
+          <p style={{ color: '#cbd5e1', margin: '0.45rem 0 0.9rem', lineHeight: 1.55 }}>
+            Pick one stack by role first, then come back here when you need a category-specific replacement.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
+            <a href="/ai-tools-by-role#freelancers" style={{ color: '#00d4ff', textDecoration: 'none', border: '1px solid rgba(0,212,255,0.25)', borderRadius: '999px', padding: '0.45rem 0.8rem' }}>Freelancers</a>
+            <a href="/ai-tools-by-role#agency-owners" style={{ color: '#00d4ff', textDecoration: 'none', border: '1px solid rgba(0,212,255,0.25)', borderRadius: '999px', padding: '0.45rem 0.8rem' }}>Agencies</a>
+            <a href="/ai-tools-by-role#small-business-owners" style={{ color: '#00d4ff', textDecoration: 'none', border: '1px solid rgba(0,212,255,0.25)', borderRadius: '999px', padding: '0.45rem 0.8rem' }}>Small businesses</a>
+            <a href="/workflows/automation" style={{ color: '#00d4ff', textDecoration: 'none', border: '1px solid rgba(0,212,255,0.25)', borderRadius: '999px', padding: '0.45rem 0.8rem' }}>Automation workflows</a>
+          </div>
+        </section>
+
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '3rem' }}>
           {categories.map(c => (
             <a
