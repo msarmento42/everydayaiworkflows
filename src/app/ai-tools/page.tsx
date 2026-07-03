@@ -196,6 +196,9 @@ export default function AITools() {
           Tested and curated recommendations across writing, research, automation, images, and code.
           Every tool listed has been evaluated for real-world usefulness — not just hype.
         </p>
+        <p style={{ color: '#cbd5e1', fontSize: '0.95rem', maxWidth: '640px', lineHeight: 1.6, marginTop: '-1.5rem', marginBottom: '2rem' }}>
+          Choosing tools for a specific job? Use the <a href="/ai-tools-by-role" style={{ color: '#00d4ff' }}>AI tools by role guide</a> for freelancer, sales, marketing, agency, creator, and small business stacks.
+        </p>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '3rem' }}>
           {categories.map(c => (
