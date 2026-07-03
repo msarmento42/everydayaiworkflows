@@ -86,10 +86,9 @@ export default function Privacy() {
 
           <h2 style={{ fontSize: '1.3rem', color: '#fff', marginTop: '2rem', marginBottom: '1rem' }}>Analytics</h2>
           <p style={{ marginBottom: '1rem' }}>
-            This website does not currently use Google Analytics or any other third-party analytics platform.
-            Basic traffic metrics (page views and referral sources) may be reviewed through our hosting
-            provider&apos;s built-in dashboard. No personally identifiable information is included in these
-            aggregate statistics.
+            This website may use privacy-conscious analytics, including Google Analytics or hosting-provider
+            analytics, to understand which pages are useful, which links are clicked, and where visitors arrive
+            from. These reports are reviewed in aggregate and are not used to identify individual readers.
           </p>
 
           <h2 style={{ fontSize: '1.3rem', color: '#fff', marginTop: '2rem', marginBottom: '1rem' }}>Affiliate Links</h2>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import Analytics from "./components/Analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+      <Analytics />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
