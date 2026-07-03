@@ -21,6 +21,12 @@ export default function BlogPost() {
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
+          <div style={{ background: "rgba(0, 212, 255, 0.06)", border: "1px solid rgba(0, 212, 255, 0.22)", borderRadius: "12px", padding: "1rem", marginBottom: "1.5rem" }}>
+            <p style={{ margin: 0, color: "#cbd5e1" }}>
+              Choosing tools for client delivery? Compare the <a href="/ai-tools-by-role#agency-owners" style={{ color: "#00d4ff" }}>agency owner stack</a> and the <a href="/workflows/automation" style={{ color: "#00d4ff" }}>automation workflows hub</a> before adding another subscription.
+            </p>
+          </div>
+
           <p>The agency model has a structural problem: revenue grows linearly with headcount, but clients expect faster delivery and lower costs every year. AI doesn&apos;t solve every agency challenge, but it dramatically changes the leverage equation. The agencies winning right now aren&apos;t necessarily bigger — they&apos;re better systematized. Here&apos;s what the AI stack looks like for agencies that have cracked the delivery side.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Where Agencies Lose the Most Time (And Where AI Wins)</h2>
