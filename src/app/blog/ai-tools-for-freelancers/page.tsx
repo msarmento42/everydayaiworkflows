@@ -21,6 +21,12 @@ export default function BlogPost() {
 
           <p>Freelancers who operate solo still compete against agencies with entire support teams. AI has closed that gap. The right stack lets one person handle client communication, content delivery, invoicing, and business development without dropping any ball. Here are 7 tools — and exactly how to use them — that give you the leverage of an assistant without the overhead.</p>
 
+          <div style={{ background: "rgba(0, 212, 255, 0.06)", border: "1px solid rgba(0, 212, 255, 0.22)", borderRadius: "12px", padding: "1rem", marginBottom: "1.5rem" }}>
+            <p style={{ margin: 0, color: "#cbd5e1" }}>
+              Want the shorter buying path? Start with the <a href="/ai-tools-by-role#freelancers" style={{ color: "#00d4ff" }}>freelancer stack in our AI tools by role guide</a>, then use this article for implementation detail.
+            </p>
+          </div>
+
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>1. Claude or ChatGPT — Your Always-On Writing Partner</h2>
           <p>Every freelancer writes more than they expect: proposals, client emails, project updates, LinkedIn posts, case studies. AI cuts that writing time by 60-80% when used correctly. The key is having pre-built prompt templates for your most common writing tasks.</p>
           <p>Start with these four templates saved somewhere accessible (Notion, a text file, whatever you use daily):</p>
@@ -63,7 +69,7 @@ Keep total length under 400 words.`}</pre>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
-              💡 <strong>Tip:</strong> The biggest leverage comes from combining these tools. Otter transcribes your client call → Claude drafts the follow-up → Make.com sends it automatically when you approve. That's an assistant-level workflow running on autopilot. <a href="/tools" style={{ color: "#00d4ff" }}>See all recommended tools →</a>
+              💡 <strong>Tip:</strong> The biggest leverage comes from combining these tools. Otter transcribes your client call → Claude drafts the follow-up → Make.com sends it automatically when you approve. That's an assistant-level workflow running on autopilot. <a href="/workflows/automation" style={{ color: "#00d4ff" }}>See automation workflows →</a>
             </p>
           </div>
 
