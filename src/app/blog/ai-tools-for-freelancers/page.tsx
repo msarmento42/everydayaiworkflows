@@ -1,3 +1,5 @@
+import RoleStackCTA from "../../components/RoleStackCTA";
+
 export const metadata = {
   title: "The Freelancer\'s AI Stack: 7 Tools That Replace a Full-Time Assistant",
   description: "Freelancers who operate solo still compete against agencies with entire support teams. AI has closed that gap. The right stack lets one person handle client...",
@@ -44,7 +46,7 @@ Keep total length under 400 words.`}</pre>
           <p>Practical use: set up a Brand Voice for each client at onboarding. From then on, first drafts come out on-brand with minimal editing.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>3. Make.com — Automating the Operational Glue</h2>
-          <p>The biggest time drain for most freelancers isn't the actual work — it's the operational overhead around it: sending intake forms, following up on unpaid invoices, posting deliverables to client folders, updating project statuses. <a href="https://www.make.com/en/register?pc=msarmento42/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> automates these recurring triggers without writing a single line of code.</p>
+          <p>The biggest time drain for most freelancers isn't the actual work — it's the operational overhead around it: sending intake forms, following up on unpaid invoices, posting deliverables to client folders, updating project statuses. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> automates these recurring triggers without writing a single line of code.</p>
           <p>Three high-ROI scenarios for freelancers:</p>
           <ul style={{ paddingLeft: "1.5rem", marginBottom: "1rem" }}>
             <li style={{ marginBottom: "0.5rem" }}><strong style={{ color: "#fff" }}>New client onboarding:</strong> Form submission → create Google Drive folder → send welcome email → create project in your PM tool → log to CRM row. All automatic.</li>
@@ -52,6 +54,12 @@ Keep total length under 400 words.`}</pre>
             <li style={{ marginBottom: "0.5rem" }}><strong style={{ color: "#fff" }}>Deliverable packaging:</strong> When you move a file to a specific Drive folder, Make auto-notifies the client with a message and link. No manual "Hey, it's ready!" emails.</li>
           </ul>
           <p>Make's free tier supports 1,000 operations/month — enough for most solo freelancers to automate their entire back office.</p>
+
+          <RoleStackCTA
+            role="freelancers"
+            title="Build the freelancer stack in the right order"
+            body="Start with one writing assistant, one client workspace, and one automation tool so the stack saves time instead of becoming another admin chore."
+          />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>4. Notion AI — Your Second Brain</h2>
           <p>Freelancers juggle client context across multiple engagements simultaneously. Notion AI turns your project notes into an active knowledge base: ask it to summarize a meeting note, extract action items from a messy brain dump, or generate a status update from your notes in the client's preferred format.</p>
