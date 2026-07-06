@@ -137,7 +137,7 @@ Write it for an executive audience — direct, no fluff, actionable.`}</pre>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
-              💡 <strong>Want to automate ongoing market monitoring?</strong> Build a <a href="https://www.make.com/en/register?pc=msarmento42/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> scenario that tracks competitor blog posts, Reddit mentions, and news articles weekly — and sends you a digest summarized by AI. It takes about an hour to set up and runs itself from there. <a href="/tools" style={{ color: "#00d4ff" }}>See all recommended tools →</a>
+              💡 <strong>Want to automate ongoing market monitoring?</strong> Build a <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> scenario that tracks competitor blog posts, Reddit mentions, and news articles weekly — and sends you a digest summarized by AI. It takes about an hour to set up and runs itself from there. <a href="/tools" style={{ color: "#00d4ff" }}>See all recommended tools →</a>
             </p>
           </div>
 

@@ -35,11 +35,24 @@ export default function Analytics() {
             }
 
             var isExternal = url.hostname && url.hostname !== window.location.hostname;
-            var isAffiliate = /sponsored|affiliate/i.test(link.rel || '') || /affiliate|make\\.com|notion|jasper|grammarly|surferseo|semrush/i.test(link.href);
+            var href = link.href;
+            var isAffiliate = /sponsored|affiliate/i.test(link.rel || '') || /affiliate|make\\.com|notion|jasper|grammarly|surferseo|semrush|writesonic|nordvpn/i.test(href);
+            var partner = 'external';
+
+            if (/make\\.com/i.test(href)) partner = 'make';
+            else if (/notion/i.test(href)) partner = 'notion';
+            else if (/jasper/i.test(href)) partner = 'jasper';
+            else if (/grammarly/i.test(href)) partner = 'grammarly';
+            else if (/surferseo/i.test(href)) partner = 'surferseo';
+            else if (/semrush/i.test(href)) partner = 'semrush';
+            else if (/writesonic/i.test(href)) partner = 'writesonic';
+            else if (/nordvpn|awin1/i.test(href)) partner = 'nordvpn';
 
             if (isAffiliate || isExternal) {
               window.gtag('event', isAffiliate ? 'affiliate_click' : 'outbound_click', {
                 link_url: link.href,
+                link_domain: url.hostname,
+                affiliate_partner: isAffiliate ? partner : undefined,
                 link_text: (link.textContent || '').trim().slice(0, 100),
                 page_location: window.location.href
               });
