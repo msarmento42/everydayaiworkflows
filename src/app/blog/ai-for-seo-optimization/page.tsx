@@ -20,6 +20,35 @@ export default function BlogPost() {
           How to Use AI for SEO Optimization: A Practical Workflow That Actually Ranks
         </h1>
         <ShareButtons title="How to Use AI for SEO Optimization: A Practical Workflow That Actually Ranks" url="https://everydayaiworkflows.com/blog/ai-for-seo-optimization" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://everydayaiworkflows.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://everydayaiworkflows.com/blog"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "AI for SEO Optimization",
+                  "item": "https://everydayaiworkflows.com/blog/ai-for-seo-optimization"
+                }
+              ]
+            })
+          }}
+        />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
