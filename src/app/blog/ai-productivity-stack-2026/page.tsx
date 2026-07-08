@@ -1,4 +1,4 @@
-import NewsletterCapture from "../components/NewsletterCapture";
+import NewsletterCapture from "../components/NewsletterCapture";import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs) | Everyday AI Workflows",
@@ -17,7 +17,7 @@ export default function BlogPost() {
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs)
-        </h1>
+        </h1>        <ShareButtons title="The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs)" url="https://everydayaiworkflows.com/blog/ai-productivity-stack-2026" />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
@@ -78,7 +78,30 @@ export default function BlogPost() {
           ))}
         </div>
 
-        <NewsletterCapture darkMode={true} />
+        <NewsletterCapture darkMode={true} />        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://everydayaiworkflows.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://everydayaiworkflows.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs)",
+      "item": "https://everydayaiworkflows.com/blog/ai-productivity-stack-2026"
+    }
+  ]
+}` }}></script>
       </div>
     </div>
   );
