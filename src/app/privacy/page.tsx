@@ -16,7 +16,7 @@ export default function Privacy() {
         <h1 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: '#00d4ff' }}>Privacy Policy</h1>
 
         <div style={{ lineHeight: '1.8', color: '#d1d5db' }}>
-          <p style={{ marginBottom: '1rem' }}>Last updated: June 2026</p>
+          <p style={{ marginBottom: '1rem' }}>Last updated: July 2026</p>
 
           <h2 style={{ fontSize: '1.3rem', color: '#fff', marginTop: '2rem', marginBottom: '1rem' }}>Information We Collect</h2>
           <p style={{ marginBottom: '1rem' }}>
@@ -95,7 +95,13 @@ export default function Privacy() {
           <p style={{ marginBottom: '1rem' }}>
             Some links on this site are affiliate links. If you click an affiliate link and make a purchase,
             we may earn a commission at no additional cost to you. Affiliate partners may set their own
-            cookies to track referral activity. We only recommend tools we genuinely believe are useful.
+            cookies to track referral activity. We only recommend tools we genuinely believe are useful. For
+            more on how recommendations are handled, see our <a href="/editorial-policy" style={{ color: '#00d4ff' }}>editorial policy</a>.
+          </p>
+
+          <h2 style={{ fontSize: '1.3rem', color: '#fff', marginTop: '2rem', marginBottom: '1rem' }}>Contact and Email</h2>
+          <p style={{ marginBottom: '1rem' }}>
+            If you contact us directly, we receive the information you include in your message so we can reply and maintain a record of the conversation. We do not sell contact submissions or use them for unrelated marketing.
           </p>
 
           <h2 style={{ fontSize: '1.3rem', color: '#fff', marginTop: '2rem', marginBottom: '1rem' }}>Your Rights</h2>

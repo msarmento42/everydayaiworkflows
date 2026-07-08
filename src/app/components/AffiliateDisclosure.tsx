@@ -16,7 +16,7 @@ export default function AffiliateDisclosure() {
       }}
     >
       This post may contain affiliate links. If you click and purchase, we may earn a commission at no extra cost to
-      you.
+      you. Recommendations are based on practical fit and real use, not payouts alone. Read our <a href="/editorial-policy" style={{ color: '#00d4ff' }}>editorial policy</a>.
     </div>
   );
 }

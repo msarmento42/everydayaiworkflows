@@ -119,6 +119,21 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         <h1 style={{ fontSize: '2.5rem', color: '#00d4ff', marginBottom: '0.5rem' }}>Blog</h1>
         <p style={{ color: '#9ca3af', marginBottom: '2rem' }}>{allPosts.length} articles</p>
 
+        <section style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', marginBottom: '2rem' }}>
+          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>What this blog covers</strong>
+            <p style={{ color: '#9ca3af', margin: 0, fontSize: '0.9rem', lineHeight: 1.6 }}>AI tools, practical prompts, automation systems, and workflow guides for working professionals.</p>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>How tools are reviewed</strong>
+            <p style={{ color: '#9ca3af', margin: 0, fontSize: '0.9rem', lineHeight: 1.6 }}>Recommendations are based on fit and workflow leverage. Read the <a href="/editorial-policy" style={{ color: '#00d4ff' }}>editorial policy</a>.</p>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>Need a correction?</strong>
+            <p style={{ color: '#9ca3af', margin: 0, fontSize: '0.9rem', lineHeight: 1.6 }}>Use the <a href="/contact" style={{ color: '#00d4ff' }}>contact page</a> for fixes, suggestions, and partnership questions.</p>
+          </div>
+        </section>
+
         <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
           {categories.map(cat => (
             <span key={cat} style={{ color: '#9ca3af', background: 'rgba(255,255,255,0.05)', border: '1px solid #374151', borderRadius: '999px', padding: '0.4rem 0.75rem', fontSize: '0.85rem' }}>

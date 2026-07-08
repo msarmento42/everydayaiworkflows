@@ -201,6 +201,26 @@ export default function AITools() {
         </p>
 
         <section style={{
+          display: 'grid',
+          gap: '1rem',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+          marginBottom: '2rem',
+        }}>
+          <div style={{ border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.04)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>Best for role-based shopping</strong>
+            <p style={{ color: '#cbd5e1', margin: 0, lineHeight: 1.6, fontSize: '0.9rem' }}>Start with the <a href="/ai-tools-by-role" style={{ color: '#00d4ff' }}>AI tools by role guide</a> if you want the shortest path to a usable stack.</p>
+          </div>
+          <div style={{ border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.04)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>Best for implementation</strong>
+            <p style={{ color: '#cbd5e1', margin: 0, lineHeight: 1.6, fontSize: '0.9rem' }}>Use the <a href="/workflows/automation" style={{ color: '#00d4ff' }}>automation workflows hub</a> once you know which tools you want to connect.</p>
+          </div>
+          <div style={{ border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.04)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>How recommendations work</strong>
+            <p style={{ color: '#cbd5e1', margin: 0, lineHeight: 1.6, fontSize: '0.9rem' }}>Recommendations are practical-fit driven. Read the <a href="/editorial-policy" style={{ color: '#00d4ff' }}>editorial policy</a>.</p>
+          </div>
+        </section>
+
+        <section style={{
           border: '1px solid rgba(0,212,255,0.2)',
           background: 'rgba(0,212,255,0.06)',
           borderRadius: '12px',

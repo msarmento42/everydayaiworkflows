@@ -16,7 +16,7 @@ export default function Contact() {
         <h1 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#00d4ff' }}>Contact Us</h1>
         
         <p style={{ color: '#d1d5db', marginBottom: '2rem', lineHeight: '1.6' }}>
-          Have questions, suggestions, or just want to say hi? We would love to hear from you!
+          Have questions, suggestions, corrections, or partnership inquiries? We review messages manually and use reader feedback to improve guides.
         </p>
         
         <div style={{ 
@@ -34,6 +34,24 @@ export default function Contact() {
              }}>
             everydayaiworkflows@gmail.com
           </a>
+        </div>
+
+        <div style={{ marginTop: '1.5rem', display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
+          <div style={{ background: 'rgba(255,255,255,0.04)', padding: '1rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)' }}>
+            <h2 style={{ fontSize: '1rem', margin: '0 0 0.45rem 0', color: '#fff' }}>Best reasons to contact us</h2>
+            <ul style={{ margin: 0, paddingLeft: '1rem', color: '#d1d5db', lineHeight: 1.7, fontSize: '0.92rem' }}>
+              <li>Outdated product claims or broken links</li>
+              <li>Suggestions for new workflow guides</li>
+              <li>Partnership and affiliate questions</li>
+              <li>Corrections to pricing or feature details</li>
+            </ul>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.04)', padding: '1rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)' }}>
+            <h2 style={{ fontSize: '1rem', margin: '0 0 0.45rem 0', color: '#fff' }}>Before you email</h2>
+            <p style={{ margin: 0, color: '#d1d5db', lineHeight: 1.7, fontSize: '0.92rem' }}>
+              For account, billing, or subscription support with a specific AI tool, contact that provider directly first. We review tools and workflows but do not provide product support on their behalf.
+            </p>
+          </div>
         </div>
         
         <div style={{ marginTop: '3rem', paddingTop: '1rem', borderTop: '1px solid #374151' }}>

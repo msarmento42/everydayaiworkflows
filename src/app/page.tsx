@@ -31,6 +31,21 @@ export default function Home() {
           </p>
         </section>
 
+        <section style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', marginBottom: '2.5rem' }}>
+          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>What you&apos;ll find here</strong>
+            <p style={{ color: '#9ca3af', margin: 0, lineHeight: 1.6, fontSize: '0.92rem' }}>Role-based tool stacks, implementation guides, prompt libraries, and real workflow examples for day-to-day work.</p>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>How tools are chosen</strong>
+            <p style={{ color: '#9ca3af', margin: 0, lineHeight: 1.6, fontSize: '0.92rem' }}>Recommendations are based on workflow fit and practical use. Read the <a href="/editorial-policy" style={{ color: '#00d4ff' }}>editorial policy</a>.</p>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+            <strong style={{ color: '#fff', display: 'block', marginBottom: '0.35rem' }}>Need to reach us?</strong>
+            <p style={{ color: '#9ca3af', margin: 0, lineHeight: 1.6, fontSize: '0.92rem' }}>Use the <a href="/contact" style={{ color: '#00d4ff' }}>contact page</a> for corrections, ideas, and partnership questions.</p>
+          </div>
+        </section>
+
         <PromptWidget />
 
         <nav style={{ display: "flex", justifyContent: "center", gap: "2rem", marginTop: "3rem", flexWrap: "wrap" }}>
@@ -39,6 +54,7 @@ export default function Home() {
           <a href="/about" style={{ color: "#9ca3af", textDecoration: "none" }}>About</a>
           <a href="/contact" style={{ color: "#9ca3af", textDecoration: "none" }}>Contact</a>
           <a href="/privacy" style={{ color: "#9ca3af", textDecoration: "none" }}>Privacy</a>
+          <a href="/editorial-policy" style={{ color: "#9ca3af", textDecoration: "none" }}>Editorial Policy</a>
         </nav>
 
         <footer style={{ textAlign: "center", marginTop: "4rem", color: "#4b5563", fontSize: "0.9rem" }}>

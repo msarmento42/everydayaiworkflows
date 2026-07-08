@@ -52,6 +52,21 @@ export default function About() {
             Some links on this site are affiliate links. If you sign up for a tool through one of my links, I may earn a commission at no extra cost to you. I only recommend tools I{"'"}ve personally used and found genuinely useful. My editorial opinions are not influenced by affiliate relationships.
           </p>
 
+          <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', marginTop: '2rem' }}>
+            <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#fff', fontSize: '1rem' }}>Who this is for</h3>
+              <p style={{ margin: 0, color: '#d1d5db', fontSize: '0.95rem', lineHeight: 1.6 }}>Professionals, freelancers, operators, creators, and small teams who want practical AI systems, not abstract thought pieces.</p>
+            </div>
+            <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#fff', fontSize: '1rem' }}>How we choose tools</h3>
+              <p style={{ margin: 0, color: '#d1d5db', fontSize: '0.95rem', lineHeight: 1.6 }}>Fit, usability, pricing, and workflow leverage matter more than hype. Read the <a href="/editorial-policy" style={{ color: '#00d4ff' }}>editorial policy</a>.</p>
+            </div>
+            <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
+              <h3 style={{ margin: '0 0 0.5rem 0', color: '#fff', fontSize: '1rem' }}>What this site is not</h3>
+              <p style={{ margin: 0, color: '#d1d5db', fontSize: '0.95rem', lineHeight: 1.6 }}>We do not provide legal, tax, or compliance advice. The site is educational and workflow-focused.</p>
+            </div>
+          </div>
+
           <div style={{ marginTop: '2rem', padding: '1.25rem', background: 'rgba(0,212,255,0.08)', borderRadius: '12px', border: '1px solid rgba(0,212,255,0.2)' }}>
             <p style={{ margin: 0, fontSize: '1rem' }}>
               Questions or feedback? Reach out via the <a href="/contact" style={{ color: '#00d4ff' }}>contact page</a>.
