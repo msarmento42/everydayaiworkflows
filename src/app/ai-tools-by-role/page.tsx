@@ -84,6 +84,26 @@ export default function AIToolsByRolePage() {
       fontFamily: 'system-ui, -apple-system, sans-serif',
     }}>
       <main style={{ maxWidth: '980px', margin: '0 auto', padding: '3rem 1.5rem' }}>
+        <script type="application/ld+json">
+{`{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://example.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI Tools by Role",
+      "item": "https://example.com/ai-tools-by-role"
+    }
+  ]
+}`}
+        </script>
         <AffiliateDisclosure />
         <p style={{ color: '#00d4ff', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '0.78rem', marginBottom: '0.75rem' }}>Role-based buying guide</p>
         <h1 style={{ fontSize: '2.4rem', lineHeight: 1.15, margin: '0 0 1rem' }}>Best AI Tools by Role</h1>
