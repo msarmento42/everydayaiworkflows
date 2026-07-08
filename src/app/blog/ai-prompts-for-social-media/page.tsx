@@ -18,8 +18,11 @@ export default function BlogPost() {
         </h1>
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>Most AI-generated social media posts are forgettable. They're technically correct, grammatically clean, and utterly generic. The problem isn't the AI — it's the prompts. Vague input produces vague output. The prompts below are built around what actually drives engagement: specificity, genuine value, a point of view, and a reason to respond. Use these as starting points, then customize the bracketed fields for your niche, voice, and audience.</p>
+          <p>If you publish more than a few times a week, the constraint is rarely ideas alone. It is consistency, angle selection, and platform fit. A strong prompt shortens the distance between a rough idea and a post that sounds like a real person with something to say. That is what makes this page useful: not just the prompts themselves, but the thinking behind when to use each kind.</p>
+          <p>One quick rule before you start: do not paste these into an AI tool exactly as written and hit publish on the first result. Use them as briefs. Add the specific story, customer pain point, opinion, statistic, or lesson you actually want to talk about. The best social posts still come from real experience; AI just helps you package that experience faster.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>LinkedIn Prompts (10 Prompts)</h2>
+          <p>LinkedIn rewards clarity, credibility, and pattern recognition. Posts that work well here usually do one of three things: teach something specific, challenge a lazy industry assumption, or tell a work story with a clear takeaway. The prompts below are designed to create that kind of post instead of generic thought-leadership filler.</p>
           <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`1. Write a LinkedIn post about a mistake I made early in my career 
 as a [your role] and what I learned from it. 
 Tone: honest, not preachy. End with a question.
@@ -55,8 +58,10 @@ is overhyped, and one that's underrated. Be direct.
 10. Write a post that opens with a provocative question about 
 [topic], presents two opposing perspectives honestly, 
 then shares my view. End with: "What's your take?"`}</pre>
+          <p>When you use these LinkedIn prompts, bias toward specifics: real numbers, a real meeting, a real bad decision, a real customer objection. If a post could have been written by anyone in your field, it is probably too abstract to stand out.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Twitter / X Prompts (10 Prompts)</h2>
+          <p>X rewards compression and sharpness. The platform moves too quickly for long setup, so your opening line has to carry real tension: a strong claim, a surprise, a disagreement, or a fast lesson. These prompts are built to get to the point early and keep the thread moving.</p>
           <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`11. Write a Twitter thread teaching [specific skill] in 
 10 tweets. Tweet 1 should be a hook with a bold claim. 
 Tweets 2-9 are the lessons. Tweet 10 is a CTA.
@@ -90,8 +95,10 @@ in [niche] and reframes it with a better version.
 
 20. Write a "roast" style tweet where I playfully criticize 
 a common bad habit in [your industry]. Keep it fun, not mean.`}</pre>
+          <p>A simple upgrade here is asking for three hook variations before you draft the full post. The hook is usually where performance is won or lost. If the first line is weak, the rest of the thread barely matters.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Instagram Prompts (10 Prompts)</h2>
+          <p>Instagram still runs on emotion, clarity, and visual context. That means the prompt has to account for the image, reel, or carousel structure instead of treating the caption like a standalone blog post. The best Instagram prompts tell the AI what the viewer is seeing and what emotional response you want to trigger.</p>
           <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`21. Write an Instagram caption for a photo of [describe image]. 
 Audience: [your audience]. Tone: [warm/inspiring/educational].
 Include a question at the end to drive comments.
@@ -128,8 +135,10 @@ Stat: [paste your stat].
 30. Write a "before AI vs after AI" caption for 
 [specific task in your workflow].
 Be specific about time saved or quality improved.`}</pre>
+          <p>For carousels, ask the model to write slide-by-slide, not just a caption. That one change usually produces better pacing and stronger save-worthy content. Our <a href="/blog/ai-social-media-scheduler" style={{ color: "#00d4ff" }}>AI social media scheduler guide</a> pairs well with these prompts if you want to move from drafting into actual publishing workflows.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Engagement and Community Prompts (10 Prompts)</h2>
+          <p>Community prompts matter because many creators focus entirely on broadcasting and forget to create reasons for people to participate. Comments, replies, and qualitative feedback are often more valuable than reach alone, especially when you are refining an offer or learning your audience's actual language.</p>
           <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`31. Write a poll question about [topic] for LinkedIn or Twitter 
 that will drive strong engagement. Give me 3 options.
 
@@ -164,8 +173,10 @@ Make it interesting, not just rage-bait.
 
 40. Write a "reply with your top tip for [task]" post 
 that positions me as a curator of community wisdom.`}</pre>
+          <p>These prompts work best when you already have a clear audience segment in mind. "People interested in marketing" is too broad. "Solo consultants trying to land their first retainer" gives the model something real to work with and leads to much stronger discussion prompts.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Content Repurposing and Batch Creation (10 Prompts)</h2>
+          <p>Repurposing is where AI becomes genuinely high leverage. Instead of asking it to invent from nothing every day, feed it a webinar transcript, newsletter, client email, interview, or blog post and let it adapt that source into multiple formats. This keeps your output anchored to real expertise rather than generic surface-level content.</p>
           <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginBottom: "1rem" }}>{`41. I have this blog post: [paste post]. 
 Turn it into a LinkedIn post, a Twitter thread, 
 and an Instagram carousel outline.
@@ -200,11 +211,16 @@ template I can fill in quickly each Friday.
 50. Given my content pillars: [list 3-4 pillars], 
 write one post for each pillar that I can 
 use as a template going forward.`}</pre>
+          <p>If repurposing is your main use case, our <a href="/blog/ai-content-repurposing-workflow" style={{ color: "#00d4ff" }}>AI content repurposing workflow</a> and <a href="/blog/building-an-ai-content-calendar" style={{ color: "#00d4ff" }}>AI content calendar guide</a> show how to turn this into a repeatable publishing system rather than a one-off experiment.</p>
 
-          <p>The key principle behind all of these prompts: you get what you ask for. The more specific you are about your audience, your tone, and the specific format you want, the less editing you'll need to do. Treat every prompt as a creative brief, not a search query. For automation ideas around social media posting, visit our <a href="/tools" style={{ color: "#00d4ff" }}>AI tools guide</a>.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>How to Get Better Output from These Prompts</h2>
+          <p>The key principle behind all of these prompts is simple: you get what you ask for. The more specific you are about your audience, your tone, the platform, and the action you want the reader to take, the less editing you will need to do. Treat every prompt as a creative brief, not a search query.</p>
+          <p>A strong workflow looks like this: start with a core idea, ask for three variations, pick the angle with the most energy, then ask the model to tighten the hook and make the CTA feel natural. That sequence consistently produces better content than asking for one finished post in a single shot.</p>
+          <p>It also helps to save your best-performing posts and feed them back in as examples. If you tell the model, "write this in the style of these three posts I published that got strong engagement," you will usually get a much more distinctive result. For automation ideas around social media posting, visit our <a href="/tools" style={{ color: "#00d4ff" }}>AI tools guide</a>.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Recommended Tools</h2>
           <p>For writing social content at volume with brand voice controls: <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper</a> has purpose-built social media templates and the best brand voice training of any writing tool. For more affordable volume creation with web-search capability: <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> is excellent. To schedule and automate posts across platforms once they're written: <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> connects your AI writing tools to Buffer, Later, or Hootsuite so content flows from draft to scheduled without manual steps.</p>
+          <p>If your content process also lives in a planning system, <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> is a useful companion for storing prompt libraries, tracking content pillars, and organizing repurposing workflows. It is especially handy when you want one place to keep your ideas, drafts, publishing calendar, and post-performance notes.</p>
           <p>See our full <a href="/tools" style={{ color: "#00d4ff" }}>AI tools guide</a> for more.</p>
         </div>
                 <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
