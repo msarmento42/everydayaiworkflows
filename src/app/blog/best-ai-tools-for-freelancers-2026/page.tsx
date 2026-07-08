@@ -1,3 +1,5 @@
+import NewsletterCapture from "../components/NewsletterCapture";
+
 export const metadata = {
   title: "Best AI Tools for Freelancers to 10x Productivity in 2026",
   description: "Top AI tools freelancers can use in 2026 to write faster, automate admin, manage clients, design assets, and protect more billable time.",
@@ -25,7 +27,7 @@ export default function BlogPost() {
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>1. Jasper AI for Client-Facing Writing</h2>
           <p>If a meaningful chunk of your freelance work involves proposals, landing pages, email campaigns, ad copy, or marketing deliverables, <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> is still one of the strongest specialist tools in the category. General chat tools can draft almost anything, but Jasper is built for repeatable client work. The big advantage is structure: campaign templates, brand voice controls, and a cleaner path from brief to polished copy.</p>
-          <p>For freelancers juggling multiple brands, Jasper lets you separate client tones so outputs do not blur together. That matters more than people think. The time you save is not just drafting time. It is the revision time that disappears when the first version already sounds close to the client. Use Jasper for proposal drafts, homepage copy, nurture sequences, and any deliverable where speed and consistency both matter.</p>
+          <p>For freelancers juggling multiple brands, Jasper lets you separate client tones so outputs do not blur together. That matters more than people think. The time you save is not just drafting time. It is the revision time that disappears when the first version already sounds close to the client. Use Jasper for proposal drafts, homepage copy, nurture sequences, and any deliverable where speed and consistency both matter. For a wider view of how solo operators structure a full toolkit around writing, ops, and delivery, see <a href="/blog/ai-tools-for-entrepreneurs" style={{ color: "#00d4ff" }}>AI tools for entrepreneurs</a>.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>2. Notion AI for Project Notes and Client Context</h2>
           <p><a href="https://affiliate.notion.so/everydayaiworkflows" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> earns its place because freelancers spend more time than we admit hunting for context. A client call summary is in one place, a deliverables list somewhere else, and the next draft buried in a separate doc. Notion AI turns that scattered mess into something queryable. You can paste raw notes after a call and ask it to produce action items, client-ready summaries, or a clean task list for the week.</p>
@@ -33,7 +35,7 @@ export default function BlogPost() {
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>3. Make.com for Admin Automation</h2>
           <p>When freelancers talk about being overwhelmed, the problem is usually not the core work. It is everything around it. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> is one of the best ways to automate the glue work that steals momentum: lead capture, onboarding emails, invoice reminders, deliverable notifications, database updates, and content scheduling.</p>
-          <p>A few useful examples: when a prospect fills out your form, Make can create a client record, send a tailored intake email, and log the lead in your workspace. When you move a file into a delivery folder, it can notify the client automatically. When a project status changes, it can update your dashboard and send a Slack or email summary. This is where solo operators start to feel bigger than they are. You stop spending your best cognitive energy on status pings and file handoffs.</p>
+          <p>A few useful examples: when a prospect fills out your form, Make can create a client record, send a tailored intake email, and log the lead in your workspace. When you move a file into a delivery folder, it can notify the client automatically. When a project status changes, it can update your dashboard and send a Slack or email summary. This is where solo operators start to feel bigger than they are. You stop spending your best cognitive energy on status pings and file handoffs. For the step-by-step build of three of these exact automations, see <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>how to automate repetitive tasks with Make.com</a>.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>4. Claude for Research and Synthesis</h2>
           <p>Freelancers often have to turn ambiguity into clarity fast. That makes Claude especially valuable. It shines when you need to read long source material, extract themes, compare options, or draft a strong first pass on something that needs nuance. If you are a strategist, consultant, writer, or founder-for-hire, Claude is one of the fastest ways to go from a mess of notes to a client-ready recommendation.</p>
@@ -65,13 +67,13 @@ export default function BlogPost() {
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
-              💡 <strong>Start with one bottleneck, not ten tools.</strong> If writing slows you down, begin with Jasper. If admin steals your week, start with Make.com. If context-switching is the issue, build your system in Notion first.
+              💡 <strong>Start with one bottleneck, not ten tools.</strong> If writing slows you down, begin with Jasper. If admin steals your week, start with Make.com. If context-switching is the issue, build your system in Notion first. <a href="/tools" style={{ color: "#00d4ff" }}>Browse the full AI toolkit →</a>
             </p>
           </div>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>How to Build Your Stack Without Overcomplicating It</h2>
           <p>The wrong way to adopt AI as a freelancer is to sign up for ten tools and hope productivity happens automatically. The better way is to identify your biggest recurring drag first. Are you losing time to writing? To organizing client information? To repetitive operational tasks? Start there. A freelancer with Jasper, Notion AI, and Make.com set up well will usually outperform someone with a bloated stack they never fully learned.</p>
-          <p>The point of these tools is not to make your workflow look impressive. It is to make your week lighter and your output stronger. Used well, these tools give solo operators a real advantage: faster drafts, smoother delivery, fewer dropped details, and more time left over for actual billable work.</p>
+          <p>The point of these tools is not to make your workflow look impressive. It is to make your week lighter and your output stronger. Used well, these tools give solo operators a real advantage: faster drafts, smoother delivery, fewer dropped details, and more time left over for actual billable work. If content production specifically is your bottleneck, <a href="/blog/ai-content-repurposing-workflow" style={{ color: "#00d4ff" }}>turning one post into ten pieces of content</a> is a good next read.</p>
         </div>
 
         <div style={{ display: "flex", gap: "0.75rem", marginTop: "2rem", flexWrap: "wrap" }}>
@@ -80,11 +82,7 @@ export default function BlogPost() {
           ))}
         </div>
 
-        <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
-          <p style={{ color: "#9ca3af", margin: 0 }}>
-            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
-          </p>
-        </div>
+        <NewsletterCapture darkMode={true} />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import RoleStackCTA from "../../components/RoleStackCTA";
+import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
   title: "The Freelancer\'s AI Stack: 7 Tools That Replace a Full-Time Assistant",
@@ -53,7 +54,7 @@ Keep total length under 400 words.`}</pre>
             <li style={{ marginBottom: "0.5rem" }}><strong style={{ color: "#fff" }}>Invoice follow-up:</strong> 7 days past due → send a polite follow-up email. 14 days → send a firmer version. You set it once and forget it.</li>
             <li style={{ marginBottom: "0.5rem" }}><strong style={{ color: "#fff" }}>Deliverable packaging:</strong> When you move a file to a specific Drive folder, Make auto-notifies the client with a message and link. No manual "Hey, it's ready!" emails.</li>
           </ul>
-          <p>Make's free tier supports 1,000 operations/month — enough for most solo freelancers to automate their entire back office.</p>
+          <p>Make's free tier supports 1,000 operations/month — enough for most solo freelancers to automate their entire back office. If you want the full build-out beyond these three scenarios, <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>how to automate repetitive tasks with Make.com</a> walks through three complete automations step by step.</p>
 
           <RoleStackCTA
             role="freelancers"
@@ -63,6 +64,7 @@ Keep total length under 400 words.`}</pre>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>4. Notion AI — Your Second Brain</h2>
           <p>Freelancers juggle client context across multiple engagements simultaneously. Notion AI turns your project notes into an active knowledge base: ask it to summarize a meeting note, extract action items from a messy brain dump, or generate a status update from your notes in the client's preferred format.</p>
+          <p>For a deeper system, the <a href="/blog/notion-ai-workflow-guide" style={{ color: "#00d4ff" }}>complete Notion AI workflow guide</a> covers five patterns for turning raw notes into decisions, not just summaries.</p>
           <p>The workflow that saves the most time: paste your raw meeting notes into Notion, then ask Notion AI to generate a client-ready summary with decisions made, action items, and owners. What used to take 20 minutes of formatting takes 90 seconds.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>5. Otter.ai — AI Meeting Transcription</h2>
@@ -77,12 +79,12 @@ Keep total length under 400 words.`}</pre>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
-              💡 <strong>Tip:</strong> The biggest leverage comes from combining these tools. Otter transcribes your client call → Claude drafts the follow-up → Make.com sends it automatically when you approve. That's an assistant-level workflow running on autopilot. <a href="/workflows/automation" style={{ color: "#00d4ff" }}>See automation workflows →</a>
+              💡 <strong>Tip:</strong> The biggest leverage comes from combining these tools. Otter transcribes your client call → Claude drafts the follow-up → Make.com sends it automatically when you approve. That's an assistant-level workflow running on autopilot. <a href="/workflows/automation" style={{ color: "#00d4ff" }}>See automation workflows →</a> or <a href="/tools" style={{ color: "#00d4ff" }}>browse the full AI toolkit →</a>
             </p>
           </div>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Where to Start</h2>
-          <p>Don't try to implement all seven at once. Pick the one category where you lose the most time each week — writing, operations, or meetings — and add one tool there first. Once it's part of your routine (usually 2 weeks), add the next. The compounding effect of these tools on billable-to-overhead ratio is significant. Most freelancers who build this stack report getting 8-10 additional billable hours per week — without working longer.</p>
+          <p>Don't try to implement all seven at once. Pick the one category where you lose the most time each week — writing, operations, or meetings — and add one tool there first. Once it's part of your routine (usually 2 weeks), add the next. The compounding effect of these tools on billable-to-overhead ratio is significant. Most freelancers who build this stack report getting 8-10 additional billable hours per week — without working longer. For a broader view of how these tools fit into a 2026 stack (with costs), see the <a href="/blog/ai-productivity-stack-2026" style={{ color: "#00d4ff" }}>2026 AI productivity stack</a> breakdown.</p>
 
         </div>
 
@@ -92,12 +94,9 @@ Keep total length under 400 words.`}</pre>
           ))}
         </div>
 
-                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
-          <p style={{ color: "#9ca3af", margin: 0 }}>
-            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
-          </p>
         </div>
-</div>
+
+        <NewsletterCapture darkMode={true} />
     </div>
   );
 }
