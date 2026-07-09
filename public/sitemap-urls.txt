@@ -27,14 +27,15 @@ https://everydayaiworkflows.com/blog/15-prompts-summarizing
 https://everydayaiworkflows.com/blog/15-prompts-technical-docs
 https://everydayaiworkflows.com/blog/20-prompts-meeting-prep
 https://everydayaiworkflows.com/blog/20-prompts-social-media
-https://everydayaiworkflows.com/blog/50-hours-to-20-hours
 https://everydayaiworkflows.com/blog/5-ai-habits-business
+https://everydayaiworkflows.com/blog/50-hours-to-20-hours
 https://everydayaiworkflows.com/blog/6-prompts-tiktok
 https://everydayaiworkflows.com/blog/7-prompts-facebook
 https://everydayaiworkflows.com/blog/8-prompts-discord
 https://everydayaiworkflows.com/blog/8-prompts-instagram
 https://everydayaiworkflows.com/blog/9-prompts-youtube
 https://everydayaiworkflows.com/blog/ai-ab-testing
+https://everydayaiworkflows.com/blog/ai-agents-for-small-business
 https://everydayaiworkflows.com/blog/ai-analytics-dashboard
 https://everydayaiworkflows.com/blog/ai-automated-reports
 https://everydayaiworkflows.com/blog/ai-competitive-research
@@ -45,6 +46,7 @@ https://everydayaiworkflows.com/blog/ai-customer-feedback
 https://everydayaiworkflows.com/blog/ai-customer-support-bot
 https://everydayaiworkflows.com/blog/ai-daily-plan
 https://everydayaiworkflows.com/blog/ai-email-response-system
+https://everydayaiworkflows.com/blog/ai-for-client-proposals
 https://everydayaiworkflows.com/blog/ai-for-market-research
 https://everydayaiworkflows.com/blog/ai-goal-tracking
 https://everydayaiworkflows.com/blog/ai-integrations-no-code
