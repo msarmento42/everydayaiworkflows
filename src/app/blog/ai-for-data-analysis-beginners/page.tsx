@@ -1,6 +1,6 @@
 export const metadata = {
   title: "AI for Data Analysis: A Beginner's Guide to Turning Spreadsheets into Insights",
-  description: "You don't need to know Python or SQL to do serious data analysis anymore. AI tools can now write code, clean messy datasets, spot patterns, and explain results in plain English.",
+  description: "Unlock data insights without code! This beginner's guide shows how AI tools like ChatGPT & Claude analyze spreadsheets, clean data, generate reports, and automate workflows for smarter business decisions.",
 };
 
 export default function BlogPost() {
