@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const metadata = {
   title: '404 — Page Not Found | Everyday AI Workflows',
 };
@@ -43,7 +45,7 @@ export default function NotFound() {
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '0.75rem', alignItems: 'center' }}>
-          <a
+          <Link
             href="/"
             style={{
               display: 'block',
@@ -61,9 +63,9 @@ export default function NotFound() {
             }}
           >
             ← Back to Home
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog"
             style={{
               display: 'block',
@@ -81,9 +83,9 @@ export default function NotFound() {
             }}
           >
             Browse the Blog
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/ai-tools"
             style={{
               display: 'block',
@@ -101,7 +103,7 @@ export default function NotFound() {
             }}
           >
             Explore AI Tools
-          </a>
+          </Link>
         </div>
       </div>
     </div>
