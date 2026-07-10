@@ -1,5 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
-import RoleStackCTA from "../../components/RoleStackCTA";
+import RoleStackCTA from "../../components/RoleStackCTA";import Image from 'next/image';
 
 export const metadata = {
   title: "AI for Email Marketing: Write Better Campaigns in Half the Time | Everyday AI Workflows",
