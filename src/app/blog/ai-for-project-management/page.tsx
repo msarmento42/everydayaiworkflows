@@ -4,6 +4,7 @@ import RelatedPosts from "../../components/RelatedPosts";
 export const metadata = {
   title: "AI for Project Management: Cut Meeting Time and Never Miss a Deadline | Everyday AI Workflows",
   description: "A practical guide to using AI tools to run more effective projects — from kickoff to delivery. Covers meeting summarization, task breakdown, status updates, and risk identification.",
+  openGraph: { images: [{ url: "https://www.example.com/assets/ai-project-management.png" }] },
 };
 
 const relatedPostsData = [
