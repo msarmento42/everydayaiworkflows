@@ -1,7 +1,32 @@
-export const metadata = {
-  title: "AI for Academic Research: A Practical Workflow That Cuts Literature Review Time in Half",
-  description: "Academic research has a time problem. Literature reviews that should take days stretch into weeks. Synthesizing dozens of papers into coherent arguments...",
-};
+import type { Metadata } from 'next';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const title = "AI for Academic Research: A Practical Workflow That Cuts Literature Review Time in Half";
+  const description = "Academic research has a time problem. Literature reviews that should take days stretch into weeks. Synthesizing dozens of papers into coherent arguments...";
+  const imageUrl = "/images/workflows/ai-research-workflow.png"; // Placeholder image, assuming it exists in public/images/workflows/
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: [{
+        url: imageUrl,
+        width: 1200,
+        height: 630,
+        alt: title,
+      }],
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [imageUrl],
+    },
+  };
+}
 
 export default function BlogPost() {
   return (
