@@ -1,9 +1,28 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 
-export const metadata = {
-  title: "AI for Course Creation: Build and Launch an Online Course 3x Faster",
-  description: "AI can handle the outline, lesson scripts, quiz questions, sales copy, and promotional content for your online course — here is the complete workflow.",
-};
+const postTitle = "AI for Course Creation: Build and Launch an Online Course 3x Faster";
+const postDescription = "AI can handle the outline, lesson scripts, quiz questions, sales copy, and promotional content for your online course — here is the complete workflow.";
+const ogImageUrl = "https://www.agios.ai/images/ai-course-creation-og.jpg"; // Default Open Graph image
+
+export async function generateMetadata() {
+  return {
+    title: postTitle,
+    description: postDescription,
+    openGraph: {
+      title: postTitle,
+      description: postDescription,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: postTitle,
+        },
+      ],
+      type: "article",
+    },
+  };
+}
 
 export default function BlogPost() {
   return (
