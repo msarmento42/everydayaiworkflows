@@ -3,6 +3,32 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "How to Use AI for Customer Support: A Practical Workflow That Actually Scales | Everyday AI Workflows",
   description: "Build an AI customer support system that cuts ticket load by 40-60%. Triage, draft, escalate, and analyze — with no code and copy-paste prompts for every step.",
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Use AI for Customer Support: A Practical Workflow That Actually Scales",
+        "description": "Build an AI customer support system that cuts ticket load by 40-60%. Triage, draft, escalate, and analyze — with no code and copy-paste prompts for every step.",
+        "image": "https://www.everydayaiworkflows.com/images/blog/ai-for-customer-support.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Everyday AI Workflows"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Everyday AI Workflows",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.everydayaiworkflows.com/images/logo.png"
+          }
+        },
+        "datePublished": "2026-06-21T00:00:00Z",
+        "dateModified": "2026-06-21T00:00:00Z"
+      })
+    }
+  ]
 };
 
 export default function BlogPost() {
