@@ -155,7 +155,14 @@ For each question, also note what the interviewer is really trying to assess.`}<
           <p>The best use of this workflow is not to game the system but to ensure that your genuine qualifications are represented in the language and format that each specific employer is looking for. That is not deceptive — it is smart communication.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Recommended Tools for This Workflow</h2>
-          <p>You can run the entire process above with a general chatbot, but three tools make it faster at scale. <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> is the best home for your master resume and application tracker — one database, AI editing built in. <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> shines for cover letters when you are applying to many roles per week. And <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> is a budget-friendly option for punching up bullet points and summaries when you hit free-tier limits elsewhere.</p>
+          <p>You can run the entire process above with a general chatbot, but three tools make it faster at scale. <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> is the best home for your master resume and application tracker — one database, AI editing built in. <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> shines for cover letters when you are applying to many roles per week. And <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> is a budget-friendly option for punching up bullet points and summaries when you hit free-tier limits elsewhere.</p><h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+<ul style={{ color: "#d1d5db", marginLeft: "1.5rem" }}>
+  <li>AI can quickly tailor resumes to match ATS keywords, saving time and increasing interview chances.</li>
+  <li>Start with a comprehensive master resume, then use AI to extract and incorporate job-specific keywords.</li>
+  <li>Strengthen bullet points with the STAR‑Plus‑Metric formula to highlight impact and scale.</li>
+  <li>Generate targeted cover letters and interview prep using AI to stand out.</li>
+  <li>Use AI as a tool to present genuine experience effectively, not to fabricate qualifications.</li>
+</ul>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
