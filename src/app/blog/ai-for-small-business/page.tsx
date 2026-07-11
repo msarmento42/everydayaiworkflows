@@ -1,5 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
-import RoleStackCTA from "../../components/RoleStackCTA";
+import RoleStackCTA from "../../components/RoleStackCTA";import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 
 export const metadata = {
   title: "AI for Small Business: The Practical Toolkit That Replaces Three Hires | Everyday AI Workflows",
@@ -81,7 +81,8 @@ Include a clear call to action in each version.`}</pre>
             body="Compare the leanest tool mix for marketing, customer support, operations, and follow-up automation."
           />
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Financial Summaries and Bookkeeping Support</h2>
+                    <LeadMagnetCTA />
+<h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Financial Summaries and Bookkeeping Support</h2>
           <p>AI is not a replacement for an accountant, and it should not be used to make complex financial decisions. But the layer of financial administration that eats small business owner time — summarizing bank statements, categorizing expenses, preparing data for their accountant, understanding what their financial reports mean — is something AI handles well.</p>
           <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`Here is my business's financial summary for [month]:
 
