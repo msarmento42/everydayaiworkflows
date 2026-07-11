@@ -1,4 +1,4 @@
-import NewsletterCapture from "../components/NewsletterCapture";
+import NewsletterCapture from "../components/NewsletterCapture";import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "AI for Customer Feedback Analysis: Turn Reviews and Surveys Into Action | Everyday AI Workflows",
@@ -17,7 +17,7 @@ export default function BlogPost() {
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Customer Feedback Analysis: Turn Reviews and Surveys Into Action
-        </h1>
+        </h1>        <ShareButtons title="AI for Customer Feedback Analysis: Turn Reviews and Surveys Into Action | Everyday AI Workflows" url="https://example.com/blog/ai-for-customer-feedback-analysis" />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
