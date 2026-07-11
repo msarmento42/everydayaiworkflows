@@ -3,6 +3,19 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder | Everyday AI Workflows",
   description: "Use AI to tailor your resume to every job in minutes, write bullet points that pass ATS filters, and build a cover letter that actually gets read. Copy-paste prompts included.",
+  openGraph: {
+    title: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder",
+    description: "Use AI to tailor your resume to every job in minutes, write bullet points that pass ATS filters, and build a cover letter that actually gets read. Copy-paste prompts included.",
+    images: [
+      {
+        url: "https://www.agios.ai/images/ai-resume-writing-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder",
+      },
+    ],
+    type: "article",
+  },
 };
 
 export default function BlogPost() {
