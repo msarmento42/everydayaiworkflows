@@ -21,7 +21,16 @@ export default function BlogPost() {
 
           <p>Travel planning used to mean hours of tab-juggling across booking sites, travel blogs, Reddit threads, and Google Maps. You&apos;d spend a weekend researching a week&apos;s trip, second-guess every restaurant, and still arrive without a clear plan for day three. AI collapses that entire process into a single conversation — if you know how to prompt it correctly. Here&apos;s the complete workflow, from destination shortlist to day-by-day itinerary, using AI at every stage.</p>
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Use AI to Pick Your Destination</h2>
+          
+<h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+<ul style={{ color: "#d1d5db", marginLeft: "1.5rem", lineHeight: "1.6" }}>
+  <li>AI can condense the entire travel planning workflow into a single conversation, saving hours of research.</li>
+  <li>Prompting AI with clear constraints (budget, duration, preferences) yields tailored destination options and itineraries.</li>
+  <li>Use AI to evaluate neighborhoods, create packing lists, and handle logistics like transport and local customs.</li>
+  <li>Organize AI‑generated content in a Notion database for easy reference and future trips.</li>
+  <li>During travel, AI assists with real‑time problem solving, translations, and personalized recommendations.</li>
+</ul>
+<h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Use AI to Pick Your Destination</h2>
           <p>Most people start with a destination and then research it. That&apos;s backwards. Start by telling AI what kind of trip you want, and let it suggest destinations that actually match your constraints.</p>
           <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`"Help me choose a travel destination. Here are my constraints:
 - Budget: $3,000 total for 2 people including flights from NYC
