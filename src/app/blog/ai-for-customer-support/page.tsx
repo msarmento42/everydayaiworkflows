@@ -3,6 +3,16 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "How to Use AI for Customer Support: A Practical Workflow That Actually Scales | Everyday AI Workflows",
   description: "Build an AI customer support system that cuts ticket load by 40-60%. Triage, draft, escalate, and analyze — with no code and copy-paste prompts for every step.",
+  openGraph: {
+    images: [
+      {
+        url: "https://www.everydayaiworkflows.com/images/blog/ai-for-customer-support.jpg",
+        alt: "AI for Customer Support Workflow",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
   script: [
     {
       type: "application/ld+json",
