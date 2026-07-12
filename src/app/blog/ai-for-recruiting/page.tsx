@@ -18,6 +18,15 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Recruiting: Cut Time-to-Hire by 40% Without Sacrificing Candidate Quality
         </h1>
+        <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "1.5rem", marginBottom: "2rem" }}>
+          <h2 style={{ fontSize: "1.3rem", color: "#a5f3fc", marginTop: "0", marginBottom: "1rem" }}>Key Takeaways</h2>
+          <ul style={{ listStyleType: "disc", marginLeft: "1.25rem", color: "#d1d5db" }}>
+            <li style={{ marginBottom: "0.05rem" }}>AI automates administrative recruiting tasks, significantly reducing time-to-hire.</li>
+            <li style={{ marginBottom: "0.05rem" }}>Leverage AI to craft specific job descriptions, screen applications consistently, and build structured interview guides for better candidate quality.</li>
+            <li style={{ marginBottom: "0.05rem" }}>Personalize candidate outreach and automate communication updates to improve engagement and reduce drop-offs.</li>
+            <li>AI frees recruiters to focus on high-value human judgment, such as cultural fit and relationship building, which are critical for successful hires.</li>
+          </ul>
+        </div>
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
