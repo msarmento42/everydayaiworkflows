@@ -1,5 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
-import RelatedPosts from "../../components/RelatedPosts";
+import RelatedPosts from "../../components/RelatedPosts";import Head from "next/head";
 
 export const metadata = {
   title: "AI for Project Management: Cut Meeting Time and Never Miss a Deadline | Everyday AI Workflows",
@@ -18,6 +18,26 @@ const relatedPostsData = [
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "AI for Project Management: Cut Meeting Time and Never Miss a Deadline",
+              "description": "A practical guide to using AI tools to run more effective projects — from kickoff to delivery. Covers meeting summarization, task breakdown, status updates, and risk identification.",
+              "image": "https://example.com/placeholder-image.jpg",
+              "author": {
+                "@type": "Person",
+                "name": "Author Name"
+              },
+              "datePublished": "2026-07-12",
+              "dateModified": "2026-07-12"
+            })
+          }}
+        />
+      </Head>
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>{"← Back to Blog"}</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
