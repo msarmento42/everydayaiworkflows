@@ -1,6 +1,8 @@
 import Link from 'next/link';
 
 const allPosts = [
+{ slug: 'ai-tools-for-photographers', title: 'The Best AI Tools for Photographers in 2026: Culling, Editing, and Client Delivery', excerpt: 'A practical AI toolkit for photographers -- faster culling, consistent editing, client communication, and automated gallery delivery.', date: '2026-07-12', category: 'AI Tools', readingTime: '9 min' },
+{ slug: 'notebooklm-workflow-guide', title: 'How to Use NotebookLM for Research and Content Workflows', excerpt: 'A practical guide to Google\'s NotebookLM -- grounded source-based research, audio overviews, and how it fits alongside Claude and ChatGPT.', date: '2026-07-12', category: 'Tutorials', readingTime: '8 min' },
 { slug: '10-chatgpt-prompts-sales', title: '10 ChatGPT Prompts for Sales Professionals', excerpt: 'Boost your sales game with these prompts.', date: '2026-03-15', category: 'AI Prompts', readingTime: '5 min' },
 { slug: 'save-10-hours-week-ai', title: 'How I Save 10 Hours Per Week with AI', excerpt: 'Real strategies to reclaim 10 hours.', date: '2026-03-11', category: 'Productivity', readingTime: '6 min' },
 { slug: 'chatgpt-vs-claude-2026', title: 'ChatGPT vs Claude: Which Should You Use?', excerpt: 'An in-depth comparison.', date: '2026-03-12', category: 'AI Tools', readingTime: '8 min' },
