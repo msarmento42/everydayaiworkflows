@@ -7,7 +7,18 @@ export const metadata = {
 
 export default function BlogPost() {
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "AI Tools for Lawyers: How Attorneys Are Saving 10+ Hours a Week Without Sacrificing Accuracy",
+          "description": "Legal work is drowning in text — contracts, briefs, memos, case research, client emails. AI does not replace legal judgment, but it handles the text-heavy groundwork faster than any associate.",
+          "image": "https://example.com/ai-tools-for-lawyers.jpg",
+          "author": {
+            "@type": "Person",
+            "name": "Your Name"
+          },
+          "datePublished": "2026-05-26"
+        }) }} />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>{"← Back to Blog"}</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
