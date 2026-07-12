@@ -1,4 +1,4 @@
-import NewsletterCapture from "../components/NewsletterCapture";
+import NewsletterCapture from "../components/NewsletterCapture";import Head from "next/head";
 
 export const metadata = {
   title: "How Real Estate Agents Are Using AI to Write Listings That Actually Sell",
@@ -7,7 +7,26 @@ export const metadata = {
 
 export default function BlogPost() {
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}><Head>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How Real Estate Agents Are Using AI to Write Listings That Actually Sell",
+        "description": "A practical guide to using AI for listing descriptions, social captions, client emails, and objection scripts with copy-paste prompts for every step.",
+        "image": "https://example.com/placeholder-image.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "Author Name"
+        },
+        "datePublished": "2026-05-26",
+        "dateModified": "2026-05-26"
+      })
+    }}
+  />
+</Head>
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
