@@ -8,6 +8,35 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "AI for Event Planning: Save 20+ Hours on Your Next Event Without Losing Control",
+          "description": "From venue research to run-of-show schedules to vendor emails, AI can handle the tedious 80% of event planning. A practical workflow with copy-paste prompts for every stage.",
+          "image": "https://everydayaiworkflows.com/images/ai-event-planning.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "Everyday AI Workflows"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Everyday AI Workflows",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://everydayaiworkflows.com/logo.png"
+            }
+          },
+          "datePublished": "2026-06-21",
+          "dateModified": "2026-06-21",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://everydayaiworkflows.com/blog/ai-for-event-planning"
+          },
+          "url": "https://everydayaiworkflows.com/blog/ai-for-event-planning"
+        }) }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
