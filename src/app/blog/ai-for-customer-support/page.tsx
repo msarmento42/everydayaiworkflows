@@ -58,6 +58,14 @@ export default function BlogPost() {
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>Most customer support teams are drowning. Ticket volumes grow faster than headcount, response times slip, and agents burn out answering the same questions over and over. AI does not eliminate this problem — but the right workflow can cut your team&apos;s manual load by 40–60% without sacrificing quality.</p>
+<h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+<ul style={{ paddingLeft: "1.5rem", marginBottom: "1rem" }}>
+  <li style={{ marginBottom: "0.5rem" }}>AI‑assisted support can cut manual ticket load by 40–60% while keeping quality.</li>
+  <li style={{ marginBottom: "0.5rem" }}>Automate triage, draft responses, and escalation to speed up handling and free agents for complex issues.</li>
+  <li style={{ marginBottom: "0.5rem" }}>Regular trend analysis turns ticket data into actionable product insights.</li>
+  <li style={{ marginBottom: "0.5rem" }}>Guardrails (no hallucinations, human review) are essential for reliable AI support.</li>
+</ul>
+
 
           <p>This guide walks through an end-to-end AI customer support system: from auto-triaging inboxes to drafting responses to escalation logic and trend analysis. You can implement it whether you are a solo founder or managing a team of ten agents. No coding required for most of it.</p>
 
