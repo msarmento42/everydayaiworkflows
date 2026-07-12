@@ -5,9 +5,34 @@ export const metadata = {
   description: "How to use AI to map competitor positioning, track pricing and feature changes, analyze their content and SEO strategy, and turn it all into a decision-ready brief.",
 };
 
-export default function BlogPost() {
+export default function BlogPost() {  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": metadata.title,
+    "description": metadata.description,
+    "image": "https://www.everydayaiworkflows.com/images/ai-for-competitor-analysis-banner.jpg", // Placeholder image URL
+    "author": {
+      "@type": "Person",
+      "name": "Everyday AI Workflows"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Everyday AI Workflows",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.everydayaiworkflows.com/images/logo.png" // Placeholder logo URL
+      }
+    },
+    "datePublished": "2026-07-08T00:00:00Z",
+    "dateModified": "2026-07-08T00:00:00Z"
+  };
+
+
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
