@@ -32,6 +32,14 @@ export default function BlogPost() {
               Want the shorter buying path? Start with the <a href="/ai-tools-by-role#freelancers" style={{ color: "#00d4ff" }}>freelancer stack in our AI tools by role guide</a>, then use this article for implementation detail.
             </p>
           </div>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+          <ul style={{ paddingLeft: "1.5rem", marginBottom: "1rem", listStyleType: "disc" }}>
+            <li style={{ marginBottom: "0.5rem" }}>AI tools empower solo freelancers to compete with agencies by automating key tasks and bridging the resource gap.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Leverage AI for high-ROI areas: writing (Claude/ChatGPT, Jasper), operations (Make.com), knowledge management (Notion AI), meetings (Otter.ai), SEO content (Writesonic), and visuals (Canva AI).</li>
+            <li style={{ marginBottom: "0.5rem" }}>Start by integrating one tool in your biggest time-sink area, then gradually add more for compounding benefits.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Combining tools creates powerful, automated workflows (e.g., Otter → Claude → Make.com for follow-ups).</li>
+            <li style={{ marginBottom: "0.5rem" }}>Implementing this AI stack can significantly increase billable hours and reduce operational overhead.</li>
+          </ul>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>1. Claude or ChatGPT — Your Always-On Writing Partner</h2>
           <p>Every freelancer writes more than they expect: proposals, client emails, project updates, LinkedIn posts, case studies. AI cuts that writing time by 60-80% when used correctly. The key is having pre-built prompt templates for your most common writing tasks.</p>
