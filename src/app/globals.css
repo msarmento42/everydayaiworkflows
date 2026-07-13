@@ -17,3 +17,12 @@ a {
 button:hover {
   transform: scale(1.02);
 }
+
+/* Added for article font scaling */
+:root {
+  --article-font-scale: 1;
+}
+
+.article-content {
+  font-size: calc(1rem * var(--article-font-scale));
+}
