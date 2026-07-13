@@ -27,6 +27,15 @@ export default function BlogPost() {
           <p>Most advice about AI and school stops at "don't use it to cheat" and never gets to the more useful question: how do students who are doing the work honestly use AI to actually learn faster? The gap between a student who treats AI as an answer machine and one who treats it as a tutor, editor, and study partner is enormous — and only one of those approaches survives an oral defense, a closed-book final, or a job interview that tests the underlying skill.</p>
 
           <p>This guide covers the workflows that hold up: turning lecture notes into something you actually retain, using AI to stress-test your own essay arguments instead of writing them for you, building a study plan that adapts to what you are actually weak on, and staying secure while doing all of it on shared campus networks. None of this requires a paid plan to start.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+          <ul style={{ paddingLeft: "1.5rem", listStyleType: "disc", marginBottom: "1rem" }}>
+            <li style={{ marginBottom: "0.5rem" }}>Use AI to transform raw lecture notes into structured study guides, identifying unclear points for follow-up.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Engage AI as a Socratic tutor for active recall, asking it to quiz you, provide hints, and track your weak spots.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Leverage AI to stress-test your essay outlines and arguments, but always write the final content yourself to ensure academic integrity.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Develop adaptive exam study plans with AI, using diagnostic quizzes and spaced repetition to focus on your actual weak areas.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Always verify and adhere to your institution's academic integrity policies; AI should be a learning aid, not a submission generator.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Protect your personal data and assignments on campus Wi-Fi by using a VPN when interacting with AI tools.</li>
+          </ul>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>1. Turn Messy Lecture Notes Into a Study Guide That Sticks</h2>
           <p>Raw lecture notes are usually a mix of half-finished sentences, abbreviations only you understand, and gaps where you stopped writing to actually listen. AI is very good at turning that raw material into something structured — as long as you feed it good source material and ask for the right output.</p>
