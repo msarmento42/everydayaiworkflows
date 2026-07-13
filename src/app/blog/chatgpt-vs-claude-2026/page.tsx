@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "ChatGPT vs Claude in 2026: Which Should You Actually Use? | Everyday AI Workflows",
   description: "A practical comparison of ChatGPT and Claude in 2026 — what each tool does best, when to use each, and how to combine both for maximum productivity.",
+  alternates: {
+    canonical: "/blog/chatgpt-vs-claude-2026",
+  },
 };
 
 export default function BlogPost() {

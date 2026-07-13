@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "The Best AI Tools for Content Creators in 2026 | Everyday AI Workflows",
   description: "A complete guide to the best AI tools for every stage of the content workflow — ideation, writing, visuals, repurposing, SEO, and distribution — with specific recommendations for each job.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-content-creators",
+  },
 };
 
 export default function BlogPost() {

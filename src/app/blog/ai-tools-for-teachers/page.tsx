@@ -4,6 +4,9 @@ import ShareButtons from "../../components/ShareButtons";
 export const metadata = {
   title: "AI Tools for Teachers: Save 5 Hours a Week on Lesson Planning and Grading | Everyday AI Workflows",
   description: "A practical guide for educators using AI to create lesson plans, differentiate instruction, write rubrics, give feedback faster, and handle the administrative load that eats teaching time.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-teachers",
+  },
 };
 
 export default function BlogPost() {

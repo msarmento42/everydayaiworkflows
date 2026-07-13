@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Best AI Writing Assistants in 2026: Tested and Ranked | Everyday AI Workflows",
   description: "Six AI writing tools tested across five real tasks: Claude, ChatGPT, Jasper, Writesonic, Copy.ai, and Grammarly AI — ranked on quality, consistency, and value with copy-paste prompts.",
+  alternates: {
+    canonical: "/blog/best-ai-writing-assistants",
+  },
 };
 
 export default function BlogPost() {

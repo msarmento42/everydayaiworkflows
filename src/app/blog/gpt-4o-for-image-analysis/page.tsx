@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "GPT-4o Image Analysis: Practical Workflows That Save Hours Every Week | Everyday AI Workflows",
   description: "How to use GPT-4o's vision capabilities for real work — analyzing charts, extracting data from screenshots, reviewing designs, and automating image-heavy tasks.",
+  alternates: {
+    canonical: "/blog/gpt-4o-for-image-analysis",
+  },
 };
 
 export default function BlogPost() {

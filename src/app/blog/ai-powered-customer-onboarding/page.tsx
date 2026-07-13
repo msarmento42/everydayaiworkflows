@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI-Powered Customer Onboarding: Cut Time-to-Value by 50% | Everyday AI Workflows",
   description: "A practical workflow for using AI to automate onboarding emails, personalize setup guides, answer common questions instantly, and track activation milestones — without a larger team.",
+  alternates: {
+    canonical: "/blog/ai-powered-customer-onboarding",
+  },
 };
 
 export default function BlogPost() {

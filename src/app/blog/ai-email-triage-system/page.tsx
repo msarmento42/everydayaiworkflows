@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Build an AI Email Triage System: Zero Inbox in Under 10 Minutes | Everyday AI Workflows",
   description: "Cut your daily email time to under 10 minutes with AI-powered triage, automated sorting, and draft generation workflows.",
+  alternates: {
+    canonical: "/blog/ai-email-triage-system",
+  },
 };
 
 export default function BlogPost() {

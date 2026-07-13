@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "How to Use NotebookLM for Research and Content Workflows | Everyday AI Workflows",
   description: "A practical guide to Google's NotebookLM — grounded source-based research, audio overviews, and how it fits alongside Claude and ChatGPT in a real workflow.",
+  alternates: {
+    canonical: "/blog/notebooklm-workflow-guide",
+  },
 };
 
 export default function BlogPost() {

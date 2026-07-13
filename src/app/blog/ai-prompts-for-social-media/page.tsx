@@ -1,6 +1,9 @@
 export const metadata = {
   title: "50 AI Prompts for Social Media That Actually Get Engagement",
   description: "Most AI-generated social media posts are forgettable. They\'re technically correct, grammatically clean, and utterly generic. The problem isn\'t the AI — it\'s...",
+  alternates: {
+    canonical: "/blog/ai-prompts-for-social-media",
+  },
 };
 
 export default function BlogPost() {

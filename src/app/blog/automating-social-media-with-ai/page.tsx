@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Automating Social Media with AI: One Input, 30 Days of Posts | Everyday AI Workflows",
   description: "A complete workflow for automating social media content using AI — generate a month of platform-native posts from a single brief, schedule automatically, and maintain a consistent voice without manual daily effort.",
+  alternates: {
+    canonical: "/blog/automating-social-media-with-ai",
+  },
 };
 
 export default function BlogPost() {

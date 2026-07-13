@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for Startup Founders: Replace Three Hires With the Right Stack | Everyday AI Workflows",
   description: "The practical AI toolkit for startup founders and solopreneurs — from writing investor updates to automating customer support, market research, and content marketing with fewer resources.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-startup-founders",
+  },
 };
 
 export default function BlogPost() {

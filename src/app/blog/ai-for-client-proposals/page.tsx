@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Client Proposals: Write Winning Proposals in 30 Minutes, Not 3 Hours | Everyday AI Workflows",
   description: "A repeatable AI workflow for freelancers and agencies: discovery-call notes to polished proposal in under 30 minutes, with prompts for scoping, pricing tiers, and follow-ups.",
+  alternates: {
+    canonical: "/blog/ai-for-client-proposals",
+  },
 };
 
 export default function BlogPost() {

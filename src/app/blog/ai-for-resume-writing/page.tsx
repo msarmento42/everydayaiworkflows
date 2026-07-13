@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder | Everyday AI Workflows",
   description: "Use AI to tailor your resume to every job in minutes, write bullet points that pass ATS filters, and build a cover letter that actually gets read. Copy-paste prompts included.",
+  alternates: {
+    canonical: "/blog/ai-for-resume-writing",
+  },
   openGraph: {
     title: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder",
     description: "Use AI to tailor your resume to every job in minutes, write bullet points that pass ATS filters, and build a cover letter that actually gets read. Copy-paste prompts included.",

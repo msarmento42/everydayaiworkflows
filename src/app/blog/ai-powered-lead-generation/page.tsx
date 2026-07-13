@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI-Powered Lead Generation: Automate Prospecting Without Losing the Human Touch | Everyday AI Workflows",
   description: "How sales teams and solopreneurs use AI to identify prospects, research accounts, personalize outreach at scale, and build pipelines that fill themselves.",
+  alternates: {
+    canonical: "/blog/ai-powered-lead-generation",
+  },
 };
 
 export default function BlogPost() {

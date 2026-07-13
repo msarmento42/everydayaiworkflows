@@ -4,6 +4,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "The Freelancer\'s AI Stack: 7 Tools That Replace a Full-Time Assistant",
   description: "Freelancers who operate solo still compete against agencies with entire support teams. AI has closed that gap. The right stack lets one person handle client...",
+  alternates: {
+    canonical: "/blog/ai-tools-for-freelancers",
+  },
 };
 
 export default function BlogPost() {

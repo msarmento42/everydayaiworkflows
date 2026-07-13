@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for HR Teams: Cut Admin Time and Focus on the Work That Matters",
   description: "HR teams spend an outsized chunk of their week on tasks that don&apos;t require human judgment: formatting job descriptions, drafting offer letters,...",
+  alternates: {
+    canonical: "/blog/ai-tools-for-hr-teams",
+  },
 };
 
 export default function BlogPost() {

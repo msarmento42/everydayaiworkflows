@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "VPN for AI Researchers: Stay Secure While Accessing AI Tools Globally | Everyday AI Workflows",
   description: "Why AI researchers, remote workers, and power users need a VPN â and how to pick one that keeps your prompts, API keys, and research data private.",
+  alternates: {
+    canonical: "/blog/vpn-for-ai-researchers",
+  },
 };
 
 export default function BlogPost() {

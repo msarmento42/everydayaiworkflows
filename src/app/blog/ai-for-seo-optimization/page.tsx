@@ -4,6 +4,9 @@ import ShareButtons from "../../components/ShareButtons";
 export const metadata = {
   title: "How to Use AI for SEO Optimization: A Practical Workflow That Actually Ranks",
   description: "A five-step AI workflow for keyword research, SERP-informed outlining, section-by-section writing, on-page auditing, and automated internal linking.",
+  alternates: {
+    canonical: "/blog/ai-for-seo-optimization",
+  },
 };
 
 export default function BlogPost() {

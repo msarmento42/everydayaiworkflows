@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for Students: Study Faster, Write Better, and Actually Understand the Material | Everyday AI Workflows",
   description: "A practical guide to using AI as a student — for note-taking, essay drafts, exam prep, and research — without crossing into academic dishonesty. Copy-paste prompts included.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-students",
+  },
 };
 
 export default function BlogPost() {

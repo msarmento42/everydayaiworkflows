@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";import ShareButt
 export const metadata = {
   title: "AI for Customer Feedback Analysis: Turn Reviews and Surveys Into Action | Everyday AI Workflows",
   description: "How to use AI to read thousands of reviews, support tickets, and survey responses at once — and turn them into a prioritized list of what to fix first.",
+  alternates: {
+    canonical: "/blog/ai-for-customer-feedback-analysis",
+  },
 };
 
 export default function BlogPost() {

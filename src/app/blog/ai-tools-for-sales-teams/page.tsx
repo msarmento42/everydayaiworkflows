@@ -4,6 +4,9 @@ import RoleStackCTA from "../../components/RoleStackCTA";
 export const metadata = {
   title: "AI Tools for Sales Teams: Close More Deals Without Working More Hours",
   description: "Sales is already a data-heavy, communication-intensive job. AI doesn't replace great salespeople — it removes the parts that aren't selling: drafting follow-ups, researching prospects, and writing proposals from scratch.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-sales-teams",
+  },
 };
 
 export default function BlogPost() {

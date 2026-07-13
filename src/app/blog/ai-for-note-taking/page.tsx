@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Note-Taking: How to Build a Knowledge System That Actually Works | Everyday AI Workflows",
   description: "Stop losing ideas to scattered notes. This guide shows you how to use AI with Notion, Obsidian, and voice capture to build a note-taking system that surfaces what you need when you need it.",
+  alternates: {
+    canonical: "/blog/ai-for-note-taking",
+  },
 };
 
 export default function BlogPost() {

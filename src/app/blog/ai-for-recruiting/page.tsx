@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Recruiting: Cut Time-to-Hire by 40% Without Sacrificing Candidate Quality",
   description: "Recruiting teams are using AI to write better job descriptions, screen applications faster, build interview guides, and send personalized outreach — without adding headcount.",
+  alternates: {
+    canonical: "/blog/ai-for-recruiting",
+  },
 };
 
 export default function BlogPost() {

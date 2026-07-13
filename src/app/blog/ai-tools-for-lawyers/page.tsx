@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for Lawyers: How Attorneys Are Saving 10+ Hours a Week Without Sacrificing Accuracy",
   description: "Legal work is drowning in text — contracts, briefs, memos, case research, client emails. AI does not replace legal judgment, but it handles the text-heavy groundwork faster than any associate.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-lawyers",
+  },
 };
 
 export default function BlogPost() {

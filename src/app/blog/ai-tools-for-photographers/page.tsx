@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "The Best AI Tools for Photographers in 2026: Culling, Editing, and Client Delivery | Everyday AI Workflows",
   description: "A practical AI toolkit for photographers — faster culling, editing assistance, caption and client-communication tools, and automated delivery workflows.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-photographers",
+  },
 };
 
 export default function BlogPost() {

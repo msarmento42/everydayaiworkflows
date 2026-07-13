@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for Accounting: Automate the Tedious Work and Focus on Advisory",
   description: "How accountants and bookkeepers are using AI to automate transaction categorization, draft financial narratives, catch data entry errors, and spend more time on high-value client work.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-accounting",
+  },
 };
 
 export default function BlogPost() {

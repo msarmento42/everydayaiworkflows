@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for Designers: Automate the Tedious Parts and Focus on Creative Work",
   description: "Designers spend a surprising chunk of their week on non-design work. Here are six AI workflows that handle the language layer so you can stay in the visual layer.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-designers",
+  },
 };
 
 export default function BlogPost() {

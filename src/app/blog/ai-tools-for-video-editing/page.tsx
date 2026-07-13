@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for Video Editing: Cut Your Editing Time Without Losing Quality | Everyday AI Workflows",
   description: "How creators and marketers are using AI to handle transcription, rough cuts, silence removal, captioning, and repurposing — the workflow, not just the tool list.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-video-editing",
+  },
 };
 
 export default function BlogPost() {

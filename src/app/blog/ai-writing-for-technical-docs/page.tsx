@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Writing Technical Documentation: Cut the Time, Raise the Quality | Everyday AI Workflows",
   description: "A practical workflow for using AI to produce API docs, runbooks, and user guides faster — with prompts for structure, clarity, diff-based updates, and keeping docs current.",
+  alternates: {
+    canonical: "/blog/ai-writing-for-technical-docs",
+  },
 };
 
 export default function BlogPost() {

@@ -4,6 +4,9 @@ import RoleStackCTA from "../../components/RoleStackCTA";
 export const metadata = {
   title: "AI Tools for Agency Owners: Automate Delivery, Scale Without Hiring",
   description: "Running an agency means delivering high-quality work across multiple clients while keeping margins intact. Here's how agency owners are using AI to automate delivery, handle reporting, and scale output without proportional headcount growth.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-agency-owners",
+  },
 };
 
 export default function BlogPost() {

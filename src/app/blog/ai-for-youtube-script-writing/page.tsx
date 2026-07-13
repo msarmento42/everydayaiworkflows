@@ -1,6 +1,9 @@
 export const metadata = {
   title: "How to Use AI to Write YouTube Scripts That Actually Keep Viewers Watching",
   description: "Most YouTube scripts fail in the first 30 seconds — not because the creator lacks ideas, but because the structure is wrong. Here's the exact AI workflow that cuts script time in half.",
+  alternates: {
+    canonical: "/blog/ai-for-youtube-script-writing",
+  },
 };
 
 export default function BlogPost() {

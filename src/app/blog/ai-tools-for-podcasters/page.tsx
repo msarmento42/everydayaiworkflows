@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for Podcasters: From Episode Idea to Published Show in Half the Time",
   description: "Podcasting is time-heavy. AI can absorb the research, scripting, show notes, and promotion — so you spend your energy on the actual conversation.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-podcasters",
+  },
 };
 
 export default function BlogPost() {

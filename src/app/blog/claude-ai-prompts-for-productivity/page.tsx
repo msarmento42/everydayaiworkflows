@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "10 Claude AI Prompts That Will Transform Your Workday | Everyday AI Workflows",
   description: "Ten high-impact Claude prompts for email drafting, meeting prep, research synthesis, deep work, and daily planning — with real templates you can copy immediately.",
+  alternates: {
+    canonical: "/blog/claude-ai-prompts-for-productivity",
+  },
 };
 
 export default function BlogPost() {

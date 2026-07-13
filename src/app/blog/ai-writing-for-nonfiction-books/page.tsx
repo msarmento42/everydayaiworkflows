@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Writing for Nonfiction Books: From Rough Idea to Finished Draft in Half the Time | Everyday AI Workflows",
   description: "A practical AI-assisted workflow for nonfiction authors — outline structure, chapter drafting, research synthesis, and editing passes that cut writing time in half without losing your voice.",
+  alternates: {
+    canonical: "/blog/ai-writing-for-nonfiction-books",
+  },
 };
 
 export default function BlogPost() {

@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";import Head from
 export const metadata = {
   title: "How Real Estate Agents Are Using AI to Write Listings That Actually Sell",
   description: "A practical guide to using AI for listing descriptions, social captions, client emails, and objection scripts with copy-paste prompts for every step.",
+  alternates: {
+    canonical: "/blog/ai-for-real-estate-listings",
+  },
 };
 
 export default function BlogPost() {

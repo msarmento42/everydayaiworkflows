@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Voice-to-Text AI Workflows: Capture Ideas Hands-Free and Never Lose a Thought | Everyday AI Workflows",
   description: "How to build voice-to-text AI workflows that capture ideas on the go, transcribe meetings, and convert spoken thoughts into polished written outputs automatically.",
+  alternates: {
+    canonical: "/blog/voice-to-text-ai-workflows",
+  },
 };
 
 export default function BlogPost() {
