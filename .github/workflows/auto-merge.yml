@@ -15,13 +15,18 @@ jobs:
     name: Policy-gated auto-merge
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    outputs:
+      merged: ${{ steps.gate.outputs.merged }}
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       REPO: ${{ github.repository }}
       RUN_ID: ${{ github.event.workflow_run.id }}
     steps:
       - name: Check gates, enable auto-merge, and close the linked issue
+        id: gate
         run: |
+          echo "merged=false" >> "$GITHUB_OUTPUT"
+
           # Get PR number from the workflow run
           PR=$(gh api "repos/$REPO/actions/runs/$RUN_ID" \
             --jq '.pull_requests[0].number // empty' 2>/dev/null)
@@ -80,6 +85,14 @@ jobs:
           # poll for the merge to land within *this* run (whose own trigger
           # is workflow_run, not GITHUB_TOKEN-caused, so it isn't subject to
           # that suppression) and close the issue explicitly once it does.
+          #
+          # The same suppression is why this repo also needs an explicit
+          # deploy step below: `deploy.yml`'s `push: branches: [master]`
+          # trigger never fires for these auto-merges either (confirmed:
+          # PR #193, merged this way, produced no new Vercel deployment
+          # even though an earlier manually-merged PR into the same branch
+          # deployed correctly). `merged` is exposed as a job output so the
+          # next step can run the deploy for real.
           echo "Waiting for PR #$PR to merge..."
           PR_STATE="OPEN"
           for i in $(seq 1 24); do
@@ -96,6 +109,8 @@ jobs:
             exit 0
           fi
 
+          echo "merged=true" >> "$GITHUB_OUTPUT"
+
           ISSUE_STATE=$(gh issue view "$ISSUE" --repo "$REPO" --json state --jq '.state' 2>/dev/null)
           if [ "$ISSUE_STATE" = "CLOSED" ]; then
             echo "Issue #$ISSUE already closed — nothing to do"
@@ -105,3 +120,28 @@ jobs:
           echo "Explicitly closing issue #$ISSUE (linked PR #$PR merged)"
           gh issue close "$ISSUE" --repo "$REPO" \
             --comment "Closed automatically: linked PR #$PR merged (https://github.com/$REPO/pull/$PR)."
+
+  deploy:
+    name: Deploy to Vercel (auto-merge path)
+    needs: policy-gate
+    if: needs.policy-gate.outputs.merged == 'true'
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_ORG_ID: jcltSRl27oNddBEszaaDX86J
+      VERCEL_PROJECT_ID: prj_7XeYVrgnT7b7nVDjx4FDrbLLsvqx
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      - name: Pull Vercel environment info
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build project artifacts
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
