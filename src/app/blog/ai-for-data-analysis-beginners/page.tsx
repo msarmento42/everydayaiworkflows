@@ -1,6 +1,9 @@
 export const metadata = {
   title: "AI for Data Analysis: A Beginner's Guide to Turning Spreadsheets into Insights",
   description: "Unlock data insights without code! This beginner's guide shows how AI tools like ChatGPT & Claude analyze spreadsheets, clean data, generate reports, and automate workflows for smarter business decisions.",
+  alternates: {
+    canonical: "/blog/ai-for-data-analysis-beginners",
+  },
 };
 import ShareButtons from '../../components/ShareButtons';
 

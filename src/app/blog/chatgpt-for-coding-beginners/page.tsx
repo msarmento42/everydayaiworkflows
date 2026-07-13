@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";import Head from
 export const metadata = {
   title: "ChatGPT for Coding Beginners: Learn Faster and Debug Smarter | Everyday AI Workflows",
   description: "A practical guide to using ChatGPT and Claude as coding assistants when you are just starting out — from understanding errors to building your first real projects.",
+  alternates: {
+    canonical: "/blog/chatgpt-for-coding-beginners",
+  },
 };
 
 export default function BlogPost() {

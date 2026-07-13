@@ -4,6 +4,9 @@ import RoleStackCTA from "../../components/RoleStackCTA";import LeadMagnetCTA fr
 export const metadata = {
   title: "AI for Small Business: The Practical Toolkit That Replaces Three Hires | Everyday AI Workflows",
   description: "How small business owners are using AI to handle marketing copy, customer support, bookkeeping summaries, and operations tasks that used to require additional staff.",
+  alternates: {
+    canonical: "/blog/ai-for-small-business",
+  },
 };
 
 const jsonLd = {

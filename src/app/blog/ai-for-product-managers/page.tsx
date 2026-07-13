@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Product Managers: Workflows That Cut Planning Time in Half",
   description: "How PMs are using AI to write PRDs, generate user stories, run competitor analysis, prioritize backlogs, and turn messy meeting notes into actionable roadmaps.",
+  alternates: {
+    canonical: "/blog/ai-for-product-managers",
+  },
 };
 
 export default function BlogPost() {

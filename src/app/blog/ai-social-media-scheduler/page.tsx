@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "How to Build an AI Social Media Scheduler That Writes and Posts For You",
   description: "Most people treat social media scheduling as a chore — copy, paste, adjust tone, schedule, repeat. With the right AI + automation stack, you can turn that into a fully automated pipeline.",
+  alternates: {
+    canonical: "/blog/ai-social-media-scheduler",
+  },
 };
 
 export default function BlogPost() {

@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Tools for Ecommerce: Product Listings, Customer Emails, and Inventory Done Faster",
   description: "How ecommerce operators use AI to write better product descriptions, automate customer communications, analyze sales data, and free up hours every week.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-ecommerce",
+  },
 };
 
 export default function BlogPost() {

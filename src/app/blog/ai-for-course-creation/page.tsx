@@ -8,6 +8,9 @@ export async function generateMetadata() {
   return {
     title: postTitle,
     description: postDescription,
+    alternates: {
+      canonical: "/blog/ai-for-course-creation",
+    },
     openGraph: {
       title: postTitle,
       description: postDescription,

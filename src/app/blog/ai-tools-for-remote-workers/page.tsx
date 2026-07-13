@@ -3,6 +3,9 @@ import RoleStackCTA from "../../components/RoleStackCTA";
 export const metadata = {
   title: "AI Tools for Remote Workers: The Stack That Closes the Collaboration Gap",
   description: "Remote work created a collaboration tax. Every meeting you used to have in the hallway became a scheduled video call. Every quick clarification that took 30...",
+  alternates: {
+    canonical: "/blog/ai-tools-for-remote-workers",
+  },
 };
 
 export default function BlogPost() {

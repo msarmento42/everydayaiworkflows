@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Agents for Small Business: Practical Automations That Run While You Sleep | Everyday AI Workflows",
   description: "How small businesses are using AI agents for lead follow-up, inbox triage, review responses, and weekly reporting — with copy-paste prompts and no-code setups.",
+  alternates: {
+    canonical: "/blog/ai-agents-for-small-business",
+  },
 };
 
 export default function BlogPost() {

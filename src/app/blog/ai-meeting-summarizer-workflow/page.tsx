@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Build an AI Meeting Summarizer Workflow: Save Hours Every Week | Everyday AI Workflows",
   description: "Turn raw meeting transcripts into structured summaries, decision logs, and action items automatically. Step-by-step guide to building a fully automated Make.com pipeline.",
+  alternates: {
+    canonical: "/blog/ai-meeting-summarizer-workflow",
+  },
 };
 
 export default function BlogPost() {

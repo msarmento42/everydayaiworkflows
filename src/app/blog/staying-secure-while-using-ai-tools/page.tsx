@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Staying Secure While Using AI Tools: A Practical Security Guide for 2026 | Everyday AI Workflows",
   description: "The AI tools you use every day create real security and privacy risks most people ignore. Here is how to use AI safely without compromising your data, credentials, or client information.",
+  alternates: {
+    canonical: "/blog/staying-secure-while-using-ai-tools",
+  },
 };
 
 export default function BlogPost() {

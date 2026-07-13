@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Competitor Analysis: A Practical Workflow That Replaces a Week of Manual Research | Everyday AI Workflows",
   description: "How to use AI to map competitor positioning, track pricing and feature changes, analyze their content and SEO strategy, and turn it all into a decision-ready brief.",
+  alternates: {
+    canonical: "/blog/ai-for-competitor-analysis",
+  },
 };
 
 export default function BlogPost() {  const jsonLd = {

@@ -8,6 +8,9 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title,
     description,
+    alternates: {
+      canonical: "/blog/ai-for-academic-research",
+    },
     openGraph: {
       title,
       description,

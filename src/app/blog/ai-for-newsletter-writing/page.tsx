@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Newsletter Writing: How to Publish Weekly Without Burning Out",
   description: "Writing a consistent newsletter is one of the highest-leverage things a creator or marketer can do — but it's also the first thing that gets dropped. Here's how to use AI to write, edit, and schedule your newsletter without it consuming your week.",
+  alternates: {
+    canonical: "/blog/ai-for-newsletter-writing",
+  },
 };
 
 export default function BlogPost() {

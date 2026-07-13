@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Using AI for Contract Review: Cut Hours of Reading Down to Minutes | Everyday AI Workflows",
   description: "How to use AI to review contracts faster — extracting key clauses, flagging risky language, and summarizing obligations without missing what matters.",
+  alternates: {
+    canonical: "/blog/using-ai-for-contract-review",
+  },
 };
 
 export default function BlogPost() {

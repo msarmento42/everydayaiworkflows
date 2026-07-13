@@ -4,6 +4,9 @@ import RoleStackCTA from "../../components/RoleStackCTA";import Image from 'next
 export const metadata = {
   title: "AI for Email Marketing: Write Better Campaigns in Half the Time | Everyday AI Workflows",
   description: "Prompts and workflows for writing high-converting emails, generating A/B subject line variants, segmenting copy, building drip sequences, and automating the entire send pipeline.",
+  alternates: {
+    canonical: "/blog/ai-for-email-marketing",
+  },
 };
 
 export default function BlogPost() {

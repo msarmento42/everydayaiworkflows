@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Personal Branding: Build a Consistent Online Presence Without Spending Hours on Content",
   description: "Use AI to define your brand voice, generate consistent content across platforms, and build an audience — without burning hours every week on social media.",
+  alternates: {
+    canonical: "/blog/ai-for-personal-branding",
+  },
 };
 
 export default function BlogPost() {

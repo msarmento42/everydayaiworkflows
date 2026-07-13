@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "15 AI Prompts That Will Get You the Job: Interview Prep from First Round to Offer | Everyday AI Workflows",
   description: "Copy-paste-ready AI prompts covering every stage of interview prep — research, behavioral stories, mock interviews, salary negotiation, and follow-up.",
+  alternates: {
+    canonical: "/blog/ai-prompts-for-job-interviews",
+  },
 };
 
 export default function BlogPost() {

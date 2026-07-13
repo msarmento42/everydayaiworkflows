@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "How to Add an AI Chatbot to Your Website (No Code Required)",
   description: "A practical guide to adding an AI chatbot to your website that actually helps visitors — covering tool selection, training on your content, handoff flows, and measuring impact.",
+  alternates: {
+    canonical: "/blog/ai-chatbot-for-website",
+  },
 };
 
 export default function BlogPost() {

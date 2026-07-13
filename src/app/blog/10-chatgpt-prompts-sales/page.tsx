@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "10 ChatGPT Prompts for Sales Professionals That Actually Close Deals | Everyday AI Workflows",
   description: "Sales reps who use AI remove the friction that keeps them from selling. These 10 prompts cover prospect research, cold email, objection handling, follow-up sequences, and pipeline analysis.",
+  alternates: {
+    canonical: "/blog/10-chatgpt-prompts-sales",
+  },
 };
 
 export default function BlogPost() {

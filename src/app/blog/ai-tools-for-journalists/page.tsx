@@ -1,6 +1,9 @@
 export const metadata = {
   title: "AI Tools for Journalists: Research Faster, Write Tighter, Verify Smarter",
   description: "Journalists are using AI to cut research time, transcribe interviews, detect source bias, and produce first drafts — without compromising editorial standards. Here's the practical workflow.",
+  alternates: {
+    canonical: "/blog/ai-tools-for-journalists",
+  },
 };
 
 export default function BlogPost() {

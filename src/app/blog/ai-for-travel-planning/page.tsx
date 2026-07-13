@@ -1,6 +1,9 @@
 export const metadata = {
   title: "AI for Travel Planning: Build Your Perfect Trip in 30 Minutes Flat",
   description: "Travel planning used to mean hours of tab-juggling across booking sites, blogs, and maps. AI collapses that into a single conversation. Here's the complete workflow.",
+  alternates: {
+    canonical: "/blog/ai-for-travel-planning",
+  },
 };
 
 export default function BlogPost() {

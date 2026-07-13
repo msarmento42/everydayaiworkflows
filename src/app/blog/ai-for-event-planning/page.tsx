@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Event Planning: Save 20+ Hours on Your Next Event Without Losing Control | Everyday AI Workflows",
   description: "From venue research to run-of-show schedules to vendor emails, AI can handle the tedious 80% of event planning. A practical workflow with copy-paste prompts for every stage.",
+  alternates: {
+    canonical: "/blog/ai-for-event-planning",
+  },
 };
 
 export default function BlogPost() {

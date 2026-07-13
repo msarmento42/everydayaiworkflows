@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Using Claude for Research: A Practical Workflow That Actually Saves Hours | Everyday AI Workflows",
   description: "How to use Claude as a research partner — synthesizing sources, stress-testing arguments, and building structured knowledge faster than traditional research methods.",
+  alternates: {
+    canonical: "/blog/using-claude-for-research",
+  },
 };
 
 export default function BlogPost() {

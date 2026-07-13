@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI Content Repurposing: Turn One Post Into 10 Pieces of Content Automatically | Everyday AI Workflows",
   description: "How to build an AI-powered content repurposing workflow that turns a single blog post or video into LinkedIn posts, newsletters, tweets, short-form video scripts, and more — automatically.",
+  alternates: {
+    canonical: "/blog/ai-content-repurposing-workflow",
+  },
 };
 
 export default function BlogPost() {

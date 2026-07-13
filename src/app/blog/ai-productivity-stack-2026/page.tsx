@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs) | Everyday AI Workflows",
   description: "A curated breakdown of the best AI productivity tools in 2026 — what each one does, when to use it, and how to stack them into a coherent system without subscription overload.",
+  alternates: {
+    canonical: "/blog/ai-productivity-stack-2026",
+  },
 };
 
 export default function BlogPost() {

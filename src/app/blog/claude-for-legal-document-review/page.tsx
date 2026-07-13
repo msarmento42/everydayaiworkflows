@@ -3,6 +3,9 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "Claude for Legal Document Review: A Practical Workflow for Non-Lawyers | Everyday AI Workflows",
   description: "How to use Claude to extract key terms, flag risky clauses, compare contract versions, and summarize legal documents — without a law degree or expensive attorney review for routine work.",
+  alternates: {
+    canonical: "/blog/claude-for-legal-document-review",
+  },
 };
 
 export default function BlogPost() {
