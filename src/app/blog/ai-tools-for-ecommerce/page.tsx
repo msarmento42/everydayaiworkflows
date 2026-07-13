@@ -1,4 +1,4 @@
-import NewsletterCapture from "../components/NewsletterCapture";
+import NewsletterCapture from "../components/NewsletterCapture";import Script from "next/script";
 
 export const metadata = {
   title: "AI Tools for Ecommerce: Product Listings, Customer Emails, and Inventory Done Faster",
@@ -10,7 +10,32 @@ export const metadata = {
 
 export default function BlogPost() {
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}><Script id="breadcrumb-schema" type="application/ld+json">
+{`{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://example.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://example.com/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI Tools for Ecommerce: Product Listings, Customer Emails, and Inventory Done Faster",
+      "item": "https://example.com/blog/ai-tools-for-ecommerce"
+    }
+  ]
+}`}
+</Script>
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
