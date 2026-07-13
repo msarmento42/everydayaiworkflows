@@ -1,0 +1,15 @@
+{
+  "name": "Everyday AI Workflows",
+  "short_name": "AI Workflows",
+  "description": "Discover daily AI prompts and curated tools to boost your productivity. Learn how to integrate AI into your daily workflow.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f23",
+  "theme_color": "#0f0f23",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ]
+}
