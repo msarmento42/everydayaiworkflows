@@ -121,7 +121,11 @@ Ideas:
 
         </div>
 
-        <div style={{ display: "flex", gap: "0.75rem", marginTop: "2rem", flexWrap: "wrap" }}>
+        <div style={{ background: "#1e3a8a", padding: "1.5rem", borderRadius: "8px", textAlign: "center", marginTop: "2rem" }}>
+  <h2 style={{ color: "#fff", marginBottom: "0.5rem" }}>Unlock the Power of Notion AI</h2>
+  <p style={{ color: "#d1d5db", marginBottom: "1rem" }}>Boost your productivity with Notion AI – try it now and get a special discount.</p>
+  <a href="https://notion.so?ref=affiliate" target="_blank" rel="noopener sponsored" style={{ display: "inline-block", background: "#00d4ff", color: "#0f0f23", padding: "0.75rem 1.5rem", borderRadius: "4px", textDecoration: "none", fontWeight: "bold" }}>Start Using Notion AI</a>
+</div><div style={{ display: "flex", gap: "0.75rem", marginTop: "2rem", flexWrap: "wrap" }}>
           {["notion", "productivity", "ai-tools", "knowledge-management", "workflows"].map(tag => (
             <span key={tag} style={{ fontSize: "0.75rem", color: "#6b7280", background: "rgba(255,255,255,0.05)", padding: "0.2rem 0.6rem", borderRadius: "4px" }}>#{tag}</span>
           ))}
