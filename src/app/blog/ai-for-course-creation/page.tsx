@@ -1,4 +1,4 @@
-import NewsletterCapture from "../components/NewsletterCapture";
+import NewsletterCapture from "../components/NewsletterCapture";import RelatedPosts from "../../components/RelatedPosts";
 
 const postTitle = "AI for Course Creation: Build and Launch an Online Course 3x Faster";
 const postDescription = "AI can handle the outline, lesson scripts, quiz questions, sales copy, and promotional content for your online course — here is the complete workflow.";
@@ -210,7 +210,7 @@ leading up to a launch window.`}</pre>
           ))}
         </div>
 
-        <NewsletterCapture darkMode={true} />
+        <RelatedPosts posts={[{ title: "Building an AI Content Calendar", slug: "/blog/building-an-ai-content-calendar" },{ title: "Automating Social Media with AI", slug: "/blog/automating-social-media-with-ai" },{ title: "AI Prompt Engineering Basics", slug: "/blog/ai-prompt-engineering-basics" }]} /><NewsletterCapture darkMode={true} />
       </div>
     </div>
   );
