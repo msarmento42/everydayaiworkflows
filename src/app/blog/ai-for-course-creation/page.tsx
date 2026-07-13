@@ -1,4 +1,4 @@
-import NewsletterCapture from "../components/NewsletterCapture";import RelatedPosts from "../../components/RelatedPosts";
+import NewsletterCapture from "../components/NewsletterCapture";import RelatedPosts from "../../components/RelatedPosts";import ShareButtons from "../../components/ShareButtons";
 
 const postTitle = "AI for Course Creation: Build and Launch an Online Course 3x Faster";
 const postDescription = "AI can handle the outline, lesson scripts, quiz questions, sales copy, and promotional content for your online course — here is the complete workflow.";
@@ -39,7 +39,7 @@ export default function BlogPost() {
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Course Creation: Build and Launch an Online Course 3x Faster
-        </h1>
+        </h1>        <ShareButtons url="https://www.agios.ai/blog/ai-for-course-creation" title={postTitle} />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
