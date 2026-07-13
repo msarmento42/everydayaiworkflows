@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "AI Tools for Teachers: Save 5 Hours a Week on Lesson Planning and Grading | Everyday AI Workflows",
@@ -137,6 +138,11 @@ Requirements:
             <span key={tag} style={{ fontSize: "0.75rem", color: "#6b7280", background: "rgba(255,255,255,0.05)", padding: "0.2rem 0.6rem", borderRadius: "4px" }}>{`#${tag}`}</span>
           ))}
         </div>
+
+        <ShareButtons
+          title="AI Tools for Teachers: Save 5 Hours a Week on Lesson Planning and Grading"
+          url="https://everydayaiworkflows.com/blog/ai-tools-for-teachers"
+        />
 
         <NewsletterCapture darkMode={true} />
       </div>
