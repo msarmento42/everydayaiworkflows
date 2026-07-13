@@ -27,7 +27,7 @@ export default function Home() {
             The site covers writing and editing with AI, automating repetitive tasks with tools like Make.com and Zapier, using AI for data analysis, customer support, content creation, and more. Every guide is written for working professionals — focused on practical application, not theory.
           </p>
           <p style={{ color: "#9ca3af", fontSize: "0.95rem", lineHeight: "1.7" }}>
-            Browse the <a href="/blog" style={{ color: "#00d4ff" }}>blog</a> for in-depth tutorials, explore the <a href="/ai-tools" style={{ color: "#00d4ff" }}>AI tools directory</a> for curated recommendations, or use the daily prompt below as a starting point for today{"\'"}s work.
+            New here? Start with the <a href="/start-here" style={{ color: "#00d4ff" }}>reader guide</a>, browse the <a href="/blog" style={{ color: "#00d4ff" }}>blog</a> for in-depth tutorials, explore the <a href="/ai-tools" style={{ color: "#00d4ff" }}>AI tools directory</a> for curated recommendations, or use the daily prompt below as a starting point for today{"\'"}s work.
           </p>
         </section>
 
@@ -50,6 +50,7 @@ export default function Home() {
 
         <nav style={{ display: "flex", justifyContent: "center", gap: "2rem", marginTop: "3rem", flexWrap: "wrap" }}>
           <a href="/tools" style={{ color: "#9ca3af", textDecoration: "none" }}>Tools</a>
+          <a href="/start-here" style={{ color: "#9ca3af", textDecoration: "none" }}>Start Here</a>
           <a href="/blog" style={{ color: "#9ca3af", textDecoration: "none" }}>Blog</a>
           <a href="/about" style={{ color: "#9ca3af", textDecoration: "none" }}>About</a>
           <a href="/contact" style={{ color: "#9ca3af", textDecoration: "none" }}>Contact</a>
