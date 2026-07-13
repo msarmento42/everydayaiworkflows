@@ -93,7 +93,7 @@ export default function PromptWidget() {
 
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <button onClick={copyToClipboard} style={{ background: copied ? '#10b981' : 'linear-gradient(90deg, #00d4ff, #7c3aed)', border: 'none', padding: '0.8rem 1.5rem', borderRadius: '10px', color: '#fff', fontWeight: '600', cursor: 'pointer', fontSize: '1rem' }}>
-            {copied ? '✓ Copied!' : '📋 Copy Prompt'}
+            {copied ? '✓ Copied!' : 'Copy Prompt'}
           </button>
           <button onClick={getNewPrompt} style={{ background: darkMode ? 'rgba(255, 255, 255, 0.1)' : '#e5e7eb', border: darkMode ? '1px solid rgba(255, 255, 255, 0.2)' : '1px solid #d1d5db', padding: '0.8rem 1.5rem', borderRadius: '10px', color: darkMode ? '#fff' : '#1a1a3e', fontWeight: '600', cursor: 'pointer', fontSize: '1rem' }}>
             🎲 Random Prompt
