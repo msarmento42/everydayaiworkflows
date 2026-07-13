@@ -1,7 +1,9 @@
 export const metadata = {
   title: "AI for Data Analysis: A Beginner's Guide to Turning Spreadsheets into Insights",
-  description: "You don't need to know Python or SQL to do serious data analysis anymore. AI tools can now write code, clean messy datasets, spot patterns, and explain results in plain English.",
+  description: "Unlock data insights without code! This beginner's guide shows how AI tools like ChatGPT & Claude analyze spreadsheets, clean data, generate reports, and automate workflows for smarter business decisions.",
 };
+import ShareButtons from '../../components/ShareButtons';
+
 
 export default function BlogPost() {
   return (
@@ -16,6 +18,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Data Analysis: A Beginner&apos;s Guide to Turning Spreadsheets into Insights
         </h1>
+        <ShareButtons title={metadata.title} url="https://everydayaiworkflows.com/blog/ai-for-data-analysis-beginners" />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 

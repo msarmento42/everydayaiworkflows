@@ -2,7 +2,26 @@ import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
   title: "AI for Financial Planning: Build a Budget, Track Goals, and Stop Guessing",
-  description: "How to use AI tools to build a personal budget, set savings goals, analyze spending patterns, and prepare for financial decisions — without a financial advisor.",
+  description: "How to use AI tools to build a personal budget, set savings goals, analyze spending patterns, and prepare for financial decisions — without a financial advisor.",  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AI for Financial Planning: Build a Budget, Track Goals, and Stop Guessing",
+        "description": "How to use AI tools to build a personal budget, set savings goals, analyze spending patterns, and prepare for financial decisions — without a financial advisor.",
+        "image": "https://www.everydayaiworkflows.com/images/blog/ai-for-financial-planning.jpg",
+        "author": { "@type": "Person", "name": "Everyday AI Workflows" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Everyday AI Workflows",
+          "logo": { "@type": "ImageObject", "url": "https://www.everydayaiworkflows.com/images/logo.png" }
+        },
+        "datePublished": "2026-06-19T00:00:00Z",
+        "dateModified": "2026-06-19T00:00:00Z"
+      })
+    }
+  ],
 };
 
 export default function BlogPost() {
@@ -22,6 +41,14 @@ export default function BlogPost() {
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>Most personal finance advice is either too generic ("spend less than you earn") or too complicated (custom spreadsheets with VLOOKUP formulas most people abandon by February). AI sits in a useful middle ground: it can take your actual numbers, ask the right questions, and produce a realistic plan that accounts for your specific situation — without the $250/hour advisory fee. Here is how to use AI tools for budgeting, goal-setting, and the financial decisions that come up throughout the year.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+          <ul style={{ listStyleType: "disc", marginLeft: "1.5rem", marginBottom: "2rem", color: "#d1d5db" }}>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Personalized Budgeting:</strong> Use AI to build a realistic budget based on your actual income and expenses, avoiding generic templates.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Spending Analysis:</strong> Leverage AI to analyze bank transaction exports, identify spending patterns, recurring subscriptions, and potential areas for cuts.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Goal Optimization:</strong> AI can help you set achievable financial goals, prioritize them, and understand the tradeoffs involved in different savings and debt repayment strategies.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Decision Structuring:</strong> For major financial decisions (e.g., buying a car, job changes), AI provides frameworks to compare options and ask the right questions.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Support, Not Replacement:</strong> AI excels at organizing information and running scenarios, but it's not a substitute for licensed financial or tax professionals for complex advice or transactions.</li>
+          </ul>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Start with a Financial Snapshot, Not a Generic Template</h2>
           <p>The problem with most budgeting templates is that they assume a generic income and expense structure. AI lets you build from your reality. Start by giving it your actual numbers:</p>

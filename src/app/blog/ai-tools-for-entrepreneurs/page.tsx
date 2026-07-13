@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 
 export const metadata = {
   title: "AI Tools for Entrepreneurs: The Lean Founder's Tech Stack for 2026 | Everyday AI Workflows",
@@ -52,6 +53,8 @@ to my current plan? What question should I be asking that I'm not?`}</pre>
             <li style={{ marginBottom: "0.5rem" }}><strong>Weekly digest:</strong> Every Sunday, pull key metrics from Stripe, GA4, and your CRM → summarize with AI → send yourself a one-page business digest</li>
           </ul>
           <p>Each of these automations takes 1–3 hours to set up and saves 2–5 hours per month indefinitely. After 6 months, the compounded time savings are significant. Our guide on <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>automating tasks with Make.com</a> walks through the setup step by step.</p>
+
+          <LeadMagnetCTA />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Layer 5: Customer-Facing AI — Support, Onboarding, and Sales</h2>
           <p>Once you have paying customers, AI can also handle the repetitive parts of customer interaction. A well-built AI customer support bot (using Claude via API, or a tool like Intercom with AI built in) can handle 60–80% of tier-1 support questions without human intervention — status questions, how-to requests, basic troubleshooting. This frees you to handle only the complex, high-stakes conversations that actually need a founder's attention.</p>

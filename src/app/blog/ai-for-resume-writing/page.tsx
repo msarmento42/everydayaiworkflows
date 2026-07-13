@@ -3,6 +3,19 @@ import NewsletterCapture from "../components/NewsletterCapture";
 export const metadata = {
   title: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder | Everyday AI Workflows",
   description: "Use AI to tailor your resume to every job in minutes, write bullet points that pass ATS filters, and build a cover letter that actually gets read. Copy-paste prompts included.",
+  openGraph: {
+    title: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder",
+    description: "Use AI to tailor your resume to every job in minutes, write bullet points that pass ATS filters, and build a cover letter that actually gets read. Copy-paste prompts included.",
+    images: [
+      {
+        url: "https://www.agios.ai/images/ai-resume-writing-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder",
+      },
+    ],
+    type: "article",
+  },
 };
 
 export default function BlogPost() {
@@ -26,7 +39,7 @@ export default function BlogPost() {
           <p>AI changes this calculus entirely. With the right workflow, you can tailor a version of your resume to any job posting in under 10 minutes — matching keywords, reordering bullet points, and reframing your experience to align with exactly what each company is looking for. Here is the full system.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Build Your Master Resume in AI-Friendly Format</h2>
-          <p>Before you can tailor anything, you need a comprehensive master document. This is not your polished one-pager — it is a brain dump of every role, project, accomplishment, skill, and metric you can remember. Quantity over quality at this stage.</p>
+          <p>Before you can tailor anything, you need a comprehensive master document. This is not your polished one-pager — it is a brain dump of every role, project, accomplishment, skill, and metric you can remember. Quantity over quality at this stage. Keep it somewhere you can update easily — a doc in <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> works well, since you can ask its built-in AI to reformat or summarize sections as your history grows.</p>
           <p>Master resume prompt (run once):</p>
           <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc" }}>{`I'm going to give you my work history as rough notes. Your job is to help me turn it into a comprehensive master resume.
 
@@ -100,7 +113,7 @@ Return rewritten versions and note which ones still need a metric from me.`}</pr
           <p>Even if you do not have hard numbers for every bullet, this prompt will identify the gaps and prompt you with the right question to fill them. &quot;How many people were on the team you managed?&quot; is the kind of detail that transforms a weak bullet into a strong one.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 5: Generate a Targeted Cover Letter in Under 5 Minutes</h2>
-          <p>Most cover letters are ignored because they are generic. AI makes it trivial to write a targeted one that references the specific company and role — which is the only kind recruiters actually read.</p>
+          <p>Most cover letters are ignored because they are generic. AI makes it trivial to write a targeted one that references the specific company and role — which is the only kind recruiters actually read. If you are applying at volume, a dedicated writing tool like <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> can keep tone consistent across dozens of letters with saved brand-voice settings.</p>
           <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc" }}>{`Write a cover letter for this role.
 
 About me:
@@ -140,6 +153,16 @@ For each question, also note what the interviewer is really trying to assess.`}<
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>The Honest Limits of AI Resume Help</h2>
           <p>AI is excellent at formatting, language, keyword matching, and structure. It cannot invent experience you do not have, tell you whether your experience is actually strong enough for a role, or replace the judgment call of whether to apply in the first place. Use it to surface and present your real experience more effectively — not to fabricate it. ATS might not catch inconsistencies, but human recruiters and hiring managers will.</p>
           <p>The best use of this workflow is not to game the system but to ensure that your genuine qualifications are represented in the language and format that each specific employer is looking for. That is not deceptive — it is smart communication.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Recommended Tools for This Workflow</h2>
+          <p>You can run the entire process above with a general chatbot, but three tools make it faster at scale. <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> is the best home for your master resume and application tracker — one database, AI editing built in. <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> shines for cover letters when you are applying to many roles per week. And <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> is a budget-friendly option for punching up bullet points and summaries when you hit free-tier limits elsewhere.</p><h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+<ul style={{ color: "#d1d5db", marginLeft: "1.5rem" }}>
+  <li>AI can quickly tailor resumes to match ATS keywords, saving time and increasing interview chances.</li>
+  <li>Start with a comprehensive master resume, then use AI to extract and incorporate job-specific keywords.</li>
+  <li>Strengthen bullet points with the STAR‑Plus‑Metric formula to highlight impact and scale.</li>
+  <li>Generate targeted cover letters and interview prep using AI to stand out.</li>
+  <li>Use AI as a tool to present genuine experience effectively, not to fabricate qualifications.</li>
+</ul>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>

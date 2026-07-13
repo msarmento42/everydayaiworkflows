@@ -1,9 +1,19 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import RelatedPosts from "../../components/RelatedPosts";
 
 export const metadata = {
   title: "AI for Project Management: Cut Meeting Time and Never Miss a Deadline | Everyday AI Workflows",
   description: "A practical guide to using AI tools to run more effective projects — from kickoff to delivery. Covers meeting summarization, task breakdown, status updates, and risk identification.",
+  openGraph: { images: [{ url: "https://www.example.com/assets/ai-project-management.png" }] },
 };
+
+const relatedPostsData = [
+  { title: "How to Automate Tasks with Make.com", slug: "/blog/how-to-automate-tasks-with-make" },
+  { title: "AI Meeting Summarizer Workflows", slug: "/blog/ai-meeting-summarizer-workflow" },
+  { title: "The Future of Work: How AI is Reshaping Industries", slug: "/blog/future-of-work-ai" },
+  { title: "Mastering Prompt Engineering for Business", slug: "/blog/mastering-prompt-engineering" },
+  { title: "Top 5 AI Tools for Small Businesses", slug: "/blog/top-ai-tools-small-business" },
+];
 
 export default function BlogPost() {
   return (
@@ -118,6 +128,7 @@ Generate:
               <a href="/tools" style={{ color: "#00d4ff" }}>{"Browse the full toolkit →"}</a>
             </p>
           </div>
+          <RelatedPosts posts={relatedPostsData} />
 
         </div>
 

@@ -1,3 +1,5 @@
+import NewsletterCapture from "../components/NewsletterCapture";
+
 export const metadata = {
   title: "AI Tools for HR Teams: Cut Admin Time and Focus on the Work That Matters",
   description: "HR teams spend an outsized chunk of their week on tasks that don&apos;t require human judgment: formatting job descriptions, drafting offer letters,...",
@@ -78,6 +80,10 @@ Keep it to 300-400 words, professional but not stiff."`}</pre>
           <p>AI in HR has real limits. Never use it to make employment decisions — candidate screening, performance ratings, termination — without clear human review and accountability. Bias in AI outputs is a documented problem, particularly in hiring contexts. Use it for drafting, organizing, and reducing clerical load. Keep the judgment calls where they belong: with the humans.</p>
           <p>The goal isn&apos;t to automate HR. It&apos;s to give HR professionals back the hours they&apos;re currently spending on tasks that a well-prompted language model can handle in 30 seconds — so they can spend more time on the conversations, decisions, and relationships that actually require them.</p>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Related Workflows Worth Stealing</h2>
+          <p>Hiring is only one slice of the HR workload, and several adjacent guides on this site extend what&apos;s covered here. For sourcing and screening candidates before they ever reach an interview, see <a href="/blog/ai-for-recruiting" style={{ color: "#00d4ff" }}>AI for recruiting</a>. The interview question banks above pair naturally with <a href="/blog/ai-prompts-for-job-interviews" style={{ color: "#00d4ff" }}>AI prompts for job interviews</a> — useful on both sides of the table when you&apos;re coaching hiring managers. And the onboarding FAQ bot pattern extends almost unchanged to external audiences; <a href="/blog/ai-powered-customer-onboarding" style={{ color: "#00d4ff" }}>AI-powered customer onboarding</a> shows the same routing logic applied to customers instead of new hires.</p>
+          <p>One practical note on where all these artifacts should live: JD templates, interview banks, onboarding FAQs, and policy TL;DRs multiply fast. A shared workspace like <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> keeps them searchable and lets you use its built-in AI to update templates in place, rather than regenerating from scratch every quarter.</p>
+
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
               💡 <strong>Building an AI-assisted HR workflow? Start with the right tools.</strong> <a href="/tools" style={{ color: "#00d4ff" }}>Browse the full AI toolkit →</a>
@@ -92,11 +98,7 @@ Keep it to 300-400 words, professional but not stiff."`}</pre>
           ))}
         </div>
 
-                <div style={{ marginTop: "2.5rem", padding: "2rem", background: "rgba(124,58,237,0.1)", borderRadius: "12px", border: "1px solid rgba(124,58,237,0.3)", textAlign: "center" }}>
-          <p style={{ color: "#9ca3af", margin: 0 }}>
-            📧 <a href="mailto:everydayaiworkflows@gmail.com" style={{ color: "#00d4ff" }}>Subscribe for weekly AI tips</a>
-          </p>
-        </div>
+        <NewsletterCapture darkMode={true} />
 </div>
     </div>
   );

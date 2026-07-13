@@ -8,6 +8,35 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "AI for Event Planning: Save 20+ Hours on Your Next Event Without Losing Control",
+          "description": "From venue research to run-of-show schedules to vendor emails, AI can handle the tedious 80% of event planning. A practical workflow with copy-paste prompts for every stage.",
+          "image": "https://everydayaiworkflows.com/images/ai-event-planning.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "Everyday AI Workflows"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Everyday AI Workflows",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://everydayaiworkflows.com/logo.png"
+            }
+          },
+          "datePublished": "2026-06-21",
+          "dateModified": "2026-06-21",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://everydayaiworkflows.com/blog/ai-for-event-planning"
+          },
+          "url": "https://everydayaiworkflows.com/blog/ai-for-event-planning"
+        }) }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -24,6 +53,14 @@ export default function BlogPost() {
           <p>Event planning is a coordination problem: dozens of vendors, timelines, attendees, logistics, and contingencies that all have to fit together on a specific date. The parts that burn the most time — research, drafting communications, building checklists, writing schedules — are exactly the parts where AI excels. The parts that require real judgment — reading a venue, choosing the right speaker, making a call on budget trade-offs — still need you.</p>
 
           <p>This guide walks through how to use AI at every stage of event planning, from initial concept through post-event follow-up, with copy-paste prompts for each step. It works for corporate events, conferences, team off-sites, weddings, and community gatherings alike.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+          <ul style={{ listStyleType: "disc", marginLeft: "1.5rem", marginBottom: "2rem" }}>
+            <li style={{ marginBottom: "0.5rem" }}>AI can significantly reduce the time spent on tedious event planning tasks like research, drafting communications, and scheduling.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Utilize AI to quickly generate comprehensive event briefs, detailed planning checklists, and backwards-planned timelines.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Automate vendor outreach and attendee communications with AI-drafted emails, ensuring consistency and saving hours.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Streamline the creation of complex documents like the run-of-show and facilitate efficient post-event debriefs.</li>
+            <li style={{ marginBottom: "0.5rem" }}>By offloading repetitive tasks to AI, you can focus on the critical, judgment-based aspects of event management.</li>
+          </ul>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Build the Master Event Brief in 20 Minutes</h2>
           <p>Every well-run event starts with a clear brief that all vendors, co-planners, and stakeholders can reference. Writing one from scratch is tedious — AI can produce a complete draft from a short conversation about what you are trying to achieve.</p>

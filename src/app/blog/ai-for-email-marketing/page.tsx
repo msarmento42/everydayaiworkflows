@@ -1,5 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
-import RoleStackCTA from "../../components/RoleStackCTA";
+import RoleStackCTA from "../../components/RoleStackCTA";import Image from 'next/image';import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "AI for Email Marketing: Write Better Campaigns in Half the Time | Everyday AI Workflows",
@@ -21,6 +21,10 @@ export default function BlogPost() {
         </h1>
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
+          <ShareButtons
+            title={metadata.title}
+            url="https://everydayaiworkflows.com/blog/ai-for-email-marketing"
+          />
 
           <p>Email marketing still delivers the highest ROI of any digital channel — around $36 for every $1 spent — but most teams spend 60% of their campaign time on the copy itself. AI changes that equation. The workflows below let you go from blank page to polished, segmented email sequences in a fraction of the time, without losing the personal feel that makes emails actually convert. Each section includes the exact prompt you need to run it.</p>
           <p>The big opportunity is not replacing human judgment. It is removing the slow, repetitive drafting work that keeps campaigns from shipping. When the strategy is clear, AI is best used as a fast first-draft engine, a testing partner, and an operations shortcut.</p>

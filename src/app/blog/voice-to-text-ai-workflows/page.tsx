@@ -51,7 +51,7 @@ Format as a clean bulleted list under each heading.
 
 Transcript:
 [paste Otter transcript]`}</pre>
-          <p>You get a ready-to-share meeting summary in under a minute. Copy it into your follow-up email and send.</p>
+          <p>You get a ready-to-share meeting summary in under a minute. Copy it into your follow-up email and send. For the fuller version of this workflow — including how to route summaries automatically — see the <a href="/blog/ai-meeting-summarizer-workflow" style={{ color: "#00d4ff" }}>AI meeting summarizer workflow</a>.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Tool 3: Notion AI for Voice-to-Structured-Notes</h2>
           <p>Once raw voice captures land in <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion</a>, Notion AI can process them into structured notes with a single command. Select your raw brain dump, click "Ask AI," and try:</p>
@@ -60,7 +60,7 @@ Transcript:
 - Supporting points (3-5 bullets)
 - Action items (if any)
 - Tags: [list 2-3 topic tags]`}</pre>
-          <p>A 90-second rambling voice note becomes a clean, tagged, searchable entry in your knowledge base. Over weeks, this compounds: your Notion database fills with structured thinking rather than a graveyard of unprocessed raw notes.</p>
+          <p>A 90-second rambling voice note becomes a clean, tagged, searchable entry in your knowledge base. Over weeks, this compounds: your Notion database fills with structured thinking rather than a graveyard of unprocessed raw notes. For the broader setup beyond single-note structuring, see the <a href="/blog/notion-ai-workflow-guide" style={{ color: "#00d4ff" }}>Notion AI workflow guide</a>.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Tool 4: Voice Memos → Whisper API → Make.com Pipeline</h2>
           <p>For users who want full automation: record a voice memo on your phone, and have it automatically transcribed, processed by AI, and added to the right place — without any manual steps after the recording.</p>
@@ -100,7 +100,7 @@ Transcript: [paste]`}</pre>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Making It a Habit</h2>
           <p>The technology is the easy part. The habit is harder. The single biggest factor in whether voice capture sticks: making the trigger effortless. A dedicated widget on your phone lock screen, a physical button on a desk clicker, or a Watch complication that starts recording in one tap — whichever reduces the activation energy to under 2 seconds. If it takes more effort than opening a notes app and typing, you'll fall back to typing.</p>
-          <p>Start with one use case — meeting capture or on-the-go ideas — get it working reliably, then layer in the automation. Most people who build this habit report that it's one of the highest-leverage things they've done for their thinking and output quality, because it captures ideas that were previously just lost.</p>
+          <p>Start with one use case — meeting capture or on-the-go ideas — get it working reliably, then layer in the automation. Most people who build this habit report that it's one of the highest-leverage things they've done for their thinking and output quality, because it captures ideas that were previously just lost. It pairs well with <a href="/blog/ai-for-note-taking" style={{ color: "#00d4ff" }}>AI for note-taking</a> if you want the capture and organization sides working together.</p>
 
         </div>
 

@@ -1,4 +1,4 @@
-import NewsletterCapture from "../components/NewsletterCapture";
+import NewsletterCapture from "../components/NewsletterCapture";import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "AI for Customer Feedback Analysis: Turn Reviews and Surveys Into Action | Everyday AI Workflows",
@@ -17,7 +17,7 @@ export default function BlogPost() {
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Customer Feedback Analysis: Turn Reviews and Surveys Into Action
-        </h1>
+        </h1>        <ShareButtons title="AI for Customer Feedback Analysis: Turn Reviews and Surveys Into Action | Everyday AI Workflows" url="https://example.com/blog/ai-for-customer-feedback-analysis" />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
@@ -68,6 +68,13 @@ Write a 3-paragraph summary:
 2. What got worse or stayed flat despite a fix being shipped
 3. One new theme that appeared this month that wasn't present before`}</pre>
           <p>To automate the pipeline end-to-end — new review comes in, gets analyzed, tagged, and logged to a tracking sheet automatically — connect your review sources and support inbox through <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a>. Once it&apos;s wired up, your theme tracker updates itself and you only need to run the monthly trend prompt.</p>
+          <div style={{ background: "linear-gradient(90deg, #00d4ff1a 0%, #00d4ff05 100%)", border: "1px solid #00d4ff40", borderRadius: "12px", padding: "1.5rem", marginTop: "2.5rem", marginBottom: "2.5rem", textAlign: "center" }}>
+            <h3 style={{ fontSize: "1.3rem", color: "#fff", marginBottom: "0.75rem" }}>Stay Ahead with Everyday AI Workflows</h3>
+            <p style={{ color: "#d1d5db", marginBottom: "1.25rem", maxWidth: "600px", margin: "0 auto 1.25rem auto" }}>Get practical AI workflows, tool recommendations, and insights delivered straight to your inbox every week.</p>
+            <a href="https://example.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#00d4ff", color: "#0f0f23", padding: "0.75rem 1.5rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", transition: "background-color 0.3s ease" }}>
+              Subscribe to Our Newsletter
+            </a>
+          </div>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 5: Close the Loop With Customers</h2>
           <p>Teams that analyze feedback well but never respond to it lose customer trust over time — people notice when the same complaint keeps showing up unaddressed. Use AI to draft "we heard you" updates: paste your shipped fixes alongside the themes they address, and ask for a short changelog entry or customer-facing email that explicitly references what people asked for. This closes the loop and encourages continued honest feedback, since customers see it actually leads somewhere.</p>

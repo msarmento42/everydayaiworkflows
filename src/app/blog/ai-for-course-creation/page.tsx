@@ -1,9 +1,28 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 
-export const metadata = {
-  title: "AI for Course Creation: Build and Launch an Online Course 3x Faster",
-  description: "AI can handle the outline, lesson scripts, quiz questions, sales copy, and promotional content for your online course — here is the complete workflow.",
-};
+const postTitle = "AI for Course Creation: Build and Launch an Online Course 3x Faster";
+const postDescription = "AI can handle the outline, lesson scripts, quiz questions, sales copy, and promotional content for your online course — here is the complete workflow.";
+const ogImageUrl = "https://www.agios.ai/images/ai-course-creation-og.jpg"; // Default Open Graph image
+
+export async function generateMetadata() {
+  return {
+    title: postTitle,
+    description: postDescription,
+    openGraph: {
+      title: postTitle,
+      description: postDescription,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: postTitle,
+        },
+      ],
+      type: "article",
+    },
+  };
+}
 
 export default function BlogPost() {
   return (
@@ -121,6 +140,13 @@ Then suggest a 30-day content calendar that drips these pieces strategically
 leading up to a launch window.`}</pre>
           <p>This is the flywheel that grows your audience and converts them into students simultaneously. Each piece of free content demonstrates your teaching style and the value inside the course — making the eventual sale feel like a natural next step rather than an interruption. See our guide on <a href="/blog/building-an-ai-content-calendar" style={{ color: "#00d4ff" }}>building an AI content calendar</a> for how to manage the full 30-day publishing plan, and our guide on <a href="/blog/automating-social-media-with-ai" style={{ color: "#00d4ff" }}>automating social media with AI</a> for how to schedule and distribute everything without touching it manually.</p>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+          <ul style={{ listStyleType: "disc", marginLeft: "1.5rem", marginBottom: "2rem", color: "#d1d5db" }}>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Validate first:</strong> Use AI to validate your course idea and define a clear course promise before investing significant time.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Accelerate content creation:</strong> AI can rapidly generate curriculum outlines, lesson scripts, quizzes, and supporting materials.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Streamline marketing:</strong> Leverage AI to craft compelling sales pages, launch email sequences, and content marketing assets from your course material.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Focus on expertise:</strong> AI handles the structural and writing tasks, freeing you to focus on delivering your unique teaching expertise.</li>
+          </ul>
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Course Creation AI Workflow at a Glance</h2>
           <div style={{ overflowX: "auto", marginTop: "1rem", marginBottom: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>

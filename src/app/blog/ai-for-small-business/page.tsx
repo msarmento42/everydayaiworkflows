@@ -1,14 +1,45 @@
 import NewsletterCapture from "../components/NewsletterCapture";
-import RoleStackCTA from "../../components/RoleStackCTA";
+import RoleStackCTA from "../../components/RoleStackCTA";import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 
 export const metadata = {
   title: "AI for Small Business: The Practical Toolkit That Replaces Three Hires | Everyday AI Workflows",
   description: "How small business owners are using AI to handle marketing copy, customer support, bookkeeping summaries, and operations tasks that used to require additional staff.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": metadata.title.split(' | ')[0],
+  "description": metadata.description,
+  "image": "https://www.everydayaiworkflows.com/images/ai-for-small-business-hero.jpg", // Placeholder image
+  "datePublished": "2026-06-14T00:00:00Z",
+  "dateModified": "2026-07-09T00:00:00Z", // Current date for modification
+  "author": {
+    "@type": "Organization",
+    "name": "Everyday AI Workflows"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Everyday AI Workflows",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.everydayaiworkflows.com/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.everydayaiworkflows.com/blog/ai-for-small-business"
+  }
+};
+
 export default function BlogPost() {
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>{"← Back to Blog"}</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -50,7 +81,8 @@ Include a clear call to action in each version.`}</pre>
             body="Compare the leanest tool mix for marketing, customer support, operations, and follow-up automation."
           />
 
-          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Financial Summaries and Bookkeeping Support</h2>
+                    <LeadMagnetCTA />
+<h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Financial Summaries and Bookkeeping Support</h2>
           <p>AI is not a replacement for an accountant, and it should not be used to make complex financial decisions. But the layer of financial administration that eats small business owner time — summarizing bank statements, categorizing expenses, preparing data for their accountant, understanding what their financial reports mean — is something AI handles well.</p>
           <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`Here is my business's financial summary for [month]:
 
@@ -116,5 +148,6 @@ Format it so it can be dropped directly into a training document.`}</pre>
         <NewsletterCapture darkMode={true} />
       </div>
     </div>
+    </>
   );
 }

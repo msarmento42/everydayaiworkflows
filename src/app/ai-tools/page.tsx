@@ -186,6 +186,30 @@ export default function AITools() {
     }}>
       <div style={{ maxWidth: '960px', margin: '0 auto', padding: '3rem 2rem 1rem' }}>
         <AffiliateDisclosure />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://everydayaiworkflows.com/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "AI Tools",
+                  "item": "https://everydayaiworkflows.com/ai-tools"
+                }
+              ]
+            })
+          }}
+        />
+
         <div style={{ marginBottom: '0.5rem', fontSize: '0.8rem', color: '#00d4ff', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
           Curated 2026
         </div>
