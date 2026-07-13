@@ -9,8 +9,40 @@ export const metadata = {
 };
 
 export default function BlogPost() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI for Customer Feedback Analysis: Turn Reviews and Surveys Into Action",
+    "image": [
+      "https://everydayaiworkflows.com/images/ai-customer-feedback-analysis.jpg" // Placeholder: Replace with actual image URL for the blog post
+    ],
+    "datePublished": "2026-07-04T00:00:00Z", // Date from the blog post content
+    "dateModified": "2026-07-04T00:00:00Z", // Assuming same as published for initial version
+    "author": {
+      "@type": "Organization",
+      "name": "Everyday AI Workflows"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Everyday AI Workflows",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://everydayaiworkflows.com/logo.png" // Placeholder: Replace with actual site logo URL
+      }
+    },
+    "description": "How to use AI to read thousands of reviews, support tickets, and survey responses at once — and turn them into a prioritized list of what to fix first.",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://everydayaiworkflows.com/blog/ai-for-customer-feedback-analysis" // Full canonical URL
+    }
+  };
+
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
