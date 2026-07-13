@@ -4,6 +4,17 @@ import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 export const metadata = {
   title: "AI Tools for Entrepreneurs: The Lean Founder's Tech Stack for 2026 | Everyday AI Workflows",
   description: "The essential AI toolkit for founders and solopreneurs: automate operations, accelerate content, manage customer relationships, and run lean with fewer tools than you think.",
+  openGraph: {
+    images: [
+      {
+        url: '/images/workflows/ai-tools-for-entrepreneurs-social.png',
+        alt: 'AI Tools for Entrepreneurs: The Lean Founder\'s Tech Stack for 2026',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
   alternates: {
     canonical: "/blog/ai-tools-for-entrepreneurs",
   },
