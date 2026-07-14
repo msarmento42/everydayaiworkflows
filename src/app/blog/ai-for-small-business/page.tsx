@@ -7,6 +7,16 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-small-business",
   },
+  openGraph: {
+    images: [
+      {
+        url: "https://www.everydayaiworkflows.com/images/ai-for-small-business-hero.jpg",
+        width: 1200,
+        height: 630,
+        alt: "AI for Small Business: The Practical Toolkit That Replaces Three Hires",
+      },
+    ],
+  },
 };
 
 const jsonLd = {
