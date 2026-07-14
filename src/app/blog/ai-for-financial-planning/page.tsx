@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import NotionAICta from "../../components/NotionAICta";
 
 export const metadata = {
   title: "AI for Financial Planning: Build a Budget, Track Goals, and Stop Guessing",
@@ -149,6 +150,8 @@ List any deductions or credits I might be overlooking based on this profile.`}</
               {"💡 "}<strong>{"Looking for the best AI tools for productivity and financial workflows? "}</strong><a href="/tools" style={{ color: "#00d4ff" }}>{"Browse the full AI toolkit →"}</a>
             </p>
           </div>
+
+          <NotionAICta />
 
         </div>
 
