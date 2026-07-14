@@ -64,7 +64,15 @@ Do NOT invent prices — leave [PRICE] placeholders for me.`}</pre>
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>The Compounding Advantage</h2>
           <p>The real payoff arrives around proposal ten: you now have a library of approved problem statements, tier structures, and skeptic-pass fixes. Feed your last three winning proposals to the model as examples and drafts start arriving 80% right instead of 60%. Freelancers can pair this workflow with our roundup of <a href="/blog/ai-tools-for-freelancers" style={{ color: "#00d4ff" }}>AI tools for freelancers</a>; if you&apos;re running a team, <a href="/blog/ai-tools-for-agency-owners" style={{ color: "#00d4ff" }}>AI tools for agency owners</a> covers how to standardize this across multiple proposal writers.</p>
 
-          <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+<ul style={{ paddingLeft: "1.5rem" }}>
+  <li style={{ marginBottom: "0.5rem" }}>Discovery-call notes — captured verbatim, including budget signals and stated timeline — set the ceiling on how good an AI-drafted proposal can be.</li>
+  <li style={{ marginBottom: "0.5rem" }}>Draft the "Current Situation & Goals" section on its own first; if the client wouldn't nod at every sentence, the notes were thin, not the prompt.</li>
+  <li style={{ marginBottom: "0.5rem" }}>Give the model a fixed proposal skeleton (Situation → Approach → Deliverables → Investment → Why Us → Next Step) rather than letting it invent structure.</li>
+  <li style={{ marginBottom: "0.5rem" }}>Use three pricing tiers instead of one number, and never let AI invent the actual prices — that judgment call stays with you.</li>
+  <li style={{ marginBottom: "0.5rem" }}>Run a "skeptic pass" before sending — asking AI to role-play the client&apos;s CFO catches vague deliverables and scope holes worth more than prose polish.</li>
+  <li style={{ marginBottom: "0.5rem" }}>Schedule a three-touch follow-up sequence (day 3, 7, 14) the moment the proposal goes out, since silence — not rejection — kills most proposals.</li>
+</ul><div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
               💡 <strong>Want the full stack for winning more client work with AI?</strong> <a href="/tools" style={{ color: "#00d4ff" }}>Browse the full toolkit →</a>
             </p>
