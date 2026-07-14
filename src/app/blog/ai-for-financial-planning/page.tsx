@@ -5,7 +5,8 @@ export const metadata = {
   description: "How to use AI tools to build a personal budget, set savings goals, analyze spending patterns, and prepare for financial decisions — without a financial advisor.",
   alternates: {
     canonical: "/blog/ai-for-financial-planning",
-  },  script: [
+  },
+  script: [
     {
       type: "application/ld+json",
       innerHTML: JSON.stringify({
