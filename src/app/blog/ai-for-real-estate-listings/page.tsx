@@ -40,6 +40,15 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           How Real Estate Agents Are Using AI to Write Listings That Actually Sell
         </h1>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+          <ul style={{ marginTop: "1rem", marginBottom: "1rem", color: "#d1d5db", listStyleType: "disc", paddingLeft: "1.5rem" }}>
+            <li>AI can transform raw property notes into polished listing descriptions in minutes.</li>
+            <li>Use AI prompts to generate social media captions, email sequences, and objection scripts.</li>
+            <li>Integrate AI with tools like Make.com to automate routine client communications.</li>
+            <li>Combine multiple AI tools (e.g., Jasper, Writesonic, Claude) for different tasks to maximize efficiency.</li>
+            <li>Always review AI-generated content for accuracy before publishing.</li>
+          </ul>
+
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
