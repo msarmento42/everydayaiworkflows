@@ -11,7 +11,7 @@ export const metadata = {
     images: [
       {
         url: "https://www.everydayaiworkflows.com/images/blog/ai-for-customer-support.jpg",
-        alt: "AI for Customer Support Workflow",
+        alt: "AI for Customer Support Workflow Image",
         width: 1200,
         height: 630,
       },
