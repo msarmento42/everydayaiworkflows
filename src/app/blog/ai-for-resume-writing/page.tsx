@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 
 export const metadata = {
   title: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder | Everyday AI Workflows",
@@ -40,6 +41,8 @@ export default function BlogPost() {
           <p>Most job seekers apply with a single generic resume and wonder why they hear nothing back. The painful truth is that recruiters spend an average of 7 seconds on an initial resume scan, and most resumes never even reach a human — they are filtered out by an Applicant Tracking System (ATS) that grades keyword matches against the job description.</p>
 
           <p>AI changes this calculus entirely. With the right workflow, you can tailor a version of your resume to any job posting in under 10 minutes — matching keywords, reordering bullet points, and reframing your experience to align with exactly what each company is looking for. Here is the full system.</p>
+
+          <LeadMagnetCTA />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Build Your Master Resume in AI-Friendly Format</h2>
           <p>Before you can tailor anything, you need a comprehensive master document. This is not your polished one-pager — it is a brain dump of every role, project, accomplishment, skill, and metric you can remember. Quantity over quality at this stage. Keep it somewhere you can update easily — a doc in <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> works well, since you can ask its built-in AI to reformat or summarize sections as your history grows.</p>
