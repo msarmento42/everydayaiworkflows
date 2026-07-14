@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "How to Use AI for Customer Support: A Practical Workflow That Actually Scales | Everyday AI Workflows",
@@ -45,6 +46,9 @@ export const metadata = {
 };
 
 export default function BlogPost() {
+  const blogPostTitle = metadata.title;
+  const blogPostUrl = "https://www.everydayaiworkflows.com" + metadata.alternates.canonical;
+
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
@@ -57,6 +61,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           How to Use AI for Customer Support: A Practical Workflow That Actually Scales
         </h1>
+        <ShareButtons title={blogPostTitle} url={blogPostUrl} />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
