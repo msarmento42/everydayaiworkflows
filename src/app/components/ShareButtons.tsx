@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface ShareButtonsProps {
   title: string;
@@ -19,19 +19,34 @@ const buttonStyle = {
 
 export default function ShareButtons({ title, url }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
+  const [absoluteUrl, setAbsoluteUrl] = useState('');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && url) {
+      const fullUrl = url.startsWith('http') ? url : `${window.location.origin}${url}`;
+      setAbsoluteUrl(fullUrl);
+    }
+  }, [url]);
+
 
   const openShareWindow = (shareUrl: string) => {
     window.open(shareUrl, '_blank', 'noopener,noreferrer');
   };
 
   const copyLink = async () => {
-    await navigator.clipboard.writeText(url);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 2000);
+    if (absoluteUrl) {
+      await navigator.clipboard.writeText(absoluteUrl);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    }
   };
 
-  const encodedUrl = encodeURIComponent(url);
+  const encodedUrl = encodeURIComponent(absoluteUrl);
   const encodedTitle = encodeURIComponent(title);
+
+  if (!absoluteUrl) {
+    return null;
+  }
 
   return (
     <div style={{ display: 'flex', gap: '0.75rem', marginTop: '2rem', alignItems: 'center', flexWrap: 'wrap' }}>
