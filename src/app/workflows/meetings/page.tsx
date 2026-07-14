@@ -3,6 +3,7 @@ import WorkflowHub from '../WorkflowHub';
 export const metadata = {
   title: 'AI Meeting Workflows | Everyday AI Workflows',
   description: 'AI workflows for meeting summaries, CRM notes, customer onboarding, project updates, and follow-up automation.',
+  alternates: { canonical: 'https://everydayaiworkflows.com/workflows/meetings' },
 };
 
 export default function MeetingWorkflowsPage() {

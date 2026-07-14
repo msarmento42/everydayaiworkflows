@@ -3,6 +3,7 @@ import WorkflowHub from '../WorkflowHub';
 export const metadata = {
   title: 'AI Writing Workflows | Everyday AI Workflows',
   description: 'Practical AI writing workflows for newsletters, social media, nonfiction books, technical docs, and content repurposing.',
+  alternates: { canonical: 'https://everydayaiworkflows.com/workflows/writing' },
 };
 
 export default function WritingWorkflowsPage() {
