@@ -1,5 +1,6 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import RoleStackCTA from "../../components/RoleStackCTA";
+import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "AI Tools for Sales Teams: Close More Deals Without Working More Hours",
@@ -22,6 +23,10 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI Tools for Sales Teams: Close More Deals Without Working More Hours
         </h1>
+        <ShareButtons
+          title={metadata.title}
+          url={metadata.alternates.canonical}
+        />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
