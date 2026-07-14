@@ -1,5 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
-import LeadMagnetCTA from "../../components/LeadMagnetCTA";
+import LeadMagnetCTA from "../../components/LeadMagnetCTA";import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder | Everyday AI Workflows",
@@ -35,6 +35,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder
         </h1>
+        <ShareButtons title="AI for Resume Writing: Land More Interviews by Working Smarter, Not Harder" url="/blog/ai-for-resume-writing" />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
