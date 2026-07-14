@@ -3,6 +3,9 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Start Here - Everyday AI Workflows',
   description: 'A practical guide to using Everyday AI Workflows: choose a role, pick one repeatable AI workflow, and build a simple weekly automation habit.',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/start-here',
+  },
 };
 
 const paths = [

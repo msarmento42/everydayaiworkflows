@@ -1,6 +1,9 @@
 export const metadata = {
   title: 'Editorial Policy - Everyday AI Workflows',
   description: 'How Everyday AI Workflows researches guides, reviews AI tools, uses affiliate links, and updates recommendations.',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/editorial-policy',
+  },
 };
 
 export default function EditorialPolicy() {
