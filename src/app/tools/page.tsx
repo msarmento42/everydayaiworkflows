@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'AI Tools Directory - Everyday AI Workflows',
   description: 'Discover the best free AI tools to boost your productivity. Curated list of AI tools for writing, coding, productivity, and more.',
+  alternates: { canonical: 'https://everydayaiworkflows.com/tools' },
 };
 
 const tools = [

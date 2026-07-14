@@ -3,6 +3,7 @@ import WorkflowHub from '../WorkflowHub';
 export const metadata = {
   title: 'AI Automation Workflows | Everyday AI Workflows',
   description: 'AI automation workflows for email triage, invoices, social media scheduling, lead generation, and content calendars.',
+  alternates: { canonical: 'https://everydayaiworkflows.com/workflows/automation' },
 };
 
 export default function AutomationWorkflowsPage() {

@@ -3,6 +3,7 @@ import WorkflowHub from '../WorkflowHub';
 export const metadata = {
   title: 'AI Research Workflows | Everyday AI Workflows',
   description: 'AI workflows for market research, academic research, image analysis, legal review, and data analysis.',
+  alternates: { canonical: 'https://everydayaiworkflows.com/workflows/research' },
 };
 
 export default function ResearchWorkflowsPage() {
