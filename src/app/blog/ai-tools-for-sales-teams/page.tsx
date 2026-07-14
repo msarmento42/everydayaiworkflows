@@ -2,7 +2,8 @@ import NewsletterCapture from "../components/NewsletterCapture";
 import RoleStackCTA from "../../components/RoleStackCTA";
 import ShareButtons from "../../components/ShareButtons";
 
-export const metadata = {
+export const metadata = {  readingTime: "10 min read",
+
   title: "AI Tools for Sales Teams: Close More Deals Without Working More Hours",
   description: "Sales is already a data-heavy, communication-intensive job. AI doesn't replace great salespeople — it removes the parts that aren't selling: drafting follow-ups, researching prospects, and writing proposals from scratch.",
   alternates: {
@@ -17,7 +18,7 @@ export default function BlogPost() {
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
           <span style={{ fontSize: "0.75rem", color: "#7c3aed", background: "rgba(124,58,237,0.2)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>AI Tools</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 10 min read</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ {metadata.readingTime}</span>
           <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>June 19, 2026</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
