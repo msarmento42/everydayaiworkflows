@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "Build an AI Email Triage System: Zero Inbox in Under 10 Minutes | Everyday AI Workflows",
@@ -21,6 +22,10 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           Build an AI Email Triage System: Zero Inbox in Under 10 Minutes
         </h1>
+        <ShareButtons
+          title={metadata.title}
+          url={metadata.alternates.canonical}
+        />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>The average professional spends 2.6 hours per day on email. That is not managing your work — that is your work managing you. With a properly configured AI triage system, you can cut that to under 10 minutes of deliberate attention. Not by ignoring email, but by letting AI do the sorting, prioritizing, and first-draft work while you make final calls on anything that actually requires your judgment.</p>
           <p>This guide walks you through a complete email triage workflow: the prompts, the sorting logic, the draft generation, and the automation layer that ties it together. You will also find notes on which tools handle each layer best.</p>
