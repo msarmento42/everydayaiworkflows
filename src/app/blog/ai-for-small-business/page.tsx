@@ -1,5 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
-import RoleStackCTA from "../../components/RoleStackCTA";import LeadMagnetCTA from "../../components/LeadMagnetCTA";
+import RoleStackCTA from "../../components/RoleStackCTA";import LeadMagnetCTA from "../../components/LeadMagnetCTA";import NotionAICta from '../../components/NotionAICta';
 
 export const metadata = {
   title: "AI for Small Business: The Practical Toolkit That Replaces Three Hires | Everyday AI Workflows",
@@ -127,6 +127,7 @@ Convert this into a Standard Operating Procedure (SOP) with:
 
 Format it so it can be dropped directly into a training document.`}</pre>
           <p>Store these SOPs in <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion</a>. As you build your process library, Notion AI can help you find related SOPs, summarize procedures for quick reference, and identify gaps where common processes are not yet documented. A business with 20 well-written SOPs is dramatically easier to delegate in and scale than one where everything lives in the owner's head.</p>
+          <NotionAICta />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Sales Outreach and Proposals</h2>
           <p>Writing proposals and sales emails is time-consuming, and most small business owners do it inconsistently — spending too long on some prospects and too little on others. AI creates a consistent, high-quality baseline for both.</p>
