@@ -1,11 +1,57 @@
 import RoleStackCTA from "../../components/RoleStackCTA";
 import NewsletterCapture from "../components/NewsletterCapture";
 
+const title = "The Freelancer's AI Stack: 7 Tools That Replace a Full-Time Assistant";
+const description = "Freelancers who operate solo still compete against agencies with entire support teams. AI has closed that gap. The right stack lets one person handle client communication, content delivery, invoicing, and business development without dropping any ball.";
+const imageUrl = "/images/workflows/ai-tools-for-freelancers-social.png";
+const datePublished = "2026-05-15";
+const author = "Everyday AI Workflows";
+const publisher = "Everyday AI Workflows";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "image": imageUrl,
+  "datePublished": datePublished,
+  "dateModified": datePublished,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": publisher,
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo.png"
+    }
+  }
+};
+
 export const metadata = {
-  title: "The Freelancer\'s AI Stack: 7 Tools That Replace a Full-Time Assistant",
-  description: "Freelancers who operate solo still compete against agencies with entire support teams. AI has closed that gap. The right stack lets one person handle client...",
+  title: `${title} | Everyday AI Workflows`,
+  description,
+  openGraph: {
+    title,
+    description,
+    images: [
+      {
+        url: imageUrl,
+        alt: title,
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: 'article',
+    publishedTime: datePublished,
+  },
   alternates: {
     canonical: "/blog/ai-tools-for-freelancers",
+  },
+  other: {
+    'application/ld+json': JSON.stringify(jsonLd),
   },
 };
 

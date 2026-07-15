@@ -1,22 +1,57 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 
+const title = "AI Tools for Entrepreneurs: The Lean Founder's Tech Stack for 2026";
+const description = "The essential AI toolkit for founders and solopreneurs: automate operations, accelerate content, manage customer relationships, and run lean with fewer tools than you think.";
+const imageUrl = '/images/workflows/ai-tools-for-entrepreneurs-social.png';
+const datePublished = "2026-06-16";
+const author = "Everyday AI Workflows";
+const publisher = "Everyday AI Workflows";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "image": imageUrl,
+  "datePublished": datePublished,
+  "dateModified": datePublished,
+  "author": {
+    "@type": "Organization",
+    "name": author
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": publisher,
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/images/logo.png"
+    }
+  }
+};
+
 export const metadata = {
-  title: "AI Tools for Entrepreneurs: The Lean Founder's Tech Stack for 2026 | Everyday AI Workflows",
-  description: "The essential AI toolkit for founders and solopreneurs: automate operations, accelerate content, manage customer relationships, and run lean with fewer tools than you think.",
+  title: `${title} | Everyday AI Workflows`,
+  description,
   openGraph: {
+    title,
+    description,
     images: [
       {
-        url: '/images/workflows/ai-tools-for-entrepreneurs-social.png',
-        alt: 'AI Tools for Entrepreneurs: The Lean Founder\'s Tech Stack for 2026',
+        url: imageUrl,
+        alt: title,
         width: 1200,
         height: 630,
       },
     ],
+    type: 'article',
+    publishedTime: datePublished,
   },
-
   alternates: {
     canonical: "/blog/ai-tools-for-entrepreneurs",
+  },
+  other: {
+    'application/ld+json': JSON.stringify(jsonLd),
   },
 };
 

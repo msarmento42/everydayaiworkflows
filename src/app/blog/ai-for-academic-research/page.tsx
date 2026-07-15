@@ -3,7 +3,32 @@ import type { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   const title = "AI for Academic Research: A Practical Workflow That Cuts Literature Review Time in Half";
   const description = "Academic research has a time problem. Literature reviews that should take days stretch into weeks. Synthesizing dozens of papers into coherent arguments...";
-    const imageUrl = "/images/workflows/ai-for-academic-research/og-image.png";
+  const imageUrl = "/images/workflows/ai-for-academic-research/og-image.png";
+  const datePublished = "2026-06-01";
+  const author = "Everyday AI Workflows";
+  const publisher = "Everyday AI Workflows";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "image": imageUrl,
+    "datePublished": datePublished,
+    "dateModified": datePublished,
+    "author": {
+      "@type": "Organization",
+      "name": author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": publisher,
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/images/logo.png"
+      }
+    }
+  };
 
   return {
     title,
@@ -21,12 +46,16 @@ export async function generateMetadata(): Promise<Metadata> {
         alt: title,
       }],
       type: 'article',
+      publishedTime: datePublished,
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
       images: [imageUrl],
+    },
+    other: {
+      'application/ld+json': JSON.stringify(jsonLd),
     },
   };
 }
