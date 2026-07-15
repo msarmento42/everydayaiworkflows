@@ -1,4 +1,6 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import AiToolComparisonTable from "../../components/AiToolComparisonTable";
+
 
 export const metadata = {
   title: "Best AI Writing Assistants in 2026: Tested and Ranked | Everyday AI Workflows",
@@ -71,7 +73,9 @@ Include: [specific angle or key point to cover]`}</pre>
 
         </div>
 
-        <div style={{ display: "flex", gap: "0.75rem", marginTop: "2rem", flexWrap: "wrap" }}>
+        
+        <AiToolComparisonTable />
+<div style={{ display: "flex", gap: "0.75rem", marginTop: "2rem", flexWrap: "wrap" }}>
           {["ai-writing", "jasper", "writesonic", "content-creation", "ai-tools"].map(tag => (
             <span key={tag} style={{ fontSize: "0.75rem", color: "#6b7280", background: "rgba(255,255,255,0.05)", padding: "0.2rem 0.6rem", borderRadius: "4px" }}>#{tag}</span>
           ))}
