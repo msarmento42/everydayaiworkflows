@@ -4,6 +4,16 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-youtube-script-writing",
   },
+  openGraph: {
+    images: [
+      {
+        url: "/images/ai-youtube-script.png",
+        alt: "AI for YouTube Script Writing Workflow",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function BlogPost() {
