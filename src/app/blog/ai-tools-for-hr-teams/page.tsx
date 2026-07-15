@@ -6,6 +6,14 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-tools-for-hr-teams",
   },
+  openGraph: {
+    images: [
+      {
+        url: "/images/blog/ai-hr-tools.jpg",
+        alt: "AI Tools for HR Teams: Cut Admin Time and Focus on the Work That Matters",
+      },
+    ],
+  },
 };
 
 export default function BlogPost() {
