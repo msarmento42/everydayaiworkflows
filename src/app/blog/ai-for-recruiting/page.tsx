@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 
 export const metadata = {
   title: "AI for Recruiting: Cut Time-to-Hire by 40% Without Sacrificing Candidate Quality",
@@ -34,6 +35,13 @@ export default function BlogPost() {
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>Recruiting is one of the most admin-heavy functions in any organization. Writing job descriptions, screening 200 applicants for 10 relevant ones, scheduling interviews, preparing structured questions, and keeping candidates warm through a long process — each step consumes hours that recruiters should be spending on the relationships and judgment calls that actually determine hire quality. AI does not evaluate candidates for you, but it compresses every administrative step in the funnel dramatically. Here is how to build the workflow from job requisition to offer letter.</p>
+
+          <LeadMagnetCTA
+            title="Get Free AI Workflow Templates"
+            description="Supercharge your recruiting process with ready-to-use AI workflow templates. Subscribe to our newsletter and get instant access to templates for job descriptions, candidate screening, interview guides, and more."
+            ctaText="Get Free Templates"
+            href="https://beehiiv.com/subscribe/your-list-id"
+          />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Write Job Descriptions That Attract the Right Candidates</h2>
           <p>Most job descriptions are written by copying last year's version and updating the team name. The result is generic postings that attract generic applicants. AI can help you write JDs that are specific, honest, and calibrated to the candidates you actually want to hire — not the idealized unicorn that nobody can find.</p>
