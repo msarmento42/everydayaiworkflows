@@ -10,7 +10,37 @@ export const metadata = {
 
 export default function BlogPost() {
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "AI for Nonprofit Fundraising: Write Better Grant Applications and Donor Emails in Half the Time",
+            "description": "A practical AI workflow for nonprofit teams — grant writing, donor segmentation, thank-you letters, and campaign automation, built for lean teams without a dedicated development staff.",
+            "image": "https://everydayaiworkflows.com/images/ai-nonprofit-fundraising.jpg",
+            "author": {
+              "@type": "Organization",
+              "name": "Everyday AI Workflows"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Everyday AI Workflows",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://everydayaiworkflows.com/logo.png"
+              }
+            },
+            "datePublished": "2026-07-16",
+            "dateModified": "2026-07-16",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://everydayaiworkflows.com/blog/ai-for-nonprofit-fundraising"
+            },
+            "url": "https://everydayaiworkflows.com/blog/ai-for-nonprofit-fundraising"
+          })
+        }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
