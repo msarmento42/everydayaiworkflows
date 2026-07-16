@@ -1,6 +1,9 @@
 export const metadata = {
   title: 'Privacy Policy - Everyday AI Workflows',
   description: 'Privacy Policy for Everyday AI Workflows — how we handle data, cookies, advertising, and your rights.',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/privacy',
+  },
 };
 
 export default function Privacy() {

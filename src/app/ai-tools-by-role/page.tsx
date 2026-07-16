@@ -3,6 +3,9 @@ import AffiliateDisclosure from '../components/AffiliateDisclosure';
 export const metadata = {
   title: 'Best AI Tools by Role (2026) - Freelancers, Sales, Marketing, Agencies',
   description: 'Choose the best AI tools for your actual job: freelancers, sales teams, marketers, creators, agencies, small businesses, and operators.',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/ai-tools-by-role',
+  },
 };
 
 const roleStacks = [

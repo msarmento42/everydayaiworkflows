@@ -1,6 +1,9 @@
 export const metadata = {
   title: 'Contact - Everyday AI Workflows',
   description: 'Get in touch with Everyday AI Workflows. We would love to hear from you!',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/contact',
+  },
 };
 
 export default function Contact() {

@@ -1,6 +1,9 @@
 export const metadata = {
   title: 'About - Everyday AI Workflows',
   description: 'Everyday AI Workflows is written by Marcus Sarmento, a product and operations professional helping teams integrate AI into their daily work.',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/about',
+  },
 };
 
 export default function About() {
