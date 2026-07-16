@@ -11,6 +11,37 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "AI for Newsletter Writing: How to Publish Weekly Without Burning Out",
+            "description": "Writing a consistent newsletter is one of the highest-leverage things a creator or marketer can do — but it's also the first thing that gets dropped. Here's how to use AI to write, edit, and schedule your newsletter without it consuming your week.",
+            "image": "https://everydayaiworkflows.com/images/ai-newsletter-writing.jpg",
+            "author": {
+              "@type": "Organization",
+              "name": "Everyday AI Workflows"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Everyday AI Workflows",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://everydayaiworkflows.com/logo.png"
+              }
+            },
+            "datePublished": "2026-06-29",
+            "dateModified": "2026-06-29",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://everydayaiworkflows.com/blog/ai-for-newsletter-writing"
+            },
+            "url": "https://everydayaiworkflows.com/blog/ai-for-newsletter-writing"
+          })
+        }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
