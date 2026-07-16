@@ -2,7 +2,7 @@ import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
   title: "AI for Client Proposals: Write Winning Proposals in 30 Minutes, Not 3 Hours | Everyday AI Workflows",
-  description: "A repeatable AI workflow for freelancers and agencies: discovery-call notes to polished proposal in under 30 minutes, with prompts for scoping, pricing tiers, and follow-ups.",
+  description: "A repeatable AI workflow for freelancers and agencies: discovery-call notes to polished proposal in under 30 minutes, with prompts for scoping, pricing tiers, tool comparisons, and follow-ups.",
   alternates: {
     canonical: "/blog/ai-for-client-proposals",
   },
@@ -15,8 +15,8 @@ export default function BlogPost() {
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
           <span style={{ fontSize: "0.75rem", color: "#7c3aed", background: "rgba(124,58,237,0.2)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>Productivity</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 8 min read</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>July 9, 2026</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 10 min read</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>July 16, 2026</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Client Proposals: Write Winning Proposals in 30 Minutes, Not 3 Hours
@@ -44,6 +44,37 @@ Rules:
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 3: Draft the Full Proposal From a Skeleton</h2>
           <p>Give the model your structure rather than letting it invent one. A proven skeleton: Current Situation &amp; Goals → Proposed Approach (phases, not features) → Deliverables &amp; Timeline → Investment → Why Us → Next Step. Feed it the approved problem statement plus your scoping decisions and let it fill in the connective tissue. For agencies producing several proposals a week, a tool with saved voice settings like <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> keeps every proposal sounding like the same firm wrote it, regardless of which team member ran the prompt.</p>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Which AI Writing Tool Fits Your Proposal Workflow?</h2>
+          <p>Notion AI, Jasper, and Writesonic all show up in this workflow, but they earn their place at different steps. Here&apos;s the honest breakdown:</p>
+          <div style={{ overflowX: "auto", marginTop: "1rem", marginBottom: "1rem" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid #374151" }}>
+                  <th style={{ textAlign: "left", padding: "0.5rem", color: "#fff" }}>Tool</th>
+                  <th style={{ textAlign: "left", padding: "0.5rem", color: "#fff" }}>Best step</th>
+                  <th style={{ textAlign: "left", padding: "0.5rem", color: "#fff" }}>Why</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.5rem" }}>Notion AI</td>
+                  <td style={{ padding: "0.5rem" }}>Discovery notes &amp; client history</td>
+                  <td style={{ padding: "0.5rem" }}>Lives where your client database already is</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.5rem" }}>Jasper AI</td>
+                  <td style={{ padding: "0.5rem" }}>Full proposal draft, multi-writer teams</td>
+                  <td style={{ padding: "0.5rem" }}>Saved brand voice keeps every writer consistent</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "0.5rem" }}>Writesonic</td>
+                  <td style={{ padding: "0.5rem" }}>Follow-up sequences, budget-conscious solo use</td>
+                  <td style={{ padding: "0.5rem" }}>Lower cost per seat for short-form copy</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 4: Price With Three Tiers, Not One Number</h2>
           <p>Single-number pricing invites yes/no decisions; tiered pricing invites &quot;which one?&quot; AI is useful here as a structuring device:</p>
           <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", marginTop: "1rem", marginBottom: "1rem" }}>{`My core offer: [describe scope and price].
@@ -60,6 +91,9 @@ Do NOT invent prices — leave [PRICE] placeholders for me.`}</pre>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 6: Automate the Follow-Up Sequence</h2>
           <p>Most proposals die in silence, and most freelancers follow up once. Draft a three-touch sequence the moment you send the proposal — day 3 (a useful addition, not a nudge), day 7 (short check-in with a deadline reason), day 14 (graceful close-the-loop) — using a budget writer like <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> if you&apos;re watching subscription costs. Schedule all three immediately so following up requires zero willpower later.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 7: Track What Actually Wins</h2>
+          <p>Once you&apos;ve sent a dozen AI-assisted proposals, start tagging outcomes in your client database: which problem-statement phrasing landed, which tier clients picked most, which objections the skeptic pass caught versus missed. This turns your proposal process into a feedback loop instead of a one-off document, and it&apos;s the same close-loop discipline covered in <a href="/blog/ai-for-customer-feedback-analysis" style={{ color: "#00d4ff" }}>AI for customer feedback analysis</a> — treat your own win/loss pattern as data worth mining, not just anecdote.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>The Compounding Advantage</h2>
           <p>The real payoff arrives around proposal ten: you now have a library of approved problem statements, tier structures, and skeptic-pass fixes. Feed your last three winning proposals to the model as examples and drafts start arriving 80% right instead of 60%. Freelancers can pair this workflow with our roundup of <a href="/blog/ai-tools-for-freelancers" style={{ color: "#00d4ff" }}>AI tools for freelancers</a>; if you&apos;re running a team, <a href="/blog/ai-tools-for-agency-owners" style={{ color: "#00d4ff" }}>AI tools for agency owners</a> covers how to standardize this across multiple proposal writers.</p>
