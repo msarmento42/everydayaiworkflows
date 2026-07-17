@@ -2,6 +2,18 @@ export const metadata = {
   title: 'AI Tools Directory - Everyday AI Workflows',
   description: 'Discover the best free AI tools to boost your productivity. Curated list of AI tools for writing, coding, productivity, and more.',
   alternates: { canonical: 'https://everydayaiworkflows.com/tools' },
+  openGraph: {
+    title: 'AI Tools Directory - Everyday AI Workflows',
+    description: 'Discover the best free AI tools to boost your productivity. Curated list of AI tools for writing, coding, productivity, and more.',
+    url: 'https://everydayaiworkflows.com/tools',
+    siteName: 'Everyday AI Workflows',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Tools Directory - Everyday AI Workflows',
+    description: 'Discover the best free AI tools to boost your productivity. Curated list of AI tools for writing, coding, productivity, and more.',
+  },
 };
 
 const tools = [
