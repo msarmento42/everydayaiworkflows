@@ -1,6 +1,21 @@
 export const metadata = {
   title: 'Privacy Policy - Everyday AI Workflows',
   description: 'Privacy Policy for Everyday AI Workflows — how we handle data, cookies, advertising, and your rights.',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/privacy',
+  },
+  openGraph: {
+    title: 'Privacy Policy - Everyday AI Workflows',
+    description: 'Privacy Policy for Everyday AI Workflows — how we handle data, cookies, advertising, and your rights.',
+    url: 'https://everydayaiworkflows.com/privacy',
+    siteName: 'Everyday AI Workflows',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy - Everyday AI Workflows',
+    description: 'Privacy Policy for Everyday AI Workflows — how we handle data, cookies, advertising, and your rights.',
+  },
 };
 
 export default function Privacy() {

@@ -1,6 +1,21 @@
 export const metadata = {
   title: 'Editorial Policy - Everyday AI Workflows',
   description: 'How Everyday AI Workflows researches guides, reviews AI tools, uses affiliate links, and updates recommendations.',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/editorial-policy',
+  },
+  openGraph: {
+    title: 'Editorial Policy - Everyday AI Workflows',
+    description: 'How Everyday AI Workflows researches guides, reviews AI tools, uses affiliate links, and updates recommendations.',
+    url: 'https://everydayaiworkflows.com/editorial-policy',
+    siteName: 'Everyday AI Workflows',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Editorial Policy - Everyday AI Workflows',
+    description: 'How Everyday AI Workflows researches guides, reviews AI tools, uses affiliate links, and updates recommendations.',
+  },
 };
 
 export default function EditorialPolicy() {
