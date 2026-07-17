@@ -11,6 +11,12 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"AI for Writing Technical Documentation: Cut the Time, Raise the Quality\",\"description\":\"A practical workflow for using AI to produce API docs, runbooks, and user guides faster — with prompts for structure, clarity, diff-based updates, and keeping docs current.\",\"image\":\"https://everydayaiworkflows.com/images/ai-writing-for-technical-docs.jpg\",\"author\":{\"@type\":\"Organization\",\"name\":\"Everyday AI Workflows\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Everyday AI Workflows\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://everydayaiworkflows.com/logo.png\"}},\"datePublished\":\"2026-06-21\",\"dateModified\":\"2026-06-21\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://everydayaiworkflows.com/blog/ai-writing-for-technical-docs\"},\"url\":\"https://everydayaiworkflows.com/blog/ai-writing-for-technical-docs\"}"
+        }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
