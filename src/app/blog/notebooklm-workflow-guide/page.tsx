@@ -15,7 +15,7 @@ export default function BlogPost() {
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
           <span style={{ fontSize: "0.75rem", color: "#7c3aed", background: "rgba(124,58,237,0.2)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>Tutorials</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 8 min read</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 10 min read</span>
           <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>July 12, 2026</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
@@ -49,6 +49,45 @@ Summarize each source's core claim in one sentence, with citation.`}</pre>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Where NotebookLM Fits Alongside Claude and ChatGPT</h2>
           <p>The realistic setup for most knowledge workers is not choosing one tool — it is routing tasks to the right one. Use NotebookLM when you need grounded, citable answers from a defined source set. Use a general-purpose model like Claude when you need broad reasoning, drafting, or synthesis that goes beyond your uploaded material. A common pattern: research and verify facts in NotebookLM, then take the synthesized, citation-backed findings into Claude to draft the actual report, or into a specialist writing tool like <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> if the output needs to match a specific client or brand voice. For managing that broader system prompt and prompt-library side of the workflow, <a href="/blog/claude-ai-prompts-for-productivity" style={{ color: "#00d4ff" }}>Claude AI prompts for productivity</a> is a good next stop, and if you are keeping research notes organized across tools, <a href="/blog/notion-ai-workflow-guide" style={{ color: "#00d4ff" }}>the Notion AI workflow guide</a> covers where to store and structure everything NotebookLM helps you synthesize.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>NotebookLM vs. Other Research Tools</h2>
+          <p>The right tool depends entirely on whether you need grounded citations or broad reasoning. Here is how the main options actually differ in practice:</p>
+          <div style={{ overflowX: "auto", marginTop: "1rem", marginBottom: "1.5rem" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid #374151" }}>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Tool</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Best for</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Citations</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>NotebookLM</td>
+                  <td style={{ padding: "0.6rem" }}>Closed-set research, transcripts, audio review</td>
+                  <td style={{ padding: "0.6rem" }}>Inline, source-linked</td>
+                  <td style={{ padding: "0.6rem" }}>Free</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Perplexity</td>
+                  <td style={{ padding: "0.6rem" }}>Live web research, current events</td>
+                  <td style={{ padding: "0.6rem" }}>Web links</td>
+                  <td style={{ padding: "0.6rem" }}>Free / Pro tier</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Claude / ChatGPT</td>
+                  <td style={{ padding: "0.6rem" }}>Drafting, reasoning, open-ended synthesis</td>
+                  <td style={{ padding: "0.6rem" }}>None by default</td>
+                  <td style={{ padding: "0.6rem" }}>Free / paid tiers</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>None of these replace each other — the strongest workflow chains them: NotebookLM to verify facts against your own sources, Perplexity when you need something current that is not in your uploads, and Claude or ChatGPT to turn verified findings into a polished draft.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>From Notebook to Published Post</h2>
+          <p>If the end goal of a research notebook is a blog post or article rather than an internal memo, the handoff matters. Pull your citation-backed findings out of NotebookLM, draft with Claude or Jasper, then run the draft through an SEO tool like <a href="https://surferseo.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Surfer SEO</a> to check keyword coverage and structure before you publish — grounded facts plus solid on-page structure is a combination most competing content skips one half of. For the SEO half specifically, our <a href="/blog/ai-for-seo-optimization" style={{ color: "#00d4ff" }}>guide to AI for SEO optimization</a> covers the workflow end to end.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Limits Worth Knowing</h2>
           <p>NotebookLM will not browse the live web or pull in anything you have not explicitly uploaded, so it is a poor fit for questions needing current events or information outside your source set. The 50-source cap per notebook (with a generous per-source size limit) is plenty for most individual research projects but means large ongoing research programs need a filing system — split by project or time period rather than one mega-notebook. And because it is free and tied to a Google account, treat sensitive or confidential documents the way you would any cloud tool: know your organization&apos;s data policy before uploading client or proprietary material.</p>

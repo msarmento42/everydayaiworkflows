@@ -15,7 +15,7 @@ export default function BlogPost() {
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
           <span style={{ fontSize: "0.75rem", color: "#7c3aed", background: "rgba(124,58,237,0.2)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>Automation</span>
-          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 8 min read</span>
+          <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>⏱️ 10 min read</span>
           <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>July 9, 2026</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
@@ -61,6 +61,62 @@ Rules:
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Agent 4: The Monday Morning Reporter</h2>
           <p>Every Monday at 7am, an agent pulls last week&apos;s numbers — sales, new leads, top-selling item, review count — and writes you a plain-English briefing with one suggested action. The data collection is standard automation; the agent part is the synthesis: &quot;Revenue was down 12% but lead volume was up — the bottleneck this week was follow-up, not demand.&quot; Store these briefings in a shared workspace like <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> and you also get a searchable business journal you can query later (&quot;what did we try in March?&quot;).</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Agent 5: The No-Show Reducer</h2>
+          <p>Missed appointments are a quiet revenue leak for any service business. An agent watches your booking calendar and, 24 hours out, sends a personalized reminder that references the specific service booked rather than a generic blast — then, if there is no response, a shorter same-day nudge. The judgment call is tone and timing: a first-time client gets a warmer, more detailed reminder than a regular who books weekly.</p>
+          <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", marginTop: "1rem", marginBottom: "1rem" }}>{`Write a 24-hour appointment reminder text for [client name],
+booked for [service] at [time] with [business name].
+- If this is their first visit, add one sentence on what to expect
+- If they've booked 3+ times before, keep it to one line
+- Always include the reschedule link: [link]
+- Friendly, not corporate. No exclamation points.`}</pre>
+          <p>Businesses that put even a simple version of this in place typically see no-show rates drop noticeably within the first month, since most no-shows are forgetfulness rather than a change of heart.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>The Five Agents at a Glance</h2>
+          <div style={{ overflowX: "auto", marginTop: "1rem", marginBottom: "1.5rem" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid #374151" }}>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Agent</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Trigger</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Build time</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Approval needed?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Lead qualifier</td>
+                  <td style={{ padding: "0.6rem" }}>New inquiry</td>
+                  <td style={{ padding: "0.6rem" }}>~1 hour</td>
+                  <td style={{ padding: "0.6rem" }}>No, auto-replies</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Inbox triage</td>
+                  <td style={{ padding: "0.6rem" }}>Incoming email</td>
+                  <td style={{ padding: "0.6rem" }}>~1 hour</td>
+                  <td style={{ padding: "0.6rem" }}>No</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Review responder</td>
+                  <td style={{ padding: "0.6rem" }}>New review posted</td>
+                  <td style={{ padding: "0.6rem" }}>~30 min</td>
+                  <td style={{ padding: "0.6rem" }}>Yes, below 4 stars</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Monday reporter</td>
+                  <td style={{ padding: "0.6rem" }}>Weekly schedule</td>
+                  <td style={{ padding: "0.6rem" }}>~2 hours</td>
+                  <td style={{ padding: "0.6rem" }}>No</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>No-show reducer</td>
+                  <td style={{ padding: "0.6rem" }}>Calendar, 24hrs out</td>
+                  <td style={{ padding: "0.6rem" }}>~1 hour</td>
+                  <td style={{ padding: "0.6rem" }}>No</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Guardrails: What Not to Hand to an Agent</h2>
           <p>Three rules keep agents from embarrassing you. First, <strong>never let an agent state prices, discounts, or commitments</strong> unless they come verbatim from a source you control. Second, <strong>keep a human approval step on anything public-facing and negative</strong> — angry-review responses and refund conversations need your eyes. Third, <strong>log everything the agent does</strong> to a spreadsheet or database so you can audit its judgment weekly. Expect to tighten prompts in the first two weeks; after that, most of these run untouched for months.</p>
