@@ -1,6 +1,21 @@
 export const metadata = {
   title: 'About - Everyday AI Workflows',
   description: 'Everyday AI Workflows is written by Marcus Sarmento, a product and operations professional helping teams integrate AI into their daily work.',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/about',
+  },
+  openGraph: {
+    title: 'About - Everyday AI Workflows',
+    description: 'Everyday AI Workflows is written by Marcus Sarmento, a product and operations professional helping teams integrate AI into their daily work.',
+    url: 'https://everydayaiworkflows.com/about',
+    siteName: 'Everyday AI Workflows',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About - Everyday AI Workflows',
+    description: 'Everyday AI Workflows is written by Marcus Sarmento, a product and operations professional helping teams integrate AI into their daily work.',
+  },
 };
 
 export default function About() {

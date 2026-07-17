@@ -1,6 +1,21 @@
 export const metadata = {
   title: 'Contact - Everyday AI Workflows',
   description: 'Get in touch with Everyday AI Workflows. We would love to hear from you!',
+  alternates: {
+    canonical: 'https://everydayaiworkflows.com/contact',
+  },
+  openGraph: {
+    title: 'Contact - Everyday AI Workflows',
+    description: 'Get in touch with Everyday AI Workflows. We would love to hear from you!',
+    url: 'https://everydayaiworkflows.com/contact',
+    siteName: 'Everyday AI Workflows',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact - Everyday AI Workflows',
+    description: 'Get in touch with Everyday AI Workflows. We would love to hear from you!',
+  },
 };
 
 export default function Contact() {
