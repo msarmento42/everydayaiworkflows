@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import Head from 'next/head';
 
 export const metadata = {
   title: "ChatGPT vs Claude in 2026: Which Should You Actually Use? | Everyday AI Workflows",
@@ -11,6 +12,23 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "ChatGPT vs Claude in 2026: Which Should You Actually Use?",
+              "description": "A practical comparison of ChatGPT and Claude in 2026 — what each tool does best, when to use each, and how to combine both for maximum productivity.",
+              "image": "https://example.com/placeholder-image.jpg",
+              "author": { "@type": "Person", "name": "Author Name" },
+              "datePublished": "2026-03-12",
+              "dateModified": "2026-03-12"
+            })
+          }}
+        />
+      </Head>
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
