@@ -1,3 +1,4 @@
+import Head from "next/head";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -11,6 +12,23 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "Using AI for Grant Writing: A Practical Workflow for Nonprofits and Researchers",
+              "description": "How to use AI to draft stronger grant applications faster — needs statements, budget narratives, boilerplate reuse, and reviewer-proofing — without losing the human specificity funders actually reward.",
+              "image": "https://example.com/placeholder-image.jpg",
+              "author": { "@type": "Person", "name": "Author Name" },
+              "datePublished": "2026-07-17",
+              "dateModified": "2026-07-17"
+            })
+          }}
+        />
+      </Head>
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
