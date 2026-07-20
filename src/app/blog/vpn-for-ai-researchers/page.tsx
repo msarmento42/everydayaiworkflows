@@ -1,4 +1,22 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import Script from 'next/script';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "VPN for AI Researchers: Stay Secure While Accessing AI Tools Globally",
+  "description": "Why AI researchers, remote workers, and power users need a VPN — and how to pick one, set it up correctly, and integrate it into a daily AI workflow without adding friction.",
+  "datePublished": "2026-07-19",
+  "dateModified": "2026-07-19",
+  "author": {
+    "@type": "Organization",
+    "name": "Everyday AI Workflows"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Everyday AI Workflows"
+  }
+};
 
 export const metadata = {
   title: "VPN for AI Researchers: Stay Secure While Accessing AI Tools Globally | Everyday AI Workflows",
@@ -11,6 +29,11 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
