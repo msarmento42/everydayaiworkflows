@@ -40,7 +40,7 @@ export default function BlogPost() {
             title="Get Free AI Workflow Templates"
             description="Supercharge your recruiting process with ready-to-use AI workflow templates. Subscribe to our newsletter and get instant access to templates for job descriptions, candidate screening, interview guides, and more."
             ctaText="Get Free Templates"
-            href="https://beehiiv.com/subscribe/your-list-id"
+            source="recruiting"
           />
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Write Job Descriptions That Attract the Right Candidates</h2>
