@@ -1,8 +1,58 @@
+"use client";
+
 import Script from "next/script";
+import { useEffect } from "react";
+import { trackAnalyticsEvent } from "../lib/analytics";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export default function Analytics() {
+  useEffect(() => {
+    const handleClick = (event: MouseEvent) => {
+      const target = event.target;
+      const link = target instanceof Element ? target.closest<HTMLAnchorElement>("a[href]") : null;
+      if (!link) return;
+
+      let url: URL;
+      try {
+        url = new URL(link.href);
+      } catch {
+        return;
+      }
+
+      const isExternal = Boolean(url.hostname && url.hostname !== window.location.hostname);
+      const isAffiliate = /sponsored|affiliate/i.test(link.rel || "")
+        || /affiliate|make\.com|notion|jasper|grammarly|surferseo|semrush|writesonic|nordvpn/i.test(link.href);
+      if (!isAffiliate && !isExternal) return;
+
+      const partner =
+        /make\.com/i.test(link.href) ? "make"
+          : /notion/i.test(link.href) ? "notion"
+            : /jasper/i.test(link.href) ? "jasper"
+              : /grammarly/i.test(link.href) ? "grammarly"
+                : /surferseo/i.test(link.href) ? "surferseo"
+                  : /semrush/i.test(link.href) ? "semrush"
+                    : /writesonic/i.test(link.href) ? "writesonic"
+                      : /nordvpn|awin1/i.test(link.href) ? "nordvpn"
+                        : "external";
+      const page = window.location.pathname.toLowerCase() || "/";
+      const placement = link.dataset.analyticsPlacement || "content";
+      const pageIntent = link.dataset.analyticsIntent
+        || (page.includes("tools") ? "commercial" : page.includes("workflows") ? "workflow" : "editorial");
+
+      trackAnalyticsEvent(isAffiliate ? "affiliate_click" : "outbound_click", {
+        page,
+        placement,
+        partner,
+        page_intent: pageIntent,
+        link_domain: url.hostname.toLowerCase(),
+      });
+    };
+
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
+  }, []);
+
   return (
     <>
       {GA_MEASUREMENT_ID ? (
@@ -21,45 +71,6 @@ export default function Analytics() {
           </Script>
         </>
       ) : null}
-      <Script id="income-click-tracking" strategy="afterInteractive">
-        {`
-          document.addEventListener('click', function(event) {
-            var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
-            if (!link || !window.gtag) return;
-
-            var url;
-            try {
-              url = new URL(link.href);
-            } catch (_) {
-              return;
-            }
-
-            var isExternal = url.hostname && url.hostname !== window.location.hostname;
-            var href = link.href;
-            var isAffiliate = /sponsored|affiliate/i.test(link.rel || '') || /affiliate|make\\.com|notion|jasper|grammarly|surferseo|semrush|writesonic|nordvpn/i.test(href);
-            var partner = 'external';
-
-            if (/make\\.com/i.test(href)) partner = 'make';
-            else if (/notion/i.test(href)) partner = 'notion';
-            else if (/jasper/i.test(href)) partner = 'jasper';
-            else if (/grammarly/i.test(href)) partner = 'grammarly';
-            else if (/surferseo/i.test(href)) partner = 'surferseo';
-            else if (/semrush/i.test(href)) partner = 'semrush';
-            else if (/writesonic/i.test(href)) partner = 'writesonic';
-            else if (/nordvpn|awin1/i.test(href)) partner = 'nordvpn';
-
-            if (isAffiliate || isExternal) {
-              window.gtag('event', isAffiliate ? 'affiliate_click' : 'outbound_click', {
-                link_url: link.href,
-                link_domain: url.hostname,
-                affiliate_partner: isAffiliate ? partner : undefined,
-                link_text: (link.textContent || '').trim().slice(0, 100),
-                page_location: window.location.href
-              });
-            }
-          });
-        `}
-      </Script>
     </>
   );
 }

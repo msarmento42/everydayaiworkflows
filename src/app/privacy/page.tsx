@@ -105,7 +105,11 @@ export default function Privacy() {
           <p style={{ marginBottom: '1rem' }}>
             This website may use privacy-conscious analytics, including Google Analytics or hosting-provider
             analytics, to understand which pages are useful, which links are clicked, and where visitors arrive
-            from. These reports are reviewed in aggregate and are not used to identify individual readers.
+            from. We may measure anonymous interaction categories such as starting or completing a signup,
+            downloading a template, opening a product or checkout page, completing a purchase, or following an
+            affiliate link. Analytics events do not include email addresses, prompts, form contents, checkout
+            identifiers, or other text you provide. These reports are reviewed in aggregate and are not used to
+            identify individual readers.
           </p>
 
           <h2 style={{ fontSize: '1.3rem', color: '#fff', marginTop: '2rem', marginBottom: '1rem' }}>Affiliate Links</h2>
