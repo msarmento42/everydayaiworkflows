@@ -1,30 +1,23 @@
 import React from "react";
+import NewsletterCapture from "../blog/components/NewsletterCapture";
+import type { NewsletterSource } from "../lib/newsletter";
 
 interface LeadMagnetCTAProps {
   title?: string;
   description?: string;
   ctaText?: string;
-  href?: string;
+  source?: NewsletterSource;
 }
 
 export default function LeadMagnetCTA({
   title = "Get Free AI Workflow Templates",
   description = "Subscribe to our newsletter and receive a curated collection of AI workflow templates for small businesses.",
   ctaText = "Subscribe Now",
-  href = "https://beehiiv.com/subscribe/your-list-id",
+  source = "lead-magnet",
 }: LeadMagnetCTAProps) {
   return (
     <div className="my-8 p-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg text-center">
-      <h2 className="text-2xl font-bold mb-4">{title}</h2>
-      <p className="mb-4">{description}</p>
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-6 py-3 bg-white text-purple-700 font-semibold rounded-md hover:bg-gray-100 transition"
-      >
-        {ctaText}
-      </a>
+      <NewsletterCapture darkMode source={source} title={title} description={description} ctaText={ctaText} />
     </div>
   );
 }
