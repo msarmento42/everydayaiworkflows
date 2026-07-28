@@ -39,7 +39,9 @@ export default function Privacy() {
             email addresses, passwords, payment details, or any other personal information simply by visiting
             this website. If you choose to subscribe to our newsletter via the sign-up form on blog posts,
             your email address is used solely to send weekly AI workflow tips and is never sold or shared with
-            third parties.
+            unrelated third parties. The address is sent only after you submit the form and explicitly consent.
+            Our email delivery provider or configured automation service processes it on our behalf to manage
+            subscriptions and unsubscribe requests.
           </p>
           <p style={{ marginBottom: '1rem' }}>
             We do not store passwords — there is no login system on this site. The only server-side data we
