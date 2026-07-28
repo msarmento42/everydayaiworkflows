@@ -27,6 +27,18 @@ export default function Analytics() {
             var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
             if (!link || !window.gtag) return;
 
+            var page = window.location.pathname;
+            var placement = link.dataset.analyticsPlacement || 'inline';
+
+            if (link.dataset.templateDownload) {
+              window.gtag('event', 'template_download', {
+                page: page,
+                placement: placement,
+                template: link.dataset.templateDownload
+              });
+              return;
+            }
+
             var url;
             try {
               url = new URL(link.href);
@@ -36,8 +48,10 @@ export default function Analytics() {
 
             var isExternal = url.hostname && url.hostname !== window.location.hostname;
             var href = link.href;
-            var isAffiliate = /sponsored|affiliate/i.test(link.rel || '') || /affiliate|make\\.com|notion|jasper|grammarly|surferseo|semrush|writesonic|nordvpn/i.test(href);
-            var partner = 'external';
+            // Monetization is explicit. A vendor domain by itself is editorial,
+            // not evidence that a link is an affiliate relationship.
+            var isAffiliate = Boolean(link.dataset.affiliatePartner) || /sponsored|affiliate/i.test(link.rel || '');
+            var partner = link.dataset.affiliatePartner || 'external';
 
             if (/make\\.com/i.test(href)) partner = 'make';
             else if (/notion/i.test(href)) partner = 'notion';
@@ -53,6 +67,9 @@ export default function Analytics() {
                 link_url: link.href,
                 link_domain: url.hostname,
                 affiliate_partner: isAffiliate ? partner : undefined,
+                page: page,
+                placement: placement,
+                partner: isAffiliate ? partner : undefined,
                 link_text: (link.textContent || '').trim().slice(0, 100),
                 page_location: window.location.href
               });
