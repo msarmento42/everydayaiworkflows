@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import type { FormEvent } from "react";
+import { trackAnalyticsEvent } from "../../lib/analytics";
 import type { NewsletterSource } from "../../lib/newsletter";
 
 interface NewsletterCaptureProps {
@@ -40,6 +41,8 @@ export default function NewsletterCapture({
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const page = window.location.pathname.toLowerCase() || "/";
+    trackAnalyticsEvent("lead_submit", { page, placement: source });
     setStatus("loading");
 
     try {
@@ -53,6 +56,9 @@ export default function NewsletterCapture({
         ? result.status as FormStatus
         : "error";
       setStatus(nextStatus);
+      if (nextStatus === "success" || nextStatus === "duplicate") {
+        trackAnalyticsEvent("lead_success", { page, placement: source });
+      }
       if (nextStatus === "success" || nextStatus === "duplicate") setEmail("");
     } catch {
       setStatus("error");
@@ -74,7 +80,7 @@ export default function NewsletterCapture({
           </div>
           <label htmlFor={emailId} style={{ display: "block", color: panelStyles.heading, fontSize: "0.9rem", fontWeight: 600, marginBottom: "0.4rem" }}>Email address</label>
           <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            <input id={emailId} name="email" type="email" autoComplete="email" value={email} onChange={(event) => setEmail(event.target.value)} required disabled={status === "loading"} style={{ flex: "1 1 220px", padding: "0.75rem", borderRadius: "8px", border: "1px solid #6b7280", background: panelStyles.inputBackground, color: panelStyles.inputColor, outline: "none" }} />
+            <input id={emailId} name="email" type="email" autoComplete="email" value={email} onFocus={() => trackAnalyticsEvent("lead_start", { page: window.location.pathname.toLowerCase() || "/", placement: source })} onChange={(event) => setEmail(event.target.value)} required disabled={status === "loading"} style={{ flex: "1 1 220px", padding: "0.75rem", borderRadius: "8px", border: "1px solid #6b7280", background: panelStyles.inputBackground, color: panelStyles.inputColor, outline: "none" }} />
             <button type="submit" disabled={status === "loading"} style={{ padding: "0.75rem 1.5rem", background: "#7c3aed", border: "none", borderRadius: "8px", color: "#fff", fontWeight: 600, cursor: status === "loading" ? "wait" : "pointer", opacity: status === "loading" ? 0.7 : 1 }}>
               {status === "loading" ? "Submitting…" : ctaText}
             </button>

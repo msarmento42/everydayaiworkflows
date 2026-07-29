@@ -85,6 +85,7 @@ export default function RootLayout({
             { href: '/ai-tools', label: 'AI Tools' },
             { href: '/ai-tools-by-role', label: 'By Role' },
             { href: '/tools', label: 'Directory' },
+            { href: '/method-stack', label: 'Method Stack' },
             { href: '/editorial-policy', label: 'Policy' },
           ].map(({ href, label }) => (
             <a key={href} href={href} style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '0.85rem' }}>

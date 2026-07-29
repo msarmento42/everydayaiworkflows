@@ -1,0 +1,102 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #0f0f23, #15152f 55%, #0d1b2a);
+  color: #f8fafc;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.main {
+  width: min(960px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 4.5rem 0 5rem;
+}
+
+.eyebrow {
+  color: #67e8f9;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero {
+  max-width: 760px;
+}
+
+.hero h1 {
+  margin: 0.75rem 0 1rem;
+  font-size: clamp(2.4rem, 7vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.hero p {
+  color: #cbd5e1;
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #aebbd0;
+  line-height: 1.65;
+}
+
+.price {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.status {
+  margin-top: 0.75rem;
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+.free {
+  margin-top: 4rem;
+  padding: 2rem;
+  border: 1px solid rgba(103, 232, 249, 0.35);
+  border-radius: 18px;
+  background: rgba(8, 145, 178, 0.1);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.8rem 1.15rem;
+  border-radius: 9px;
+  background: #06b6d4;
+  color: #06202a;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.disclosure {
+  margin-top: 3rem;
+  color: #8491a5;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
