@@ -24,6 +24,11 @@ const products = [
     description: "Fourteen workflows for priorities, meetings, projects, research, and executable next actions.",
     price: "$49",
   },
+  {
+    name: "Method Stack Complete System",
+    description: "All three systems for daily execution, weekly planning, research, and better decisions. Save $18 versus buying separately.",
+    price: "$69",
+  },
 ] as const;
 
 export default function MethodStackPage() {
