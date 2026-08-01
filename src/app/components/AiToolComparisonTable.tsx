@@ -4,7 +4,7 @@ type Tool = {
   name: string;
   features: string;
   pricing: string;
-  affiliateLink: string;
+  link: string;
 };
 
 const tools: Tool[] = [
@@ -12,13 +12,13 @@ const tools: Tool[] = [
     name: "Jasper",
     features: "Brand Voice, Templates",
     pricing: "$49/mo",
-    affiliateLink: "https://jasper.ai?ref=affiliate",
+    link: "https://jasper.ai",
   },
   {
     name: "Writesonic",
     features: "Chatsonic, SEO Mode",
     pricing: "$15/mo",
-    affiliateLink: "https://writesonic.com?ref=affiliate",
+    link: "https://writesonic.com",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function AiToolComparisonTable() {
             <th style={headerStyle}>Tool</th>
             <th style={headerStyle}>Key Features</th>
             <th style={headerStyle}>Pricing</th>
-            <th style={headerStyle}>Affiliate</th>
+            <th style={headerStyle}>Visit</th>
           </tr>
         </thead>
         <tbody>
@@ -53,8 +53,8 @@ export default function AiToolComparisonTable() {
               <td style={cellStyle}>{t.features}</td>
               <td style={cellStyle}>{t.pricing}</td>
               <td style={cellStyle}>
-                <a href={t.affiliateLink} rel="noopener sponsored" style={{ color: "#00d4ff" }}>
-                  Buy {t.name}
+                <a href={t.link} rel="noopener noreferrer" style={{ color: "#00d4ff" }}>
+                  Visit {t.name}
                 </a>
               </td>
             </tr>

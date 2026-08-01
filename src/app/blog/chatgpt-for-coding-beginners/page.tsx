@@ -19,10 +19,9 @@ export default function BlogPost() {
         "@type": "Article",
         "headline": "ChatGPT for Coding Beginners: Learn Faster and Debug Smarter",
         "description": "A practical guide to using ChatGPT and Claude as coding assistants when you are just starting out — from understanding errors to building your first real projects.",
-        "image": "https://example.com/placeholder-image.jpg",
         "author": {
-          "@type": "Person",
-          "name": "Author Name"
+          "@type": "Organization",
+          "name": "Everyday AI Workflows"
         },
         "datePublished": "2026-07-12",
         "dateModified": "2026-07-12"

@@ -82,7 +82,7 @@ Help me:
         <div style={{ background: "rgba(255, 215, 0, 0.1)", border: "1px solid rgba(255, 215, 0, 0.3)", borderRadius: "12px", padding: "1.5rem", marginTop: "2rem", textAlign: "center" }}>
           <h2 style={{ fontSize: "1.6rem", color: "#fff", marginBottom: "0.5rem" }}>Ready to Write Your Nonfiction Book Faster?</h2>
           <p style={{ marginBottom: "1rem", color: "#d1d5db" }}>Boost your writing speed with Jasper AI’s powerful language models. Try it now and see how quickly you can draft chapters.</p>
-          <a href="https://jasper.ai?ref=affiliate123" rel="noopener sponsored" style={{ display: "inline-block", background: "#ffcc00", color: "#000", padding: "0.75rem 1.5rem", borderRadius: "6px", textDecoration: "none", fontWeight: "bold" }}>Start Writing with Jasper AI</a>
+          <a href="https://jasper.ai" rel="noopener noreferrer" style={{ display: "inline-block", background: "#ffcc00", color: "#000", padding: "0.75rem 1.5rem", borderRadius: "6px", textDecoration: "none", fontWeight: "bold" }}>Start Writing with Jasper AI</a>
         </div>
 
           <p>This is also where examples matter most. If a chapter sounds abstract, ask the model to suggest three kinds of concrete material you could add: a short anecdote, a counterexample, or a case study. That prompt often reveals exactly what the chapter is missing from a reader's perspective.</p>

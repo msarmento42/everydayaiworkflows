@@ -19,19 +19,19 @@ export default function BlogPost() {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://example.com/"
+      "item": "https://everydayaiworkflows.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Blog",
-      "item": "https://example.com/blog"
+      "item": "https://everydayaiworkflows.com/blog"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "AI Tools for Ecommerce: Product Listings, Customer Emails, and Inventory Done Faster",
-      "item": "https://example.com/blog/ai-tools-for-ecommerce"
+      "item": "https://everydayaiworkflows.com/blog/ai-tools-for-ecommerce"
     }
   ]
 }`}
