@@ -19,10 +19,9 @@ export default function BlogPost() {
         "@type": "Article",
         "headline": "How Real Estate Agents Are Using AI to Write Listings That Actually Sell",
         "description": "A practical guide to using AI for listing descriptions, social captions, client emails, and objection scripts with copy-paste prompts for every step.",
-        "image": "https://example.com/placeholder-image.jpg",
         "author": {
-          "@type": "Person",
-          "name": "Author Name"
+          "@type": "Organization",
+          "name": "Everyday AI Workflows"
         },
         "datePublished": "2026-05-26",
         "dateModified": "2026-05-26"

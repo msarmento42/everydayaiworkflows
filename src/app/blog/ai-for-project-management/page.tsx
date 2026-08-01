@@ -7,7 +7,6 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-project-management",
   },
-  openGraph: { images: [{ url: "https://www.example.com/assets/ai-project-management.png" }] },
 };
 
 const relatedPostsData = [

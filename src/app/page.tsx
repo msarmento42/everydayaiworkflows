@@ -56,6 +56,7 @@ export default function Home() {
           <a href="/contact" style={{ color: "#9ca3af", textDecoration: "none" }}>Contact</a>
           <a href="/privacy" style={{ color: "#9ca3af", textDecoration: "none" }}>Privacy</a>
           <a href="/editorial-policy" style={{ color: "#9ca3af", textDecoration: "none" }}>Editorial Policy</a>
+          <a href="/terms" style={{ color: "#9ca3af", textDecoration: "none" }}>Terms</a>
         </nav>
 
         <footer style={{ textAlign: "center", marginTop: "4rem", color: "#4b5563", fontSize: "0.9rem" }}>

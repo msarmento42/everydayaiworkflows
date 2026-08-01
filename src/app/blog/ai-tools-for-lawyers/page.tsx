@@ -15,10 +15,9 @@ export default function BlogPost() {
           "@type": "Article",
           "headline": "AI Tools for Lawyers: How Attorneys Are Saving 10+ Hours a Week Without Sacrificing Accuracy",
           "description": "Legal work is drowning in text — contracts, briefs, memos, case research, client emails. AI does not replace legal judgment, but it handles the text-heavy groundwork faster than any associate.",
-          "image": "https://example.com/ai-tools-for-lawyers.jpg",
           "author": {
-            "@type": "Person",
-            "name": "Your Name"
+            "@type": "Organization",
+            "name": "Everyday AI Workflows"
           },
           "datePublished": "2026-05-26"
         }) }} />

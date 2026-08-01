@@ -21,8 +21,7 @@ export default function BlogPost() {
               "@type": "Article",
               "headline": "Using AI for Grant Writing: A Practical Workflow for Nonprofits and Researchers",
               "description": "How to use AI to draft stronger grant applications faster — needs statements, budget narratives, boilerplate reuse, and reviewer-proofing — without losing the human specificity funders actually reward.",
-              "image": "https://example.com/placeholder-image.jpg",
-              "author": { "@type": "Person", "name": "Author Name" },
+              "author": { "@type": "Organization", "name": "Everyday AI Workflows" },
               "datePublished": "2026-07-17",
               "dateModified": "2026-07-17"
             })

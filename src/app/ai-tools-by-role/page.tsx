@@ -108,13 +108,13 @@ export default function AIToolsByRolePage() {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://example.com/"
+      "item": "https://everydayaiworkflows.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "AI Tools by Role",
-      "item": "https://example.com/ai-tools-by-role"
+      "item": "https://everydayaiworkflows.com/ai-tools-by-role"
     }
   ]
 }`}
