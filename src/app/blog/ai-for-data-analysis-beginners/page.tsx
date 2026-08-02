@@ -101,6 +101,14 @@ Audience: non-technical executives who have 5 minutes to read this.`}</pre>
           <p><strong>Day 3:</strong> Pick the most interesting insight from Day 1. Ask the AI to dig deeper: &quot;You mentioned X. Can you break that down by month and tell me if the trend is accelerating or slowing?&quot;</p>
           <p><strong>Week 2:</strong> If you&apos;re happy with the manual workflow, look at Make.com for automation. The free tier lets you run 1,000 operations per month — plenty for a weekly data report pipeline. And if analysis is a regular part of your role, also check our overview of <a href="/blog/ai-for-small-business" style={{ color: "#00d4ff" }}>AI tools for small business</a> for the broader stack that teams like yours are building.</p>
           <p>The goal isn&apos;t to become a data scientist. The goal is to make better decisions faster. AI gets you 80% of the way there without any technical knowledge. The remaining 20% is your judgment about the business context — which is something no AI can replicate.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+          <ul style={{ paddingLeft: "1.5rem" }}>
+            <li style={{ marginBottom: "0.5rem" }}>AI tools like ChatGPT (with Code Interpreter) and Claude empower beginners to perform complex data cleaning, analysis, and visualization without needing to write code.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Effective AI data analysis relies on specific, well-structured prompts that guide the AI to deliver clear, actionable insights.</li>
+            <li style={{ marginBottom: "0.5rem" }}>AI can significantly reduce the time spent on generating business reports and can be integrated with automation platforms like Make.com for recurring data workflows.</li>
+            <li style={{ marginBottom: "0.5rem" }}>While AI handles the heavy lifting of data processing, human judgment and business context remain crucial for interpreting results and making informed decisions.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Start by uploading your most important spreadsheet to an AI tool and using a "first-look" prompt to uncover immediate insights.</li>
+          </ul>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
