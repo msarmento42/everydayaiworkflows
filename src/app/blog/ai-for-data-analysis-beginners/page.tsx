@@ -6,6 +6,7 @@ export const metadata = {
   },
 };
 import ShareButtons from '../../components/ShareButtons';
+import AffiliateDisclosure from '../components/AffiliateDisclosure';
 
 
 export default function BlogPost() {
@@ -21,6 +22,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Data Analysis: A Beginner&apos;s Guide to Turning Spreadsheets into Insights
         </h1>
+        <AffiliateDisclosure />
         <ShareButtons title={metadata.title} url="https://everydayaiworkflows.com/blog/ai-for-data-analysis-beginners" />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
