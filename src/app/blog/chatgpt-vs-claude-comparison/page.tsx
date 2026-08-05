@@ -4,7 +4,7 @@ import SourceMethodBlock from "../components/SourceMethodBlock";
 
 export const metadata = {
   title: "ChatGPT vs Claude: Which AI Assistant Is Right for You? | Everyday AI Workflows",
-  description: "An in-depth comparison of ChatGPT and Claude covering writing quality, coding, research, instruction-following, and real workflow integration — with a clear verdict for each use case.",
+  description: "An evidence-led comparison of ChatGPT and Claude covering writing quality, coding, research, instruction-following, and workflow integration with task-fit checks.",
   alternates: {
     canonical: "/blog/chatgpt-vs-claude-comparison",
   },
@@ -77,11 +77,11 @@ Questions:
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>The Verdict: Use Both, But Know Why</h2>
           <p>Some teams use both tools, but a single well-tested tool may be enough. A practical split is to route each task according to the source access, context limits, integrations, and review controls you can verify.</p>
           <p>If you can only choose one, start with a representative task set and a written acceptance checklist. Writers, analysts, developers, and researchers should make the decision from their own outputs and current plan capabilities rather than a universal ranking.</p>
-          <p>If you need a structured comparison of all major AI writing tools — not just these two — see our <a href="/blog/best-ai-writing-assistants" style={{ color: "#00d4ff" }}>ranked AI writing assistants guide</a>.</p>
+          <p>If you need a structured comparison of more AI writing tools — not just these two — see our <a href="/blog/best-ai-writing-assistants" style={{ color: "#00d4ff" }}>task-fit AI writing assistants guide</a>.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
-              {"💡 "}<strong>{"See every AI tool compared in one place — vetted and ranked by actual use case. "}</strong><a href="/tools" style={{ color: "#00d4ff" }}>{"Browse the full toolkit →"}</a>
+              {"💡 "}<strong>{"Compare AI tools by task, source trail, and review criteria. "}</strong><a href="/tools" style={{ color: "#00d4ff" }}>{"Browse the full toolkit →"}</a>
             </p>
           </div>
 

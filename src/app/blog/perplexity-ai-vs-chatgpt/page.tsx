@@ -4,7 +4,7 @@ import SourceMethodBlock from "../components/SourceMethodBlock";
 
 export const metadata = {
   title: "Perplexity AI vs. ChatGPT: Which One Should You Use for Research? | Everyday AI Workflows",
-  description: "A practical, task-by-task comparison of Perplexity and ChatGPT for research, citations, everyday Q&A, and writing -- with a clear recommendation for when to reach for each.",
+  description: "A practical, task-by-task comparison of Perplexity and ChatGPT for research, citations, everyday Q&A, and writing with source-verification checks.",
   alternates: {
     canonical: "/blog/perplexity-ai-vs-chatgpt",
   },
