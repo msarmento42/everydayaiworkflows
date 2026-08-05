@@ -4,7 +4,7 @@ import SourceMethodBlock from "../components/SourceMethodBlock";
 
 export const metadata = {
   title: "ChatGPT vs. Gemini 2026: Which AI Model Should You Actually Use? | Everyday AI Workflows",
-  description: "A practical, task-by-task comparison of ChatGPT and Google Gemini in 2026 — writing, research, coding, image analysis, and pricing — with a clear recommendation for each use case.",
+  description: "A practical, task-by-task comparison of ChatGPT and Google Gemini in 2026 — writing, research, coding, image analysis, and plan checks you can reproduce.",
   alternates: {
     canonical: "/blog/chatgpt-vs-gemini-2026",
   },
