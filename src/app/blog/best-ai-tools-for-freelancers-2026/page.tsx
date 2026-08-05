@@ -78,6 +78,14 @@ export default function BlogPost() {
           <p>Grammarly can provide a final editing pass for phrasing, tone, and transitions. Use it as one input to your own quality check, especially when a deliverable contains client facts or regulated language.</p>
           <p>The stack works best when each tool has a bounded role: drafting, notes, automation, context capture, visual exploration, or editing. The goal is not to add AI to every task, but to keep judgment, strategy, and execution with the freelancer while admin remains reviewable.</p>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>A Review-Gated Starter Sequence</h2>
+          <p>Preserve the useful implementation detail by piloting one client workflow with explicit approval points. The following sequence is a template to adapt, not a promise of a particular time or revenue result.</p>
+          <ol style={{ paddingLeft: "1.5rem", marginBottom: "1rem" }}>
+            <li style={{ marginBottom: "0.75rem" }}><strong style={{ color: "#fff" }}>Brief the draft:</strong> provide the client type, approved facts, deliverables, constraints, and audience. A starter prompt is: <code style={{ color: "#a5f3fc" }}>Draft a proposal from this brief. Separate facts from assumptions, list missing inputs, and end with questions for human review.</code></li>
+            <li style={{ marginBottom: "0.75rem" }}><strong style={{ color: "#fff" }}>Prepare the handoff:</strong> let a form or folder event create a draft record, task, or notification, but keep client data, billing, recipient lists, and external sends behind a human approval step.</li>
+            <li style={{ marginBottom: "0.75rem" }}><strong style={{ color: "#fff" }}>Log the pilot:</strong> save the input, output, corrections, approval time, errors, privacy decisions, and ongoing cost. Keep the workflow only if the record shows a useful improvement for that client and task.</li>
+          </ol>
+
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
               💡 <strong>Start with one bottleneck, not ten tools.</strong> If writing slows you down, begin with Jasper. If admin steals your week, start with Make.com. If context-switching is the issue, build your system in Notion first. <a href="/tools" style={{ color: "#00d4ff" }}>Browse the full AI toolkit →</a>
