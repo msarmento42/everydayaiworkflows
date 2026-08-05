@@ -1,5 +1,6 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
+import SourceMethodBlock from "../components/SourceMethodBlock";
 import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
@@ -24,6 +25,14 @@ export default function BlogPost() {
           Build an AI Email Triage System: Zero Inbox in Under 10 Minutes
         </h1>
         <AffiliateDisclosure />
+        <SourceMethodBlock
+          reviewedOn="August 5, 2026"
+          sources={[
+            { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
+            { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
+            { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
+          ]}
+        />
         <ShareButtons
           title={metadata.title}
           url={metadata.alternates.canonical}

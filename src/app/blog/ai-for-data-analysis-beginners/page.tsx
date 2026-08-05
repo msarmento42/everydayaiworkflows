@@ -7,6 +7,7 @@ export const metadata = {
 };
 import ShareButtons from '../../components/ShareButtons';
 import AffiliateDisclosure from '../components/AffiliateDisclosure';
+import SourceMethodBlock from '../components/SourceMethodBlock';
 
 
 export default function BlogPost() {
@@ -23,6 +24,14 @@ export default function BlogPost() {
           AI for Data Analysis: A Beginner&apos;s Guide to Turning Spreadsheets into Insights
         </h1>
         <AffiliateDisclosure />
+        <SourceMethodBlock
+          reviewedOn="August 5, 2026"
+          sources={[
+            { label: "OpenAI Help: Data analysis with ChatGPT", href: "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt" },
+            { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
+            { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
+          ]}
+        />
         <ShareButtons title={metadata.title} url="https://everydayaiworkflows.com/blog/ai-for-data-analysis-beginners" />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>

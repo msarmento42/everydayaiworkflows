@@ -1,5 +1,6 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
+import SourceMethodBlock from "../components/SourceMethodBlock";
 
 export const metadata = {
   title: "Build an AI Meeting Summarizer Workflow: Save Hours Every Week | Everyday AI Workflows",
@@ -23,6 +24,13 @@ export default function BlogPost() {
           Build an AI Meeting Summarizer Workflow: Save Hours Every Week
         </h1>
         <AffiliateDisclosure />
+        <SourceMethodBlock
+          reviewedOn="August 5, 2026"
+          sources={[
+            { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
+            { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
+          ]}
+        />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 

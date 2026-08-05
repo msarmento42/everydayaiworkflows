@@ -1,5 +1,6 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
+import SourceMethodBlock from "../components/SourceMethodBlock";
 import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
@@ -63,6 +64,13 @@ export default function BlogPost() {
           How to Use AI for Customer Support: A Practical Workflow That Actually Scales
         </h1>
         <AffiliateDisclosure />
+        <SourceMethodBlock
+          reviewedOn="August 5, 2026"
+          sources={[
+            { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
+            { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
+          ]}
+        />
         <ShareButtons title={blogPostTitle} url={blogPostUrl} />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
