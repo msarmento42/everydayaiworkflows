@@ -1,4 +1,5 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
@@ -61,6 +62,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           How to Use AI for Customer Support: A Practical Workflow That Actually Scales
         </h1>
+        <AffiliateDisclosure />
         <ShareButtons title={blogPostTitle} url={blogPostUrl} />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
