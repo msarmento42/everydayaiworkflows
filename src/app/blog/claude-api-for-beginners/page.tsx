@@ -14,26 +14,23 @@ export default function BlogPost() {
     "@type": "Article",
     "headline": metadata.title,
     "description": metadata.description,
-    "image": ["https://www.agios.ai/images/claude-api-for-beginners-hero.jpg"],
     "datePublished": "2026-07-16T00:00:00Z",
     "dateModified": "2026-07-16T00:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Agios"
+      "name": "Everyday AI Workflows",
+      "url": "https://everydayaiworkflows.com/about"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Agios",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.agios.ai/logo.png"
-      }
+      "name": "Everyday AI Workflows",
+      "url": "https://everydayaiworkflows.com"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.agios.ai" + metadata.alternates.canonical
+      "@id": "https://everydayaiworkflows.com" + metadata.alternates.canonical
     },
-    "url": "https://www.agios.ai" + metadata.alternates.canonical
+    "url": "https://everydayaiworkflows.com" + metadata.alternates.canonical
   };
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
