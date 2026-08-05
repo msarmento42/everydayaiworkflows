@@ -2,8 +2,6 @@ import NewsletterCapture from "../components/NewsletterCapture";import RelatedPo
 
 const postTitle = "AI for Course Creation: Build and Launch an Online Course 3x Faster";
 const postDescription = "AI can handle the outline, lesson scripts, quiz questions, sales copy, and promotional content for your online course — here is the complete workflow.";
-const ogImageUrl = "https://www.agios.ai/images/ai-course-creation-og.jpg"; // Default Open Graph image
-
 export async function generateMetadata() {
   return {
     title: postTitle,
@@ -14,14 +12,6 @@ export async function generateMetadata() {
     openGraph: {
       title: postTitle,
       description: postDescription,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: postTitle,
-        },
-      ],
       type: "article",
     },
   };

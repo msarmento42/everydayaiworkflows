@@ -14,28 +14,23 @@ export default function BlogPost() {
     "@type": "Article",
     "headline": metadata.title,
     "description": metadata.description,
-    "image": [
-      "https://www.agios.ai/images/ai-tools-for-designers-hero.jpg" // Placeholder image
-    ],
     "datePublished": "2026-05-24T00:00:00Z",
-    "dateModified": "2026-05-24T00:00:00Z", // Assuming same as published if no explicit modification date
+    "dateModified": "2026-05-24T00:00:00Z",
     "author": {
       "@type": "Organization",
-      "name": "Agios"
+      "name": "Everyday AI Workflows",
+      "url": "https://everydayaiworkflows.com/about"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Agios",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.agios.ai/logo.png" // Placeholder logo
-      }
+      "name": "Everyday AI Workflows",
+      "url": "https://everydayaiworkflows.com"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.agios.ai" + metadata.alternates.canonical
+      "@id": "https://everydayaiworkflows.com" + metadata.alternates.canonical
     },
-    "url": "https://www.agios.ai" + metadata.alternates.canonical
+    "url": "https://everydayaiworkflows.com" + metadata.alternates.canonical
   };
 
   return (

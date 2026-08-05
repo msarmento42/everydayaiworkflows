@@ -7,16 +7,6 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-small-business",
   },
-  openGraph: {
-    images: [
-      {
-        url: "https://www.everydayaiworkflows.com/images/ai-for-small-business-hero.jpg",
-        width: 1200,
-        height: 630,
-        alt: "AI for Small Business: The Practical Toolkit That Replaces Three Hires",
-      },
-    ],
-  },
 };
 
 const jsonLd = {
@@ -24,9 +14,8 @@ const jsonLd = {
   "@type": "Article",
   "headline": metadata.title.split(' | ')[0],
   "description": metadata.description,
-  "image": "https://www.everydayaiworkflows.com/images/ai-for-small-business-hero.jpg", // Placeholder image
   "datePublished": "2026-06-14T00:00:00Z",
-  "dateModified": "2026-07-09T00:00:00Z", // Current date for modification
+  "dateModified": "2026-07-09T00:00:00Z",
   "author": {
     "@type": "Organization",
     "name": "Everyday AI Workflows"
@@ -34,10 +23,7 @@ const jsonLd = {
   "publisher": {
     "@type": "Organization",
     "name": "Everyday AI Workflows",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.everydayaiworkflows.com/logo.png"
-    }
+    "url": "https://everydayaiworkflows.com"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
