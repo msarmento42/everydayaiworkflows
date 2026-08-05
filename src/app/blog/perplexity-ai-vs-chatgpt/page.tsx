@@ -1,4 +1,6 @@
 import NewsletterCapture from "../components/NewsletterCapture";
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
+import SourceMethodBlock from "../components/SourceMethodBlock";
 
 export const metadata = {
   title: "Perplexity AI vs. ChatGPT: Which One Should You Use for Research? | Everyday AI Workflows",
@@ -21,29 +23,38 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           Perplexity AI vs. ChatGPT: Which One Should You Use for Research?
         </h1>
+        <AffiliateDisclosure />
+        <SourceMethodBlock
+          reviewedOn="August 5, 2026"
+          sources={[
+            { label: "Perplexity Help Center: How does Perplexity work?", href: "https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work" },
+            { label: "OpenAI Help Center: Data analysis with ChatGPT", href: "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt" },
+            { label: "Anthropic Documentation", href: "https://docs.anthropic.com/en/docs/overview" },
+          ]}
+        />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
-          <p>Perplexity and ChatGPT get lumped together as "AI chatbots," but they were built to solve different problems. Perplexity is a research and answer engine built around live web search and citations. ChatGPT is a general-purpose assistant that is excellent at reasoning, writing, and coding, with web search as one capability among many. Once you know which job each one is actually optimized for, the "which one should I use" question mostly answers itself.</p>
+          <p>Perplexity and ChatGPT overlap, but their product surfaces emphasize different tasks. Perplexity documents a search-first experience with citations, while ChatGPT is a general-purpose assistant with writing, coding, data, and search features that vary by account. Use the comparison below to choose a workflow and then verify important claims in the original sources.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>How Each One Actually Works</h2>
-          <p>Perplexity's default behavior is to search the live web for every query, then synthesize an answer with numbered citations linking back to its sources. That citation-first design is the whole point of the product — you can click through and verify every claim, which makes it fundamentally a research tool wearing a chat interface.</p>
-          <p>ChatGPT's default behavior is to answer from its trained knowledge and reasoning first, and only search the web when the query clearly needs current information or you explicitly ask it to. Its strength is depth of reasoning across a conversation — holding context over many turns, working through multi-step problems, writing and debugging code, and producing long-form content that does not need a source for every sentence.</p>
+          <p>Perplexity&apos;s help center describes a search-first flow that gathers web sources and includes citations in the answer. That makes it useful when you need a visible research trail, but citations still need to be opened and checked.</p>
+          <p>ChatGPT can answer from its model knowledge and, when available and enabled, search the web or analyze uploaded files. Its best fit depends on the task, plan, and whether you need a citation trail for each current claim.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Research and Fact-Finding</h2>
-          <p>This is Perplexity's home turf. Ask it "what were the top three announcements from a product launch last week" and you get a synthesized answer with clickable citations to the actual articles, letting you verify claims in seconds rather than re-searching from scratch. ChatGPT with browsing enabled can do a similar job, but the citation experience is secondary to the conversational answer — it is built to be trusted and used directly, not audited source-by-source. For any task where you need to show your work — a client-facing research brief, a fact-checked article, competitive intelligence you will cite in a report — Perplexity's citation-first design saves real verification time.</p>
+          <p>Perplexity is a natural candidate for a cited research pass because its answers include links to sources. ChatGPT with search enabled can also support current-information work. For a client-facing brief, fact-checked article, or competitive review, open the linked sources and keep a record of what you verified rather than treating either answer as self-authenticating.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Multi-Step Reasoning and Long Conversations</h2>
-          <p>ChatGPT wins clearly here. If you are working through a complex problem across many back-and-forth turns — refining a strategy, debugging code, iterating on a document — ChatGPT holds context and reasons through the problem more reliably. Perplexity's interface and underlying design are optimized for question-and-answer, not extended collaborative problem-solving. Ask it a single well-scoped research question and it excels; ask it to hold a 40-turn planning conversation and it starts to feel like the wrong tool.</p>
+          <p>For an extended planning or editing session, many people prefer a general-purpose assistant such as ChatGPT. Perplexity is oriented toward research questions and source gathering, so a two-step workflow can be clearer: collect and verify sources first, then move the material into the tool that best supports your planning or drafting.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Writing and Content Creation</h2>
-          <p>ChatGPT is the stronger writing tool for anything longer than a paragraph — blog posts, emails, scripts, technical documentation. It was trained and refined heavily on writing quality and following detailed style instructions across a long piece. Perplexity can write short-form summaries and answers well, but it is not designed or positioned as a long-form writing tool, and pushing it into that role usually produces something closer to a research memo than polished prose. For dedicated long-form AI writing, purpose-built tools like <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> or <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> go further than either general chatbot on brand-voice consistency at scale.</p>
+          <p>ChatGPT may be the better fit for a long draft when you need iterative writing, coding, or style instructions. Perplexity can produce useful summaries, but the output should still be edited and checked against the cited sources. For dedicated long-form AI writing, tools like <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> or <a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> add separate brand and review controls; verify current plans before recommending them.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Coding and Technical Work</h2>
-          <p>ChatGPT is the better choice for anything code-related — writing functions, debugging error messages, explaining unfamiliar codebases, and working through technical architecture decisions across a session. Perplexity can look up documentation and current library versions well (its search-grounding helps with fast-moving frameworks), but it is not built as a coding assistant and lacks the extended-reasoning depth ChatGPT applies to debugging a gnarly problem.</p>
+          <p>ChatGPT is often a better fit for an iterative coding session, while Perplexity can help locate current documentation or library information. Use tests, source links, and a human code review regardless of which tool drafts the change.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Cost and Access</h2>
-          <p>Both offer a capable free tier and a paid tier (Perplexity Pro and ChatGPT Plus) in a similar price range, each unlocking more queries, higher-tier models, and extra features (Perplexity Pro adds more advanced search modes; ChatGPT Plus adds more advanced reasoning models, custom GPTs, and higher usage limits). Neither is meaningfully cheaper than the other at the individual tier, so cost is rarely the deciding factor — task fit is.</p>
+          <p>Both services have multiple plans, and pricing, usage limits, and included models change. Compare the current Perplexity and ChatGPT plan pages for your region, then estimate your actual monthly research volume. Task fit and citation requirements may matter more than the headline price.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Quick Decision Guide</h2>
           <div style={{ overflowX: "auto", marginTop: "1rem", marginBottom: "1rem" }}>
@@ -51,7 +62,7 @@ export default function BlogPost() {
               <thead>
                 <tr style={{ borderBottom: "1px solid #374151" }}>
                   <th style={{ textAlign: "left", padding: "0.5rem", color: "#fff" }}>Task</th>
-                  <th style={{ textAlign: "left", padding: "0.5rem", color: "#fff" }}>Better choice</th>
+                  <th style={{ textAlign: "left", padding: "0.5rem", color: "#fff" }}>Likely fit (verify current plan)</th>
                 </tr>
               </thead>
               <tbody>
@@ -82,10 +93,10 @@ export default function BlogPost() {
               </tbody>
             </table>
           </div>
-          <p>The honest answer for most people who do serious research or writing work is to use both, each for what it is built for: Perplexity to gather and verify facts quickly, ChatGPT to reason through them and produce the finished output. That pairing shows up directly in workflows like <a href="/blog/chatgpt-for-market-research" style={{ color: "#00d4ff" }}>ChatGPT for market research</a> and <a href="/blog/using-claude-for-research" style={{ color: "#00d4ff" }}>using Claude for research</a>, both of which lean on a dedicated search tool for the fact-gathering phase before switching to a stronger writing model for synthesis.</p>
+          <p>A two-step workflow can be useful: use a citation-focused tool to gather and verify sources, then use a drafting assistant to reason through them and produce an edited output. That pattern appears in workflows like <a href="/blog/chatgpt-for-market-research" style={{ color: "#00d4ff" }}>ChatGPT for market research</a> and <a href="/blog/using-claude-for-research" style={{ color: "#00d4ff" }}>using Claude for research</a>. Keep the source trail with the final document.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Where Claude Fits Into This Comparison</h2>
-          <p>If your research eventually needs to become a long, carefully reasoned document — a report, a legal summary, an academic-style writeup — it is worth adding Claude to the rotation rather than treating this as strictly a two-tool decision. Our <a href="/blog/using-claude-for-research" style={{ color: "#00d4ff" }}>Claude research workflow guide</a> and <a href="/blog/chatgpt-vs-claude-2026" style={{ color: "#00d4ff" }}>ChatGPT vs. Claude comparison</a> cover exactly where Claude outperforms ChatGPT on long-context synthesis, which is often the step right after a Perplexity research pass.</p>
+          <p>If research needs to become a long, carefully reasoned document, Claude is another tool worth testing for synthesis. Our <a href="/blog/using-claude-for-research" style={{ color: "#00d4ff" }}>Claude research workflow guide</a> and <a href="/blog/chatgpt-vs-claude-2026" style={{ color: "#00d4ff" }}>ChatGPT vs. Claude comparison</a> cover that narrower task. Whichever tool you use, retain the source links and review consequential claims.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>
