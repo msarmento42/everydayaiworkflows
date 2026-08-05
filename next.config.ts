@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: "/blog/chatgpt-vs-claude-2026",
         permanent: true,
       },
+      {
+        source: "/blog/ai-tools-for-freelancers",
+        destination: "/blog/best-ai-tools-for-freelancers-2026",
+        permanent: true,
+      },
     ];
   },
 };
