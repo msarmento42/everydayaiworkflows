@@ -3,8 +3,8 @@ import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
 
 export const metadata = {
-  title: "AI Content Repurposing: Turn One Post Into 10 Pieces of Content Automatically | Everyday AI Workflows",
-  description: "How to build an AI-powered content repurposing workflow that turns a single blog post or video into LinkedIn posts, newsletters, tweets, short-form video scripts, and more — automatically.",
+  title: "AI Content Repurposing: Turn One Post into Platform-Specific Drafts | Everyday AI Workflows",
+  description: "Use AI prompts and a reviewable automation workflow to adapt a blog post or video into platform-specific drafts for social posts, newsletters, and short-form video.",
   alternates: {
     canonical: "/blog/ai-content-repurposing-workflow",
   },
@@ -21,7 +21,7 @@ export default function BlogPost() {
           <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>June 16, 2026</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
-          AI Content Repurposing: Turn One Post Into 10 Pieces of Content Automatically
+          AI Content Repurposing: Turn One Post into Platform-Specific Drafts
         </h1>
         <AffiliateDisclosure />
         <SourceMethodBlock
@@ -34,10 +34,10 @@ export default function BlogPost() {
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
-          <p>The biggest inefficiency in most content workflows isn't producing content — it's what happens after. A 1,500-word blog post contains enough raw material for a week of LinkedIn posts, a newsletter section, three Twitter threads, a short-form video script, and an email sequence. Most creators write the post, publish it once, and move on. AI changes that equation entirely. Here's how to build a repurposing workflow that extracts maximum reach from every piece you publish.</p>
+          <p>The biggest inefficiency in many content workflows isn't producing content — it's what happens after. A well-developed blog post can contain raw material for platform-specific social posts, a newsletter section, a short-form video script, and an email sequence. Most creators write the post, publish it once, and move on. AI can help you adapt that source material while you keep editorial control over every derivative.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Why Most Repurposing Fails (And How AI Fixes It)</h2>
-          <p>Manual repurposing fails for one reason: it's nearly as much work as writing new content. Adapting a blog post for LinkedIn requires a different hook, a different structure, a different ending. Most creators try it once, find it takes 45 minutes, and give up. AI collapses that time to under 5 minutes per format — and does a better job of platform-native adaptation because you can train it with examples of what good looks like on each platform.</p>
+          <p>Manual repurposing often feels like writing new content. Adapting a blog post for LinkedIn requires a different hook, structure, and ending. AI can shorten the adaptation pass when you give it platform examples and review each draft for accuracy, voice, and fit.</p>
           <p>The key shift: stop thinking of your blog post as the end product. Treat it as raw material — the source document from which all your platform-specific content is derived. The blog post is your canonical, fully-researched, fully-developed piece. Everything else is a derivative optimized for a specific format and audience context.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>The Core Repurposing Prompts (Copy These)</h2>
@@ -72,8 +72,8 @@ Format:
 Write it to be spoken aloud — short sentences, no jargon.`}</pre>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Upgrading with Jasper's Brand Voice</h2>
-          <p>Raw AI repurposing produces generic content. The upgrade is brand voice training. <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> lets you upload examples of your best-performing content and trains a brand voice model that gets applied to every output. The result: repurposed content that sounds like you, not like an AI trying to sound like you.</p>
-          <p>The setup takes about 30 minutes the first time: paste 5-10 examples of your best LinkedIn posts, set your tone (direct, conversational, expert-but-accessible), and define your audience. After that, every repurposing job you run through Jasper inherits that voice automatically. This is especially valuable for founders and personal brands where authenticity is the differentiator.</p>
+          <p>Raw AI repurposing can produce generic content. One way to add editorial context is brand voice training. <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> lets you upload examples of your strongest content and apply a saved voice to later outputs. Review the drafts for accuracy and authenticity; a saved voice is a starting point, not a substitute for editing.</p>
+          <p>Start by adding a small set of representative LinkedIn posts, setting your tone (direct, conversational, expert-but-accessible), and defining your audience. Review the first outputs closely before relying on the saved voice for later drafts. This is especially useful for founders and personal brands where authenticity is the differentiator.</p>
           <p><a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> offers a similar feature with its Chatsonic tool, and is a good alternative for teams already using it for SEO content — the repurposing adds no additional cost if you're already on a paid plan.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Automating the Repurposing Pipeline with Make.com</h2>
@@ -85,14 +85,14 @@ Write it to be spoken aloud — short sentences, no jargon.`}</pre>
             <li style={{ marginBottom: "0.5rem" }}>Step 3: Saves all outputs to a Notion "Content Queue" database — one row per format, with the draft content pre-filled</li>
             <li style={{ marginBottom: "0.5rem" }}>Step 4: Notifies you via Slack or email that the queue is ready for review</li>
           </ul>
-          <p>Your morning routine becomes: open Notion, review 4-5 AI-generated drafts from yesterday's post, make minor edits, schedule them out. Total time: 20-30 minutes to distribute a full week of content from a single source piece. See our guide on <a href="/blog/automating-social-media-with-ai" style={{ color: "#00d4ff" }}>automating social media with AI</a> for the full scheduling piece of this workflow.</p>
+          <p>Your review routine becomes: open Notion, inspect the generated drafts from the source post, make the necessary edits, and schedule only the pieces that fit your calendar. See our guide on <a href="/blog/automating-social-media-with-ai" style={{ color: "#00d4ff" }}>automating social media with AI</a> for the full scheduling piece of this workflow.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>What to Repurpose First: Finding Your Evergreen Content</h2>
           <p>Not every post deserves full repurposing treatment. Prioritize content that is evergreen (the advice won't be stale in 6 months), high-performing (already getting organic traffic or engagement), or foundational (defines your core point of view). News-reactive posts and topical takes have a short shelf life; tutorials, frameworks, and opinion pieces compound.</p>
-          <p>A practical way to build your repurposing backlog: pull your top 10 posts by traffic or engagement. Run each one through the repurposing prompts above. You'll generate 40-50 pieces of derivative content from assets you've already created — with zero new research required.</p>
+          <p>A practical way to build your repurposing backlog: start with a small set of posts that already have clear traffic or engagement signals. Run each one through the prompts above and label the resulting drafts by source, platform, and review status. You can expand the backlog as you learn which topics are worth adapting.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Tracking What Actually Converts</h2>
-          <p>Repurposing at scale only makes sense if you're measuring what's working. Track which repurposed formats drive the most traffic back to the original post, which ones generate the most profile visits or follows, and which platforms your audience engages with most. After 60 days, double down on what works and cut the formats that never convert. Most creators find that 2-3 formats do 80% of the work — once you know which ones, you can streamline the whole pipeline around them.</p>
+          <p>Repurposing at scale only makes sense if you're measuring what's working. Track which repurposed formats drive traffic back to the original post, which ones generate profile visits or follows, and which platforms your audience engages with most. After a measurement period, concentrate on the formats that show useful signals and retire the ones that do not earn a place in your calendar.</p>
           <p>For SEO-specific repurposing — where the goal is ranking, not social engagement — pair your repurposing workflow with <a href="https://surferseo.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Surfer SEO</a> to ensure each derivative piece is optimized for its own target keyword rather than just copying the original. Our <a href="/blog/ai-for-seo-optimization" style={{ color: "#00d4ff" }}>AI for SEO guide</a> covers this in detail.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
