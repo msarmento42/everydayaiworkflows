@@ -44,6 +44,43 @@ export default function BlogPost() {
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Research and Fact-Finding</h2>
           <p>Perplexity is a natural candidate for a cited research pass because its answers include links to sources. ChatGPT with search enabled can also support current-information work. For a client-facing brief, fact-checked article, or competitive review, open the linked sources and keep a record of what you verified rather than treating either answer as self-authenticating.</p>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>A Reproducible Research Worksheet</h2>
+          <p>Run the same question through both tools when the decision matters. Use a dated question with a defined region and time range, ask for source links, and save the complete outputs. The steps below produce evidence you can audit; they are not a claim of first-hand testing by this site.</p>
+          <div style={{ overflowX: "auto", marginTop: "1rem", marginBottom: "1.5rem" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid #374151" }}>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Step</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Method</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>What to verify</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Set the brief</td>
+                  <td style={{ padding: "0.6rem" }}>Use one question, date, region, and definition of a good answer</td>
+                  <td style={{ padding: "0.6rem" }}>Both tools received the same wording and constraints</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Collect sources</td>
+                  <td style={{ padding: "0.6rem" }}>Ask each tool for a short answer with linked sources</td>
+                  <td style={{ padding: "0.6rem" }}>Open at least three links and note publisher, date, and primary evidence</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Check claims</td>
+                  <td style={{ padding: "0.6rem" }}>Put each material claim in a simple verification table</td>
+                  <td style={{ padding: "0.6rem" }}>Supported, contradicted, outdated, or not found in the cited source</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "0.6rem" }}>Draft the brief</td>
+                  <td style={{ padding: "0.6rem" }}>Use the verified source pack to produce the same final format</td>
+                  <td style={{ padding: "0.6rem" }}>Unsupported additions, citation coverage, and editor corrections</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Score each tool from 0–2 for source traceability, source quality, coverage of the brief, and editing effort. Citation count is not accuracy: a polished answer can still cite a weak or mismatched source, so keep the URLs and verification notes with the finished research.</p>
+
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Multi-Step Reasoning and Long Conversations</h2>
           <p>For an extended planning or editing session, many people prefer a general-purpose assistant such as ChatGPT. Perplexity is oriented toward research questions and source gathering, so a two-step workflow can be clearer: collect and verify sources first, then move the material into the tool that best supports your planning or drafting.</p>
 
