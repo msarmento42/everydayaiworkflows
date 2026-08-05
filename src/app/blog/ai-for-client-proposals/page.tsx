@@ -21,6 +21,15 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Client Proposals: Write Winning Proposals in 30 Minutes, Not 3 Hours
         </h1>
+        <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>AI Workflow Summary</h2>
+        <ul style={{ listStyleType: "disc", marginLeft: "1.5rem", marginBottom: "2rem", color: "#d1d5db" }}>
+          <li style={{ marginBottom: "0.5rem" }}><strong>Capture Discovery Notes:</strong> Document client needs, budget, and timeline in a structured format.</li>
+          <li style={{ marginBottom: "0.5rem" }}><strong>Generate Problem Statement:</strong> Use AI to draft the client's problem, focusing on their language and the cost of inaction.</li>
+          <li style={{ marginBottom: "0.5rem" }}><strong>Draft Full Proposal:</strong> Provide AI with a proven proposal skeleton and approved problem statement to fill in details.</li>
+          <li style={{ marginBottom: "0.5rem" }}><strong>Price with Three Tiers:</strong> Structure pricing into Essentials, Recommended, and Partnership tiers, letting AI build the framework.</li>
+          <li style={{ marginBottom: "0.5rem" }}><strong>Run Skeptic Pass:</strong> Have AI identify objections, ambiguities, and scope holes from a client's CFO perspective.</li>
+          <li style={{ marginBottom: "0.5rem" }}><strong>Automate Follow-Up:</strong> Draft and schedule a three-touch follow-up sequence immediately after sending the proposal.</li>
+        </ul>
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
