@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: "/ai-tools",
         permanent: true,
       },
+      {
+        source: "/blog/chatgpt-vs-claude-comparison",
+        destination: "/blog/chatgpt-vs-claude-2026",
+        permanent: true,
+      },
     ];
   },
 };

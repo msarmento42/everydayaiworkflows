@@ -68,6 +68,10 @@ export default function BlogPost() {
           <p>Do not rely on a model to silently enforce a business rule. Ask for structured output, validate the required fields, and route exceptions to a human before an automated action.</p>
           <p>Practical fit for instruction following: the assistant whose output passes your acceptance checks consistently.</p>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Interaction Style and Review Habits</h2>
+          <p>Interaction style is subjective. You may prefer one assistant&apos;s directness or the other&apos;s collaborative tone depending on the task, but treat that as a preference to test rather than a product fact.</p>
+          <p>If you use an assistant as a thinking partner, ask for counterarguments and cite the evidence behind important claims regardless of which tool you choose. Keep a human review step for consequential decisions and external actions.</p>
+
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Connecting AI to Your Existing Tools</h2>
           <p>Neither ChatGPT nor Claude does much on their own beyond conversation. The real leverage comes from wiring them into your workflow. Tools like <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> let you build no-code automations that trigger AI calls based on events — a new email arrives, a form is submitted, a spreadsheet row is updated — and then route the AI output to Slack, Notion, your CRM, or anywhere else.</p>
           <p>Both ChatGPT (via OpenAI API) and Claude (via Anthropic API) work with Make.com equally well. The choice of model here comes down to the task, not the integration. See our guide on <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>automating tasks with Make.com</a> for a full walkthrough of building your first AI automation.</p>
