@@ -90,6 +90,43 @@ export default function BlogPost() {
             </table>
           </div>
 
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>A Repeatable Side-by-Side Worksheet</h2>
+          <p>Feature lists age quickly, so use the same input and review steps when you need a decision for your own account. This worksheet is an evaluation protocol, not a claim that either vendor has been tested by this site.</p>
+          <div style={{ overflowX: "auto", marginTop: "1rem", marginBottom: "1.5rem" }}>
+            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid #374151" }}>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Step</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Use the same input</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem", color: "#fff" }}>Record before choosing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Drafting</td>
+                  <td style={{ padding: "0.6rem" }}>A brief with audience, facts, tone, and a word limit</td>
+                  <td style={{ padding: "0.6rem" }}>Missing requirements, factual edits, and review time</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Document work</td>
+                  <td style={{ padding: "0.6rem" }}>The same public document or small file</td>
+                  <td style={{ padding: "0.6rem" }}>Whether the tool can access it, useful citations, and unsupported claims</td>
+                </tr>
+                <tr style={{ borderBottom: "1px solid #1f2937" }}>
+                  <td style={{ padding: "0.6rem" }}>Structured task</td>
+                  <td style={{ padding: "0.6rem" }}>A six-row table or CSV with a requested output schema</td>
+                  <td style={{ padding: "0.6rem" }}>Assumptions, calculation errors, and whether the output is reproducible</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: "0.6rem" }}>Access check</td>
+                  <td style={{ padding: "0.6rem" }}>The exact Workspace, connector, image, or voice task you need</td>
+                  <td style={{ padding: "0.6rem" }}>Plan, permission, region, and rollout requirements</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Score each output from 0–2 for task completeness, source or calculation accuracy, correction effort, and access fit. Keep the prompts, outputs, date, plan, and corrections together; a higher score is meaningful only for the work you actually do.</p>
+
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Pricing and Value</h2>
           <p>Pricing, free-tier limits, and Workspace inclusions change. If you are already paying for Google Workspace, compare the features included in your exact edition with the ChatGPT plan you would actually use. Model your expected monthly usage and review the current pricing pages instead of relying on a fixed sticker-price comparison.</p>
 
