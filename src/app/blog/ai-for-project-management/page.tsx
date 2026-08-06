@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import RelatedPosts from "../../components/RelatedPosts";
 
@@ -30,6 +31,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Project Management: Cut Meeting Time and Never Miss a Deadline
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>Project management has always been about information flow — making sure the right people know the right things at the right time. The problem is that most of the work involved in managing that flow is administrative: writing status updates, summarizing meetings, breaking vague goals into concrete tasks, and tracking whether commitments are on schedule. AI does not manage projects for you, but it compresses all of that administrative overhead dramatically. This guide covers the workflows where AI delivers the most value, from project kickoff through delivery.</p>

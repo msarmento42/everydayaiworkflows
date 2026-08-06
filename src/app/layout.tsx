@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Everyday AI Workflows - Daily AI Prompts & Tools",
   description: "Discover daily AI prompts and curated tools to boost your productivity. Learn how to integrate AI into your daily workflow.",
   keywords: "AI, artificial intelligence, productivity, prompts, tools, workflow, automation, ChatGPT, Claude",
-  authors: [{ name: "AI Workflows Team" }],
+  authors: [{ name: "Marcus Sarmento" }],
   openGraph: {
     title: "Everyday AI Workflows - Daily AI Prompts",
     description: "Discover daily AI prompts and tools to boost your productivity.",
@@ -84,7 +84,6 @@ export default function RootLayout({
             { href: '/workflows/automation', label: 'Workflows' },
             { href: '/ai-tools', label: 'AI Tools' },
             { href: '/ai-tools-by-role', label: 'By Role' },
-            { href: '/tools', label: 'Directory' },
             { href: '/editorial-policy', label: 'Policy' },
           ].map(({ href, label }) => (
             <a key={href} href={href} style={{ color: '#9ca3af', textDecoration: 'none', fontSize: '0.85rem' }}>

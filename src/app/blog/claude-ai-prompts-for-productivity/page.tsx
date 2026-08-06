@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           10 Claude AI Prompts That Will Transform Your Workday
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>Most people use Claude for simple tasks — answering a quick question, summarizing an email, maybe drafting a reply. But Claude is capable of dramatically more than that. With the right prompts, you can offload entire chunks of your cognitive workload, turning hours of grunt work into minutes of review. These ten prompts are ones worth adding to your daily toolkit, and each one consistently saves 20–30 minutes when applied well.</p>
 

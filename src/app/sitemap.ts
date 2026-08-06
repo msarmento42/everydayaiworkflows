@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/start-here`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE_URL}/ai-tools`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE_URL}/ai-tools-by-role`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.85 },
-    { url: `${BASE_URL}/tools`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },    { url: `${BASE_URL}/workflows/automation`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.75 },
+    { url: `${BASE_URL}/workflows/automation`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.75 },
     { url: `${BASE_URL}/workflows/meetings`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.75 },
     { url: `${BASE_URL}/workflows/research`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.75 },
     { url: `${BASE_URL}/workflows/writing`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.75 },

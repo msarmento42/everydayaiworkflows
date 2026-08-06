@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI-Powered Customer Onboarding: Cut Time-to-Value by 50%
         </h1>
+        <AffiliateDisclosure />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>Customer onboarding is one of the highest-leverage activities in any SaaS or service business — and one of the most neglected. Most companies spend enormous resources acquiring customers and then hand them a welcome email and a documentation link. Churn that happens in the first 30 days is almost always an onboarding failure, not a product failure. AI changes what is possible here, even for small teams without a dedicated customer success department.</p>

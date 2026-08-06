@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import Script from 'next/script';
 
@@ -44,6 +45,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           VPN for AI Researchers: Stay Secure While Accessing AI Tools Globally
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>If you are doing serious work with AI tools — running Claude API calls from a coffee shop, accessing restricted models from a region with limitations, or handling sensitive research data — your default internet connection is probably not secure enough. A good VPN is no longer optional for AI power users; it is a core part of a responsible workflow stack.</p>
           <p>This guide covers exactly why AI researchers and remote workers need VPN protection, what to look for when choosing one, how to set it up correctly the first time, and how to integrate VPN use into your daily AI workflow without creating friction.</p>

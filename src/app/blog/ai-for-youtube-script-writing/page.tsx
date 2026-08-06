@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 export const metadata = {
   title: "How to Use AI to Write YouTube Scripts That Actually Keep Viewers Watching",
   description: "Most YouTube scripts fail in the first 30 seconds — not because the creator lacks ideas, but because the structure is wrong. Here's the exact AI workflow that cuts script time in half.",
@@ -29,6 +30,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           How to Use AI to Write YouTube Scripts That Actually Keep Viewers Watching
         </h1>
+        <AffiliateDisclosure />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
