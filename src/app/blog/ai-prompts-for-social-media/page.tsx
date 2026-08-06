@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 export const metadata = {
   title: "50 AI Prompts for Social Media That Actually Get Engagement",
   description: "Most AI-generated social media posts are forgettable. They\'re technically correct, grammatically clean, and utterly generic. The problem isn\'t the AI — it\'s...",
@@ -19,6 +20,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           50 AI Prompts for Social Media That Actually Get Engagement
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>Most AI-generated social media posts are forgettable. They're technically correct, grammatically clean, and utterly generic. The problem isn't the AI — it's the prompts. Vague input produces vague output. The prompts below are built around what actually drives engagement: specificity, genuine value, a point of view, and a reason to respond. Use these as starting points, then customize the bracketed fields for your niche, voice, and audience.</p>
           <p>If you publish more than a few times a week, the constraint is rarely ideas alone. It is consistency, angle selection, and platform fit. A strong prompt shortens the distance between a rough idea and a post that sounds like a real person with something to say. That is what makes this page useful: not just the prompts themselves, but the thinking behind when to use each kind.</p>

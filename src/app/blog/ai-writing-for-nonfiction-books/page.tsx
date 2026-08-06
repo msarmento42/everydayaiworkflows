@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI Writing for Nonfiction Books: From Rough Idea to Finished Draft in Half the Time
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>Writing a nonfiction book is one of the most demanding creative and intellectual projects a person can take on. Most authors spend months just getting a coherent structure in place before they write a single publishable word. AI does not write the book for you — your expertise, your stories, and your voice are irreplaceable — but it can dramatically compress the structural, research, and editing phases that eat most of your writing time.</p>
           <p>This guide walks through a complete AI-assisted nonfiction writing workflow: from clarifying your core argument through outlining, chapter drafting, research synthesis, and editing passes. Every prompt here is designed to amplify your thinking, not replace it.</p>

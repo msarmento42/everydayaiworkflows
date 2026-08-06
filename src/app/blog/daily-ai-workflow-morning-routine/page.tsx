@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           The 20-Minute AI Morning Routine That Saves 2 Hours a Day
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>Most people start their day reactively — opening email, scrolling Slack, reacting to whatever landed in their inbox overnight. By the time they sit down to do actual work, 90 minutes have passed and their mental energy is already fragmented. The morning routine in this post flips that pattern. Twenty minutes of structured AI-assisted planning at the start of your day consistently frees up 2+ hours later by eliminating decision fatigue, reducing context-switching, and front-loading the thinking that would otherwise bleed into your working hours.</p>
           <p>This routine is not about doing more. It is about deciding, once, at the start of the day, and then executing without constant re-prioritization. AI makes that faster and more systematic than any planner or to-do app.</p>

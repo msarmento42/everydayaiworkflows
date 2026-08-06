@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import ShareButtons from "../../components/ShareButtons";
 
@@ -22,6 +23,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           How to Use AI for SEO Optimization: A Practical Workflow That Actually Ranks
         </h1>
+        <AffiliateDisclosure />
         <ShareButtons title="How to Use AI for SEO Optimization: A Practical Workflow That Actually Ranks" url="https://everydayaiworkflows.com/blog/ai-for-seo-optimization" />
         <script
           type="application/ld+json"

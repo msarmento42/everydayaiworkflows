@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 export const metadata = {
   title: "AI Tools for Journalists: Research Faster, Write Tighter, Verify Smarter",
   description: "Journalists are using AI to cut research time, transcribe interviews, detect source bias, and produce first drafts — without compromising editorial standards. Here's the practical workflow.",
@@ -19,6 +20,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI Tools for Journalists: Research Faster, Write Tighter, Verify Smarter
         </h1>
+        <AffiliateDisclosure />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 

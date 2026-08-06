@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           15 AI Prompts That Will Get You the Job: Interview Prep from First Round to Offer
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>Most people walk into job interviews underprepared — not because they lack experience, but because they spend their prep time rereading their own resume instead of actually practicing. AI changes this equation completely. You can now simulate entire interview conversations, get instant feedback on your answers, craft compelling behavioral stories, and negotiate salary with data — all before you set foot in a room.</p>
           <p>These 15 prompts cover every stage of the interview process, from company research through final-round negotiation. Each one is designed to be copy-paste-ready; just fill in the bracketed parts with your specifics.</p>

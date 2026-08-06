@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";import Head from "next/head";
 
 export const metadata = {
@@ -39,6 +40,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           ChatGPT for Coding Beginners: Learn Faster and Debug Smarter
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>Learning to code has always involved a lot of hitting walls — error messages you do not understand, concepts that make no sense until a specific explanation clicks, and projects that work in theory but fail in practice for reasons that are not obvious. AI assistants like ChatGPT and Claude have dramatically changed what is possible for beginners because they provide instant, patient, context-specific explanations at exactly the moment you need them. This guide covers how to use AI effectively as a coding learning partner — not as a shortcut that bypasses learning, but as a tool that accelerates it.</p>

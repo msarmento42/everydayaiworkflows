@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";import Head from "next/head";
 
 export const metadata = {
@@ -39,6 +40,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           How Real Estate Agents Are Using AI to Write Listings That Actually Sell
         </h1>
+        <AffiliateDisclosure />
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
           <ul style={{ marginTop: "1rem", marginBottom: "1rem", color: "#d1d5db", listStyleType: "disc", paddingLeft: "1.5rem" }}>
             <li>AI can transform raw property notes into polished listing descriptions in minutes.</li>

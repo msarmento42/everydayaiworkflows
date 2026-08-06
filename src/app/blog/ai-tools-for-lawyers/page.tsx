@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -31,6 +32,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI Tools for Lawyers: How Attorneys Are Saving 10+ Hours a Week Without Sacrificing Accuracy
         </h1>
+        <AffiliateDisclosure />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 

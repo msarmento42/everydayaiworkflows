@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 
@@ -22,6 +23,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Recruiting: Cut Time-to-Hire by 40% Without Sacrificing Candidate Quality
         </h1>
+        <AffiliateDisclosure />
         <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "1.5rem", marginBottom: "2rem" }}>
           <h2 style={{ fontSize: "1.3rem", color: "#a5f3fc", marginTop: "0", marginBottom: "1rem" }}>Key Takeaways</h2>
           <ul style={{ listStyleType: "disc", marginLeft: "1.25rem", color: "#d1d5db" }}>

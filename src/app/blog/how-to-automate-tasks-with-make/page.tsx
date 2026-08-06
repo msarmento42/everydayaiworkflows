@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           How to Automate Repetitive Tasks with Make.com (No Code Required)
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>If you are still copying data between apps, manually sending the same types of emails, or spending time on tasks that follow a predictable pattern, you are leaving hours on the table every week. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> is a visual automation platform that lets you connect virtually any app to any other app and build workflows called "scenarios" that run automatically. No code required. This guide walks you through the core concepts, three battle-tested workflows you can build in under an hour, and the mindset shift that separates automations that last from ones that break.</p>

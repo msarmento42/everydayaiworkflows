@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import RoleStackCTA from "../../components/RoleStackCTA";import LeadMagnetCTA from "../../components/LeadMagnetCTA";import NotionAICta from '../../components/NotionAICta';
 
@@ -49,6 +50,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI for Small Business: The Practical Toolkit That Replaces Three Hires
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>Small businesses have always operated at a disadvantage relative to larger competitors when it comes to staffing. A mid-size company has dedicated people for marketing, customer support, bookkeeping, content creation, and HR. A small business owner does all of those things themselves, or pays someone to do a fraction of them. AI has changed this equation more than any previous technology — not by replacing the judgment and relationships that make a small business successful, but by handling the volume of execution work that previously required additional headcount.</p>

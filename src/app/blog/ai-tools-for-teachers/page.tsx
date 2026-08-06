@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import ShareButtons from "../../components/ShareButtons";
 
@@ -22,6 +23,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           AI Tools for Teachers: Save 5 Hours a Week on Lesson Planning and Grading
         </h1>
+        <AffiliateDisclosure />
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>Teaching is one of the most administratively burdened professions that exists. Lesson planning, rubric creation, grading, parent communication, differentiation for different learning levels, and professional documentation all sit on top of the actual work of teaching — which is the relationship and instructional work that only a human can do. AI does not teach for you, but it compresses the administrative scaffolding dramatically. Teachers who have integrated AI into their planning and feedback workflows consistently report recovering 4–6 hours per week. This guide covers the most practical applications.</p>

@@ -1,3 +1,4 @@
+import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function BlogPost() {
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
           Automating Social Media with AI: One Input, 30 Days of Posts
         </h1>
+        <AffiliateDisclosure />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
           <p>The biggest problem with social media for most businesses is not creativity — it is consistency. Coming up with something useful to say every day, adapting it to each platform's format, writing it at the right length and tone, and then actually scheduling it on time is genuinely time-consuming work. Most teams either do it inconsistently or hire someone specifically for it. AI offers a third option: build a system that takes one content brief and turns it into a month of platform-native posts, scheduled and ready to go.</p>
