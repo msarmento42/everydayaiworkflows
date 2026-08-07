@@ -3,6 +3,7 @@
 import { useId, useState } from "react";
 import type { FormEvent } from "react";
 import type { NewsletterSource } from "../../lib/newsletter";
+import { methodStackLinks } from "../../lib/revenue-links";
 
 interface NewsletterCaptureProps {
   darkMode?: boolean;
@@ -89,6 +90,14 @@ export default function NewsletterCapture({
       {status !== "idle" && status !== "loading" ? (
         <p role="status" aria-live="polite" style={{ color: status === "error" || status === "unavailable" ? "#fca5a5" : "#a5f3fc", fontSize: "0.9rem", margin: "0.85rem 0 0", fontWeight: 600 }}>
           {statusMessages[status]}
+          {status === "unavailable" ? (
+            <>
+              {' '}
+              <a href={methodStackLinks.freeReset} target="_blank" rel="noopener noreferrer" style={{ color: darkMode ? "#a5f3fc" : "#4338ca", textDecoration: "underline" }}>
+                Get the free AI Workflow Reset instead.
+              </a>
+            </>
+          ) : null}
         </p>
       ) : null}
     </section>
