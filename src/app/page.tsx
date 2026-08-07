@@ -1,4 +1,5 @@
 import PromptWidget from "./components/PromptWidget";
+import MethodStackCTA from "./components/MethodStackCTA";
 
 export const metadata = {
   title: "Everyday AI Workflows — Daily AI Prompts & Tools",
@@ -45,6 +46,8 @@ export default function Home() {
             <p style={{ color: '#9ca3af', margin: 0, lineHeight: 1.6, fontSize: '0.92rem' }}>Use the <a href="/contact" style={{ color: '#00d4ff' }}>contact page</a> for corrections, ideas, and partnership questions.</p>
           </div>
         </section>
+
+        <MethodStackCTA />
 
         <PromptWidget />
 

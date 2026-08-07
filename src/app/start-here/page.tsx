@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import MethodStackCTA from '../components/MethodStackCTA';
 
 export const metadata = {
   title: 'Start Here - Everyday AI Workflows',
@@ -78,6 +79,8 @@ export default function StartHerePage() {
             ))}
           </ol>
         </section>
+
+        <MethodStackCTA />
 
         <section style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}>
           <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
