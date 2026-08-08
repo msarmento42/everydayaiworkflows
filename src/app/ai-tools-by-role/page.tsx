@@ -25,7 +25,7 @@ const roleStacks = [
     role: 'Freelancers',
     outcome: 'Win work, deliver faster, and keep client context organized.',
     tools: [
-      ['Notion AI', 'Client notes, deliverables, content calendars, and reusable project templates.', 'https://affiliate.notion.so/everydayaiworkflows'],
+      ['Notion AI', 'Client notes, deliverables, content calendars, and reusable project templates.', 'https://www.notion.com/product/ai'],
       ['Claude Pro', 'Long-form drafting, client strategy docs, proposals, and research synthesis.', 'https://claude.ai'],
       ['Make.com', 'Automate invoice reminders, client onboarding, and handoff checklists.', 'https://www.make.com/en/register?pc=msarmento42'],
     ],
@@ -47,7 +47,7 @@ const roleStacks = [
     tools: [
       ['Jasper AI', 'Campaign copy, landing pages, email sequences, and brand voice consistency.', 'https://jasper.ai'],
       ['Surfer SEO', 'Briefs, keyword coverage, and on-page optimization.', 'https://surferseo.com'],
-      ['Notion AI', 'Editorial calendars, creative briefs, and repurposing workflows.', 'https://affiliate.notion.so/everydayaiworkflows'],
+      ['Notion AI', 'Editorial calendars, creative briefs, and repurposing workflows.', 'https://www.notion.com/product/ai'],
     ],
     workflow: 'Plan campaign angles in Notion, draft variations in Jasper, optimize SEO pages with Surfer, then store winning prompts for reuse.',
   },
@@ -66,7 +66,7 @@ const roleStacks = [
     outcome: 'Standardize delivery so every client does not require a custom process.',
     tools: [
       ['Make.com', 'Client intake, reporting, publishing, and handoff automations.', 'https://www.make.com/en/register?pc=msarmento42'],
-      ['Notion AI', 'Client portals, SOPs, project documentation, and internal knowledge base.', 'https://affiliate.notion.so/everydayaiworkflows'],
+      ['Notion AI', 'Client portals, SOPs, project documentation, and internal knowledge base.', 'https://www.notion.com/product/ai'],
       ['ChatGPT Plus', 'Drafts, research, campaign variants, and QA checklists.', 'https://chat.openai.com'],
     ],
     workflow: 'Build one client operating system in Notion, connect repeatable steps with Make, and use ChatGPT to generate first drafts inside that process.',
@@ -160,7 +160,7 @@ export default function AIToolsByRolePage() {
             <p style={{ color: '#94a3b8', marginTop: 0, lineHeight: 1.6 }}>{stack.outcome}</p>
             <div style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', margin: '1.25rem 0' }}>
               {stack.tools.map(([name, description, url]) => (
-                <a key={name} href={url} target="_blank" rel="noopener noreferrer sponsored" style={{
+                <a key={name} href={url} target="_blank" rel={url.includes('notion.com/product/ai') ? 'noopener noreferrer' : 'noopener noreferrer sponsored'} style={{
                   color: '#fff',
                   textDecoration: 'none',
                   border: '1px solid rgba(0,212,255,0.2)',
