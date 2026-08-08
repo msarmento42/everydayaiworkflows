@@ -1,6 +1,6 @@
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
-import RoleStackCTA from "../../components/RoleStackCTA";import Image from 'next/image';import ShareButtons from "../../components/ShareButtons";
+import RoleStackCTA from "../../components/RoleStackCTA";import ShareButtons from "../../components/ShareButtons";
 
 export const metadata = {
   title: "AI for Email Marketing: Write Better Campaigns in Half the Time | Everyday AI Workflows",

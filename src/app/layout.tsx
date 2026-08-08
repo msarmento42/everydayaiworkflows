@@ -4,6 +4,7 @@ import Analytics from "./components/Analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://everydayaiworkflows.com"),
   title: "Everyday AI Workflows - Daily AI Prompts & Tools",
   description: "Discover daily AI prompts and curated tools to boost your productivity. Learn how to integrate AI into your daily workflow.",
   keywords: "AI, artificial intelligence, productivity, prompts, tools, workflow, automation, ChatGPT, Claude",
