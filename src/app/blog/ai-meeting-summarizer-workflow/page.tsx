@@ -57,10 +57,7 @@ Be specific. Use names from the transcript for owners.
 Do not include filler or restate the discussion — only outcomes.
 
 Transcript:
-[paste transcript here]`}</pre>          <div style={{ textAlign: "center", margin: "2rem 0" }}>
-            <img src="/images/workflows/ai-meeting-summarizer/ai-prompt-example.png" alt="Screenshot of an AI chat interface showing the meeting summarizer prompt and its structured output." style={{ maxWidth: "100%", height: "auto", borderRadius: "8px", border: "1px solid #374151" }} />
-            <p style={{ fontSize: "0.9rem", color: "#9ca3af", marginTop: "0.5rem" }}>Example of the AI summarizer prompt in action, generating structured output.</p>
-          </div>
+[paste transcript here]`}</pre>
           <p>This prompt is designed to produce a structured draft for review. The key instruction is "do not restate the discussion" — without it, AI models tend to narrate what was said rather than extract what matters. The table format for action items also makes missing owners or due dates visible instead of burying that ambiguity in prose.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 3: Automate the Routing with Make.com</h2>
@@ -76,10 +73,7 @@ Step 3: Parse structured output (TL;DR, decisions, action items)
   ↓
 Step 4a: Send summary email to attendees via Gmail
 Step 4b: Create tasks in Notion / Asana / ClickUp
-Step 4c: Log the summary to a Notion meeting archive database`}</pre>          <div style={{ textAlign: "center", margin: "2rem 0" }}>
-            <img src="/images/workflows/ai-meeting-summarizer/make-com-workflow.png" alt="Screenshot of a Make.com scenario illustrating the automated meeting summarizer workflow." style={{ maxWidth: "100%", height: "auto", borderRadius: "8px", border: "1px solid #374151" }} />
-            <p style={{ fontSize: "0.9rem", color: "#9ca3af", marginTop: "0.5rem" }}>A visual representation of the Make.com automation flow for meeting summarization.</p>
-          </div>
+Step 4c: Log the summary to a Notion meeting archive database`}</pre>
           <p>Setting this up in <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> involves connecting the transcript source, AI step, and destination apps. Make provides pre-built modules for services such as Google Drive, Gmail, Notion, Asana, and OpenAI, so the configuration can be assembled without writing the whole integration from scratch. Test each step with a sample transcript before enabling the workflow for recorded meetings.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 4: Specialized Prompts by Meeting Type</h2>
@@ -91,10 +85,7 @@ Step 4c: Log the summary to a Notion meeting archive database`}</pre>          <
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 5: Build a Searchable Meeting Archive</h2>
           <p>The value of this workflow can grow over time. If meeting summaries land in a structured Notion database, you can search across the archive for questions like "what did we decide about the pricing model in Q1?" or "who owns the API integration task from the March kickoff?" before opening the original calendar event.</p>
-          <p>Set up your <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion</a> database with these fields: Meeting Name, Date, Attendees (multi-select), Decisions (text), Action Items (linked to your tasks database), and Status (Open / Archived). Use the Make.com automation to populate these fields from the AI output, then spot-check the fields before they become part of your archive. As the archive grows, it becomes easier to search for decisions and ownership. Pair this with the <a href="/blog/notion-ai-workflow-guide" style={{ color: "#00d4ff" }}>Notion AI workflow patterns</a> for more ways to query the same database.          <div style={{ textAlign: "center", margin: "2rem 0" }}>
-            <img src="/images/workflows/ai-meeting-summarizer/notion-archive.png" alt="Screenshot of a Notion database structured for archiving meeting summaries and action items." style={{ maxWidth: "100%", height: "auto", borderRadius: "8px", border: "1px solid #374151" }} />
-            <p style={{ fontSize: "0.9rem", color: "#9ca3af", marginTop: "0.5rem" }}>A Notion database template for organizing and searching meeting summaries.</p>
-          </div></p>
+          <p>Set up your <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion</a> database with these fields: Meeting Name, Date, Attendees (multi-select), Decisions (text), Action Items (linked to your tasks database), and Status (Open / Archived). Use the Make.com automation to populate these fields from the AI output, then spot-check the fields before they become part of your archive. As the archive grows, it becomes easier to search for decisions and ownership. Pair this with the <a href="/blog/notion-ai-workflow-guide" style={{ color: "#00d4ff" }}>Notion AI workflow patterns</a> for more ways to query the same database.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 6: Quality-Check Your AI Summaries</h2>
           <p>AI meeting summarizers are excellent but not infallible. Three failure modes to watch for:</p>
