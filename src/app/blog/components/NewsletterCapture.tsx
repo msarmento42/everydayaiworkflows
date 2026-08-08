@@ -93,13 +93,27 @@ export default function NewsletterCapture({
           {status === "unavailable" ? (
             <>
               {' '}
-              <a href={methodStackLinks.freeReset} target="_blank" rel="noopener noreferrer" style={{ color: darkMode ? "#a5f3fc" : "#4338ca", textDecoration: "underline" }}>
-                Get the free AI Workflow Reset instead.
-              </a>
+              The instant-download option below is still available.
             </>
           ) : null}
         </p>
       ) : null}
+
+      <div style={{ marginTop: "1rem", paddingTop: "0.9rem", borderTop: darkMode ? "1px solid rgba(255,255,255,0.12)" : "1px solid #ddd6fe" }}>
+        <p style={{ color: panelStyles.body, fontSize: "0.85rem", margin: "0 0 0.45rem" }}>
+          Prefer an instant download instead of joining the newsletter?
+        </p>
+        <a
+          href={methodStackLinks.freeReset}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-analytics-placement="newsletter-fallback"
+          data-analytics-intent="commercial"
+          style={{ color: darkMode ? "#a5f3fc" : "#4338ca", fontWeight: 700, textDecoration: "underline" }}
+        >
+          Get the free AI Workflow Reset →
+        </a>
+      </div>
     </section>
   );
 }

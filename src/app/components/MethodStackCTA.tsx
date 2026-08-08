@@ -18,13 +18,13 @@ export default function MethodStackCTA() {
     >
       <div>
         <p style={{ color: '#67e8f9', textTransform: 'uppercase', letterSpacing: '0.08em', fontSize: '0.72rem', fontWeight: 700, margin: '0 0 0.45rem' }}>
-          Free starting point
+          Free starting point · no newsletter signup required
         </p>
         <h2 id="method-stack-cta-heading" style={{ color: '#fff', fontSize: '1.35rem', lineHeight: 1.25, margin: '0 0 0.65rem' }}>
-          Turn one messy workday into a repeatable system
+          Get one messy workday under control today
         </h2>
         <p style={{ color: '#cbd5e1', lineHeight: 1.65, margin: '0 0 1rem' }}>
-          The free AI Workflow Reset helps you choose one bottleneck, define the handoff, and leave with a practical next step. It is the shortest path from reading about AI to using it.
+          The free AI Workflow Reset is an instant download that helps you choose one bottleneck, define the handoff, and leave with a practical next step. Start there, then upgrade only if you want the full implementation library.
         </p>
         <a
           href={methodStackLinks.freeReset}
@@ -34,14 +34,14 @@ export default function MethodStackCTA() {
           data-analytics-intent="commercial"
           style={{ display: 'inline-block', background: '#00d4ff', color: '#0f172a', fontWeight: 800, textDecoration: 'none', borderRadius: '8px', padding: '0.7rem 1rem' }}
         >
-          Get the free reset →
+          Download the free reset →
         </a>
       </div>
 
       <div style={{ background: 'rgba(15,23,42,0.35)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '10px', padding: '1rem' }}>
         <p style={{ color: '#fff', fontWeight: 700, margin: '0 0 0.55rem' }}>When you want the complete playbook</p>
         <p style={{ color: '#cbd5e1', lineHeight: 1.55, fontSize: '0.92rem', margin: '0 0 0.9rem' }}>
-          Move from one reset to a reusable library with the Workday System or the complete Method Stack collection.
+          Move from one reset to a reusable library with the Workday System, or get the complete Method Stack collection when you want every template in one place.
         </p>
         <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
           <a
