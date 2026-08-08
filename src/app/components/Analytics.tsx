@@ -22,7 +22,7 @@ export default function Analytics() {
 
       const isExternal = Boolean(url.hostname && url.hostname !== window.location.hostname);
       const isAffiliate = /sponsored|affiliate/i.test(link.rel || "")
-        || /affiliate|make\.com|notion|jasper|grammarly|surferseo|semrush|writesonic|nordvpn/i.test(link.href);
+        || /affiliate|make\.com|jasper|grammarly|surferseo|semrush|writesonic|nordvpn/i.test(link.href);
       if (!isAffiliate && !isExternal) return;
 
       const partner =

@@ -17,9 +17,9 @@ export default function NotionAICta() {
         Notion AI helps you summarize financial notes, generate action items, and turn messy data into clear insights.
       </p>
       <a
-        href="https://affiliate.notion.so/notion-ai"
+        href="https://www.notion.com/product/ai"
         target="_blank"
-        rel="noopener sponsored"
+        rel="noopener noreferrer"
         style={{
           display: "inline-block",
           background: "#7c3aed",
@@ -32,10 +32,10 @@ export default function NotionAICta() {
           transition: "background 0.2s"
         }}
       >
-        Try Notion AI Free →
+        Explore Notion AI →
       </a>
       <p style={{ fontSize: "0.8rem", color: "#6b7280", marginTop: "0.75rem", marginBottom: 0 }}>
-        Affiliate link · We may earn a commission if you sign up
+        Check Notion's current pricing and terms before signing up.
       </p>
     </div>
   );
