@@ -35,6 +35,19 @@ export default function BlogPost() {
   <li>Organize AI‑generated content in a Notion database for easy reference and future trips.</li>
   <li>During travel, AI assists with real‑time problem solving, translations, and personalized recommendations.</li>
 </ul>
+<section aria-labelledby="travel-reality-checks" style={{ margin: "1.5rem 0 2rem", padding: "1.15rem 1.25rem", border: "1px solid rgba(0,212,255,0.25)", borderRadius: "12px", background: "rgba(0,212,255,0.06)" }}>
+  <h2 id="travel-reality-checks" style={{ fontSize: "1.35rem", color: "#fff", margin: "0 0 0.75rem" }}>Reality checks before booking</h2>
+  <p style={{ margin: "0 0 0.75rem", color: "#cbd5e1" }}>Treat an AI itinerary as a planning draft. Before you pay, save, or rely on a detail, verify:</p>
+  <ul style={{ margin: 0, paddingLeft: "1.25rem", color: "#d1d5db", lineHeight: 1.7 }}>
+    <li><strong>Live price and availability:</strong> Check the airline, hotel, rail, or booking provider directly; an AI estimate is not a quote or a reservation.</li>
+    <li><strong>Opening hours and closures:</strong> Confirm hours, holidays, timed-entry rules, construction, and seasonal closures with the venue or local authority.</li>
+    <li><strong>Entry and visa rules:</strong> Use current government or consular guidance for passports, visas, transit requirements, health documentation, and customs.</li>
+    <li><strong>Transport and access:</strong> Confirm travel times, last departures, mobility access, luggage rules, and the distance between each stop instead of trusting an attractive route.</li>
+    <li><strong>Safety, health, and fit:</strong> Check current advisories, weather, local conditions, dietary needs, and accessibility with authoritative sources and your own provider.</li>
+    <li><strong>Human final pass:</strong> Have the traveler compare the final plan against their real budget, energy, companions, and cancellation options before booking.</li>
+  </ul>
+  <p style={{ margin: "0.75rem 0 0", color: "#cbd5e1" }}>AI is useful for synthesis and trade-offs; it is not a booking authority and may be wrong about time-sensitive details.</p>
+</section>
 <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Use AI to Pick Your Destination</h2>
           <p>Most people start with a destination and then research it. That&apos;s backwards. Start by telling AI what kind of trip you want, and let it suggest destinations that actually match your constraints.</p>
           <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`"Help me choose a travel destination. Here are my constraints:

@@ -34,6 +34,19 @@ export default function BlogPost() {
           <p>Email marketing still delivers the highest ROI of any digital channel — around $36 for every $1 spent — but most teams spend 60% of their campaign time on the copy itself. AI changes that equation. The workflows below let you go from blank page to polished, segmented email sequences in a fraction of the time, without losing the personal feel that makes emails actually convert. Each section includes the exact prompt you need to run it.</p>
           <p>The big opportunity is not replacing human judgment. It is removing the slow, repetitive drafting work that keeps campaigns from shipping. When the strategy is clear, AI is best used as a fast first-draft engine, a testing partner, and an operations shortcut.</p>
 
+          <section aria-labelledby="before-you-send" style={{ margin: "1.5rem 0 2rem", padding: "1.15rem 1.25rem", border: "1px solid rgba(0,212,255,0.25)", borderRadius: "12px", background: "rgba(0,212,255,0.06)" }}>
+            <h2 id="before-you-send" style={{ fontSize: "1.35rem", color: "#fff", margin: "0 0 0.75rem" }}>Before you send: an email workflow decision checklist</h2>
+            <p style={{ margin: "0 0 0.75rem", color: "#cbd5e1" }}>AI can make a draft look finished before it is ready for a real inbox. Run this short check after every generation and before you schedule anything:</p>
+            <ul style={{ margin: 0, paddingLeft: "1.25rem", color: "#d1d5db", lineHeight: 1.7 }}>
+              <li><strong>Audience and goal:</strong> Can a reader tell who this is for, what action is requested, and why that action matters now?</li>
+              <li><strong>Facts and offer:</strong> Did a person verify every price, feature, deadline, testimonial, statistic, and promise against the current source of truth?</li>
+              <li><strong>Segment fit:</strong> Does the example, objection, and call to action match this segment, or did the model quietly reuse language meant for another audience?</li>
+              <li><strong>Privacy and deliverability:</strong> Does the draft avoid unnecessary personal data, misleading subject lines, unsupported urgency, and formatting that could make the message hard to read?</li>
+              <li><strong>Human approval:</strong> Has someone with authority over the list and offer read the final message, links, unsubscribe path, and destination before release?</li>
+            </ul>
+            <p style={{ margin: "0.75rem 0 0", color: "#cbd5e1" }}>The model supplies a fast first draft; it is not the sender of record. Keep the approval step even when the copy looks polished.</p>
+          </section>
+
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 1: Brief the AI Like a Real Copywriter</h2>
           <p>The most common mistake is prompting AI with "write me a marketing email about X." That produces bland, generic copy. Give the AI the same brief you would give a human copywriter — product, audience, goal, tone, and the one objection to address:</p>
           <pre style={{ background: "rgba(255,255,255,0.05)", border: "1px solid #374151", borderRadius: "8px", padding: "1rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", whiteSpace: "pre-wrap" }}>{`You are a direct-response email copywriter.
