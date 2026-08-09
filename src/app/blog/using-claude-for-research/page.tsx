@@ -28,6 +28,20 @@ export default function BlogPost() {
 
           <p>Most people use Claude the way they use Google — type a question, read the answer, close the tab. That approach misses 80% of the value. When you treat Claude as a thinking partner throughout a research project rather than a one-shot answer machine, the time savings compound dramatically. A 10-hour research project becomes 4 to 5 hours without sacrificing depth. Here is a structured five-phase workflow for doing exactly that.</p>
 
+          <section aria-labelledby="source-ledger" style={{ margin: "1.5rem 0 2rem", padding: "1.15rem 1.25rem", border: "1px solid rgba(0,212,255,0.25)", borderRadius: "12px", background: "rgba(0,212,255,0.06)" }}>
+            <h2 id="source-ledger" style={{ fontSize: "1.35rem", color: "#fff", margin: "0 0 0.75rem" }}>The source ledger: keep summaries from becoming conclusions</h2>
+            <p style={{ margin: "0 0 0.75rem", color: "#cbd5e1" }}>A running ledger gives every important claim a traceable home. For each source, record at least:</p>
+            <ul style={{ margin: 0, paddingLeft: "1.25rem", color: "#d1d5db", lineHeight: 1.7 }}>
+              <li><strong>Identity:</strong> title, author or organization, URL, and publication or update date.</li>
+              <li><strong>Claim:</strong> the precise statement you might use, written in your own words.</li>
+              <li><strong>Evidence:</strong> a short supporting excerpt or data point, plus the section or page where it appears.</li>
+              <li><strong>Confidence:</strong> low, medium, or high, with one sentence explaining what makes the evidence strong or weak.</li>
+              <li><strong>Open question:</strong> what the source does not establish, conflicts with, or leaves time-sensitive.</li>
+              <li><strong>Next action:</strong> verify, find a second source, ask an expert, or use the claim only as background.</li>
+            </ul>
+            <p style={{ margin: "0.75rem 0 0", color: "#cbd5e1" }}>Claude can help fill and challenge the ledger, but it should not invent a citation or silently upgrade a plausible summary into a conclusion. Read the primary source for claims that carry the decision.</p>
+          </section>
+
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Phase 1: Map the Territory Before You Dive In</h2>
           <p>The biggest time sink in any research project is not knowing what you do not know. You read an article, follow a citation, find a new angle you had not considered, and two hours later you are deep in a rabbit hole that is only tangentially related to your original question.</p>
           <p>Start every research project with a scoping prompt. Before reading a single source, ask Claude to orient you:</p>

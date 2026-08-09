@@ -36,6 +36,30 @@ export default function EditorialPolicy() {
           Everyday AI Workflows publishes practical AI workflow guides, tool comparisons, and prompt libraries for working professionals. The goal is to help readers build useful systems with AI tools, not to chase novelty or publish shallow listicles.
         </p>
 
+        <section id="how-we-evaluate" style={{
+          marginBottom: '1.5rem',
+          padding: '1.25rem',
+          borderRadius: '14px',
+          border: '1px solid rgba(0,212,255,0.25)',
+          background: 'rgba(0,212,255,0.06)',
+        }}>
+          <h2 style={{ fontSize: '1.35rem', margin: '0 0 0.75rem', color: '#fff' }}>How we evaluate workflow guides</h2>
+          <p style={{ color: '#cbd5e1', lineHeight: 1.7, margin: '0 0 0.9rem' }}>
+            Every useful guide should help a reader make a decision, not just repeat a tool&apos;s feature list. Our review process is deliberately explicit so readers can tell what is documented, what is an editorial judgment, and what still needs to be checked for their own situation.
+          </p>
+          <ol style={{ margin: 0, paddingLeft: '1.35rem', color: '#d1d5db', lineHeight: 1.75 }}>
+            <li><strong>Define the decision.</strong> We start with the reader&apos;s role, goal, constraints, budget, and the failure that the workflow is meant to prevent.</li>
+            <li><strong>Start with primary documentation.</strong> Product documentation, current pricing pages, security notes, and official help articles are the baseline for capability and plan claims.</li>
+            <li><strong>Separate evidence from interpretation.</strong> A documented feature is labeled as documented; a practical recommendation explains the fit and trade-off instead of presenting a universal winner.</li>
+            <li><strong>Record the workflow check.</strong> For a repeatable workflow we describe the inputs, expected output, likely failure mode, and the point where a person should review before anything is sent or published.</li>
+            <li><strong>Show the limits.</strong> We call out stale or time-sensitive facts, privacy considerations, missing integrations, and cases where a simpler or free option is a better fit.</li>
+            <li><strong>Date and correct the page.</strong> Reviews carry a date, and readers can report an outdated claim or broken link through the contact page so the page can be refreshed deliberately.</li>
+          </ol>
+          <p style={{ color: '#cbd5e1', lineHeight: 1.7, margin: '0.9rem 0 0' }}>
+            Some guides are documentation-based explainers rather than hands-on product tests. When we have not performed a hands-on check, we say so; we do not invent test results, customer outcomes, or credentials.
+          </p>
+        </section>
+
         <div style={{ display: 'grid', gap: '1.25rem' }}>
           {[
             {

@@ -29,6 +29,9 @@ export default function SourceMethodBlock({ reviewedOn, sources }: SourceMethodB
       <p style={{ margin: "0 0 0.5rem", color: "#cbd5e1", fontSize: "0.86rem", lineHeight: 1.6 }}>
         Treat AI output as a draft: keep a human in the loop and make data-handling decisions appropriate to your organization.
       </p>
+      <p style={{ margin: "0 0 0.5rem", color: "#cbd5e1", fontSize: "0.86rem", lineHeight: 1.6 }}>
+        <a href="/editorial-policy#how-we-evaluate" style={{ color: "#00d4ff" }}>Read how we evaluate workflow guides →</a>
+      </p>
       <ul style={{ margin: 0, paddingLeft: "1.2rem", color: "#cbd5e1", fontSize: "0.86rem", lineHeight: 1.6 }}>
         {sources.map((source) => (
           <li key={source.href}>
