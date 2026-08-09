@@ -7,6 +7,7 @@ const jsonLd = {
   "@type": "Article",
   "headline": "VPN for AI Researchers: Stay Secure While Accessing AI Tools Globally",
   "description": "Why AI researchers, remote workers, and power users need a VPN — and how to pick one, set it up correctly, and integrate it into a daily AI workflow without adding friction.",
+  "image": "https://everydayaiworkflows.com/images/vpn-for-ai-researchers.jpg",
   "datePublished": "2026-07-19",
   "dateModified": "2026-07-19",
   "author": {
@@ -15,8 +16,17 @@ const jsonLd = {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Everyday AI Workflows"
-  }
+    "name": "Everyday AI Workflows",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://everydayaiworkflows.com/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://everydayaiworkflows.com/blog/vpn-for-ai-researchers"
+  },
+  "url": "https://everydayaiworkflows.com/blog/vpn-for-ai-researchers"
 };
 
 export const metadata = {
