@@ -1,4 +1,5 @@
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
+import LeadMagnetCTA from "../../components/LeadMagnetCTA";
 import NewsletterCapture from "../components/NewsletterCapture";
 
 export const metadata = {
@@ -58,6 +59,7 @@ export default function BlogPost() {
           <p>Event planning is a coordination problem: dozens of vendors, timelines, attendees, logistics, and contingencies that all have to fit together on a specific date. The parts that burn the most time — research, drafting communications, building checklists, writing schedules — are exactly the parts where AI excels. The parts that require real judgment — reading a venue, choosing the right speaker, making a call on budget trade-offs — still need you.</p>
 
           <p>This guide walks through how to use AI at every stage of event planning, from initial concept through post-event follow-up, with copy-paste prompts for each step. It works for corporate events, conferences, team off-sites, weddings, and community gatherings alike.</p>
+          <LeadMagnetCTA />
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
           <ul style={{ listStyleType: "disc", marginLeft: "1.5rem", marginBottom: "2rem" }}>
             <li style={{ marginBottom: "0.5rem" }}>AI can significantly reduce the time spent on tedious event planning tasks like research, drafting communications, and scheduling.</li>
