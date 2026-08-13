@@ -8,6 +8,20 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-event-planning",
   },
+  openGraph: {
+    title: "AI for Event Planning: Save 20+ Hours on Your Next Event Without Losing Control",
+    description: "From venue research to run-of-show schedules to vendor emails, AI can handle the tedious 80% of event planning. A practical workflow with copy-paste prompts for every stage.",
+    type: "article",
+    url: "https://everydayaiworkflows.com/blog/ai-for-event-planning",
+    siteName: "Everyday AI Workflows",
+    publishedTime: "2026-06-21",
+    modifiedTime: "2026-06-21",
+  },
+  twitter: {
+    card: "summary",
+    title: "AI for Event Planning: Save 20+ Hours on Your Next Event Without Losing Control",
+    description: "A practical AI workflow with copy-paste prompts for every stage of event planning.",
+  },
 };
 
 export default function BlogPost() {
@@ -20,7 +34,6 @@ export default function BlogPost() {
           "@type": "Article",
           "headline": "AI for Event Planning: Save 20+ Hours on Your Next Event Without Losing Control",
           "description": "From venue research to run-of-show schedules to vendor emails, AI can handle the tedious 80% of event planning. A practical workflow with copy-paste prompts for every stage.",
-          "image": "https://everydayaiworkflows.com/images/ai-event-planning.jpg",
           "author": {
             "@type": "Organization",
             "name": "Everyday AI Workflows"
@@ -28,10 +41,6 @@ export default function BlogPost() {
           "publisher": {
             "@type": "Organization",
             "name": "Everyday AI Workflows",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://everydayaiworkflows.com/logo.png"
-            }
           },
           "datePublished": "2026-06-21",
           "dateModified": "2026-06-21",

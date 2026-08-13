@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   const title = "AI for Academic Research: A Practical Workflow That Cuts Literature Review Time in Half";
   const description = "Academic research has a time problem. Literature reviews that should take days stretch into weeks. Synthesizing dozens of papers into coherent arguments...";
-  const imageUrl = "/images/workflows/ai-for-academic-research/og-image.png";
   const datePublished = "2026-06-01";
   const author = "Everyday AI Workflows";
   const publisher = "Everyday AI Workflows";
@@ -14,7 +13,6 @@ export async function generateMetadata(): Promise<Metadata> {
     "@type": "Article",
     "headline": title,
     "description": description,
-    "image": imageUrl,
     "datePublished": datePublished,
     "dateModified": datePublished,
     "author": {
@@ -24,10 +22,6 @@ export async function generateMetadata(): Promise<Metadata> {
     "publisher": {
       "@type": "Organization",
       "name": publisher,
-      "logo": {
-        "@type": "ImageObject",
-        "url": "/images/logo.png"
-      }
     }
   };
 
@@ -40,12 +34,6 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title,
       description,
-      images: [{
-        url: imageUrl,
-        width: 1200,
-        height: 630,
-        alt: title,
-      }],
       type: 'article',
       publishedTime: datePublished,
     },
@@ -53,7 +41,6 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title,
       description,
-      images: [imageUrl],
     },
     other: {
       'application/ld+json': JSON.stringify(jsonLd),

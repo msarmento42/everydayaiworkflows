@@ -14,7 +14,6 @@ export default function BlogPost() {  const jsonLd = {
     "@type": "Article",
     "headline": metadata.title,
     "description": metadata.description,
-    "image": "https://www.everydayaiworkflows.com/images/ai-for-competitor-analysis-banner.jpg", // Placeholder image URL
     "author": {
       "@type": "Person",
       "name": "Everyday AI Workflows"
@@ -22,10 +21,6 @@ export default function BlogPost() {  const jsonLd = {
     "publisher": {
       "@type": "Organization",
       "name": "Everyday AI Workflows",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.everydayaiworkflows.com/images/logo.png" // Placeholder logo URL
-      }
     },
     "datePublished": "2026-07-08T00:00:00Z",
     "dateModified": "2026-07-08T00:00:00Z"

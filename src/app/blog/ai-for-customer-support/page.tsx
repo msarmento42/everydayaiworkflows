@@ -9,16 +9,6 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-customer-support",
   },
-  openGraph: {
-    images: [
-      {
-        url: "https://www.everydayaiworkflows.com/images/blog/ai-for-customer-support.jpg",
-        alt: "AI for Customer Support Workflow Image",
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
   script: [
     {
       type: "application/ld+json",
@@ -27,7 +17,6 @@ export const metadata = {
         "@type": "Article",
         "headline": "How to Use AI for Customer Support: A Practical, Reviewable Workflow",
         "description": "Build an AI customer support workflow to triage, draft, escalate, and analyze tickets with no-code steps and copy-paste prompts.",
-        "image": "https://www.everydayaiworkflows.com/images/blog/ai-for-customer-support.jpg",
         "author": {
           "@type": "Person",
           "name": "Everyday AI Workflows"
@@ -35,10 +24,6 @@ export const metadata = {
         "publisher": {
           "@type": "Organization",
           "name": "Everyday AI Workflows",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://www.everydayaiworkflows.com/images/logo.png"
-          }
         },
         "datePublished": "2026-06-21T00:00:00Z",
         "dateModified": "2026-06-21T00:00:00Z"
