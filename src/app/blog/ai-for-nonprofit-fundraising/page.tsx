@@ -20,7 +20,6 @@ export default function BlogPost() {
             "@type": "Article",
             "headline": "AI for Nonprofit Fundraising: Grant Applications, Donor Emails, and Review Workflows",
             "description": "A practical AI workflow for nonprofit teams — grant writing, donor segmentation, thank-you letters, and campaign automation, built for lean teams without a dedicated development staff.",
-            "image": "https://everydayaiworkflows.com/images/ai-nonprofit-fundraising.jpg",
             "author": {
               "@type": "Organization",
               "name": "Everyday AI Workflows"
@@ -28,10 +27,6 @@ export default function BlogPost() {
             "publisher": {
               "@type": "Organization",
               "name": "Everyday AI Workflows",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://everydayaiworkflows.com/logo.png"
-              }
             },
             "datePublished": "2026-07-16",
             "dateModified": "2026-08-05",

@@ -5,21 +5,11 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-youtube-script-writing",
   },
-  openGraph: {
-    images: [
-      {
-        url: "/images/ai-youtube-script.png",
-        alt: "AI for YouTube Script Writing Workflow",
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
 };
 
 export default function BlogPost() {
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", "headline": "How to Use AI to Write YouTube Scripts That Actually Keep Viewers Watching", "author": { "@type": "Person", "name": "Everyday AI Workflows" }, "publisher": { "@type": "Organization", "name": "Everyday AI Workflows", "logo": { "@type": "ImageObject", "url": "/logo.png" } }, "datePublished": "2026-05-19", "dateModified": "2026-05-19", "image": "/images/ai-youtube-script.png" }) }} />
+    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", "headline": "How to Use AI to Write YouTube Scripts That Actually Keep Viewers Watching", "author": { "@type": "Person", "name": "Everyday AI Workflows" }, "publisher": { "@type": "Organization", "name": "Everyday AI Workflows" }, "datePublished": "2026-05-19", "dateModified": "2026-05-19" }) }} />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>

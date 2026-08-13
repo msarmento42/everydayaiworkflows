@@ -16,12 +16,10 @@ export const metadata = {
         "@type": "Article",
         "headline": "AI for Financial Planning: Build a Budget, Track Goals, and Stop Guessing",
         "description": "How to use AI tools to build a personal budget, set savings goals, analyze spending patterns, and prepare for financial decisions — without a financial advisor.",
-        "image": "https://www.everydayaiworkflows.com/images/blog/ai-for-financial-planning.jpg",
         "author": { "@type": "Person", "name": "Everyday AI Workflows" },
         "publisher": {
           "@type": "Organization",
           "name": "Everyday AI Workflows",
-          "logo": { "@type": "ImageObject", "url": "https://www.everydayaiworkflows.com/images/logo.png" }
         },
         "datePublished": "2026-06-19T00:00:00Z",
         "dateModified": "2026-06-19T00:00:00Z"
