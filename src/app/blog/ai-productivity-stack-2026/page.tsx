@@ -1,5 +1,6 @@
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
+import SourceMethodBlock from "../components/SourceMethodBlock";
 
 export const metadata = {
   title: "The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs) | Everyday AI Workflows",
@@ -23,6 +24,16 @@ export default function BlogPost() {
           The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs)
         </h1>
         <AffiliateDisclosure />
+        <SourceMethodBlock
+          reviewedOn="August 10, 2026"
+          sources={[
+            { label: "Claude pricing (Anthropic)", href: "https://claude.com/pricing" },
+            { label: "Make pricing", href: "https://www.make.com/en/pricing" },
+            { label: "Notion pricing", href: "https://www.notion.com/pricing" },
+            { label: "Surfer pricing", href: "https://surferseo.com/pricing/" },
+            { label: "NordVPN features", href: "https://nordvpn.com/features/" },
+          ]}
+        />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
@@ -64,6 +75,18 @@ export default function BlogPost() {
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>What to Skip</h2>
           <p>The tools worth skipping in 2026 are the AI writing assistants that add a thin AI layer on top of existing software without real depth — browser extensions that "enhance" your writing with generic suggestions, productivity apps that advertise AI features but route everything through a generic API call, and point solutions that solve one narrow problem you can already solve with the tools above.</p>
           <p>The test: before adding a new tool, ask whether it does something the tools you already have cannot do. If the answer is no, it is an overlap and a subscription you do not need. The most common trap is accumulating five AI writing tools when one good one plus a strong automation layer covers 95% of use cases.</p>
+
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Decision Check Before You Subscribe</h2>
+          <p>Use this short check before adding another tool to the stack. It is designed to prevent subscription overlap and make the workflow safe to operate, not to push you toward a particular vendor.</p>
+          <ul style={{ paddingLeft: "1.5rem", marginBottom: "1rem" }}>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Name the bottleneck:</strong> write down the recurring task, its current volume, and the output you need before comparing features.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Set the whole budget:</strong> include seats, API usage, overages, annual billing, and any adjacent subscriptions; verify current prices and plan limits on the linked first-party page.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Check data fit:</strong> identify whether the workflow touches client, financial, health, or other sensitive information, then review the vendor&apos;s current privacy and retention terms before uploading it.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Map the integration:</strong> list the systems the tool must connect to and keep a manual fallback for any step that could silently fail.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Test the real path:</strong> run one representative task on a free tier or trial, inspect the output for accuracy, and measure whether it removes work rather than creating another review queue.</li>
+            <li style={{ marginBottom: "0.5rem" }}><strong>Keep a human gate:</strong> review anything that sends an email, publishes content, changes records, or makes a security-sensitive recommendation; AI output is a draft, not approval.</li>
+          </ul>
+          <p>Pricing, limits, integrations, and privacy terms change. Re-check the first-party sources above immediately before subscribing, and treat the guide&apos;s cost ranges as orientation rather than a quote.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Building Your Stack Incrementally</h2>
           <p>The right approach for most people is to start with one tool in the writing category (Claude is a safe default), get real value from it for 30 days, and then add one automation (Make.com with a single scenario). Once those two are working well together, add the knowledge management layer (Notion). Security (NordVPN) can go in at any point — it is passive once set up.</p>
