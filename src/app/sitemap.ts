@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next';
-import fs from 'fs';
-import path from 'path';
+import { canonicalArticleSlugs } from './lib/content-strategy';
 
 const BASE_URL = 'https://everydayaiworkflows.com';
 
@@ -22,16 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/terms`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.3 },
   ];
 
-  const blogDir = path.join(process.cwd(), 'src', 'app', 'blog');
-  const slugRoutes: MetadataRoute.Sitemap = fs
-    .readdirSync(blogDir, { withFileTypes: true })
-    .filter((entry) => entry.isDirectory() && entry.name !== 'components' && entry.name !== '[slug]')
-    .map((entry) => ({
-      url: `${BASE_URL}/blog/${entry.name}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    }));
+  const slugRoutes: MetadataRoute.Sitemap = canonicalArticleSlugs.map((slug) => ({
+    url: `${BASE_URL}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
 
   return [...staticRoutes, ...slugRoutes];
 }

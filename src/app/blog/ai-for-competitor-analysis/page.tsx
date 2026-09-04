@@ -1,5 +1,7 @@
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
+import SourceMethodBlock from "../components/SourceMethodBlock";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "AI for Competitor Analysis: A Practical Workflow That Replaces a Week of Manual Research | Everyday AI Workflows",
@@ -43,6 +45,18 @@ export default function BlogPost() {  const jsonLd = {
           AI for Competitor Analysis: A Practical Workflow That Replaces a Week of Manual Research
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="turning source material into a decision-ready competitor brief"
+        />
+        <SourceMethodBlock
+          reviewedOn="September 4, 2026"
+          sources={[
+            { label: "Make Help Center", href: "https://help.make.com/" },
+            { label: "Notion AI", href: "https://www.notion.com/product/ai" },
+            { label: "Surfer SEO", href: "https://surferseo.com/" },
+          ]}
+        />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 

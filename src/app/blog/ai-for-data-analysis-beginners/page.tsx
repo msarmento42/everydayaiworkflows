@@ -8,6 +8,7 @@ export const metadata = {
 import ShareButtons from '../../components/ShareButtons';
 import AffiliateDisclosure from '../components/AffiliateDisclosure';
 import SourceMethodBlock from '../components/SourceMethodBlock';
+import EditorialQualityNotice from '../../components/EditorialQualityNotice';
 
 
 export default function BlogPost() {
@@ -24,8 +25,12 @@ export default function BlogPost() {
           AI for Data Analysis: A Beginner&apos;s Guide to Turning Spreadsheets into Insights
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="beginner-friendly, review-gated spreadsheet analysis"
+        />
         <SourceMethodBlock
-          reviewedOn="August 5, 2026"
+          reviewedOn="September 4, 2026"
           sources={[
             { label: "OpenAI Help: Data analysis with ChatGPT", href: "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt" },
             { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },

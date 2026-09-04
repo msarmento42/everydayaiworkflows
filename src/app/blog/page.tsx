@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import EditorialQualityNotice from '../components/EditorialQualityNotice';
+import { isCanonicalArticle } from '../lib/content-strategy';
 
 const allPosts = [
 { slug: 'ai-tools-for-photographers', title: 'The Best AI Tools for Photographers in 2026: Culling, Editing, and Client Delivery', excerpt: 'A practical AI toolkit for photographers -- faster culling, a head-to-head tool comparison, consistent editing, client communication, portfolio SEO, and automated gallery delivery.', date: '2026-07-16', category: 'AI Tools', readingTime: '11 min' },
@@ -96,6 +98,8 @@ const workflowHubs = [
   { href: '/workflows/automation', title: 'Automation', description: 'Email triage, invoices, lead gen, and no-code flows.' },
 ];
 
+const curatedPosts = allPosts.filter((post) => isCanonicalArticle(post.slug));
+
 type BlogPageProps = {
   searchParams?: Promise<{ page?: string }> | { page?: string };
 };
@@ -115,7 +119,7 @@ export async function generateMetadata({ searchParams }: BlogPageProps) {
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
   const currentPage = await getCurrentPage(searchParams);
-  const sortedPosts = [...allPosts].sort(
+  const sortedPosts = [...curatedPosts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
   const totalPages = Math.max(1, Math.ceil(sortedPosts.length / POSTS_PER_PAGE));
@@ -128,7 +132,11 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)', color: '#fff', fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <h1 style={{ fontSize: '2.5rem', color: '#00d4ff', marginBottom: '0.5rem' }}>Blog</h1>
-        <p style={{ color: '#9ca3af', marginBottom: '2rem' }}>{allPosts.length} articles</p>
+        <p style={{ color: '#9ca3af', marginBottom: '1rem' }}>{curatedPosts.length} curated articles</p>
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="practical AI workflows with clear sources, limitations, and a human review point"
+        />
 
         <section style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', marginBottom: '2rem' }}>
           <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem' }}>
