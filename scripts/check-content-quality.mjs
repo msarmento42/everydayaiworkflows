@@ -52,6 +52,13 @@ for (const slug of canonicalSlugs) {
     'Zero Inbox in Under 10 Minutes',
     'Replaces a Week of Manual Research',
     'cuts manual load by 40-60%',
+    'best general-purpose AI writer',
+    'best knowledge management tool',
+    'most actionable tool for content optimization',
+    'consistently outperforms either tool alone',
+    '8 to 12 hours per week',
+    'covers 95% of use cases',
+    'reliably saves meaningful time',
   ];
   for (const claim of unsupportedHeadlineClaims) {
     assert(!source.toLowerCase().includes(claim.toLowerCase()), `${slug} still contains unsupported headline claim: ${claim}`);
