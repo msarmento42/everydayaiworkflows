@@ -2,37 +2,30 @@ import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import SourceMethodBlock from "../components/SourceMethodBlock";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
+import ArticleJsonLd from "../components/ArticleJsonLd";
+import WorkflowLab from "../components/WorkflowLab";
 
 export const metadata = {
-  title: "AI for Competitor Analysis: A Practical Workflow That Replaces a Week of Manual Research | Everyday AI Workflows",
+  title: "AI for Competitor Analysis: A Practical Workflow for a Decision-Ready Brief | Everyday AI Workflows",
   description: "How to use AI to map competitor positioning, track pricing and feature changes, analyze their content and SEO strategy, and turn it all into a decision-ready brief.",
   alternates: {
     canonical: "/blog/ai-for-competitor-analysis",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-export default function BlogPost() {  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": metadata.title,
-    "description": metadata.description,
-    "author": {
-      "@type": "Person",
-      "name": "Everyday AI Workflows"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Everyday AI Workflows",
-    },
-    "datePublished": "2026-07-08T00:00:00Z",
-    "dateModified": "2026-07-08T00:00:00Z"
-  };
-
-
+export default function BlogPost() {
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-for-competitor-analysis"
+        datePublished="2026-07-08"
+        dateModified="2026-09-04"
       />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
@@ -42,7 +35,7 @@ export default function BlogPost() {  const jsonLd = {
           <span style={{ fontSize: "0.75rem", color: "#6b7280" }}>July 8, 2026</span>
         </div>
         <h1 style={{ fontSize: "2.2rem", marginTop: "0.5rem", marginBottom: "1.5rem", lineHeight: "1.2" }}>
-          AI for Competitor Analysis: A Practical Workflow That Replaces a Week of Manual Research
+          AI for Competitor Analysis: A Practical Workflow for a Decision-Ready Brief
         </h1>
         <AffiliateDisclosure />
         <EditorialQualityNotice
@@ -55,6 +48,38 @@ export default function BlogPost() {  const jsonLd = {
             { label: "Make Help Center", href: "https://help.make.com/" },
             { label: "Notion AI", href: "https://www.notion.com/product/ai" },
             { label: "Surfer SEO", href: "https://surferseo.com/" },
+          ]}
+        />
+        <WorkflowLab
+          id="competitor-analysis"
+          title="Testable competitor-brief fixture"
+          decision="Which competitor signals are documented, which are hypotheses, and what evidence is strong enough to inform a next action?"
+          setup={[
+            "Capture one public competitor homepage, pricing page, and changelog with the access date and URL.",
+            "Ask the model to extract positioning, tier structure, and changes while preserving quotations or page references for review.",
+            "Check every proposed opportunity against the source pages; mark private metrics and inferred strategy as hypotheses.",
+          ]}
+          inputExample={'Source A: https://example.test/pricing (accessed 2026-09-04)\nSource B: https://example.test/changelog (accessed 2026-09-04)\nQuestion: Which plan change is directly documented, and which differentiation idea still needs validation?'}
+          outputExample={'Documented: the public pricing page lists three tiers and names the included limits.\nHypothesis: a missing integration may be an opportunity; confirm with customer research before making a product decision.\nNext check: save a page snapshot and ask a human reviewer to verify the quote.'}
+          observationStatus="Pending an owner-run observation using current public pages"
+          safetyNotes={[
+            "Use public, permitted sources and respect terms, robots directives, rate limits, and copyright; do not scrape gated data.",
+            "Do not present estimated traffic, sentiment counts, or strategic inferences as facts without a traceable source.",
+            "Keep competitor research separate from confidential customer or employer information.",
+          ]}
+          alternatives={[
+            { option: "Manual source log", tradeoff: "Slower but gives the clearest audit trail for a small number of competitors." },
+            { option: "AI-assisted comparison", tradeoff: "Useful for organizing supplied text, but quotations and interpretations still need review." },
+            { option: "Automated monitoring", tradeoff: "Helpful for recurring changes, but requires permission, rate-limit, and false-positive controls." },
+          ]}
+          sources={[
+            { label: "Make Help Center", href: "https://help.make.com/", accessedOn: "September 4, 2026" },
+            { label: "Notion AI", href: "https://www.notion.com/product/ai", accessedOn: "September 4, 2026" },
+            { label: "Surfer SEO", href: "https://surferseo.com/", accessedOn: "September 4, 2026" },
+          ]}
+          updateLog={[
+            "September 4, 2026 — Reframed the title to remove an unverified time-saved promise and added a source-linked fixture.",
+            "Next review — Replace the pending status only when a dated, reproducible public-source run is recorded.",
           ]}
         />
 
@@ -118,7 +143,7 @@ Identify:
 2. Any keyword gaps — topics with real search volume they haven't covered
 3. Whether their content strategy skews top-of-funnel (educational) or bottom-of-funnel (comparison/buying intent)
 4. 3 content topics we could realistically outrank them on within 6 months`}</pre>
-          <p>For the broader SEO workflow this plugs into, see <a href="/blog/ai-for-seo-optimization" style={{ color: "#00d4ff" }}>AI for SEO optimization</a>. If your competitor research needs go beyond content and into full market sizing and customer personas, <a href="/blog/chatgpt-for-market-research" style={{ color: "#00d4ff" }}>ChatGPT for market research</a> covers that wider workflow in more depth.</p>
+          <p>For the broader research workflow this plugs into, see the <a href="/workflows/research" style={{ color: "#00d4ff" }}>research workflow hub</a>. Keep market sizing, customer interviews, and other strategic conclusions separate from the public-source comparison until they have their own evidence.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>5. Keep Everything in One Living Document, Not a One-Off Report</h2>
           <p>The most common failure mode in competitor analysis isn't bad research — it's research that gets done once, saved in a doc nobody reopens, and is stale within a quarter. Keep a single living workspace per competitor and update sections as you re-run each check, rather than generating a new report from scratch every time.</p>

@@ -1,7 +1,8 @@
-import Head from "next/head";
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
+import ArticleJsonLd from "../components/ArticleJsonLd";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "Using AI for Grant Writing: A Practical Workflow for Nonprofits and Researchers | Everyday AI Workflows",
@@ -9,27 +10,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-grant-writing",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "Using AI for Grant Writing: A Practical Workflow for Nonprofits and Researchers",
-              "description": "How to use AI to organize grant-writing drafts — needs statements, budget narratives, boilerplate reuse, and compliance review — without losing the human specificity funders require.",
-              "author": { "@type": "Organization", "name": "Everyday AI Workflows" },
-              "datePublished": "2026-07-17",
-              "dateModified": "2026-08-05"
-            })
-          }}
-        />
-      </Head>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-for-grant-writing"
+        datePublished="2026-07-17"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -41,6 +37,10 @@ export default function BlogPost() {
           Using AI for Grant Writing: A Practical Workflow for Nonprofits and Researchers
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="source-aware grant-writing workflows for lean teams"
+        />
         <SourceMethodBlock
           reviewedOn="August 5, 2026"
           sources={[
@@ -123,7 +123,7 @@ forced match.`}</pre>
           <p>Keep three things entirely human: which funders to pursue (that&apos;s relationship and strategy work), any specific outcome or impact number in the application (verify every figure against your actual data before it goes in), and the final tone check for organizations serving communities where AI-generated language could read as impersonal or extractive. A grant application is ultimately a relationship document as much as a persuasive one, and funders can often tell when the human judgment has been skipped entirely.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Tools That Fit This Workflow</h2>
-          <p>A general-purpose model like Claude or ChatGPT can assist with this workflow when you provide source material and acceptance checks. A dedicated writing tool like <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> may help keep organizational voice consistent across writers, while <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> can hold an approved organizational brief, past submissions, and a deadline calendar. For nonprofits weighing broader operations, our guide to <a href="/blog/ai-for-nonprofit-fundraising" style={{ color: "#00d4ff" }}>AI for nonprofit fundraising</a> covers the donor-facing side, and <a href="/blog/ai-for-academic-research" style={{ color: "#00d4ff" }}>AI for academic research</a> covers a related research workflow.</p>
+          <p>A general-purpose model like Claude or ChatGPT can assist with this workflow when you provide source material and acceptance checks. A dedicated writing tool like <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> may help keep organizational voice consistent across writers, while <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> can hold an approved organizational brief, past submissions, and a deadline calendar. For adjacent source-handling patterns, see the <a href="/workflows/research" style={{ color: "#00d4ff" }}>research workflow hub</a> rather than treating a related topic as evidence for a grant claim.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>

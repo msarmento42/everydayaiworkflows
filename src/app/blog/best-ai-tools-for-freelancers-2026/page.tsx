@@ -2,6 +2,7 @@ import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
+import ArticleJsonLd from "../components/ArticleJsonLd";
 
 export const metadata = {
   title: "AI Tools for Freelancers: A Task-Fit Workflow for Writing, Admin, and Client Delivery",
@@ -9,11 +10,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/best-ai-tools-for-freelancers-2026",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/best-ai-tools-for-freelancers-2026"
+        datePublished="2026-06-12"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -45,7 +57,7 @@ export default function BlogPost() {
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>1. Jasper AI for Client-Facing Writing</h2>
           <p>If a meaningful chunk of your freelance work involves proposals, landing pages, email campaigns, ad copy, or marketing deliverables, <a href="https://jasper.ai" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Jasper AI</a> may fit a repeatable client-writing workflow. General chat tools can draft almost anything, while a specialist tool may provide templates or brand-voice controls. Check the current vendor documentation before relying on a particular feature.</p>
-          <p>For freelancers juggling multiple brands, test whether separate style guidance keeps client tones distinct and measure the editing still required. Use approved facts and client permissions in every draft. For a wider view of how solo operators structure a toolkit around writing, ops, and delivery, see <a href="/blog/ai-tools-for-entrepreneurs" style={{ color: "#00d4ff" }}>AI tools for entrepreneurs</a>.</p>
+          <p>For freelancers juggling multiple brands, test whether separate style guidance keeps client tones distinct and measure the editing still required. Use approved facts and client permissions in every draft. For a wider view of how solo operators structure a toolkit around writing, ops, and delivery, see the <a href="/blog/ai-productivity-stack-2026" style={{ color: "#00d4ff" }}>AI productivity stack guide</a>.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>2. Notion AI for Project Notes and Client Context</h2>
           <p><a href="https://www.notion.com/product/ai" rel="noopener noreferrer" style={{ color: "#00d4ff" }}>Notion AI</a> can help organize client call summaries, deliverables, and recurring context in one workspace. Supply only notes you are authorized to store, then ask for action items, a client-ready draft, or a task list for review.</p>
@@ -53,7 +65,7 @@ export default function BlogPost() {
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>3. Make.com for Admin Automation</h2>
           <p>When admin work interrupts client delivery, <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> can orchestrate handoffs such as lead capture, onboarding drafts, invoice reminders, deliverable notifications, database updates, and content scheduling.</p>
-          <p>For example, a form submission can create a client record and draft an intake email; a delivery-folder change can prepare a notification; and a project-status update can create a reviewable summary. Keep approval gates around client data, billing, recipient lists, and external sends. For the step-by-step build pattern, see <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>how to automate repetitive tasks with Make.com</a>.</p>
+          <p>For example, a form submission can create a client record and draft an intake email; a delivery-folder change can prepare a notification; and a project-status update can create a reviewable summary. Keep approval gates around client data, billing, recipient lists, and external sends. The <a href="/workflows/automation" style={{ color: "#00d4ff" }}>automation workflow hub</a> covers the step-by-step approval pattern.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>4. Claude for Research and Synthesis</h2>
           <p>Freelancers often have to turn ambiguity into clarity. Claude may fit work that involves reading long source material, extracting themes, comparing options, or drafting a first pass that needs nuance. Treat the result as a reviewable draft, not a client-ready recommendation.</p>

@@ -2,6 +2,7 @@ import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import SourceMethodBlock from "../components/SourceMethodBlock";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
+import ArticleJsonLd from "../components/ArticleJsonLd";
 
 export const metadata = {
   title: "The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs) | Everyday AI Workflows",
@@ -9,11 +10,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-productivity-stack-2026",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-productivity-stack-2026"
+        datePublished="2026-06-18"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -59,16 +71,16 @@ export default function BlogPost() {
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Category 2: Automation and Integration</h2>
           <p><strong><a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a></strong> is the automation layer that connects everything else. If Claude is your thinking tool and Notion is your knowledge base, Make is the plumbing that moves information between them without manual copying. Use Make to build scenarios that: pull your calendar into a morning briefing, send new email threads through a Claude API prompt and deliver summaries to Slack, push new form submissions through a writing template and post them to your CMS, or run nightly reports from a database and email them formatted.</p>
-          <p>Make's free tier allows 1,000 operations per month — enough for 2 to 3 active workflows. The Core plan at $9/month expands to 10,000 operations, which covers most individual users. The key skill is learning to read Make's scenario editor; once you understand modules and data mapping, building automations goes from intimidating to fast. Our guide on <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>automating tasks with Make</a> covers the basics in detail.</p>
+          <p>Make's current plan limits and pricing should be checked before you commit to a recurring workflow. The key skill is learning to read its scenario editor; once you understand modules and data mapping, you can decide whether automation is worth the operational cost. The <a href="/workflows/automation" style={{ color: "#00d4ff" }}>automation workflow hub</a> covers the basics in context.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Category 3: Research and Knowledge Management</h2>
           <p><strong><a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion</a></strong> with its built-in AI is the best knowledge management tool for most professionals in 2026. The AI layer lets you query across all your pages, generate summaries, and draft new content grounded in what you have already written. The free tier is generous enough to evaluate it seriously; the Plus plan at $10/month per user adds unlimited blocks and AI credits if you hit limits.</p>
           <p>For SEO research specifically, <a href="https://surferseo.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Surfer SEO</a> remains the most actionable tool for content optimization. It analyzes the top-ranking pages for any keyword, extracts structural and semantic patterns, and gives you a real-time content score as you write. Pair it with any of the AI writers above: have Claude draft the content and Surfer optimize the structure. This combination consistently outperforms either tool alone for content that needs to rank.</p>
-          <p>For deeper research workflows, our guide on <a href="/blog/using-claude-for-research" style={{ color: "#00d4ff" }}>using Claude for research</a> covers the full 5-phase process from scoping to output drafting.</p>
+          <p>For deeper research workflows, the <a href="/workflows/research" style={{ color: "#00d4ff" }}>research workflow hub</a> covers scoping, source capture, synthesis, and output review.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Category 4: Security While Using AI Tools</h2>
           <p>Most productivity guides skip this category. They should not. The more AI tools you use — especially cloud-based ones that process your work documents, emails, and client data — the more important it is to ensure that traffic is encrypted and your activity is not logged by your ISP or network. This matters especially for remote workers on shared networks and for anyone processing confidential client documents.</p>
-          <p><strong><a href="https://www.awin1.com/cread.php?awinmid=15132&awinaffid=2892161" rel="noopener sponsored" style={{ color: "#00d4ff" }}>NordVPN</a></strong> is the most practical security addition to an AI productivity stack. It encrypts your connection when using cloud AI tools on public or shared networks, prevents ISP logging of your AI tool traffic, and has a Meshnet feature that lets you securely access your home network's resources remotely. At roughly $3 to 5 per month on annual plans, it is low-cost insurance for anyone doing serious professional work through cloud AI tools. See our detailed guide on <a href="/blog/vpn-for-ai-researchers" style={{ color: "#00d4ff" }}>VPNs for AI researchers</a> for a full comparison of options.</p>
+          <p><strong><a href="https://www.awin1.com/cread.php?awinmid=15132&awinaffid=2892161" rel="noopener sponsored" style={{ color: "#00d4ff" }}>NordVPN</a></strong> is one possible security layer for an AI productivity stack. Verify the current feature set, price, logging policy, and suitability for your jurisdiction before relying on it. The <a href="/workflows/research" style={{ color: "#00d4ff" }}>research workflow hub</a> keeps the broader source and privacy checks in view.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>What a Coherent Stack Looks Like</h2>
           <p>Here is how these tools work together in practice for a freelance consultant or content creator:</p>

@@ -94,6 +94,30 @@ export default function RootLayout({
         </div>
       </nav>
       {children}
+      <footer style={{
+        borderTop: '1px solid rgba(255,255,255,0.08)',
+        background: 'rgba(15,15,35,0.98)',
+        padding: '1.5rem',
+        color: '#9ca3af',
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+        fontSize: '0.82rem',
+      }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto', display: 'flex', gap: '0.9rem', flexWrap: 'wrap', alignItems: 'center' }}>
+          <span style={{ color: '#cbd5e1', fontWeight: 700 }}>Everyday AI Workflows</span>
+          {[
+            { href: '/about', label: 'About' },
+            { href: '/contact', label: 'Contact' },
+            { href: '/editorial-policy', label: 'Editorial policy' },
+            { href: '/privacy', label: 'Privacy' },
+            { href: '/terms', label: 'Terms' },
+          ].map(({ href, label }) => (
+            <a key={href} href={href} style={{ color: '#67e8f9', textDecoration: 'none' }}>
+              {label}
+            </a>
+          ))}
+          <span style={{ flexBasis: '100%', color: '#6b7280' }}>Guides are educational; verify current product details and keep a human responsible for consequential decisions.</span>
+        </div>
+      </footer>
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6175161566333696"

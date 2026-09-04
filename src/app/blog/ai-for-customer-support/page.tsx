@@ -2,6 +2,8 @@ import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
 import ShareButtons from "../../components/ShareButtons";
+import ArticleJsonLd from "../components/ArticleJsonLd";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "How to Use AI for Customer Support: A Practical, Reviewable Workflow | Everyday AI Workflows",
@@ -9,27 +11,10 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-customer-support",
   },
-  script: [
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How to Use AI for Customer Support: A Practical, Reviewable Workflow",
-        "description": "Build an AI customer support workflow to triage, draft, escalate, and analyze tickets with no-code steps and copy-paste prompts.",
-        "author": {
-          "@type": "Person",
-          "name": "Everyday AI Workflows"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Everyday AI Workflows",
-        },
-        "datePublished": "2026-06-21T00:00:00Z",
-        "dateModified": "2026-06-21T00:00:00Z"
-      })
-    }
-  ]
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BlogPost() {
@@ -38,6 +23,13 @@ export default function BlogPost() {
 
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-for-customer-support"
+        datePublished="2026-06-21"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -49,6 +41,10 @@ export default function BlogPost() {
           How to Use AI for Customer Support: A Practical, Reviewable Workflow
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="human-reviewed customer-support workflows"
+        />
         <SourceMethodBlock
           reviewedOn="August 5, 2026"
           sources={[
@@ -151,7 +147,7 @@ Format as a structured report.`}</pre>
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Putting It All Together: The Full Stack</h2>
           <p>A working AI support system typically looks like this: tickets arrive → <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> sends each to an AI classification prompt → tickets are tagged and routed in the helpdesk → AI drafts responses for non-escalated tickets → agents review and send → weekly trend reports run from exported CSVs.</p>
           <p>Initial setup requires time to connect your helpdesk, knowledge base, AI step, and review queue. Ongoing maintenance includes updating the knowledge base when your product changes and refining escalation rules as edge cases emerge.</p>
-          <p>If you are looking for other workflows that reduce repetitive work, the <a href="/blog/ai-email-triage-system" style={{ color: "#00d4ff" }}>AI email triage system</a> follows the same pattern — classify, draft, route — applied to your personal inbox. And if you want to automate ticket routing with fewer manual steps, the <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>Make.com automation guide</a> walks through building no-code workflows from scratch. For onboarding new customers smoothly, see <a href="/blog/ai-powered-customer-onboarding" style={{ color: "#00d4ff" }}>AI-powered customer onboarding</a>.</p>
+          <p>If you are looking for other workflows that reduce repetitive work, the <a href="/blog/ai-email-triage-system" style={{ color: "#00d4ff" }}>AI email triage system</a> follows the same pattern — classify, draft, route — applied to a personal inbox. The <a href="/workflows/automation" style={{ color: "#00d4ff" }}>automation workflow hub</a> covers no-code routing patterns; keep customer onboarding in the same review queue until its own evidence record is ready.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>

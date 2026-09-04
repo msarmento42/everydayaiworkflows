@@ -3,6 +3,8 @@ import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
 import ShareButtons from "../../components/ShareButtons";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
+import ArticleJsonLd from "../components/ArticleJsonLd";
+import WorkflowLab from "../components/WorkflowLab";
 
 export const metadata = {
   title: "Build an AI Email Triage System: Turn Inbox Noise into a Review Queue | Everyday AI Workflows",
@@ -10,11 +12,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-email-triage-system",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-email-triage-system"
+        datePublished="2026-05-08"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -36,6 +49,38 @@ export default function BlogPost() {
             { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
             { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
             { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
+          ]}
+        />
+        <WorkflowLab
+          id="email-triage"
+          title="Testable email triage fixture"
+          decision="Which messages should be reviewed first, and which draft actions are safe to prepare without sending?"
+          setup={[
+            "Create five synthetic messages with sender, subject, preview text, urgency, and a possible sensitive-data flag.",
+            "Apply the priority rules in this guide and require a structured result: priority, action, rationale, and draft status.",
+            "Compare every label with the fixture's expected category; route anything ambiguous to a human instead of auto-sending.",
+          ]}
+          inputExample={'1. From: CEO@example.test | Subject: Budget approval | Preview: Please confirm the assumption before Friday.\n2. From: newsletter@example.test | Subject: Weekly digest | Preview: Five links for later.\n3. From: client@example.test | Subject: Launch question | Preview: The timeline may change if the API slips.'}
+          outputExample={'High | Reply for review | The message requests a decision and includes a deadline.\nLow | Archive/read later | This is a newsletter with no requested action.\nHigh | Draft, do not send | Client timing is consequential; verify the source thread first.'}
+          observationStatus="Pending an owner-run observation with a real, sanitized inbox sample"
+          safetyNotes={[
+            "Never paste credentials, full personal data, or confidential client content into an unapproved model.",
+            "Treat urgency and sender labels as suggestions; a person checks the original thread before sending or archiving.",
+            "Keep draft generation separate from send permissions so a classification error cannot send a message automatically.",
+          ]}
+          alternatives={[
+            { option: "Manual batch review", tradeoff: "Slower, but keeps sensitive content inside the mail client and is easiest to audit." },
+            { option: "Rules plus AI draft", tradeoff: "More consistent for repeatable queues, but still needs privacy review and a human send step." },
+            { option: "Fully automated send", tradeoff: "Not recommended for this fixture because a wrong priority or draft can create irreversible harm." },
+          ]}
+          sources={[
+            { label: "Claude documentation", href: "https://docs.anthropic.com/en/docs/overview", accessedOn: "September 4, 2026" },
+            { label: "Make: create your first scenario", href: "https://help.make.com/create-your-first-scenario", accessedOn: "September 4, 2026" },
+            { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs", accessedOn: "September 4, 2026" },
+          ]}
+          updateLog={[
+            "September 4, 2026 — Added a synthetic fixture and explicit pending-observation status; no personal inbox result is claimed.",
+            "Next review — Replace the pending status only after a sanitized owner-run check is recorded with the model/plan and date.",
           ]}
         />
         <ShareButtons
@@ -108,7 +153,7 @@ or issues, (3) one process improvement to reduce inbox load
 next week.`}</pre>
           <p>This review step is what turns the setup into a real operating system. As you review batches over time, you may discover that some inbox volume can be reduced at the source: recurring status emails can become dashboards, repeat questions can become docs, and low-value internal chatter can move to async notes instead of replies.</p>
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Related Workflows Worth Building</h2>
-          <p>Once your email triage is running, extend AI to the meetings that emails create. Our <a href="/blog/ai-meeting-summarizer-workflow" style={{ color: "#00d4ff" }}>AI meeting summarizer workflow</a> shows how to auto-generate structured summaries and action items from any call transcript. The <a href="/blog/ai-for-project-management" style={{ color: "#00d4ff" }}>AI for project management guide</a> covers task lists, status updates, and retrospectives without manual overhead.</p>
+          <p>Once your email triage is running, extend AI to the meetings that emails create. Our <a href="/blog/ai-meeting-summarizer-workflow" style={{ color: "#00d4ff" }}>AI meeting summarizer workflow</a> shows how to prepare structured summaries and action items from a call transcript. The <a href="/workflows/automation" style={{ color: "#00d4ff" }}>automation workflow hub</a> covers adjacent task-routing patterns without implying that any step should run without review.</p>
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>💡 <strong>Ready to automate your full communication stack?</strong> <a href="/tools" style={{ color: "#00d4ff" }}>Browse the full toolkit →</a></p>
           </div>
