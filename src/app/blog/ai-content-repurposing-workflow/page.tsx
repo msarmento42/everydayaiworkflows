@@ -94,7 +94,7 @@ Write it to be spoken aloud — short sentences, no jargon.`}</pre>
           <p><a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> offers a similar feature with its Chatsonic tool, and is a good alternative for teams already using it for SEO content — the repurposing adds no additional cost if you're already on a paid plan.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Automating the Repurposing Pipeline with Make.com</h2>
-          <p>Once your prompts are working consistently, the next step is removing yourself from the process entirely. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> can trigger the entire repurposing workflow the moment a new post is published:</p>
+          <p>Once your prompts are working consistently, the next step is reducing manual copying while keeping an approval gate. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> can trigger a reviewable repurposing workflow when a new post is published:</p>
           <ul style={{ paddingLeft: "1.5rem", marginBottom: "1rem" }}>
             <li style={{ marginBottom: "0.5rem" }}>Trigger: new post published on your blog (via RSS feed or webhook)</li>
             <li style={{ marginBottom: "0.5rem" }}>Step 1: Make fetches the full post content</li>

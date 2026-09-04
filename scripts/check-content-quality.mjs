@@ -59,6 +59,7 @@ for (const slug of canonicalSlugs) {
     '8 to 12 hours per week',
     'covers 95% of use cases',
     'reliably saves meaningful time',
+    'removing yourself from the process entirely',
   ];
   for (const claim of unsupportedHeadlineClaims) {
     assert(!source.toLowerCase().includes(claim.toLowerCase()), `${slug} still contains unsupported headline claim: ${claim}`);
