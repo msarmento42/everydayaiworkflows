@@ -24,6 +24,20 @@ const strategyPath = 'src/app/lib/content-strategy.ts';
 const strategy = await read(strategyPath);
 const canonicalSlugs = [...strategy.matchAll(/slug:\s*"([^"]+)"/g)].map((match) => match[1]);
 const canonicalSet = new Set(canonicalSlugs);
+const articleJsonLdComponent = await read('src/app/blog/components/ArticleJsonLd.tsx');
+
+for (const requiredToken of [
+  '"@context"',
+  '"@type"',
+  'mainEntityOfPage',
+  'author',
+  'publisher',
+  'datePublished',
+  'dateModified',
+  'JSON.stringify',
+]) {
+  assert(articleJsonLdComponent.includes(requiredToken), `ArticleJsonLd is missing required structured-data token: ${requiredToken}`);
+}
 
 assert(canonicalSlugs.length >= 8 && canonicalSlugs.length <= 12, `canonical allowlist must contain 8–12 slugs (found ${canonicalSlugs.length})`);
 assert(canonicalSlugs.length === canonicalSet.size, 'canonical allowlist contains duplicate slugs');
@@ -42,6 +56,19 @@ for (const slug of canonicalSlugs) {
   assert(source.includes('SourceMethodBlock'), `${slug} is missing its method/source block`);
   assert(source.includes('AffiliateDisclosure'), `${slug} is missing its affiliate disclosure`);
   assert(source.includes('dateModified="2026-09-04"'), `${slug} is missing the stable review date`);
+
+  const sourceBlock = source.match(/sources=\{\[(.*?)\]\}/s)?.[1] || '';
+  const sourceHrefs = [...sourceBlock.matchAll(/href:\s*"([^"]+)"/g)].map((match) => match[1]);
+  assert(sourceHrefs.length >= 3, `${slug} must include at least three method/source links`);
+  for (const href of sourceHrefs) {
+    try {
+      const parsed = new URL(href);
+      assert(parsed.protocol === 'https:', `${slug} has a non-HTTPS source link: ${href}`);
+      assert(Boolean(parsed.hostname), `${slug} has a source link without a hostname: ${href}`);
+    } catch {
+      assert(false, `${slug} has a malformed source link: ${href}`);
+    }
+  }
 
   const internalArticleLinks = [...source.matchAll(/href="\/blog\/([a-z0-9-]+)"/g)].map((match) => match[1]);
   for (const target of internalArticleLinks) {
@@ -63,6 +90,28 @@ for (const slug of canonicalSlugs) {
   ];
   for (const claim of unsupportedHeadlineClaims) {
     assert(!source.toLowerCase().includes(claim.toLowerCase()), `${slug} still contains unsupported headline claim: ${claim}`);
+  }
+}
+
+// When a production build is present, parse the emitted Article JSON-LD as a
+// second line of defense against malformed structured data. The check remains
+// usable before a build by validating the shared component above.
+for (const slug of canonicalSlugs) {
+  const renderedPath = `.next/server/app/blog/${slug}.html`;
+  if (!(await exists(renderedPath))) continue;
+  const rendered = await read(renderedPath);
+  const jsonLdBlocks = [...rendered.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)].map((match) => match[1]);
+  const articleBlock = jsonLdBlocks.find((block) => block.includes('"@type":"Article"'));
+  assert(Boolean(articleBlock), `${slug} build output is missing Article JSON-LD`);
+  if (!articleBlock) continue;
+  try {
+    const parsed = JSON.parse(articleBlock);
+    assert(parsed['@context'] === 'https://schema.org', `${slug} Article JSON-LD has the wrong context`);
+    assert(parsed['@type'] === 'Article', `${slug} Article JSON-LD has the wrong type`);
+    assert(parsed.mainEntityOfPage?.['@id'] === `${BASE_URL}/blog/${slug}`, `${slug} Article JSON-LD has the wrong canonical id`);
+    assert(typeof parsed.datePublished === 'string' && typeof parsed.dateModified === 'string', `${slug} Article JSON-LD is missing dates`);
+  } catch {
+    assert(false, `${slug} emitted Article JSON-LD is not valid JSON`);
   }
 }
 

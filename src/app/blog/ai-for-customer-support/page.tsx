@@ -50,6 +50,7 @@ export default function BlogPost() {
           sources={[
             { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
             { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
+            { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
           ]}
         />
         <ShareButtons title={blogPostTitle} url={blogPostUrl} />
