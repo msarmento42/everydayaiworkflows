@@ -1,6 +1,7 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "AI Tools for Freelancers: A Task-Fit Workflow for Writing, Admin, and Client Delivery",
@@ -24,8 +25,12 @@ export default function BlogPost() {
           AI Tools for Freelancers: A Task-Fit Workflow for Writing, Admin, and Client Delivery
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="task-fit AI support for client work"
+        />
         <SourceMethodBlock
-          reviewedOn="August 5, 2026"
+          reviewedOn="September 4, 2026"
           sources={[
             { label: "Anthropic Documentation", href: "https://docs.anthropic.com/en/docs/overview" },
             { label: "OpenAI Help Center: Data analysis with ChatGPT", href: "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt" },

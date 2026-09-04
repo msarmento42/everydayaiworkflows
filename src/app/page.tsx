@@ -1,9 +1,10 @@
 import PromptWidget from "./components/PromptWidget";
 import MethodStackCTA from "./components/MethodStackCTA";
+import EditorialQualityNotice from "./components/EditorialQualityNotice";
 
 export const metadata = {
-  title: "Everyday AI Workflows — Daily AI Prompts & Tools",
-  description: "Practical AI workflow guides, daily prompts, and tool recommendations for professionals who want to work smarter.",
+  title: "Everyday AI Workflows — Evidence-led AI workflows for everyday work",
+  description: "Practical, source-aware AI workflow guides and tool recommendations for professionals who want to work smarter without over-automating judgment.",
 };
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
             Everyday AI Workflows
           </h1>
           <p style={{ color: "#9ca3af", fontSize: "1.1rem" }}>
-            Daily AI prompts to boost your productivity
+            Evidence-led AI workflows for everyday work
           </p>
         </header>
 
@@ -46,6 +47,11 @@ export default function Home() {
             <p style={{ color: '#9ca3af', margin: 0, lineHeight: 1.6, fontSize: '0.92rem' }}>Use the <a href="/contact" style={{ color: '#00d4ff' }}>contact page</a> for corrections, ideas, and partnership questions.</p>
           </div>
         </section>
+
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="practical workflows, source-aware tool guidance, and human review"
+        />
 
         <MethodStackCTA />
 

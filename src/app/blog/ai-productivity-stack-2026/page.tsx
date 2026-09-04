@@ -1,6 +1,7 @@
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
 import SourceMethodBlock from "../components/SourceMethodBlock";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs) | Everyday AI Workflows",
@@ -24,14 +25,22 @@ export default function BlogPost() {
           The 2026 AI Productivity Stack: Tools That Actually Save Time (With Costs)
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="choosing a small, practical AI productivity stack"
+        />
         <SourceMethodBlock
-          reviewedOn="August 10, 2026"
+          reviewedOn="September 4, 2026"
           sources={[
             { label: "Claude pricing (Anthropic)", href: "https://claude.com/pricing" },
             { label: "Make pricing", href: "https://www.make.com/en/pricing" },
             { label: "Notion pricing", href: "https://www.notion.com/pricing" },
             { label: "Surfer pricing", href: "https://surferseo.com/pricing/" },
             { label: "NordVPN features", href: "https://nordvpn.com/features/" },
+            { label: "Anthropic Claude overview", href: "https://www.anthropic.com/claude" },
+            { label: "Make Help Center", href: "https://help.make.com/" },
+            { label: "Notion AI", href: "https://www.notion.com/product/ai" },
+            { label: "OpenAI Help Center", href: "https://help.openai.com/" },
           ]}
         />
 

@@ -2,6 +2,7 @@ import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
 import ShareButtons from "../../components/ShareButtons";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "Build an AI Email Triage System: Turn Inbox Noise into a Review Queue | Everyday AI Workflows",
@@ -25,8 +26,12 @@ export default function BlogPost() {
           Build an AI Email Triage System: Turn Inbox Noise into a Review Queue
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="reviewable email triage and drafting"
+        />
         <SourceMethodBlock
-          reviewedOn="August 5, 2026"
+          reviewedOn="September 4, 2026"
           sources={[
             { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
             { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
