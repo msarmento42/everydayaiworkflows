@@ -27,6 +27,14 @@ export default function BlogPost() {
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
           <p>A newsletter is one of the most direct channels you can own — no algorithm, no platform risk, a direct line to readers who opted in. But publishing weekly is brutal when you&apos;re also running a business or managing clients. Most newsletters die at issue 7 or 8. AI doesn&apos;t replace your voice, but it eliminates 60–70% of the friction that causes people to quit. Here&apos;s the exact workflow that makes weekly publishing sustainable.</p>
+          <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Key Takeaways</h2>
+          <ul style={{ listStyleType: "disc", marginLeft: "1.5rem", marginBottom: "2rem" }}>
+            <li style={{ marginBottom: "0.5rem" }}>Generate a clear structure from a rough idea to cut drafting time.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Write the first draft yourself, then use AI to edit for clarity while preserving your voice.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Leverage AI to create multiple subject line options and pick the best for higher open rates.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Automate repurposing of newsletter content into social posts to maximize reach.</li>
+            <li style={{ marginBottom: "0.5rem" }}>Maintain a content bank to avoid starting from scratch each week.</li>
+          </ul>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>The Real Problem Isn&apos;t Ideas — It&apos;s Production Time</h2>
           <p>Most newsletter writers have more ideas than they can publish. The bottleneck is the 3–4 hours it takes to go from rough idea to polished, formatted issue. Drafting, editing, adding links, writing the subject line, the preview text, formatting — each of these is a small task, but together they make the weekly cadence feel like a second job.</p>
