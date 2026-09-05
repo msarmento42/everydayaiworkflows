@@ -109,7 +109,7 @@ export default function Home() {
           <a href="/terms" style={{ color: "#9ca3af", textDecoration: "none" }}>Terms</a>
         </nav>
 
-        <footer style={{ textAlign: "center", marginTop: "4rem", color: "#4b5563", fontSize: "0.9rem" }}>
+        <footer style={{ textAlign: "center", marginTop: "4rem", color: "#cbd5e1", fontSize: "0.9rem" }}>
           <p>Built to help you integrate AI into your daily workflow</p>
         </footer>
         </div>
