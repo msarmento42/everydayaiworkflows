@@ -23,24 +23,24 @@ export const metadata = {
 
 const paths = [
   {
-    title: 'If you write or publish content',
-    href: '/workflows/writing',
-    body: 'Start with one reusable writing workflow: outline, draft, edit, repurpose, and publish. The goal is not more AI output; it is a repeatable editorial process.',
+    title: 'If your inbox is the bottleneck',
+    href: '/blog/ai-email-triage-system',
+    body: 'Use a review queue to prioritize messages, prepare drafts, and keep sending or archiving under human control.',
   },
   {
     title: 'If meetings consume your week',
-    href: '/workflows/meetings',
-    body: 'Build a meeting capture system that turns transcripts into decisions, follow-ups, CRM notes, and next-step summaries.',
+    href: '/blog/ai-meeting-summarizer-workflow',
+    body: 'Turn a transcript into decisions and follow-ups while keeping conditional dates, owners, and open questions visible.',
   },
   {
     title: 'If research takes too long',
-    href: '/workflows/research',
-    body: 'Use AI to map a topic, compare sources, extract claims, and turn messy notes into a clear brief without skipping verification.',
+    href: '/blog/ai-for-competitor-analysis',
+    body: 'Compare public sources, distinguish documented signals from hypotheses, and keep a traceable brief for the next decision.',
   },
   {
-    title: 'If repetitive admin work is the bottleneck',
-    href: '/workflows/automation',
-    body: 'Connect your inbox, forms, docs, spreadsheets, and task tools with simple no-code automation patterns.',
+    title: 'If one piece of content should travel further',
+    href: '/blog/ai-content-repurposing-workflow',
+    body: 'Create channel-specific drafts from a canonical source while checking claims, permissions, and editorial fit before publishing.',
   },
 ];
 
@@ -62,6 +62,15 @@ export default function StartHerePage() {
           Everyday AI Workflows is organized around practical systems, not one-off prompts. The fastest way to get value is to choose one repeated task, make the current process visible, and use AI to improve a specific handoff.
         </p>
 
+        <section aria-labelledby="path-heading" style={{ background: 'rgba(0,212,255,0.07)', border: '1px solid rgba(0,212,255,0.2)', borderRadius: '14px', padding: '1.25rem', margin: '1.5rem 0 2rem' }}>
+          <h2 id="path-heading" style={{ margin: '0 0 0.8rem', color: '#fff', fontSize: '1.2rem' }}>Your three-step path</h2>
+          <ol style={{ color: '#d1d5db', lineHeight: 1.75, paddingLeft: '1.35rem', margin: 0 }}>
+            <li><strong>Choose one bottleneck.</strong> Start with the job you repeat, not a tool you have not evaluated.</li>
+            <li><strong>Run the matching lab.</strong> Use the fixture and review checklist before applying the pattern to real work.</li>
+            <li><strong>Keep or deepen the system.</strong> Download the free Workflow Reset first; consider the existing implementation products only if the workflow earns a place in your routine.</li>
+          </ol>
+        </section>
+
         <section style={{ display: 'grid', gap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', margin: '2rem 0' }}>
           {paths.map((path) => (
             <Link key={path.href} href={path.href} style={{ display: 'block', textDecoration: 'none', color: 'inherit', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px', padding: '1.15rem' }}>
@@ -70,6 +79,10 @@ export default function StartHerePage() {
             </Link>
           ))}
         </section>
+
+        <p style={{ color: '#94a3b8', lineHeight: 1.6, fontSize: '0.88rem', margin: '-0.75rem 0 2rem' }}>
+          Prefer a broader map first? Browse the <Link href="/workflows/writing" style={{ color: '#67e8f9' }}>writing</Link>, <Link href="/workflows/meetings" style={{ color: '#67e8f9' }}>meetings</Link>, <Link href="/workflows/research" style={{ color: '#67e8f9' }}>research</Link>, or <Link href="/workflows/automation" style={{ color: '#67e8f9' }}>automation</Link> hubs after choosing your starting job.
+        </p>
 
         <section style={{ background: 'rgba(0,212,255,0.07)', border: '1px solid rgba(0,212,255,0.2)', borderRadius: '14px', padding: '1.4rem', marginBottom: '2rem' }}>
           <h2 style={{ margin: '0 0 0.85rem', color: '#fff' }}>A simple weekly implementation system</h2>

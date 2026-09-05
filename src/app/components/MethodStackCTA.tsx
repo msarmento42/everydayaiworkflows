@@ -32,6 +32,8 @@ export default function MethodStackCTA() {
           rel="noopener noreferrer"
           data-analytics-placement="method-stack-free-reset"
           data-analytics-intent="commercial"
+          data-analytics-product="ai-workflow-reset"
+          data-analytics-template="free_reset"
           style={{ display: 'inline-block', background: '#00d4ff', color: '#0f172a', fontWeight: 800, textDecoration: 'none', borderRadius: '8px', padding: '0.7rem 1rem' }}
         >
           Download the free reset →
@@ -50,6 +52,7 @@ export default function MethodStackCTA() {
             rel="noopener noreferrer"
             data-analytics-placement="method-stack-workday-system"
             data-analytics-intent="commercial"
+            data-analytics-product="ai-workday-system"
             style={{ color: '#a5f3fc', fontWeight: 700, textDecoration: 'none' }}
           >
             Workday System →
@@ -60,6 +63,7 @@ export default function MethodStackCTA() {
             rel="noopener noreferrer"
             data-analytics-placement="method-stack-complete-system"
             data-analytics-intent="commercial"
+            data-analytics-product="method-stack-complete-system"
             style={{ color: '#c4b5fd', fontWeight: 700, textDecoration: 'none' }}
           >
             Complete collection →

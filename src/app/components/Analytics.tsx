@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import { trackAnalyticsEvent } from "../lib/analytics";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const VALID_GA_MEASUREMENT_ID = typeof GA_MEASUREMENT_ID === "string" && /^G-[A-Z0-9]+$/.test(GA_MEASUREMENT_ID)
+  ? GA_MEASUREMENT_ID
+  : undefined;
 
 export default function Analytics() {
   useEffect(() => {
@@ -21,6 +24,7 @@ export default function Analytics() {
       }
 
       const isExternal = Boolean(url.hostname && url.hostname !== window.location.hostname);
+      const isGumroadProduct = /methodstackhq\.gumroad\.com\/l\//i.test(link.href);
       const isAffiliate = /sponsored|affiliate/i.test(link.rel || "")
         || /affiliate|make\.com|jasper|grammarly|surferseo|semrush|writesonic|nordvpn/i.test(link.href);
       if (!isAffiliate && !isExternal) return;
@@ -40,6 +44,21 @@ export default function Analytics() {
       const pageIntent = link.dataset.analyticsIntent
         || (page.includes("tools") ? "commercial" : page.includes("workflows") ? "workflow" : "editorial");
 
+      if (isGumroadProduct) {
+        const product = link.dataset.analyticsProduct || url.pathname.split("/").filter(Boolean).pop() || "product";
+        const template = link.dataset.analyticsTemplate;
+        trackAnalyticsEvent(template ? "template_download" : "product_view", {
+          page,
+          placement,
+          page_intent: pageIntent,
+          partner: "gumroad",
+          product,
+          ...(template ? { template } : {}),
+          link_domain: url.hostname.toLowerCase(),
+        });
+        return;
+      }
+
       trackAnalyticsEvent(isAffiliate ? "affiliate_click" : "outbound_click", {
         page,
         placement,
@@ -55,10 +74,10 @@ export default function Analytics() {
 
   return (
     <>
-      {GA_MEASUREMENT_ID ? (
+      {VALID_GA_MEASUREMENT_ID ? (
         <>
           <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${VALID_GA_MEASUREMENT_ID}`}
             strategy="afterInteractive"
           />
           <Script id="ga4-init" strategy="afterInteractive">
@@ -66,7 +85,7 @@ export default function Analytics() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}');
+              gtag('config', '${VALID_GA_MEASUREMENT_ID}');
             `}
           </Script>
         </>

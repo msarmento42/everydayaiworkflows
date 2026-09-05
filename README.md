@@ -57,3 +57,32 @@ must be satisfied: restore account access, add genuine firsthand evidence where
 the page implies testing, verify production after deployment, and confirm that
 the site has a coherent audience and no unresolved quality blocker. No new
 automated content should be published while those gates are open.
+
+## Revenue instrumentation handoff
+
+The revenue funnel is instrumented without sending email addresses, prompts, or
+user content to analytics. The browser event contract is defined in
+`src/app/lib/analytics.ts`; the current emitted paths are lead view/start/
+submit/success, free-template download, product view, affiliate click, and
+outbound click. Checkout and purchase remain provider-side until a truthful
+provider callback or report is available.
+
+Production configuration is intentionally external to the repository:
+
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` — optional public GA4 measurement ID; the
+  readiness check accepts the `G-...` format and does not require a value for a
+  build.
+- `NEWSLETTER_WEBHOOK_URL` — server-only HTTPS endpoint for consented signup
+  delivery.
+- `NEWSLETTER_WEBHOOK_TOKEN` — optional server-only bearer token; never commit
+  it or expose it to the browser.
+
+When the provider variables are absent, the newsletter route remains honest:
+it reports that delivery is unavailable and the existing instant-download
+Gumroad fallback remains available. Validate the handoff with:
+
+```bash
+node scripts/check-analytics-readiness.mjs
+npm run check:newsletter
+node scripts/check-revenue-links.mjs
+```

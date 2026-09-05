@@ -1,8 +1,11 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
+import WorkflowLab from "../components/WorkflowLab";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
+import MethodStackCTA from "../../components/MethodStackCTA";
+import WorkflowArtifact from "../../components/WorkflowArtifact";
 
 export const metadata = {
   title: "Build an AI Meeting Summarizer Workflow: Turn Transcripts into Decisions | Everyday AI Workflows",
@@ -49,6 +52,55 @@ export default function BlogPost() {
             { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
           ]}
         />
+        <WorkflowLab
+          id="meeting-follow-up-worksheet"
+          title="Testable meeting follow-up fixture"
+          decision="Which decisions and action items are supported by the transcript, and which details must remain unresolved?"
+          setup={[
+            "Create a short synthetic transcript with one firm decision, one named action owner, and one unresolved date or dependency.",
+            "Run the summarizer prompt and require separate sections for decisions, action items, open questions, and confidence notes.",
+            "Compare every extracted owner and date with the transcript; keep any ambiguous item as TBD instead of guessing.",
+          ]}
+          inputExample={'Alex: We will ship the draft on Friday if the review is complete.\nPriya: I can review the copy by Thursday.\nSam: The API date is still TBD; I will confirm it after the vendor call.'}
+          outputExample={'Decision: Ship the draft on Friday only if review is complete.\nAction: Priya — review copy by Thursday.\nOpen question: Sam must confirm the API date after the vendor call.\nCheck: Do not convert the conditional ship date into a firm commitment.'}
+          observationStatus="Pending an owner-run observation against a synthetic or sanitized transcript"
+          safetyNotes={[
+            "Obtain consent and follow applicable recording, workplace, and meeting-notice requirements before processing a real transcript.",
+            "Remove credentials, sensitive personal data, and confidential client details from any test fixture or vendor upload.",
+            "Verify owners, dates, and conditional language against the original transcript before sending a summary or creating tasks.",
+            "Keep task creation and email sending behind a human approval step until the extraction has been checked.",
+          ]}
+          alternatives={[
+            { option: "Manual notes plus checklist", tradeoff: "Slower, but keeps context with the note-taker and is easiest to audit." },
+            { option: "AI draft with human review", tradeoff: "Reduces formatting work while preserving a check on attribution and commitments." },
+            { option: "Automatic task/email routing", tradeoff: "Efficient for low-risk repeats, but not recommended until transcript errors and privacy controls are proven." },
+          ]}
+          sources={[
+            { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario", accessedOn: "September 4, 2026" },
+            { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs", accessedOn: "September 4, 2026" },
+            { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview", accessedOn: "September 4, 2026" },
+          ]}
+          updateLog={[
+            "September 4, 2026 — Added a synthetic transcript fixture and explicit pending-observation status; no owner-run meeting result is claimed.",
+            "Next review — Replace the pending status only after a dated, reproducible sanitized transcript run is recorded.",
+          ]}
+        />
+        <WorkflowArtifact
+          id="meeting-follow-up"
+          title="Turn one transcript into a review queue"
+          intro="Use a synthetic or sanitized transcript to record what was decided, who owns the next step, and what remains unresolved. Do not upload a real recording here."
+          fields={[
+            { label: "Transcript fixture", placeholder: "Paste a short synthetic exchange or a redacted excerpt with names replaced." },
+            { label: "Decisions and actions", placeholder: "List only supported decisions, owners, dates, and dependencies; mark missing details TBD." },
+            { label: "Human follow-up", placeholder: "What will you verify in the original transcript before creating a task or sending a summary?" },
+          ]}
+          checks={[
+            "Participants consented to any real recording or transcript processing, where applicable.",
+            "I verified each owner, date, and conditional statement against the original source.",
+            "Task creation and outbound messages remain behind a human approval step.",
+          ]}
+        />
+        <MethodStackCTA />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
