@@ -9,7 +9,8 @@
     "lint": "eslint",
     "check:content": "node scripts/check-content-quality.mjs",
     "check:adsense": "node scripts/check-content-quality.mjs && node scripts/check-adsense-readiness.mjs",
-    "check:newsletter": "node scripts/check-newsletter-readiness.mjs"
+    "check:newsletter": "node scripts/check-newsletter-readiness.mjs",
+    "check:legacy-redirects": "node scripts/check-legacy-redirects.mjs"
   },
   "dependencies": {
     "next": "16.1.6",

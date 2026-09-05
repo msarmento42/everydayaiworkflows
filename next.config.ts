@@ -9,6 +9,21 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/home",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/sites/utility-network-landing",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/sites/utility-network-landing/index.html",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/blog/chatgpt-vs-claude-comparison",
         destination: "/blog/chatgpt-vs-claude-2026",
         permanent: true,
