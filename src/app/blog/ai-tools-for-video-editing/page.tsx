@@ -10,8 +10,41 @@ export const metadata = {
 };
 
 export default function BlogPost() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": metadata.title,
+    "description": metadata.description,
+    "image": [
+      "https://www.agios.ai/images/ai-tools-for-video-editing-hero.jpg"
+    ],
+    "datePublished": "2026-07-16T00:00:00Z",
+    "dateModified": "2026-07-16T00:00:00Z",
+    "author": {
+      "@type": "Organization",
+      "name": "Agios"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Agios",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.agios.ai/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.agios.ai" + metadata.alternates.canonical
+    },
+    "url": "https://www.agios.ai" + metadata.alternates.canonical
+  };
+
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
