@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import { trackAnalyticsEvent } from "../lib/analytics";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const VALID_GA_MEASUREMENT_ID = typeof GA_MEASUREMENT_ID === "string" && /^G-[A-Z0-9]+$/.test(GA_MEASUREMENT_ID)
+  ? GA_MEASUREMENT_ID
+  : undefined;
 
 export default function Analytics() {
   useEffect(() => {
@@ -71,10 +74,10 @@ export default function Analytics() {
 
   return (
     <>
-      {GA_MEASUREMENT_ID ? (
+      {VALID_GA_MEASUREMENT_ID ? (
         <>
           <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${VALID_GA_MEASUREMENT_ID}`}
             strategy="afterInteractive"
           />
           <Script id="ga4-init" strategy="afterInteractive">
@@ -82,7 +85,7 @@ export default function Analytics() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}');
+              gtag('config', '${VALID_GA_MEASUREMENT_ID}');
             `}
           </Script>
         </>

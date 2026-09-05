@@ -7,7 +7,7 @@ const failures = [];
 if (measurementId && !configured) failures.push('NEXT_PUBLIC_GA_MEASUREMENT_ID has an invalid format');
 
 const checks = [
-  ['src/app/components/Analytics.tsx', ['trackAnalyticsEvent(template ? "template_download" : "product_view"', 'trackAnalyticsEvent(isAffiliate ? "affiliate_click" : "outbound_click"']],
+  ['src/app/components/Analytics.tsx', ['trackAnalyticsEvent(template ? "template_download" : "product_view"', 'trackAnalyticsEvent(isAffiliate ? "affiliate_click" : "outbound_click"', 'VALID_GA_MEASUREMENT_ID']],
   ['src/app/blog/components/NewsletterCapture.tsx', ['trackAnalyticsEvent("lead_view"', 'trackAnalyticsEvent("lead_start"', 'trackAnalyticsEvent("lead_submit"', 'trackAnalyticsEvent("lead_success"']],
   ['src/app/components/MethodStackCTA.tsx', ['data-analytics-product="ai-workflow-reset"', 'data-analytics-product="ai-workday-system"', 'data-analytics-product="method-stack-complete-system"']],
 ];
