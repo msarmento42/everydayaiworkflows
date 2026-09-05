@@ -33,7 +33,8 @@ export const metadata = {
 export default function Home() {
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)', color: '#fff', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-      <div style={{ maxWidth: "800px", margin: "0 auto", padding: "2rem" }}>
+      <main id="main-content" aria-label="Everyday AI Workflows content">
+        <div style={{ maxWidth: "800px", margin: "0 auto", padding: "2rem" }}>
         <header style={{ textAlign: "center", marginBottom: "3rem", paddingTop: "2rem" }}>
           <h1 style={{ fontSize: "2.5rem", fontWeight: "700", background: "linear-gradient(90deg, #00d4ff, #7c3aed)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", marginBottom: "0.5rem" }}>
             Everyday AI Workflows
@@ -111,7 +112,8 @@ export default function Home() {
         <footer style={{ textAlign: "center", marginTop: "4rem", color: "#4b5563", fontSize: "0.9rem" }}>
           <p>Built to help you integrate AI into your daily workflow</p>
         </footer>
-      </div>
+        </div>
+      </main>
     </div>
   );
 }
