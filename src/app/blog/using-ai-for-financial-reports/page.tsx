@@ -1,5 +1,23 @@
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import NewsletterCapture from "../components/NewsletterCapture";
+import Script from 'next/script';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Using AI to Write Financial Reports: A Practical Workflow for Non-Finance Teams",
+  "description": "A step-by-step workflow for using AI to structure, draft, and polish financial reports — turning raw numbers into clear narratives that non-finance stakeholders can act on.",
+  "datePublished": "2025-05-23",
+  "dateModified": "2025-05-23",
+  "author": {
+    "@type": "Organization",
+    "name": "Everyday AI Workflows"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Everyday AI Workflows"
+  }
+};
 
 export const metadata = {
   title: "Using AI to Write Financial Reports: A Practical Workflow for Non-Finance Teams | Everyday AI Workflows",
@@ -12,6 +30,11 @@ export const metadata = {
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
