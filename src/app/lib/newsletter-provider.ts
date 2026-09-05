@@ -15,6 +15,32 @@ type ProviderOptions = {
   now?: () => Date;
 };
 
+function isBeehiivSubscriptionsEndpoint(url: URL) {
+  return url.hostname === "api.beehiiv.com"
+    && /^\/v2\/publications\/pub_[^/]+\/subscriptions\/?$/.test(url.pathname);
+}
+
+function buildProviderPayload(submission: NewsletterSubmission, now: () => Date, url: URL) {
+  if (isBeehiivSubscriptionsEndpoint(url)) {
+    return {
+      email: submission.email,
+      utm_source: "eawf",
+      utm_medium: "website",
+      utm_campaign: "eawf_funnel_2026q3",
+      utm_content: submission.source,
+      referring_site: "https://everydayaiworkflows.com",
+      send_welcome_email: false,
+      double_opt_override: "not_set",
+    };
+  }
+
+  return {
+    email: submission.email,
+    source: submission.source,
+    consent_timestamp: now().toISOString(),
+  };
+}
+
 export async function submitToNewsletterProvider(
   submission: NewsletterSubmission,
   options: ProviderOptions = {},
@@ -38,11 +64,7 @@ export async function submitToNewsletterProvider(
     const response = await (options.fetchImpl ?? fetch)(url, {
       method: "POST",
       headers,
-      body: JSON.stringify({
-        email: submission.email,
-        source: submission.source,
-        consent_timestamp: (options.now ?? (() => new Date()))().toISOString(),
-      }),
+      body: JSON.stringify(buildProviderPayload(submission, options.now ?? (() => new Date()), url)),
       cache: "no-store",
       signal: AbortSignal.timeout(8_000),
     });

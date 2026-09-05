@@ -84,3 +84,29 @@ test("provider sends the minimal consent record and maps responses", async () =>
   const failingFetch = async () => { throw new Error("network"); };
   assert.deepEqual(await provider.submitToNewsletterProvider(submission, { webhookUrl: "https://example.com", fetchImpl: failingFetch }), { status: "error" });
 });
+
+test("provider maps the consented funnel source to Beehiiv's API contract", async () => {
+  /** @type {Array<[string, RequestInit]>} */
+  const calls = [];
+  const fetchImpl = async (/** @type {URL} */ url, /** @type {RequestInit} */ init) => {
+    calls.push([url.toString(), init]);
+    return { ok: true, status: 200 };
+  };
+  const submission = { email: "reader@example.com", source: "lead-magnet", consent: true };
+  assert.deepEqual(await provider.submitToNewsletterProvider(submission, {
+    webhookUrl: "https://api.beehiiv.com/v2/publications/pub_123/subscriptions",
+    webhookToken: "secret",
+    fetchImpl,
+  }), { status: "success" });
+  assert.equal(calls[0][1].headers.authorization, "Bearer secret");
+  assert.deepEqual(JSON.parse(calls[0][1].body), {
+    email: "reader@example.com",
+    utm_source: "eawf",
+    utm_medium: "website",
+    utm_campaign: "eawf_funnel_2026q3",
+    utm_content: "lead-magnet",
+    referring_site: "https://everydayaiworkflows.com",
+    send_welcome_email: false,
+    double_opt_override: "not_set",
+  });
+});
