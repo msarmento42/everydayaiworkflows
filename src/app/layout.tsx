@@ -115,7 +115,7 @@ export default function RootLayout({
               {label}
             </a>
           ))}
-          <span style={{ flexBasis: '100%', color: '#6b7280' }}>Guides are educational; verify current product details and keep a human responsible for consequential decisions.</span>
+          <span style={{ flexBasis: '100%', color: '#cbd5e1' }}>Guides are educational; verify current product details and keep a human responsible for consequential decisions.</span>
         </div>
       </footer>
       <Script
