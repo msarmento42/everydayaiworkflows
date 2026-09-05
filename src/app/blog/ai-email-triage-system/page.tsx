@@ -6,6 +6,7 @@ import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import WorkflowLab from "../components/WorkflowLab";
 import MethodStackCTA from "../../components/MethodStackCTA";
+import WorkflowArtifact from "../../components/WorkflowArtifact";
 
 export const metadata = {
   title: "Build an AI Email Triage System: Turn Inbox Noise into a Review Queue | Everyday AI Workflows",
@@ -53,7 +54,7 @@ export default function BlogPost() {
           ]}
         />
         <WorkflowLab
-          id="email-triage"
+          id="email-triage-worksheet"
           title="Testable email triage fixture"
           decision="Which messages should be reviewed first, and which draft actions are safe to prepare without sending?"
           setup={[
@@ -82,6 +83,21 @@ export default function BlogPost() {
           updateLog={[
             "September 4, 2026 — Added a synthetic fixture and explicit pending-observation status; no personal inbox result is claimed.",
             "Next review — Replace the pending status only after a sanitized owner-run check is recorded with the model/plan and date.",
+          ]}
+        />
+        <WorkflowArtifact
+          id="email-triage"
+          title="Build your own triage review queue"
+          intro="Fill this worksheet with sanitized labels or a synthetic batch before you apply the workflow to a real inbox. Keep the final send, archive, or delegation decision in your mail client."
+          fields={[
+            { label: "Priority rules", placeholder: "Which senders, deadlines, decisions, or risks should be High, Medium, or Low?" },
+            { label: "Sanitized message batch", placeholder: "Example: client / launch question / timeline may change if dependency slips" },
+            { label: "Review decision", placeholder: "What will you inspect before drafting, sending, delegating, or archiving?" },
+          ]}
+          checks={[
+            "I removed credentials, personal data, and confidential message content from the test batch.",
+            "I compared each priority and owner suggestion with the original thread before acting.",
+            "No automated rule can send or archive a consequential message without my review.",
           ]}
         />
         <MethodStackCTA />

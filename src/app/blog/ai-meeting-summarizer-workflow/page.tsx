@@ -5,6 +5,7 @@ import WorkflowLab from "../components/WorkflowLab";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 import MethodStackCTA from "../../components/MethodStackCTA";
+import WorkflowArtifact from "../../components/WorkflowArtifact";
 
 export const metadata = {
   title: "Build an AI Meeting Summarizer Workflow: Turn Transcripts into Decisions | Everyday AI Workflows",
@@ -52,7 +53,7 @@ export default function BlogPost() {
           ]}
         />
         <WorkflowLab
-          id="meeting-follow-up"
+          id="meeting-follow-up-worksheet"
           title="Testable meeting follow-up fixture"
           decision="Which decisions and action items are supported by the transcript, and which details must remain unresolved?"
           setup={[
@@ -82,6 +83,21 @@ export default function BlogPost() {
           updateLog={[
             "September 4, 2026 — Added a synthetic transcript fixture and explicit pending-observation status; no owner-run meeting result is claimed.",
             "Next review — Replace the pending status only after a dated, reproducible sanitized transcript run is recorded.",
+          ]}
+        />
+        <WorkflowArtifact
+          id="meeting-follow-up"
+          title="Turn one transcript into a review queue"
+          intro="Use a synthetic or sanitized transcript to record what was decided, who owns the next step, and what remains unresolved. Do not upload a real recording here."
+          fields={[
+            { label: "Transcript fixture", placeholder: "Paste a short synthetic exchange or a redacted excerpt with names replaced." },
+            { label: "Decisions and actions", placeholder: "List only supported decisions, owners, dates, and dependencies; mark missing details TBD." },
+            { label: "Human follow-up", placeholder: "What will you verify in the original transcript before creating a task or sending a summary?" },
+          ]}
+          checks={[
+            "Participants consented to any real recording or transcript processing, where applicable.",
+            "I verified each owner, date, and conditional statement against the original source.",
+            "Task creation and outbound messages remain behind a human approval step.",
           ]}
         />
         <MethodStackCTA />

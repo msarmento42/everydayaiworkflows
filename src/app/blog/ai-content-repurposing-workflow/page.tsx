@@ -5,6 +5,7 @@ import WorkflowLab from "../components/WorkflowLab";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 import MethodStackCTA from "../../components/MethodStackCTA";
+import WorkflowArtifact from "../../components/WorkflowArtifact";
 
 export const metadata = {
   title: "AI Content Repurposing: Turn One Post into Platform-Specific Drafts | Everyday AI Workflows",
@@ -52,7 +53,7 @@ export default function BlogPost() {
           ]}
         />
         <WorkflowLab
-          id="content-repurposing"
+          id="content-repurposing-worksheet"
           title="Testable content-repurposing fixture"
           decision="Which derivatives preserve the source claim, and which need editorial correction before publishing?"
           setup={[
@@ -82,6 +83,21 @@ export default function BlogPost() {
           updateLog={[
             "September 4, 2026 — Added a claim-preservation fixture and explicit pending-observation status; no publishing result is claimed.",
             "Next review — Replace the pending status only after a dated, reproducible editorial run is recorded with the source and approved outputs.",
+          ]}
+        />
+        <WorkflowArtifact
+          id="content-repurposing"
+          title="Repurpose one source without losing the claim"
+          intro="Use a source you own or have permission to adapt. Draft derivatives here as a review queue, then approve only the versions that preserve the source and its qualifications."
+          fields={[
+            { label: "Canonical source and claim", placeholder: "Record the source URL or document and the one claim every derivative must preserve." },
+            { label: "Derivative drafts", placeholder: "Outline the LinkedIn, newsletter, or video versions you want to review." },
+            { label: "Editorial corrections", placeholder: "Note unsupported claims, missing qualifications, rights questions, or platform-specific edits." },
+          ]}
+          checks={[
+            "The source text, images, quotes, and customer examples are owned or permitted for reuse.",
+            "Every derivative retains the material qualification and a path back to the canonical source.",
+            "Nothing is scheduled or published until a human reviews accuracy, voice, rights, and platform fit.",
           ]}
         />
         <MethodStackCTA />

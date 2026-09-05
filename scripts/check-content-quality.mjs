@@ -115,7 +115,7 @@ for (const slug of canonicalSlugs) {
   }
 }
 
-for (const slug of ['ai-email-triage-system', 'ai-for-data-analysis-beginners', 'ai-for-competitor-analysis']) {
+for (const slug of ['ai-email-triage-system', 'ai-meeting-summarizer-workflow', 'ai-for-competitor-analysis', 'ai-content-repurposing-workflow']) {
   const source = await read(`src/app/blog/${slug}/page.tsx`);
   assert(source.includes('WorkflowLab'), `${slug} is missing its Workflow Lab evidence record`);
   assert(source.includes('observationStatus='), `${slug} is missing an explicit observation status`);

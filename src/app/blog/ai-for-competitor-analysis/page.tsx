@@ -5,6 +5,7 @@ import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import WorkflowLab from "../components/WorkflowLab";
 import MethodStackCTA from "../../components/MethodStackCTA";
+import WorkflowArtifact from "../../components/WorkflowArtifact";
 
 export const metadata = {
   title: "AI for Competitor Analysis: A Practical Workflow for a Decision-Ready Brief | Everyday AI Workflows",
@@ -52,7 +53,7 @@ export default function BlogPost() {
           ]}
         />
         <WorkflowLab
-          id="competitor-analysis"
+          id="competitor-analysis-worksheet"
           title="Testable competitor-brief fixture"
           decision="Which competitor signals are documented, which are hypotheses, and what evidence is strong enough to inform a next action?"
           setup={[
@@ -81,6 +82,21 @@ export default function BlogPost() {
           updateLog={[
             "September 4, 2026 — Reframed the title to remove an unverified time-saved promise and added a source-linked fixture.",
             "Next review — Replace the pending status only when a dated, reproducible public-source run is recorded.",
+          ]}
+        />
+        <WorkflowArtifact
+          id="competitor-analysis"
+          title="Build a source-backed competitor brief"
+          intro="Capture public-source evidence before asking for a strategic interpretation. Keep the access date and next verification step with every finding."
+          fields={[
+            { label: "Public sources and access dates", placeholder: "Example: homepage, pricing page, changelog — each with URL and YYYY-MM-DD access date." },
+            { label: "Documented signals", placeholder: "What do the pages explicitly say about positioning, tiers, features, or changes?" },
+            { label: "Hypothesis and next check", placeholder: "What might this imply, and what evidence or customer research would validate it?" },
+          ]}
+          checks={[
+            "I used public, permitted sources and respected terms, robots directives, rate limits, and copyright.",
+            "I separated quotations and documented facts from estimates, sentiment counts, and strategic hypotheses.",
+            "The brief contains no confidential customer, employer, or gated competitor information.",
           ]}
         />
         <MethodStackCTA />
