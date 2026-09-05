@@ -1,6 +1,7 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
+import WorkflowLab from "../components/WorkflowLab";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
@@ -47,6 +48,39 @@ export default function BlogPost() {
             { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
             { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
             { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
+          ]}
+        />
+        <WorkflowLab
+          id="content-repurposing"
+          title="Testable content-repurposing fixture"
+          decision="Which derivatives preserve the source claim, and which need editorial correction before publishing?"
+          setup={[
+            "Choose a short public or owned source paragraph with one clear claim, one qualification, and a link to the canonical source.",
+            "Generate one LinkedIn draft, one newsletter section, and one short-video script while requiring each draft to point back to the source claim.",
+            "Compare every derivative with the source; mark unsupported claims, missing context, rights issues, and platform-specific edits before approval.",
+          ]}
+          inputExample={'Source claim: A reviewable approval queue lets a team draft several channel-specific versions without publishing automatically.\nQualification: The workflow still requires a human to check accuracy, voice, and permissions.'}
+          outputExample={'LinkedIn draft: preserves the approval-queue claim and links to the source.\nNewsletter draft: keeps the human-review qualification.\nVideo script: needs an edit if it says the workflow publishes automatically.\nDecision: approve only the versions that retain both the claim and its qualification.'}
+          observationStatus="Pending an owner-run editorial observation against a public or owned source"
+          safetyNotes={[
+            "Keep the source citation and material qualifications attached to every derivative; do not turn an example into a universal result.",
+            "Confirm that source text, images, customer stories, and quotes are owned or permitted before reuse.",
+            "Do not include personal or confidential information in a repurposing prompt unless the processing path is approved.",
+            "Save drafts to a review queue and require human approval before publishing or scheduling any channel output.",
+          ]}
+          alternatives={[
+            { option: "Manual adaptation", tradeoff: "Highest editorial control, but it takes longer and is harder to repeat consistently." },
+            { option: "AI drafts plus claim checklist", tradeoff: "Speeds up first drafts while keeping factual and rights review explicit." },
+            { option: "Automatic cross-posting", tradeoff: "Lowest effort, but not recommended until claim preservation, permissions, and platform formatting are verified." },
+          ]}
+          sources={[
+            { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario", accessedOn: "September 4, 2026" },
+            { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs", accessedOn: "September 4, 2026" },
+            { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview", accessedOn: "September 4, 2026" },
+          ]}
+          updateLog={[
+            "September 4, 2026 — Added a claim-preservation fixture and explicit pending-observation status; no publishing result is claimed.",
+            "Next review — Replace the pending status only after a dated, reproducible editorial run is recorded with the source and approved outputs.",
           ]}
         />
 
