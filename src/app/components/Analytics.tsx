@@ -47,7 +47,7 @@ export default function Analytics() {
       if (isGumroadProduct) {
         const product = link.dataset.analyticsProduct || url.pathname.split("/").filter(Boolean).pop() || "product";
         const template = link.dataset.analyticsTemplate;
-        trackAnalyticsEvent(template ? "template_download" : "product_view", {
+        const productPayload = {
           page,
           placement,
           page_intent: pageIntent,
@@ -55,7 +55,12 @@ export default function Analytics() {
           product,
           ...(template ? { template } : {}),
           link_domain: url.hostname.toLowerCase(),
-        });
+        };
+        trackAnalyticsEvent(template ? "template_download" : "product_view", productPayload);
+        if (!template) {
+          // This marks the start of the external purchase journey, not a provider-confirmed checkout or sale.
+          trackAnalyticsEvent("checkout_start", productPayload);
+        }
         return;
       }
 

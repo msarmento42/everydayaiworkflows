@@ -86,3 +86,31 @@ test("missing gtag fails safely and valid dispatch succeeds", () => {
     { page: "/research", template: "competitor_brief" },
   ]]);
 });
+
+test("paid checkout-start telemetry stays within the safe product contract", () => {
+  const calls = [];
+  const gtag = (...args) => calls.push(args);
+  assert.equal(
+    trackAnalyticsEvent("checkout_start", {
+      page: "/blog/ai-email-triage-system",
+      placement: "method-stack-workday-system",
+      page_intent: "workflow",
+      partner: "gumroad",
+      product: "ai-workday-system",
+      link_domain: "methodstackhq.gumroad.com",
+    }, gtag),
+    true,
+  );
+  assert.deepEqual(calls, [[
+    "event",
+    "checkout_start",
+    {
+      page: "/blog/ai-email-triage-system",
+      placement: "method-stack-workday-system",
+      page_intent: "workflow",
+      partner: "gumroad",
+      product: "ai-workday-system",
+      link_domain: "methodstackhq.gumroad.com",
+    },
+  ]]);
+});
