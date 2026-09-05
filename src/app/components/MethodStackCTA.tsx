@@ -69,6 +69,33 @@ export default function MethodStackCTA() {
             Complete collection →
           </a>
         </div>
+        <p style={{ color: '#e2e8f0', fontWeight: 700, margin: '1rem 0 0.45rem', fontSize: '0.9rem' }}>
+          Prefer a narrower kit?
+        </p>
+        <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
+          <a
+            href={methodStackLinks.researchDecisionKit}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-analytics-placement="method-stack-research-decision-kit"
+            data-analytics-intent="commercial"
+            data-analytics-product="ai-research-decision-kit"
+            style={{ color: '#a5f3fc', fontWeight: 700, textDecoration: 'none' }}
+          >
+            Research &amp; Decision Kit →
+          </a>
+          <a
+            href={methodStackLinks.weeklyPlanningKit}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-analytics-placement="method-stack-weekly-planning-kit"
+            data-analytics-intent="commercial"
+            data-analytics-product="ai-weekly-planning-kit"
+            style={{ color: '#c4b5fd', fontWeight: 700, textDecoration: 'none' }}
+          >
+            Weekly Planning Kit →
+          </a>
+        </div>
       </div>
 
       <p style={{ gridColumn: '1 / -1', color: '#94a3b8', fontSize: '0.78rem', lineHeight: 1.5, margin: 0 }}>
