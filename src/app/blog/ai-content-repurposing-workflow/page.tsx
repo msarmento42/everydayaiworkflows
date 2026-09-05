@@ -4,6 +4,7 @@ import SourceMethodBlock from "../components/SourceMethodBlock";
 import WorkflowLab from "../components/WorkflowLab";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
+import MethodStackCTA from "../../components/MethodStackCTA";
 
 export const metadata = {
   title: "AI Content Repurposing: Turn One Post into Platform-Specific Drafts | Everyday AI Workflows",
@@ -83,6 +84,7 @@ export default function BlogPost() {
             "Next review — Replace the pending status only after a dated, reproducible editorial run is recorded with the source and approved outputs.",
           ]}
         />
+        <MethodStackCTA />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 

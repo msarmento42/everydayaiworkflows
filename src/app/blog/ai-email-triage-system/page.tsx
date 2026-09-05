@@ -5,6 +5,7 @@ import ShareButtons from "../../components/ShareButtons";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import WorkflowLab from "../components/WorkflowLab";
+import MethodStackCTA from "../../components/MethodStackCTA";
 
 export const metadata = {
   title: "Build an AI Email Triage System: Turn Inbox Noise into a Review Queue | Everyday AI Workflows",
@@ -83,6 +84,7 @@ export default function BlogPost() {
             "Next review — Replace the pending status only after a sanitized owner-run check is recorded with the model/plan and date.",
           ]}
         />
+        <MethodStackCTA />
         <ShareButtons
           title={metadata.title}
           url={metadata.alternates.canonical}

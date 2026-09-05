@@ -4,6 +4,7 @@ import SourceMethodBlock from "../components/SourceMethodBlock";
 import WorkflowLab from "../components/WorkflowLab";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
+import MethodStackCTA from "../../components/MethodStackCTA";
 
 export const metadata = {
   title: "Build an AI Meeting Summarizer Workflow: Turn Transcripts into Decisions | Everyday AI Workflows",
@@ -83,6 +84,7 @@ export default function BlogPost() {
             "Next review — Replace the pending status only after a dated, reproducible sanitized transcript run is recorded.",
           ]}
         />
+        <MethodStackCTA />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 

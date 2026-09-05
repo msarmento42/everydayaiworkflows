@@ -4,6 +4,7 @@ import SourceMethodBlock from "../components/SourceMethodBlock";
 import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 import ArticleJsonLd from "../components/ArticleJsonLd";
 import WorkflowLab from "../components/WorkflowLab";
+import MethodStackCTA from "../../components/MethodStackCTA";
 
 export const metadata = {
   title: "AI for Competitor Analysis: A Practical Workflow for a Decision-Ready Brief | Everyday AI Workflows",
@@ -82,6 +83,7 @@ export default function BlogPost() {
             "Next review — Replace the pending status only when a dated, reproducible public-source run is recorded.",
           ]}
         />
+        <MethodStackCTA />
 
         <div style={{ lineHeight: "1.8", fontSize: "1.05rem", color: "#d1d5db" }}>
 
