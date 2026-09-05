@@ -1,6 +1,8 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
+import ArticleJsonLd from "../components/ArticleJsonLd";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "AI Content Repurposing: Turn One Post into Platform-Specific Drafts | Everyday AI Workflows",
@@ -8,11 +10,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-content-repurposing-workflow",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-content-repurposing-workflow"
+        datePublished="2026-06-16"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -24,11 +37,16 @@ export default function BlogPost() {
           AI Content Repurposing: Turn One Post into Platform-Specific Drafts
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="reviewable content repurposing systems"
+        />
         <SourceMethodBlock
           reviewedOn="August 5, 2026"
           sources={[
             { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
             { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
+            { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
           ]}
         />
 
@@ -77,7 +95,7 @@ Write it to be spoken aloud — short sentences, no jargon.`}</pre>
           <p><a href="https://writesonic.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Writesonic</a> offers a similar feature with its Chatsonic tool, and is a good alternative for teams already using it for SEO content — the repurposing adds no additional cost if you're already on a paid plan.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Automating the Repurposing Pipeline with Make.com</h2>
-          <p>Once your prompts are working consistently, the next step is removing yourself from the process entirely. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> can trigger the entire repurposing workflow the moment a new post is published:</p>
+          <p>Once your prompts are working consistently, the next step is reducing manual copying while keeping an approval gate. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> can trigger a reviewable repurposing workflow when a new post is published:</p>
           <ul style={{ paddingLeft: "1.5rem", marginBottom: "1rem" }}>
             <li style={{ marginBottom: "0.5rem" }}>Trigger: new post published on your blog (via RSS feed or webhook)</li>
             <li style={{ marginBottom: "0.5rem" }}>Step 1: Make fetches the full post content</li>
@@ -85,7 +103,7 @@ Write it to be spoken aloud — short sentences, no jargon.`}</pre>
             <li style={{ marginBottom: "0.5rem" }}>Step 3: Saves all outputs to a Notion "Content Queue" database — one row per format, with the draft content pre-filled</li>
             <li style={{ marginBottom: "0.5rem" }}>Step 4: Notifies you via Slack or email that the queue is ready for review</li>
           </ul>
-          <p>Your review routine becomes: open Notion, inspect the generated drafts from the source post, make the necessary edits, and schedule only the pieces that fit your calendar. See our guide on <a href="/blog/automating-social-media-with-ai" style={{ color: "#00d4ff" }}>automating social media with AI</a> for the full scheduling piece of this workflow.</p>
+          <p>Your review routine becomes: open Notion, inspect the generated drafts from the source post, make the necessary edits, and schedule only the pieces that fit your calendar. See the <a href="/workflows/automation" style={{ color: "#00d4ff" }}>automation workflow hub</a> for the scheduling and approval patterns that complement this guide.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>What to Repurpose First: Finding Your Evergreen Content</h2>
           <p>Not every post deserves full repurposing treatment. Prioritize content that is evergreen (the advice won't be stale in 6 months), high-performing (already getting organic traffic or engagement), or foundational (defines your core point of view). News-reactive posts and topical takes have a short shelf life; tutorials, frameworks, and opinion pieces compound.</p>
@@ -93,7 +111,7 @@ Write it to be spoken aloud — short sentences, no jargon.`}</pre>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Tracking What Actually Converts</h2>
           <p>Repurposing at scale only makes sense if you're measuring what's working. Track which repurposed formats drive traffic back to the original post, which ones generate profile visits or follows, and which platforms your audience engages with most. After a measurement period, concentrate on the formats that show useful signals and retire the ones that do not earn a place in your calendar.</p>
-          <p>For SEO-specific repurposing — where the goal is ranking, not social engagement — pair your repurposing workflow with <a href="https://surferseo.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Surfer SEO</a> to ensure each derivative piece is optimized for its own target keyword rather than just copying the original. Our <a href="/blog/ai-for-seo-optimization" style={{ color: "#00d4ff" }}>AI for SEO guide</a> covers this in detail.</p>
+          <p>For SEO-specific repurposing — where the goal is ranking, not social engagement — pair your repurposing workflow with <a href="https://surferseo.com" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Surfer SEO</a> to evaluate each derivative piece against its own target keyword rather than just copying the original. The <a href="/workflows/writing" style={{ color: "#00d4ff" }}>writing workflow hub</a> covers the surrounding editorial checks.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>

@@ -4,16 +4,29 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-for-data-analysis-beginners",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 import ShareButtons from '../../components/ShareButtons';
 import AffiliateDisclosure from '../components/AffiliateDisclosure';
 import SourceMethodBlock from '../components/SourceMethodBlock';
 import EditorialQualityNotice from '../../components/EditorialQualityNotice';
+import ArticleJsonLd from '../components/ArticleJsonLd';
+import WorkflowLab from '../components/WorkflowLab';
 
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-for-data-analysis-beginners"
+        datePublished="2026-05-21"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>← Back to Blog</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -35,6 +48,38 @@ export default function BlogPost() {
             { label: "OpenAI Help: Data analysis with ChatGPT", href: "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt" },
             { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
             { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
+          ]}
+        />
+        <WorkflowLab
+          id="spreadsheet-analysis"
+          title="Testable spreadsheet-analysis fixture"
+          decision="Is the dataset clean enough for a useful summary, and which findings require a human check before they influence a decision?"
+          setup={[
+            "Create a small synthetic CSV with duplicate rows, one missing category, and a known monthly total.",
+            "Ask the model to report row counts, missing values, duplicate candidates, and the calculation it used for the total.",
+            "Recalculate the total independently and mark any disagreement or unsupported inference for review.",
+          ]}
+          inputExample={'date,product,region,revenue\n2026-01-01,Alpha,West,120\n2026-01-02,Alpha,West,120\n2026-01-03,Beta,,80'}
+          outputExample={'Checks: 3 rows; 1 missing region; 1 duplicate candidate; revenue sum 320.\nDecision note: do not infer the missing region or treat the duplicate as an error until the source owner confirms it.'}
+          observationStatus="Pending an owner-run observation against a non-sensitive sample spreadsheet"
+          safetyNotes={[
+            "Do not upload financial, health, customer, or employee data unless the account and workspace are approved for that data.",
+            "Verify row counts, formulas, units, date ranges, and missing values outside the model before using a conclusion.",
+            "Keep the raw file and the generated narrative together so a reviewer can trace every number.",
+          ]}
+          alternatives={[
+            { option: "Spreadsheet formulas first", tradeoff: "Most transparent for simple totals, but less helpful for open-ended pattern discovery." },
+            { option: "AI-assisted analysis", tradeoff: "Faster narrative and anomaly suggestions, but every number needs independent verification." },
+            { option: "Scripted notebook", tradeoff: "Most reproducible for recurring reports, but requires setup and maintenance." },
+          ]}
+          sources={[
+            { label: "OpenAI Help: data analysis with ChatGPT", href: "https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt", accessedOn: "September 4, 2026" },
+            { label: "Claude documentation", href: "https://docs.anthropic.com/en/docs/overview", accessedOn: "September 4, 2026" },
+            { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs", accessedOn: "September 4, 2026" },
+          ]}
+          updateLog={[
+            "September 4, 2026 — Added a deterministic synthetic CSV and independent-calculation checklist.",
+            "Next review — Add a real sanitized observation only if the owner elects to run one; otherwise keep this clearly marked as pending.",
           ]}
         />
         <ShareButtons title={metadata.title} url="https://everydayaiworkflows.com/blog/ai-for-data-analysis-beginners" />
@@ -94,11 +139,11 @@ Write an executive summary (300 words max) for a leadership meeting.
 Include: key wins, areas of concern, and 2-3 specific recommendations.
 Write in plain business language, not data jargon.
 Audience: non-technical executives who have 5 minutes to read this.`}</pre>
-          <p>This can shorten the first-draft step, but the AI does not know your business context. Refine the narrative and add facts it could not know — like that the Q3 dip was due to a planned promotion. For a deeper look at AI-assisted financial analysis, see our guide on <a href="/blog/using-ai-for-financial-reports" style={{ color: "#00d4ff" }}>using AI for financial reports</a>.</p>
+          <p>This can shorten the first-draft step, but the AI does not know your business context. Refine the narrative and add facts it could not know — like that the Q3 dip was due to a planned promotion. For adjacent evidence and research patterns, see the <a href="/workflows/research" style={{ color: "#00d4ff" }}>research workflow hub</a>.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Connecting Data Sources Automatically</h2>
           <p>If you&apos;re pulling data from multiple places — a CRM, a spreadsheet, a Google Analytics report — doing it manually can become repetitive. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> can automate the data collection step: pull records from your CRM, export from Google Sheets, merge the files, and send the combined dataset to Claude for analysis on a schedule. Review the permissions and generated report before relying on it for recurring decisions.</p>
-          <p>This is the difference between one-off analysis and a systematic intelligence workflow. Setup includes connecting the sources, handling permissions, and deciding where a human review belongs. If your data lives in accounting software, you might also find our breakdown of <a href="/blog/ai-tools-for-accounting" style={{ color: "#00d4ff" }}>AI tools for accounting</a> useful — it covers how to connect those data sources to an automated reporting pipeline.</p>
+          <p>This is the difference between one-off analysis and a systematic intelligence workflow. Setup includes connecting the sources, handling permissions, and deciding where a human review belongs. If you are assembling a broader toolkit, the <a href="/blog/ai-productivity-stack-2026" style={{ color: "#00d4ff" }}>AI productivity stack guide</a> explains how to keep the number of moving parts small.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>A Practical Example: Monthly Sales Report</h2>
           <p>Here&apos;s what the full workflow looks like in practice for a small business owner running a monthly sales report:</p>
@@ -115,7 +160,7 @@ Audience: non-technical executives who have 5 minutes to read this.`}</pre>
           <p>Don&apos;t try to build the full automated system on day one. Start here:</p>
           <p><strong>Day 1:</strong> Take your most-used business spreadsheet — sales, customers, expenses, whatever matters most — and upload it to Claude or ChatGPT. Use the first-look prompt above and record which findings need human verification.</p>
           <p><strong>Day 3:</strong> Pick the most interesting insight from Day 1. Ask the AI to dig deeper: &quot;You mentioned X. Can you break that down by month and tell me if the trend is accelerating or slowing?&quot;</p>
-          <p><strong>Week 2:</strong> If you&apos;re happy with the manual workflow, look at Make.com for automation and check the current plan limits before building a recurring pipeline. And if analysis is a regular part of your role, also check our overview of <a href="/blog/ai-for-small-business" style={{ color: "#00d4ff" }}>AI tools for small business</a> for the broader stack that teams like yours are building.</p>
+          <p><strong>Week 2:</strong> If you&apos;re happy with the manual workflow, look at Make.com for automation and check the current plan limits before building a recurring pipeline. For a broader, task-fit toolkit, see the <a href="/blog/best-ai-tools-for-freelancers-2026" style={{ color: "#00d4ff" }}>freelancer workflow guide</a> and adapt its review gates to your context.</p>
           <p>The goal isn&apos;t to become a data scientist. The goal is to make decisions with clearer evidence. AI can handle a mechanical first pass, but your judgment about the business context remains essential.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>

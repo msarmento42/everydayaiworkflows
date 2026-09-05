@@ -1,6 +1,8 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
+import ArticleJsonLd from "../components/ArticleJsonLd";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "Build an AI Meeting Summarizer Workflow: Turn Transcripts into Decisions | Everyday AI Workflows",
@@ -8,11 +10,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-meeting-summarizer-workflow",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-meeting-summarizer-workflow"
+        datePublished="2026-06-17"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>{"← Back to Blog"}</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -24,11 +37,16 @@ export default function BlogPost() {
           Build an AI Meeting Summarizer Workflow: Turn Transcripts into Decisions
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="meeting notes, decisions, and follow-up routing"
+        />
         <SourceMethodBlock
           reviewedOn="August 5, 2026"
           sources={[
             { label: "Make Help Center: Create your first scenario", href: "https://help.make.com/create-your-first-scenario" },
             { label: "Notion AI FAQs", href: "https://www.notion.com/help/notion-ai-faqs" },
+            { label: "Claude Platform Docs", href: "https://docs.anthropic.com/en/docs/overview" },
           ]}
         />
 
@@ -61,7 +79,7 @@ Transcript:
           <p>This prompt is designed to produce a structured draft for review. The key instruction is "do not restate the discussion" — without it, AI models tend to narrate what was said rather than extract what matters. The table format for action items also makes missing owners or due dates visible instead of burying that ambiguity in prose.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 3: Automate the Routing with Make.com</h2>
-          <p>Running the prompt manually works, but you can also connect the steps into a single pipeline. With <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a>, transcript intake, summarization, and task creation can move through one workflow with fewer manual handoffs. For more on building Make.com automations from scratch, see our guide on <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>how to automate tasks with Make</a>.</p>
+          <p>Running the prompt manually works, but you can also connect the steps into a single pipeline. With <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a>, transcript intake, summarization, and task creation can move through one workflow with fewer manual handoffs. The <a href="/workflows/automation" style={{ color: "#00d4ff" }}>automation workflow hub</a> covers the same approval-first pattern.</p>
           <p>Here is the full workflow architecture:</p>
           <pre style={{ background: "rgba(0,0,0,0.4)", border: "1px solid #374151", borderRadius: "8px", padding: "1.25rem", overflowX: "auto", fontSize: "0.9rem", color: "#a5f3fc", marginTop: "1rem", marginBottom: "1rem", whiteSpace: "pre-wrap" }}>{`Trigger: New recording in Google Drive folder (or Fireflies webhook)
   ↓
@@ -85,7 +103,7 @@ Step 4c: Log the summary to a Notion meeting archive database`}</pre>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 5: Build a Searchable Meeting Archive</h2>
           <p>The value of this workflow can grow over time. If meeting summaries land in a structured Notion database, you can search across the archive for questions like "what did we decide about the pricing model in Q1?" or "who owns the API integration task from the March kickoff?" before opening the original calendar event.</p>
-          <p>Set up your <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion</a> database with these fields: Meeting Name, Date, Attendees (multi-select), Decisions (text), Action Items (linked to your tasks database), and Status (Open / Archived). Use the Make.com automation to populate these fields from the AI output, then spot-check the fields before they become part of your archive. As the archive grows, it becomes easier to search for decisions and ownership. Pair this with the <a href="/blog/notion-ai-workflow-guide" style={{ color: "#00d4ff" }}>Notion AI workflow patterns</a> for more ways to query the same database.</p>
+          <p>Set up your <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion</a> database with these fields: Meeting Name, Date, Attendees (multi-select), Decisions (text), Action Items (linked to your tasks database), and Status (Open / Archived). Use the Make.com automation to populate these fields from the AI output, then spot-check the fields before they become part of your archive. As the archive grows, it becomes easier to search for decisions and ownership. The <a href="/blog/ai-productivity-stack-2026" style={{ color: "#00d4ff" }}>AI productivity stack guide</a> covers how to keep that system focused.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Step 6: Quality-Check Your AI Summaries</h2>
           <p>AI meeting summarizers are excellent but not infallible. Three failure modes to watch for:</p>
@@ -104,7 +122,7 @@ Step 4c: Log the summary to a Notion meeting archive database`}</pre>
             <li>Claude or ChatGPT — the AI core of the summarizer; both work equally well with the prompts above</li>
             <li>Fireflies.ai or Otter.ai — automatic transcript generation for all your calls</li>
           </ul>
-          <p>For a broader look at how to tie these tools together across your whole workflow, check out our guide to <a href="/blog/automating-social-media-with-ai" style={{ color: "#00d4ff" }}>automating content workflows with AI</a> — many of the same Make.com patterns apply.</p>
+          <p>For a broader look at how to tie these tools together across your whole workflow, see the <a href="/blog/ai-content-repurposing-workflow" style={{ color: "#00d4ff" }}>content repurposing workflow</a> — many of the same Make.com approval patterns apply.</p>
 
           <div style={{ background: "rgba(0, 212, 255, 0.05)", border: "1px solid rgba(0, 212, 255, 0.2)", borderRadius: "12px", padding: "1.25rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ margin: 0, color: "#a5f3fc" }}>

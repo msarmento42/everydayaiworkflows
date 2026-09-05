@@ -1,6 +1,8 @@
 import NewsletterCapture from "../components/NewsletterCapture";
 import AffiliateDisclosure from "../components/AffiliateDisclosure";
 import SourceMethodBlock from "../components/SourceMethodBlock";
+import ArticleJsonLd from "../components/ArticleJsonLd";
+import EditorialQualityNotice from "../../components/EditorialQualityNotice";
 
 export const metadata = {
   title: "AI Tools for Content Creators in 2026: A Workflow Map | Everyday AI Workflows",
@@ -8,11 +10,22 @@ export const metadata = {
   alternates: {
     canonical: "/blog/ai-tools-for-content-creators",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function BlogPost() {
   return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d1b2a 100%)", color: "#fff", fontFamily: "system-ui, sans-serif", padding: "2rem" }}>
+      <ArticleJsonLd
+        headline={metadata.title}
+        description={metadata.description}
+        canonical="https://everydayaiworkflows.com/blog/ai-tools-for-content-creators"
+        datePublished="2026-05-09"
+        dateModified="2026-09-04"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto", paddingTop: "2rem" }}>
         <a href="/blog" style={{ color: "#00d4ff", textDecoration: "none" }}>{"← Back to Blog"}</a>
         <div style={{ marginTop: "1rem", display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
@@ -24,6 +37,10 @@ export default function BlogPost() {
           AI Tools for Content Creators in 2026: A Workflow Map
         </h1>
         <AffiliateDisclosure />
+        <EditorialQualityNotice
+          reviewedOn="September 4, 2026"
+          focus="content-creation tools chosen by workflow fit"
+        />
         <SourceMethodBlock
           reviewedOn="August 5, 2026"
           sources={[
@@ -80,12 +97,12 @@ From this, generate:
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Automating Your Content Pipeline</h2>
           <p>Connecting these tools can reduce handoffs, but automation should prepare drafts and queues rather than publish unchecked material. <a href="https://www.make.com/en/register?pc=msarmento42" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Make.com</a> can be configured to detect a new post, prepare social drafts, create a thumbnail task, and update a content calendar. Add approval gates for claims, links, images, recipients, and publishing permissions.</p>
-          <p>A common pattern is: write in the primary tool, push to a shared location, then trigger a reviewable distribution queue. For a step-by-step guide to building this kind of automation, see <a href="/blog/how-to-automate-tasks-with-make" style={{ color: "#00d4ff" }}>automating repetitive tasks with Make.com</a>.</p>
+          <p>A common pattern is: write in the primary tool, push to a shared location, then trigger a reviewable distribution queue. The <a href="/workflows/automation" style={{ color: "#00d4ff" }}>automation workflow hub</a> shows how to keep approvals between a draft and an external publish action.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>Building a Consistent Content Calendar</h2>
           <p>The hardest part of content creation for most people is consistency — not quality. AI helps here not by generating content for you indefinitely, but by removing the friction that causes creators to skip publishing weeks when they are busy.</p>
           <p>Use <a href="https://notion.so" rel="noopener sponsored" style={{ color: "#00d4ff" }}>Notion AI</a> to build and maintain a content calendar with fields for topic, keyword target, draft status, publish date, and repurposing checklist. It can assist with outlines and summaries, while a human checks the source material and publishing decision. A permissioned calendar can connect to Make.com workflows, but keep the final publish action reviewable.</p>
-          <p>For content marketing and AI strategy at a deeper level, see our guide on <a href="/blog/building-an-ai-content-calendar" style={{ color: "#00d4ff" }}>building an AI-powered content calendar</a>.</p>
+          <p>For content marketing and AI strategy at a deeper level, see the <a href="/blog/ai-content-repurposing-workflow" style={{ color: "#00d4ff" }}>content repurposing workflow</a> and its source-and-review checklist.</p>
 
           <h2 style={{ fontSize: "1.5rem", color: "#fff", marginTop: "2rem", marginBottom: "1rem", borderBottom: "1px solid #374151", paddingBottom: "0.5rem" }}>The Creator's AI Toolkit: A Quick Reference</h2>
           <p>Here is one possible layered toolkit to test; the right combination depends on your audience, channels, privacy needs, and budget:</p>

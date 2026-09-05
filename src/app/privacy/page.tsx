@@ -31,7 +31,7 @@ export default function Privacy() {
         <h1 style={{ fontSize: '2rem', marginBottom: '1.5rem', color: '#00d4ff' }}>Privacy Policy</h1>
 
         <div style={{ lineHeight: '1.8', color: '#d1d5db' }}>
-          <p style={{ marginBottom: '1rem' }}>Last updated: July 2026</p>
+          <p style={{ marginBottom: '1rem' }}>Last updated: September 4, 2026</p>
 
           <h2 style={{ fontSize: '1.3rem', color: '#fff', marginTop: '2rem', marginBottom: '1rem' }}>Information We Collect</h2>
           <p style={{ marginBottom: '1rem' }}>
@@ -64,10 +64,10 @@ export default function Privacy() {
 
           <h2 style={{ fontSize: '1.3rem', color: '#fff', marginTop: '2rem', marginBottom: '1rem' }}>Third-Party Advertising (Google AdSense)</h2>
           <p style={{ marginBottom: '1rem' }}>
-            We use <strong style={{ color: '#fff' }}>Google AdSense</strong> to display advertisements on
-            this website. Google AdSense uses cookies and device identifiers to serve ads that are relevant
-            to your interests based on your visits to this and other websites across the internet. This is
-            known as interest-based or personalized advertising.
+            This site includes the <strong style={{ color: '#fff' }}>Google AdSense</strong> loader while our
+            publisher account is pending review. We do not intentionally place AdSense ad units until Google
+            approves the site. If approval is granted, AdSense may use cookies and device identifiers to serve
+            ads that are relevant to your interests based on visits to this and other websites.
           </p>
           <p style={{ marginBottom: '1rem' }}>
             Google&apos;s use of advertising cookies enables it and its partners to serve ads based on your
