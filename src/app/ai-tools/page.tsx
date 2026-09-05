@@ -4,6 +4,18 @@ export const metadata = {
   title: 'Best AI Tools (2026) — Curated Recommendations | Everyday AI Workflows',
   description: 'The best AI tools for writing, research, automation, image generation, and coding in 2026. Curated recommendations with honest reviews and affiliate links.',
   alternates: { canonical: 'https://everydayaiworkflows.com/ai-tools' },
+  openGraph: {
+    title: 'Best AI Tools (2026) — Curated Recommendations | Everyday AI Workflows',
+    description: 'The best AI tools for writing, research, automation, image generation, and coding in 2026. Curated recommendations with honest reviews and affiliate links.',
+    url: 'https://everydayaiworkflows.com/ai-tools',
+    siteName: 'Everyday AI Workflows',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Best AI Tools (2026) — Curated Recommendations | Everyday AI Workflows',
+    description: 'The best AI tools for writing, research, automation, image generation, and coding in 2026. Curated recommendations with honest reviews and affiliate links.',
+  },
 };
 
 const categories = [
