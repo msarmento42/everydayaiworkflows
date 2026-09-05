@@ -84,4 +84,5 @@ Gumroad fallback remains available. Validate the handoff with:
 ```bash
 node scripts/check-analytics-readiness.mjs
 npm run check:newsletter
+node scripts/check-revenue-links.mjs
 ```
