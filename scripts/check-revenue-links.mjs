@@ -19,6 +19,8 @@ for (const token of [
   "utm_content: content",
   "gumroadLink('ai-workflow-reset', 'free_reset')",
   "gumroadLink('ai-workday-system', 'workday_system')",
+  "gumroadLink('ai-weekly-planning-kit', 'weekly_planning_kit')",
+  "gumroadLink('ai-research-decision-kit', 'research_decision_kit')",
   "gumroadLink('method-stack-complete-system', 'complete_system')",
 ]) {
   assert(revenueLinks.includes(token), `revenue-links.ts is missing ${token}`);
@@ -28,9 +30,13 @@ const methodStackCta = await source('src/app/components/MethodStackCTA.tsx');
 for (const token of [
   'methodStackLinks.freeReset',
   'methodStackLinks.workdaySystem',
+  'methodStackLinks.researchDecisionKit',
+  'methodStackLinks.weeklyPlanningKit',
   'methodStackLinks.completeSystem',
   'data-analytics-product="ai-workflow-reset"',
   'data-analytics-product="ai-workday-system"',
+  'data-analytics-product="ai-research-decision-kit"',
+  'data-analytics-product="ai-weekly-planning-kit"',
   'data-analytics-product="method-stack-complete-system"',
   'Product links are provided for readers who want implementation assets',
 ]) {

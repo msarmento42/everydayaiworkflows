@@ -15,5 +15,7 @@ function gumroadLink(slug: string, content: string) {
 export const methodStackLinks = {
   freeReset: gumroadLink('ai-workflow-reset', 'free_reset'),
   workdaySystem: gumroadLink('ai-workday-system', 'workday_system'),
+  weeklyPlanningKit: gumroadLink('ai-weekly-planning-kit', 'weekly_planning_kit'),
+  researchDecisionKit: gumroadLink('ai-research-decision-kit', 'research_decision_kit'),
   completeSystem: gumroadLink('method-stack-complete-system', 'complete_system'),
 } as const;
