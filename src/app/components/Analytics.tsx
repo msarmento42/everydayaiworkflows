@@ -21,6 +21,7 @@ export default function Analytics() {
       }
 
       const isExternal = Boolean(url.hostname && url.hostname !== window.location.hostname);
+      const isGumroadProduct = /methodstackhq\.gumroad\.com\/l\//i.test(link.href);
       const isAffiliate = /sponsored|affiliate/i.test(link.rel || "")
         || /affiliate|make\.com|jasper|grammarly|surferseo|semrush|writesonic|nordvpn/i.test(link.href);
       if (!isAffiliate && !isExternal) return;
@@ -39,6 +40,21 @@ export default function Analytics() {
       const placement = link.dataset.analyticsPlacement || "content";
       const pageIntent = link.dataset.analyticsIntent
         || (page.includes("tools") ? "commercial" : page.includes("workflows") ? "workflow" : "editorial");
+
+      if (isGumroadProduct) {
+        const product = link.dataset.analyticsProduct || url.pathname.split("/").filter(Boolean).pop() || "product";
+        const template = link.dataset.analyticsTemplate;
+        trackAnalyticsEvent(template ? "template_download" : "product_view", {
+          page,
+          placement,
+          page_intent: pageIntent,
+          partner: "gumroad",
+          product,
+          ...(template ? { template } : {}),
+          link_domain: url.hostname.toLowerCase(),
+        });
+        return;
+      }
 
       trackAnalyticsEvent(isAffiliate ? "affiliate_click" : "outbound_click", {
         page,

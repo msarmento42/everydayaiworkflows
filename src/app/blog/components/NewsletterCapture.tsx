@@ -1,8 +1,9 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import type { NewsletterSource } from "../../lib/newsletter";
+import { trackAnalyticsEvent } from "../../lib/analytics";
 import { methodStackLinks } from "../../lib/revenue-links";
 
 interface NewsletterCaptureProps {
@@ -35,13 +36,42 @@ export default function NewsletterCapture({
   const [consent, setConsent] = useState(false);
   const [honeypot, setHoneypot] = useState("");
   const [status, setStatus] = useState<FormStatus>("idle");
+  const leadStarted = useRef(false);
+  const page = typeof window === "undefined" ? "/" : window.location.pathname.toLowerCase() || "/";
   const panelStyles = darkMode
     ? { background: "rgba(124,58,237,0.1)", border: "1px solid rgba(124,58,237,0.3)", heading: "#fff", body: "#cbd5e1", inputBackground: "#1a1a3e", inputColor: "#fff" }
     : { background: "#f5f3ff", border: "1px solid #ddd6fe", heading: "#1f2937", body: "#4b5563", inputBackground: "#fff", inputColor: "#111827" };
 
+  useEffect(() => {
+    trackAnalyticsEvent("lead_view", {
+      page,
+      placement: "newsletter_capture",
+      page_intent: "lead_capture",
+      template: source,
+    });
+  }, [page, source]);
+
+  function startLead() {
+    if (leadStarted.current) return;
+    leadStarted.current = true;
+    trackAnalyticsEvent("lead_start", {
+      page,
+      placement: "newsletter_form",
+      page_intent: "lead_capture",
+      template: source,
+    });
+  }
+
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("loading");
+    startLead();
+    trackAnalyticsEvent("lead_submit", {
+      page,
+      placement: "newsletter_form",
+      page_intent: "lead_capture",
+      template: source,
+    });
 
     try {
       const response = await fetch("/api/newsletter/subscribe", {
@@ -54,6 +84,14 @@ export default function NewsletterCapture({
         ? result.status as FormStatus
         : "error";
       setStatus(nextStatus);
+      if (nextStatus === "success" || nextStatus === "duplicate") {
+        trackAnalyticsEvent("lead_success", {
+          page,
+          placement: "newsletter_form",
+          page_intent: "lead_capture",
+          template: source,
+        });
+      }
       if (nextStatus === "success" || nextStatus === "duplicate") setEmail("");
     } catch {
       setStatus("error");
@@ -75,7 +113,7 @@ export default function NewsletterCapture({
           </div>
           <label htmlFor={emailId} style={{ display: "block", color: panelStyles.heading, fontSize: "0.9rem", fontWeight: 600, marginBottom: "0.4rem" }}>Email address</label>
           <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            <input id={emailId} name="email" type="email" autoComplete="email" value={email} onChange={(event) => setEmail(event.target.value)} required disabled={status === "loading"} style={{ flex: "1 1 220px", padding: "0.75rem", borderRadius: "8px", border: "1px solid #6b7280", background: panelStyles.inputBackground, color: panelStyles.inputColor, outline: "none" }} />
+            <input id={emailId} name="email" type="email" autoComplete="email" value={email} onChange={(event) => { startLead(); setEmail(event.target.value); }} required disabled={status === "loading"} style={{ flex: "1 1 220px", padding: "0.75rem", borderRadius: "8px", border: "1px solid #6b7280", background: panelStyles.inputBackground, color: panelStyles.inputColor, outline: "none" }} />
             <button type="submit" disabled={status === "loading"} style={{ padding: "0.75rem 1.5rem", background: "#7c3aed", border: "none", borderRadius: "8px", color: "#fff", fontWeight: 600, cursor: status === "loading" ? "wait" : "pointer", opacity: status === "loading" ? 0.7 : 1 }}>
               {status === "loading" ? "Submitting…" : ctaText}
             </button>
@@ -109,6 +147,8 @@ export default function NewsletterCapture({
           rel="noopener noreferrer"
           data-analytics-placement="newsletter-fallback"
           data-analytics-intent="commercial"
+          data-analytics-product="ai-workflow-reset"
+          data-analytics-template="free_reset"
           style={{ color: darkMode ? "#a5f3fc" : "#4338ca", fontWeight: 700, textDecoration: "underline" }}
         >
           Get the free AI Workflow Reset →
