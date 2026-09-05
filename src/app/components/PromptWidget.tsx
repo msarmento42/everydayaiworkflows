@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import NewsletterCapture from "../blog/components/NewsletterCapture";
 
 const prompts = [
@@ -39,19 +39,32 @@ export default function PromptWidget() {
   const [promptIndex, setPromptIndex] = useState(0);
   const [darkMode, setDarkMode] = useState(true);
   const [readingProgress, setReadingProgress] = useState(0);
+  const progressFrame = useRef<number | null>(null);
 
   useEffect(() => {
     const { index, prompt: p } = getDailyPrompt();
     setPrompt(p);
     setPromptIndex(index);
 
-    const handleScroll = () => {
+    const updateProgress = () => {
+      progressFrame.current = null;
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      setReadingProgress((scrollTop / docHeight) * 100);
+      const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      setReadingProgress(Math.min(100, Math.max(0, progress)));
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    const handleScroll = () => {
+      if (progressFrame.current !== null) return;
+      progressFrame.current = window.requestAnimationFrame(updateProgress);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (progressFrame.current !== null) window.cancelAnimationFrame(progressFrame.current);
+    };
   }, []);
 
   const copyToClipboard = async () => {
@@ -72,6 +85,7 @@ export default function PromptWidget() {
       <div style={{ position: 'fixed', top: 0, left: 0, height: '3px', background: 'linear-gradient(90deg, #00d4ff, #7c3aed)', width: readingProgress + '%', zIndex: 1000 }} />
 
       <button
+        aria-label="Toggle color theme"
         onClick={() => setDarkMode(!darkMode)}
         style={{ position: 'fixed', top: '1rem', right: '1rem', padding: '0.5rem 1rem', background: darkMode ? 'rgba(255,255,255,0.1)' : '#e5e7eb', border: 'none', borderRadius: '8px', cursor: 'pointer', fontSize: '1.2rem', zIndex: 100 }}
       >
